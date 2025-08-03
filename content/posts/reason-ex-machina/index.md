@@ -7,10 +7,10 @@ draft: false
 tags: ["llm", "ai", "dev"]
 categories: ["Dev"]
 
-image: "smarter-than-thee.jpg"
+image: "/posts/reason-ex-machina/smarter-than-thee.jpg"
 
 images:
-  - "smarter-than-thee.jpg"
+  - "/posts/reason-ex-machina/smarter-than-thee.jpg"
 ---
 
 ![Reason ex Machina](smarter-than-thee.jpg)

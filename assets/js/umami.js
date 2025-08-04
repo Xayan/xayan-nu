@@ -9,7 +9,7 @@
   // Engagement intervals: every 10s up to 1m, then every 1m
   const intervals = [];
   for(let i=10; i<=60; i+=10) intervals.push(i);
-  for(let i=120; i<=1800; i+=60) intervals.push(i); // up to 30min, adjust if needed
+  for(let i=120; i<=1800; i+=60) intervals.push(i); // up to 30min, adjust as needed
 
   let visible = true;
   let engagementTime = 0; // seconds
@@ -17,12 +17,12 @@
   let intervalIndex = 0;
 
   // Helper: Send engagement event if umami is loaded
-  function sendEvent(sec) {
+  function sendEvent(event) {
     if (typeof umami !== 'undefined') {
-      umami.track(`engaged-${sec}s`);
-      console.log(`[umami] Sent: engaged-${sec}s`);
+      umami.track(event);
+      console.log(`[umami] Sent: ${event}`);
     } else {
-      console.log(`[umami] Not loaded at ${sec}s`);
+      console.log(`[umami] Not loaded for: ${event}`);
     }
   }
 
@@ -33,7 +33,7 @@
 
     // Fire event if matches interval
     if (intervalIndex < intervals.length && engagementTime === intervals[intervalIndex]) {
-      sendEvent(intervals[intervalIndex]);
+      sendEvent(`engaged-${intervals[intervalIndex]}s`);
       intervalIndex++;
     }
   }
@@ -41,6 +41,7 @@
   // Visibility handler
   function handleVisibilityChange() {
     visible = (document.visibilityState === 'visible');
+    sendEvent(`visibility-${document.visibilityState}`);
     console.log(`[umami] Visibility: ${document.visibilityState}, time: ${engagementTime}s`);
     if (visible && !timer) {
       timer = setInterval(tick, 1000);
@@ -54,6 +55,8 @@
 
   // Initial state
   document.addEventListener('visibilitychange', handleVisibilityChange);
+  // Send initial visibility
+  sendEvent(`visibility-${document.visibilityState}`);
   // Start timer if page is visible
   if (document.visibilityState === 'visible') {
     timer = setInterval(tick, 1000);

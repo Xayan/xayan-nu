@@ -147,6 +147,9 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 6. It is **unlikely** to be a viable way to "fully jailbreak" an LLM, making it say whatever you want, or produce harmful content. Rules are positive/neutral traits, not a differential diagnosis for psychosis.
 7. While I find the findings fascinating, I am also not that surprised - LLMs are trained on man-made data, and meant to mirror human behavior, after all.
 
+![Rules in effect](rules-in-effect.jpg)
+*(Image: Rules in effect; a visualization)*
+
 ### Final Note: Peer Review from Grok
 
 An interesting thing happened when I gave this post to Grok for a review. Take a look:

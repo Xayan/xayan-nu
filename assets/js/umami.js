@@ -8,6 +8,7 @@
 
   // Engagement intervals: every 10s up to 1m, then every 1m
   const intervals = [];
+  for(let i=10; i<=30; i+=10) intervals.push(i);
   for(let i=60; i<=1800; i+=60) intervals.push(i);
 
   let visible = true;
@@ -77,7 +78,7 @@
     console.log('[umami] Tracking scroll: page is long enough.');
 
     const scrollPercents = [];
-    for (let p = 10; p <= 100; p += 10) scrollPercents.push(p);
+    for (let p = 25; p <= 100; p += 25) scrollPercents.push(p);
     let fired = {};
 
     window.addEventListener('scroll', function() {

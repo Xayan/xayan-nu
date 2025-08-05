@@ -7,7 +7,7 @@ tags: ["dev", "llm", "ai", "prompt-engineering"]
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 ---
 
-**This is Part II of the series "*[Ex Machina: Wacky World of Bullying LLMs](../)*".**
+**This is Part II of the series "*[Ex Machina: Wacky World of Bullied LLMs](../)*".**
 
 ![Reason ex Machina](../smarter-than-thee.jpg)
 

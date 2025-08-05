@@ -1,5 +1,5 @@
 ---
-title: "Ex Machina: Wacky World of Bullying LLMs"
+title: "Ex Machina: Wacky World of Bullied LLMs"
 type: series
 series_intro: true
 ---

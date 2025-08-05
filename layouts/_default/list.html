@@ -1,0 +1,22 @@
+{{- define "main" -}}
+<div class="wrapper list-page">
+    <header class="header">
+        <h1 class="header-title center">{{ .Title }}</h1>
+    </header>
+    <main class="page-content" aria-label="Content">
+
+        {{ if or (eq .Params.series_intro true) (eq .Type "series") }}
+            {{ .Content }}
+        {{ else }}
+            {{ range .Pages.GroupByDate "2006" }}
+            {{ $year := .Key }}
+            <h2 class="post-year">{{ $year }}</h2>
+            {{ range .Pages }}
+                {{ partial "postCard" . }}
+            {{ end }}
+            {{ end }}
+        {{ end }}
+
+    </main>
+</div>
+{{- end -}}

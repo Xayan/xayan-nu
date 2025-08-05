@@ -44,5 +44,17 @@ name = "Xayan"
 description = "There are no stupid questions, only stupid people."
 
 [[params.socialIcons]]
+name = "github"
+url = "https://github.com/Xayan/"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/xayan__"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/xayan__"
+
+[[params.socialIcons]]
 name = "Rss"
 url = "/index.xml"

@@ -4,8 +4,8 @@ author: "Xayan"
 date: 2025-08-03
 draft: false
 
-tags: ["llm", "ai", "dev"]
-categories: ["Dev"]
+tags: ["dev", "llm", "ai", "prompt-engineering"]
+categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 
 image: "/posts/reason-ex-machina/smarter-than-thee.jpg"
 

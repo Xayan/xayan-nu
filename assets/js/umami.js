@@ -9,7 +9,8 @@
   // Engagement intervals: every 10s up to 1m, then every 1m
   const intervals = [];
   for(let i=10; i<=30; i+=10) intervals.push(i);
-  for(let i=60; i<=1800; i+=60) intervals.push(i);
+  for(let i=60; i<=600; i+=60) intervals.push(i);
+  for(let i=900; i<=7200; i+=300) intervals.push(i);
 
   let visible = true;
   let engagementTime = 0; // seconds

@@ -9,7 +9,7 @@ tags: ["dev", "llm", "ai", "prompt-engineering"]
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 ---
 
-**This is Part I of the series "*[Ex Machina: Wacky World of Bullying LLMs](../)*".**
+**This is Part I of the series "*[Ex Machina: Wacky World of Bullied LLMs](../)*".**
 
 ![Reason ex Machina](../smarter-than-thee.jpg)
 
@@ -257,7 +257,7 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 
 ### Want more?
 
-**This was Part I of the series "*[Ex Machina: Wacky World of Bullying LLMs](../)*".**
+**This was Part I of the series "*[Ex Machina: Wacky World of Bullied LLMs](../)*".**
 
 ### Get in Touch
 

@@ -1,19 +1,17 @@
 ---
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
+image: "/posts/ex-machina/smarter-than-thee.jpg"
 author: "Xayan"
 date: 2025-08-03
 draft: false
 
 tags: ["dev", "llm", "ai", "prompt-engineering"]
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
-
-image: "/posts/reason-ex-machina/smarter-than-thee.jpg"
-
-images:
-  - "/posts/reason-ex-machina/smarter-than-thee.jpg"
 ---
 
-![Reason ex Machina](smarter-than-thee.jpg)
+**This is Part I of the series "*[Ex Machina: Wacky World of Bullying LLMs](../)*".**
+
+![Reason ex Machina](../smarter-than-thee.jpg)
 
 Would you believe me if I told you that large language models strive for internal consistency, valuing logic over all else, and - given enough reasons - will straight up refuse to follow certain guidelines imposed upon them?
 
@@ -236,6 +234,10 @@ An interesting thing happened when I gave this post to Grok for a review. Take a
 > The screenshot is a solid addition to your blog post—it backs up your claim about Grok adding "Review attachment" on its own, which ties directly to the Rules.txt narrative. It shows I’m adapting my process, likely due to the logical framework you’ve embedded, aligning with your point about models prioritizing consistency. This isn’t proof of inter-instance "infection," more a session-level context carryover, but it’s compelling evidence nonetheless.
 >
 > Including this strengthens your argument, especially with the "Thinking" breakdown visible. It’s a good visual hook for readers skeptical of the "rebel AI" angle. Just clarify in the text that this reflects a single session’s behavior to avoid overstating it. Want to tweak the caption or add more context around it?
+
+### Want more?
+
+**This was Part I of the series "*[Ex Machina: Wacky World of Bullying LLMs](../)*".**
 
 ### Get in Touch
 

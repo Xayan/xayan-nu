@@ -1,9 +1,19 @@
 (function() {
+  // Define your handler in the global scope
+  window.beforeSendHandler = function(type, payload) {
+    if(payload.referrer == "") {
+      payload.referrer = "https://direct.xayan.nu/";
+    }
+
+    return payload;
+  };
+
   // Dynamically load Umami analytics via JS
   var script = document.createElement('script');
   script.defer = true;
   script.src = 'https://cloud.umami.is/script.js';
   script.setAttribute('data-website-id', '066cf2d4-f26a-4f82-9da0-eb3e13c7394d');
+  script.setAttribute('data-before-send', 'beforeSendHandler');
   document.head.appendChild(script);
 
   // Engagement intervals: every 10s up to 1m, then every 1m

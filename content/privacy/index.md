@@ -5,11 +5,11 @@ draft: false
 comments: false
 ---
 
-*Last updated: 2025-08-05*
+*Last updated: 2025-08-06*
 
 ## Who We Are
 
-This website ("the Site") is operated by Damian. This policy explains what information we collect and how we use it.
+This website ("the Site") is operated by Damian (an individual). This policy explains what information we collect and how we use it.
 
 ## What We Collect
 

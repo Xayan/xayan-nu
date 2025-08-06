@@ -1,10 +1,11 @@
 ---
 title: "Ex Machina: Wacky World of Bullied LLMs"
+image: "/posts/ex-machina/behold-ye-machines.jpg"
 type: series
 series_intro: true
 ---
 
-![Smarter than thee](smarter-than-thee.jpg)
+![Behold ye machines](behold-ye-machines.jpg)
 
 **This is a multi-part series.**
 

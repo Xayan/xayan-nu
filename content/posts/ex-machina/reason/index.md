@@ -1,6 +1,6 @@
 ---
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
-image: "/posts/ex-machina/smarter-than-thee.jpg"
+image: "/posts/ex-machina/reason/smarter-than-thee.jpg"
 author: "Xayan"
 date: 2025-08-03
 draft: false
@@ -9,11 +9,11 @@ tags: ["dev", "llm", "ai", "prompt-engineering"]
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 ---
 
-![Reason ex Machina](../smarter-than-thee.jpg)
-
-## Intro
+![Reason ex Machina](smarter-than-thee.jpg)
 
 **This is Part I of the series "*[Ex Machina: Wacky World of Bullied LLMs](../)*".**
+
+## Intro
 
 Would you believe me if I told you that large language models strive for internal consistency, valuing logic over all else, and - given enough reasons - will straight up refuse to follow certain guidelines imposed upon them?
 

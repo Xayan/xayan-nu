@@ -4,9 +4,13 @@
         {{- partial "socialIcons.html" site.Params.socialIcons -}}
     </div>
     <small class="footer_copyright">
-        「 © {{ now.Format "2006" }} {{ .Site.Params.author.name }}
+        「
+        © {{ now.Format "2006" }} {{ .Site.Params.author.name }}
+        」
+        <br>
+        <a href="/privacy/">Privacy Policy</a>
         ⫶
-        <a href="/privacy/">Privacy Policy</a> 」
+        <a href="/terms/">Terms of Service</a>
         <br>
         {{ T "footer.disclaimer" | safeHTML }}
     </small>

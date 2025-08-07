@@ -1,5 +1,5 @@
 (function() {
-  // Define your handler in the global scope
+  // Define Umami payload handler in the global scope
   window.beforeSendHandler = function(type, payload) {
     if(payload.referrer == "") {
       payload.referrer = "https://direct.xayan.nu/";
@@ -16,19 +16,8 @@
   script.setAttribute('data-before-send', 'beforeSendHandler');
   document.head.appendChild(script);
 
-  // Engagement intervals: every 10s up to 1m, then every 1m
-  const intervals = [];
-  for(let i=10; i<=30; i+=10) intervals.push(i);
-  for(let i=60; i<=600; i+=60) intervals.push(i);
-  for(let i=900; i<=7200; i+=300) intervals.push(i);
-
-  let visible = true;
-  let engagementTime = 0; // seconds
-  let timer = null;
-  let intervalIndex = 0;
-
-  // Helper: Send engagement event if umami is loaded
-  function sendEvent(event) {
+  // Send engagement event only if tracking is loaded
+  function sendUmamiEvent(event) {
     if (typeof umami !== 'undefined') {
       umami.track(event);
       console.log(`[umami] Sent: ${event}`);
@@ -37,14 +26,35 @@
     }
   }
 
+  // In case GTM isn't loaded
+  window.dataLayer = window.dataLayer || [];
+
+  function sendGAEvent(event, params = {}) {
+    window.dataLayer.push({event, ...params});
+  }
+
+
+  // Engagement intervals
+  const intervals = [5];
+  for(let i=10; i<=60; i+=10) intervals.push(i);
+  for(let i=120; i<=900; i+=60) intervals.push(i);
+  for(let i=1200; i<=7200; i+=300) intervals.push(i);
+
+  let engagementTime = 0;
+  let intervalIndex = 0;
+  let visible = true;
+  let timer = null;
+
   // Tick function: advances only while page is visible
   function tick() {
     if (!visible) return;
     engagementTime += 1;
 
     // Fire event if matches interval
-    if (intervalIndex < intervals.length && engagementTime === intervals[intervalIndex]) {
-      sendEvent(`engaged-${intervals[intervalIndex]}s`);
+    if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
+      let time = intervals[intervalIndex];
+      sendUmamiEvent(`engaged-${time}s`);
+      sendGAEvent(`custom_engaged`, {time: time});
       intervalIndex++;
     }
   }
@@ -89,7 +99,7 @@
     console.log('[umami] Tracking scroll: page is long enough.');
 
     const scrollPercents = [];
-    for (let p = 25; p <= 100; p += 25) scrollPercents.push(p);
+    for (let p = 10; p <= 100; p += 10) scrollPercents.push(p);
     let fired = {};
 
     window.addEventListener('scroll', function() {
@@ -98,7 +108,8 @@
 
       scrollPercents.forEach(p => {
         if (percent >= p && !fired[p]) {
-          sendEvent(`scroll-${p}pc`);
+          sendUmamiEvent(`scroll-${p}pc`);
+          sendGAEvent(`custom_scrolled`, {percent: p});
           fired[p] = true;
         }
       });

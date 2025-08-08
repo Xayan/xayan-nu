@@ -3,9 +3,9 @@ title = "xayan.nu"
 languageCode = "en-us"
 defaultContentLanguage = "en-gb"
 enableEmoji = true
-ignoreErrors = ["additional-script-loading-error"]
-
+ignoreErrors = ["additional-script-loading-error", "warning-goldmark-raw-html"]
 [menu]
+
 [[menu.main]]
 pageRef = "/"
 name = "Home"
@@ -19,6 +19,7 @@ url = "/posts/"
 weight = 20
 
 [outputs]
+
 home = ["html", "rss"]
 page = ["html"]
 rss = ["rss"]
@@ -27,12 +28,14 @@ taxonomy = ["html", "rss"]
 term = ["html", "rss"]
 
 [module]
+
 workspace = "xayan-nu.work"
 
 [[module.imports]]
 path = "github.com/hugo-sid/hugo-blog-awesome"
 
 [params]
+
 sitename = "xayan.nu"
 defaultColor = "dark"
 toc = true

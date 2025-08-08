@@ -16,23 +16,26 @@
   script.setAttribute('data-before-send', 'beforeSendHandler');
   document.head.appendChild(script);
 
+  console.log("[Pikachu] Hi. Whatcha doing here? Care to take a peek into analytics' logs?");
+
   // Send engagement event only if tracking is loaded
   function sendUmamiEvent(event) {
     if (typeof umami !== 'undefined') {
       umami.track(event);
-      console.log(`[umami] Sent: ${event}`);
+      console.log(`[umami] Event sent: ${event}`);
     } else {
       console.log(`[umami] Not loaded for: ${event}`);
     }
   }
 
-  // In case GTM isn't loaded
-  window.dataLayer = window.dataLayer || [];
-
-  function sendGAEvent(event, params = {}) {
-    window.dataLayer.push({event, ...params});
+  function sendPHEvent(name, params = {}) {
+    if (typeof posthog !== 'undefined' && posthog.capture) {
+      posthog.capture(name, params);
+      console.log(`[PostHog] Event sent: ${name}`, params);
+    } else {
+      console.log(`[PostHog] Not loaded for: ${name}`);
+    }
   }
-
 
   // Engagement intervals
   const intervals = [5];
@@ -54,7 +57,7 @@
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
       let time = intervals[intervalIndex];
       sendUmamiEvent(`engaged-${time}s`);
-      sendGAEvent(`custom_engaged`, {time: time});
+      sendPHEvent('engaged', { seconds: time });
       intervalIndex++;
     }
   }
@@ -63,14 +66,14 @@
   function handleVisibilityChange() {
     visible = (document.visibilityState === 'visible');
 
-    console.log(`[umami] Visibility: ${document.visibilityState}, time: ${engagementTime}s`);
+    console.log(`[Pikachu] Visibility: ${document.visibilityState}, time: ${engagementTime}s`);
     if (visible && !timer) {
       timer = setInterval(tick, 1000);
-      console.log(`[umami] Timer started`);
+      console.log(`[Pikachu] Timer started`);
     } else if (!visible && timer) {
       clearInterval(timer);
       timer = null;
-      console.log(`[umami] Timer paused`);
+      console.log(`[Pikachu] Timer paused`);
     }
   }
 
@@ -79,7 +82,7 @@
   // Start timer if page is visible
   if (document.visibilityState === 'visible') {
     timer = setInterval(tick, 1000);
-    console.log(`[umami] Initial timer started`);
+    console.log(`[Pikachu] Initial timer started`);
   }
 
   function setupScrollTracking() {
@@ -93,10 +96,10 @@
 
     // Only activate if content is at least 2x viewport height
     if (pageHeight < viewportHeight * 2) {
-      console.log('[umami] Not tracking scroll: page too short.');
+      console.log('[Pikachu] Not tracking scroll: page too short.');
       return;
     }
-    console.log('[umami] Tracking scroll: page is long enough.');
+    console.log('[Pikachu] Tracking scroll: page is long enough.');
 
     const scrollPercents = [];
     for (let p = 10; p <= 100; p += 10) scrollPercents.push(p);
@@ -109,7 +112,7 @@
       scrollPercents.forEach(p => {
         if (percent >= p && !fired[p]) {
           sendUmamiEvent(`scroll-${p}pc`);
-          sendGAEvent(`custom_scrolled`, {percent: p});
+          sendPHEvent('scrolled', { percent: p });
           fired[p] = true;
         }
       });

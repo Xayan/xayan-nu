@@ -40,7 +40,7 @@
   // Engagement intervals
   const intervals = [5];
   for(let i=10; i<=60; i+=10) intervals.push(i);
-  for(let i=120; i<=900; i+=60) intervals.push(i);
+  for(let i=120; i<=7200; i+=60) intervals.push(i);
   for(let i=1200; i<=7200; i+=300) intervals.push(i);
 
   let engagementTime = 0;
@@ -56,8 +56,8 @@
     // Fire event if matches interval
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
       let time = intervals[intervalIndex];
-      sendUmamiEvent(`engaged-${time}s`);
       sendPHEvent('engaged', { seconds: time });
+      sendUmamiEvent(`engaged-${time}s`);
       intervalIndex++;
     }
   }
@@ -111,8 +111,8 @@
 
       scrollPercents.forEach(p => {
         if (percent >= p && !fired[p]) {
-          sendUmamiEvent(`scroll-${p}pc`);
           sendPHEvent('scrolled', { percent: p });
+          sendUmamiEvent(`scroll-${p}pc`);
           fired[p] = true;
         }
       });

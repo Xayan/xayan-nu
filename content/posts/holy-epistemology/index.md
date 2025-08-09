@@ -43,9 +43,6 @@ Any attempts to argue with theologians from a scientific perspective are pointle
 
 I also want to broaden your horizon by showing you various philosophical concepts that suggest alternative answers. I don't expect you to just latch onto them - just think, for a moment. From **cosmology** to **existentialism**, stripping **sacrum** down to **profanum**. Some horrors and nice views along the way. All I'm asking for is an open mind.
 
-> **Sacrum** - holy shit\
-> **Profanum** - regular shit
-
 Due to my cultural background, the only religion I had any significant contact with was catholicism. Because of that, some parts of my critique are presented through the lens of christianity. That, of course, doesn't mean other religions are any different - it's just the one I'm most "fluent" in, and where I know what kind of "tricks" to expect.
 
 Sounds good? Let's get started then.
@@ -184,9 +181,9 @@ It just so happens that the Abrahamic religions are the most popular ones that h
 
 Consider this: how many people would be religious, if they weren't indoctrinated by their parents? If they had no assumption of what is "right" to believe - how many of them would be interested in exploring spirituality? Out of them, how many would feel inclined to join any kind of organized religion?
 
-**▓** **How many would choose one that uses fear as a motivator?**
+**How many would choose one that uses fear as a motivator?**
 
-Want to see why they're doing this?\
+Want to see why they're doing this?\ **▓**
 I'll show you. Take my hand. Or maybe not, ew.
 
 ### Lost, alone, in an unknown Universe
@@ -220,7 +217,7 @@ Neither - it's just **The Universe**. It's not out to get you. It's just... *the
 
 It doesn't care about anything. Gods? Bad news - they're too human to be Universal; not compatible, so they don't get to play. Unless you can somehow tell the difference between a god and the owner of the simulation, that is.
 
-Why would anyone think we're a simulation though? It's not like they could prove it.\
+Why would anyone think we're a simulation though? It's not like they could prove it. **▓**\
 Where are the glitches, bugs, errors?
 
 **▓**

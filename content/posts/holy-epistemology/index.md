@@ -5,8 +5,9 @@ author: "Xayan"
 draft: false
 date: 2025-08-08
 
-tags: ["religion", "christianity", "theology", "cosmology", "simulation"]
-categories: ["Philosophy", "Epistemology", "Sociology", "Anthropology"]
+ttr: "20~25m"
+categories: ["Philosophy", "Epistemology", "Anthropology"]
+tags: ["religion", "theology", "cosmology", "simulation"]
 ---
 
 ![Holy Epistemology](holy-epistemology.jpg)
@@ -118,22 +119,14 @@ How did I arrive at these conclusions? I decided to do a little research. With o
 
 Unlike other fields of science, theology gives itself certain liberties when it comes to argumentation. They say faith is *different* from everything else. That one can *know* things based on that faith. They use emotions and experiences to make their concepts cohesive. This renders theology as unprovable, not empirical, and not examinable by the scientific method.
 
-What's worse is that they use this to discredit purely scientific arguments, hiding their heads in the sand instead of debating. Not because they are afraid (well, maybe some) - but because they just... can't. Unable to use faith as an argument, their whole "field of science" collapses like a house of cards. So they **deflect** - it's all they can do.
-
-Don't you think it's very convenient? That:
-
-1. Theology doesn't have to play by the rules of science, using faith or experience to make arguments they consider as "valid",
-2. Theology can use its own arguments to dismiss scientific claims,
-3. Science can't use purely scientific claims to argue against theology,
-4. Science can't use theological standard of "good enough" to make a scietific argument,
-5. Theologians keep using actual science - mathematics, astronomy, astrophysics, quantum mechanics - to ground their hypotheticals in real life, but too much science? Blasphemy. **▓**
+What's worse is that they use this to discredit purely scientific arguments, hiding their heads in the sand instead of debating. Not because they are afraid - but because they just... can't. Unable to use faith as an argument, their whole "field of science" collapses like a house of cards. So they **deflect** - it's all they can do.
 
 How theology utilizes their arguments:
 
-- Unclear. I have noticed that they sometimes publish papers, but the language and citations they use are extremely self-referential, meaning there's not much information exchange with non-theologians.
+- **Unclear**. I have noticed that they sometimes publish papers, but the language and citations they use are extremely self-referential, meaning there's not much information exchange with non-theologians.
 - They also don't seem to build arguments based on other theologians' work, instead each one is doing their own, unrelated thing.
-- The citations they include are often mentioned to add some gravity to their writing by mentioning something similar enough, but not directly related to the main topic
-- It looks like this: "X said A, Y claimed that B, good old Z always thought that C, and here's what I think: D"
+- The citations they include are often mentioned to add some gravity to their writing by mentioning concepts that seem similar enough, but are not directly related to the main topic.
+- It looks like this: *"X said A, Y claimed that B, good old Z always thought that C, and here's what I think: D"*.
 
 Doesn't it sound to you like something? Hm? Starts with an "I".
 
@@ -183,7 +176,7 @@ Consider this: how many people would be religious, if they weren't indoctrinated
 
 **How many would choose one that uses fear as a motivator?**
 
-Want to see why they're doing this?\ **▓**
+Want to see why they're doing this?\
 I'll show you. Take my hand. Or maybe not, ew.
 
 ### Lost, alone, in an unknown Universe
@@ -204,7 +197,7 @@ Who knows what's out there.
 
 What does one get at the end of **Everything**? \
 Could it be **salvation**? Or **damnation**? \
-A ***"YOU DIED"*** screen shoved in your face?
+A ***"YOU DIED"*** screen shoved in your face? **▓**
 
 ...
 

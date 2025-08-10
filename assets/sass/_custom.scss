@@ -1,3 +1,33 @@
+.header {
+  margin-top: 3.2em;
+
+  .header-title {
+      margin-bottom: 0.4em;
+  }
+}
+
+#terms {
+  color:#596263;
+  font-size: small;
+  word-break: keep-all;
+
+  a.category {
+    color:#609d9f;
+  }
+
+  a.tag {
+    color:#395e60;
+  }
+
+  .noselect {
+    cursor: default;
+  }
+}
+
+.footer {
+  margin-top: 2.8em;
+}
+
 .neon-title {
   margin: auto;
   font-size: 1.6rem;

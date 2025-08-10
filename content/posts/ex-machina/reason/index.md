@@ -5,6 +5,7 @@ author: "Xayan"
 date: 2025-08-03
 draft: false
 
+ttr: "15~20m"
 tags: ["dev", "llm", "ai", "prompt-engineering"]
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 ---

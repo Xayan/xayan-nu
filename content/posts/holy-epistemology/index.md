@@ -5,7 +5,7 @@ author: "Xayan"
 draft: false
 date: 2025-08-08
 
-ttr: "20~25m"
+ttr: "15~20m"
 categories: ["Philosophy", "Epistemology", "Anthropology"]
 tags: ["religion", "theology", "cosmology", "simulation"]
 ---
@@ -16,14 +16,14 @@ tags: ["religion", "theology", "cosmology", "simulation"]
 
 The text below is a philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology.
 
-I've written this piece with my book in mind, but given my progress on it... yeah, better just publish this single chapter it as a standalone post.
+I've written this piece with my book in mind, but given my progress on it... yeah, better just publish this single chapter as a standalone post.
 
 *Ahem.*
 
 ## Holy Epistemology
 
-> **Bender:** "You know, I was God once." **▓**\
-> **The Universe:** "Yes, I saw. You were doing well until everyone died."
+> **Bender:** "You know, I was God once."\
+> **The Universe:** "Yes, I saw. You were doing well until everyone died." ▓
 >
 > ~ Futurama, S03E20 *"Godfellas"*
 
@@ -95,7 +95,7 @@ Eden story is interesting too. Right after creating first humans, god sets up ru
 Is that paradise?\
 A botched phenomenological study?\
 A prison experiment gone wrong?\
-Some fucked up version of Matrix? **▓**
+Some fucked up version of Matrix? ▓
 
 This isn't even a joke. It's just what it looks like through the lens of determinism. Just a possibility, one of many, but here a god-created world is a much worse scenario than a godless one.
 
@@ -113,7 +113,7 @@ First, I would like to propose following hypotheses:
 1. Theology is not a field of science.
 2. Theology is a branch of philosophy, built around thinking about religious belief and what faith means.
 3. Theologians-preachers, who claim scientific implications of theology, exhibit ideological affinity to their religion. They will 100% go to hell.
-4. Theologians-philosophers, who don't claim scientific implications of theology, are rational and keep their bias in check. They're cool dudes, ableit rare, and deserve recognition among them all.
+4. Theologians-philosophers, who don't claim scientific implications of theology, are rational and keep their bias in check. They're cool dudes, albeit rare, and deserve recognition among them all.
 
 How did I arrive at these conclusions? I decided to do a little research. With our friend epistemology in mind, I looked not only at their ideas, but behavior as well, to determine how they construct their concepts and formulate their arguments. And it certainly paints a picture.
 
@@ -156,7 +156,7 @@ The contrast was always stark, especially in school. Some geography, some chemis
 
 I saw people in churches. It seemed like nobody understood why they're there. Like it was just a performance. If some new part of a sermon was to be introduced, without them knowing beforehand - would they know how to react? Stand up, kneel, pray, sing?
 
-Only when I became an independent adult I was no longer burdened and was able to shake this feeling off. And since then, I've never felt compeled to *"do religion"*.
+Only when I became an independent adult I was no longer burdened and was able to shake this feeling off. And since then, I've never felt compelled to *"do religion"*.
 
 Now, all I want to tell you is: **it's okay to doubt yourself**. Especially so when it comes to the **unprovable**.
 
@@ -197,23 +197,23 @@ Who knows what's out there.
 
 What does one get at the end of **Everything**? \
 Could it be **salvation**? Or **damnation**? \
-A ***"YOU DIED"*** screen shoved in your face? **▓**
+A ***"YOU DIED"*** screen shoved in your face? ▓
 
 ...
 
-What do you think *the **decay** sounds like*?\
-The same as ***radiation** tastes*, just without its *asphyxiating smell of **death***?
+What do you think *the decay sounds like*?\
+The same as *radiation tastes*, just without its *asphyxiating smell of death*?
 
-Or maybe like ***nothing** at all* - as everything once created eventually *succumbs to cosmic **hypothermia***, dissipating into what it once was, *as if it **never** happened*?
+Or maybe like *nothing at all* - as everything once created eventually *succumbs to cosmic hypothermia*, dissipating into what it once was, *as if it never happened*?
 
 Neither - it's just **The Universe**. It's not out to get you. It's just... *there*.
 
 It doesn't care about anything. Gods? Bad news - they're too human to be Universal; not compatible, so they don't get to play. Unless you can somehow tell the difference between a god and the owner of the simulation, that is.
 
-Why would anyone think we're a simulation though? It's not like they could prove it. **▓**\
+Why would anyone think we're a simulation though? It's not like they could prove it. ▓\
 Where are the glitches, bugs, errors?
 
-**▓**
+▓
 
 Huh? This again? Sorry, let me just—
 
@@ -239,7 +239,7 @@ Now, where were we...?
 
 *Where does one go for solace when myths around them crumble?*\
 A different temple? Their family?\
-Thailand? Bieszczady?
+Kabuchiko? Bieszczady?
 
 *What kind of journey can one embark on?*\
 Inward? Outward?\
@@ -264,7 +264,7 @@ I just wanted to show you around the cosmic neighborhood.
 
 ...
 
-**▓**
+▓
 
 ## Get in Touch
 

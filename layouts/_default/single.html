@@ -26,7 +26,13 @@
 			</header>
 			{{ partial "toc.html" .}}
 			<div class="page-content">
-					{{ .Content }}
+					{{ $wrapped := .Content
+						| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
+						| replaceRE `</table>` `</table></div>`
+					}}
+					<div class="post-content">
+						{{ $wrapped | safeHTML }}
+					</div>
 			</div>
 		</article>
 		{{- partial "comments.html" . -}}

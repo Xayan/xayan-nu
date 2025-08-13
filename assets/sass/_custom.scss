@@ -55,6 +55,31 @@
   }
 }
 
+.scrollable-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100vh;
+  -webkit-overflow-scrolling: touch;
+
+  table {
+    width: 100%;           /* fill container */
+    table-layout: auto;    /* browser figures out sensible column widths */
+    border-collapse: collapse;
+
+    td {
+      word-break: normal;
+    }
+  }
+
+
+  .table-scroll th,
+  .table-scroll td {
+    @media (max-width: 768px){
+      white-space: nowrap;
+    }
+  }
+}
+
 .noselect {
   cursor: default;
 }

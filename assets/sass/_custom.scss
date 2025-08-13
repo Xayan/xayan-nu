@@ -20,6 +20,41 @@
   }
 }
 
+
+.posts-item-note, .post-year {
+  font-size:1.2em;
+}
+
+.post-item {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  align-items: center;
+
+  .post-item-title {
+    font-size: 0.88em;
+    flex: 1; /* take remaining space */
+  }
+
+  .right-cols {
+    display: flex;
+    flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
+    gap: 1.2em; /* spacing between them */
+    flex-shrink: 0; /* don't shrink into left space */
+
+    time {
+      font-weight: bold;;
+    }
+
+    .post-item-meta {
+      font-size: 0.75em;
+    }
+
+    .ttr {
+      font-style: italic;
+    }
+  }
+}
+
 .noselect {
   cursor: default;
 }

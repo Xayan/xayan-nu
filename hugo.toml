@@ -18,6 +18,12 @@ name = "Posts"
 url = "/posts/"
 weight = 20
 
+[[menu.main]]
+pageRef = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 30
+
 [outputs]
 
 home = ["html", "rss"]
@@ -51,10 +57,6 @@ description = "There are no stupid questions, only stupid people."
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/Xayan/"
-
-[[params.socialIcons]]
-name = "twitter"
-url = "https://x.com/xayan__"
 
 [[params.socialIcons]]
 name = "x"

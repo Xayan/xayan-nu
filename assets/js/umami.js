@@ -1,14 +1,21 @@
 (function() {
-  // Define Umami payload handler in the global scope
-  window.beforeSendHandler = function(type, payload) {
-    if(payload.referrer == "") {
-      payload.referrer = "https://direct.xayan.nu/";
-    }
+  // --- Engagement schedule ---
+  const intervals = [5];
+  for (let i = 10; i <= 60; i += 10) intervals.push(i);
+  for (let i = 120; i <= 7200; i += 60) intervals.push(i);
+  for (let i = 1200; i <= 7200; i += 300) intervals.push(i);
 
-    return payload;
-  };
+  let engagementTime = 0;
+  let intervalIndex = 0;
 
-  // Dynamically load Umami analytics via JS
+  // --- State machine ---
+  let visible = (document.visibilityState === 'visible');
+  let idle = true;                 // start idle until first user activity
+  let timer = null;                // setInterval id
+  let idleTimer = null;            // setTimeout id
+  const idleLimit = 60000;         // 60s
+
+  // --- Load Umami ---
   var script = document.createElement('script');
   script.defer = true;
   script.src = 'https://cloud.umami.is/script.js';
@@ -18,110 +25,142 @@
 
   console.log("[Pikachu] Hi. Whatcha doing here? Care to take a peek into analytics' logs?");
 
-  // Send engagement event only if tracking is loaded
   function sendUmamiEvent(event) {
     if (typeof umami !== 'undefined') {
       umami.track(event);
-      console.log(`[umami] Event sent: ${event}`);
-    } else {
-      console.log(`[umami] Not loaded for: ${event}`);
     }
   }
 
   function sendPHEvent(name, params = {}) {
+    console.log(`[Pikachu] ${name}`, params);
+
     if (typeof posthog !== 'undefined' && posthog.capture) {
       posthog.capture(name, params);
-      console.log(`[PostHog] Event sent: ${name}`, params);
     } else {
-      console.log(`[PostHog] Not loaded for: ${name}`);
+      console.log(`[Pikachu] PostHog not loaded`);
     }
   }
 
-  // Engagement intervals
-  const intervals = [5];
-  for(let i=10; i<=60; i+=10) intervals.push(i);
-  for(let i=120; i<=7200; i+=60) intervals.push(i);
-  for(let i=1200; i<=7200; i+=300) intervals.push(i);
+  function startTimer() {
+    if (!timer) {
+      timer = setInterval(tick, 1000);
+      console.log("[Pikachu] Timer START");
+    }
+  }
 
-  let engagementTime = 0;
-  let intervalIndex = 0;
-  let visible = true;
-  let timer = null;
+  function stopTimer(reason) {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+      console.log(`[Pikachu] Timer STOP (${reason})`);
+    }
+  }
 
-  // Tick function: advances only while page is visible
+  function scheduleIdleTimeout() {
+    if (idleTimer) clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => {
+      idle = true;
+      console.log("[Pikachu] Became IDLE");
+      updateTimerState();
+    }, idleLimit);
+  }
+
+  function markActivity(evtName) {
+    // Mark active and keep extending idle deadline
+    if (idle) {
+      idle = false;
+      console.log(`[Pikachu] Became ACTIVE via ${evtName}`);
+      updateTimerState();
+    }
+    scheduleIdleTimeout();
+  }
+
+  function updateTimerState() {
+    // Only run timer when visible AND not idle
+    if (visible && !idle) {
+      startTimer();
+    } else {
+      stopTimer(visible ? "idle" : "hidden");
+    }
+  }
+
   function tick() {
-    if (!visible) return;
+    // We only ever have a running timer when visible && !idle,
+    // but guard anyway to be bulletproof.
+    if (!visible || idle) return;
+
     engagementTime += 1;
 
-    // Fire event if matches interval
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
-      let time = intervals[intervalIndex];
+      const time = intervals[intervalIndex];
       sendPHEvent('engaged', { seconds: time });
       sendUmamiEvent(`engaged-${time}s`);
       intervalIndex++;
     }
   }
 
-  // Visibility handler
-  function handleVisibilityChange() {
+  // --- Visibility wiring ---
+  document.addEventListener('visibilitychange', () => {
     visible = (document.visibilityState === 'visible');
-
     console.log(`[Pikachu] Visibility: ${document.visibilityState}, time: ${engagementTime}s`);
-    if (visible && !timer) {
-      timer = setInterval(tick, 1000);
-      console.log(`[Pikachu] Timer started`);
-    } else if (!visible && timer) {
-      clearInterval(timer);
-      timer = null;
-      console.log(`[Pikachu] Timer paused`);
-    }
-  }
+    updateTimerState();
+  });
 
-  // Initial state
-  document.addEventListener('visibilitychange', handleVisibilityChange);
-  // Start timer if page is visible
-  if (document.visibilityState === 'visible') {
-    timer = setInterval(tick, 1000);
-    console.log(`[Pikachu] Initial timer started`);
+  // Some browsers fire pagehide when tab is closed or bfcached.
+  window.addEventListener('pagehide', () => { visible = false; updateTimerState(); });
+  window.addEventListener('pageshow', () => { visible = true; updateTimerState(); });
+
+  // --- Activity wiring ---
+  const activityEvents = [
+    'mousemove',    // desktop
+    'pointermove',
+    'scroll',       // reading
+    'keydown',      // typing
+    'touchstart',   // mobile tap
+    'pointerdown'
+  ];
+  activityEvents.forEach(evt =>
+    window.addEventListener(evt, () => markActivity(evt), { passive: true })
+  );
+
+  // If the page starts visible, we still require an activity within 60s;
+  // any activity flips "idle" to false and starts the timer.
+  if (visible) {
+    console.log("[Pikachu] Page visible at load; waiting for activity...");
+  } else {
+    console.log("[Pikachu] Page hidden at load; will start when visible and active.");
   }
+  scheduleIdleTimeout(); // arm the idle timer so we have a deadline
 
   function setupScrollTracking() {
-    const body = document.body;
-    const html = document.documentElement;
-    const pageHeight = Math.max(
-      body.scrollHeight, body.offsetHeight,
-      html.clientHeight, html.scrollHeight, html.offsetHeight
-    );
-    const viewportHeight = window.innerHeight;
+    const vh = () => window.innerHeight;
+    const giscus = document.querySelector('div.giscus');
+    const targetY = giscus ? window.pageYOffset + giscus.getBoundingClientRect().top :
+                            Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
 
-    // Only activate if content is at least 2x viewport height
-    if (pageHeight < viewportHeight * 2) {
-      console.log('[Pikachu] Not tracking scroll: page too short.');
-      return;
-    }
-    console.log('[Pikachu] Tracking scroll: page is long enough.');
+    console.log(giscus ? '[Pikachu] Using giscus TOP as 100%:' : '[Pikachu] Using PAGE BOTTOM as 100%', targetY);
 
-    const scrollPercents = [];
-    for (let p = 10; p <= 100; p += 10) scrollPercents.push(p);
-    let fired = {};
+    const thresholds = [];
+    for (let p = 10; p <= 100; p += 10) thresholds.push(p);
+    const fired = {};
 
-    window.addEventListener('scroll', function() {
-      const scrolled = window.scrollY + viewportHeight;
-      const percent = Math.floor((scrolled / pageHeight) * 100);
+    window.addEventListener('scroll', () => {
+      const visibleBottom = window.scrollY + vh();
+      const ratio = Math.max(0, Math.min(1, visibleBottom / targetY));
+      const percent = Math.floor(ratio * 100);
 
-      scrollPercents.forEach(p => {
+      thresholds.forEach(p => {
         if (percent >= p && !fired[p]) {
           sendPHEvent('scrolled', { percent: p });
           sendUmamiEvent(`scroll-${p}pc`);
           fired[p] = true;
         }
       });
-    });
+    }, { passive: true });
   }
 
-  // Wait for DOM to load before checking height
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupScrollTracking);
+    document.addEventListener('DOMContentLoaded', setupScrollTracking, { once: true });
   } else {
     setupScrollTracking();
   }

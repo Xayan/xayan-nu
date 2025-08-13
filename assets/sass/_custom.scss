@@ -29,16 +29,34 @@ article {
     }
   }
 
-  details.toc {
+  .toc {
     padding: 0;
+    cursor: default;
+    background-color: inherit !important;
 
     summary {
       margin: 0;
       padding: 0.25em 1em;
+
+      cursor: pointer;
+      background-color: rgba(96, 193, 215, 0.2);
+    }
+
+    nav {
+      background-color: rgba(96, 193, 215, 0.1);
     }
 
     nav > ul {
-      padding: 0.8em 0em 0.8em 2em;
+      padding: 1em 0em 1em 2em;
+      font-size: 0.9em;
+    }
+  }
+
+  .page-content {
+    font-size: 0.95em;
+
+    p {
+      margin: 1em 0;
     }
   }
 }

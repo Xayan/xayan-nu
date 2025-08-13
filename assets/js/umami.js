@@ -102,7 +102,7 @@
   // --- Visibility wiring ---
   document.addEventListener('visibilitychange', () => {
     visible = (document.visibilityState === 'visible');
-    console.log(`[Pikachu] Visibility: ${document.visibilityState}, time: ${engagementTime}s`);
+    console.log(`[Pikachu] ${document.visibilityState}, time: ${engagementTime}s`);
     updateTimerState();
   });
 

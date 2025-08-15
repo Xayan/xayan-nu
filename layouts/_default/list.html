@@ -7,6 +7,7 @@
 
         {{ if or (eq .Params.series_intro true) (eq .Type "series") }}
             {{ .Content }}
+            {{- partial "comments.html" . -}}
         {{ else }}
             {{ range .Pages.GroupByDate "2006" }}
             {{ $year := .Key }}

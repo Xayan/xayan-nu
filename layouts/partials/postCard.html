@@ -1,3 +1,4 @@
+{{ if not .Params.hidden }}
 <article class="post-item">
     <h4 class="post-item-title">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -20,3 +21,4 @@
       </time>
     </div>
 </article>
+{{ end }}

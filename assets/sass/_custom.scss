@@ -1,5 +1,11 @@
+.menu {
+  .menu-icon {
+    margin-right: 0.8em;
+  }
+}
+
 .author {
-  margin-top: 4.0rem;
+  margin-top: 5.6rem;
   margin-bottom: 5.6rem;
 }
 
@@ -16,7 +22,6 @@ article {
 
     #terms {
       color:#596263;
-      font-size: small;
       word-break: keep-all;
 
       a.category {

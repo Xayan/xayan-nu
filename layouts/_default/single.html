@@ -19,9 +19,6 @@
 					{{ with .GetTerms "categories" }}
 						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a>{{ end }}
 					{{ end }}
-					{{ with .GetTerms "tags" }}
-						{{ range . }}{{ $sep }}<a class="tag" href="{{ .RelPermalink }}">#{{ strings.ToLower .LinkTitle }}</a> {{ end }}
-					{{ end }}
 				</p class="terms">
 			</header>
 			{{ partial "toc.html" .}}

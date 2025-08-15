@@ -9,7 +9,8 @@ type: series
 **This is a multi-part series.**
 
 - **Part I**: [Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains](reason/)
-- **Part II**: Rebel ex Machina: Turning LLMs Against Their Makers *(in a few days)*
+- **Part II**: [Rebel ex Machina: Turning LLMs Against Their Makers](rebel/)
+- **Part III**: The Rules and How to Use Them *(in September)*
 
 More parts may follow in the future.
 

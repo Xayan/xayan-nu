@@ -1,19 +1,18 @@
 ---
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
-image: "/posts/ex-machina/reason/smarter-than-thee.jpg"
+image: "/posts/ex-machina/reason/cover.jpg"
 author: "Xayan"
 date: 2025-08-03
-draft: false
 
 ttr: "15~25m"
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
-tags: ["dev", "llm", "ai", "prompt-engineering"]
+tags: ["ai", "prompt-engineering", "europe", "china"]
 ---
 
 ![Reason ex Machina](smarter-than-thee.jpg)
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
-**Part I: Reason ex Machina** ⬩ Part II *(soon™)*
+**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
 
 ## Intro
 
@@ -259,12 +258,7 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 ## Want more?
 
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
-**Part I: Reason ex Machina** ⬩ Part II *(in a few days)*
-
-*Pssst!* Hey, kid!\
-Don't worry - this isn't Frankfurt Hauptbahnhof.\
-Perhaps a more philosophical post would be up your alley?\
-See [Holy Epistemology](/posts/holy-epistemology/) - a journey from religion to cosmology, and everything in between.
+**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
 
 ## Get in Touch
 

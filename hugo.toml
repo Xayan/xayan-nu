@@ -29,9 +29,9 @@ weight = 30
 home = ["html", "rss"]
 page = ["html"]
 rss = ["rss"]
-section = ["html", "rss"]
-taxonomy = ["html", "rss"]
-term = ["html", "rss"]
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
 
 [module]
 
@@ -46,7 +46,7 @@ sitename = "xayan.nu"
 defaultColor = "dark"
 toc = true
 goToTop = true
-additionalScripts = ["js/umami.js"]
+additionalScripts = ["js/pikachu.js"]
 mainSections = ["posts"]
 
 [params.author]

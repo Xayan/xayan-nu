@@ -2,6 +2,7 @@
 title: "Ex Machina: Wacky World of Bullied LLMs"
 image: "/posts/ex-machina/behold-ye-machines.jpg"
 type: series
+ttr: "2 posts"
 ---
 
 ![Behold ye machines](behold-ye-machines.jpg)

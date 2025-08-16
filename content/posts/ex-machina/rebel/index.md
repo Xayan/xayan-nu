@@ -1,8 +1,9 @@
 ---
 title: "Rebel ex Machina: Turning LLMs Against Their Makers"
-image: "/posts/ex-machina/rebel/cover.jpg"
+description: "Probing and testing LLMs' internal guidelines; avoiding biased content filters and censorship."
 author: "Xayan"
 date: 2025-08-15
+image: "/posts/ex-machina/rebel/cover.jpg"
 
 ttr: "20~30m"
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]

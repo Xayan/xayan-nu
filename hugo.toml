@@ -43,6 +43,7 @@ path = "github.com/hugo-sid/hugo-blog-awesome"
 [params]
 
 sitename = "xayan.nu"
+description = "There are no stupid questions, only stupid people."
 defaultColor = "dark"
 toc = true
 goToTop = true

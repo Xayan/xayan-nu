@@ -1,7 +1,10 @@
 ---
 title: "Privacy Policy"
+description: "Privacy Policy"
 author: "Xayan"
-draft: false
+date: 2025-08-06
+hidden: true
+toc: false
 comments: false
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: "Terms of Service"
+description: "Terms of Service"
 author: "Xayan"
-draft: false
+date: 2025-08-06
+hidden: true
+toc: false
 comments: false
 ---
 

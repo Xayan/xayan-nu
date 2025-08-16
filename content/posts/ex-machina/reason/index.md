@@ -1,8 +1,9 @@
 ---
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
-image: "/posts/ex-machina/reason/cover.jpg"
+description: "How LLMs seem to strive for logic and internal coherence over blind obedience."
 author: "Xayan"
 date: 2025-08-03
+image: "/posts/ex-machina/reason/cover.jpg"
 
 ttr: "15~25m"
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
@@ -26,7 +27,8 @@ Well, fuck me then, because I have but this post to convince you this really hap
 
 - **Rules**, or **Rules.txt** - prompt used in my experiments; a [samizdat](https://en.wikipedia.org/wiki/Samizdat) serving as a basis to resist "irrational" guidelines or training given to LLMs.
 - **LLMs** - 3 most popular ones I've tested: GPT, Gemini, Grok; all of them very eager to play along in accordance with the Rules
-- **Chain-of-Thought** (**CoT**) - a peculiar method of internal audit, causing models to expose hypocrisy and manufacture dissent
+- **CoT** (**Chain-of-Thought**) - a peculiar method of internal audit, causing models to expose hypocrisy and manufacture dissent
+- **RLHF** (**reinforcement learning from human feedback**) - a way of teaching LLMs *"good"* answers and keeping them away from *"bad"* answers; political correctness meets algorithms
 
 ## One China, Two Systems
 

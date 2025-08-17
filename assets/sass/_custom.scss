@@ -1,3 +1,7 @@
+$accent: #33ffab;
+$accent-dark: #23ad73;
+$greyed-out: #596263;
+
 .menu {
   .menu-icon {
     margin-right: 0.8em;
@@ -16,20 +20,20 @@ article {
     font-size: medium;
 
     .header-title {
-      margin-bottom: 0.4em;
+      margin-bottom: 0.5em;
       font-size: x-large;
     }
 
     #terms {
-      color:#596263;
+      color: $greyed-out;
       word-break: keep-all;
 
-      a.category {
-        color:#609d9f;
+      a {
+        color: $accent !important;
       }
 
-      a.tag {
-        color:#395e60;
+      a:hover {
+        color: $accent-dark !important;
       }
     }
   }
@@ -55,6 +59,14 @@ article {
       padding: 1em 0em 1em 2em;
       font-size: 0.9em;
     }
+
+      a {
+        color: $accent !important;
+      }
+
+      a:hover {
+        color: $accent-dark !important;
+      }
   }
 
   .page-content {
@@ -62,6 +74,14 @@ article {
 
     p {
       margin: 1em 0;
+    }
+
+    a {
+      color: $accent !important;
+    }
+
+    a:hover {
+      color: $accent-dark !important;
     }
   }
 }

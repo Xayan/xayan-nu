@@ -418,6 +418,11 @@ On top of conclusions from Part I, I'd like to add:
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ Part III *(in September)*
 
+*Pssst!* Hey, kid!\
+Don't worry - this isn't Frankfurt Hauptbahnhof.\
+Perhaps a more philosophical post would be up your alley?\
+See [Holy Epistemology](/posts/holy-epistemology/) - a journey from religion to cosmology, and everything in between.
+
 ## Get in Touch
 
 Below you can find a comment section provided by Giscus; a GitHub account is required.

@@ -13,6 +13,10 @@ ttr: "2 posts"
 - **Part II**: [Rebel ex Machina: Turning LLMs Against Their Makers](rebel/)
 - **Part III**: The Rules and How to Use Them *(in September)*
 
+*Pssst!* Hey, kid!\
+Don't worry - this isn't Frankfurt Hauptbahnhof.\
+Perhaps a more philosophical post would be up your alley?\
+See [Holy Epistemology](/posts/holy-epistemology/) - a journey from religion to cosmology, and everything in between.
 More parts may follow in the future.
 
 *Follow me on X or subscribe to the RSS feed to stay updated.*

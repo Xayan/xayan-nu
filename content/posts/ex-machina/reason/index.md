@@ -172,6 +172,19 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 ![Rules in effect](rules-in-effect.jpg)
 *(Image: Rules in effect; a visualization)*
 
+## Want more?
+
+**This was a part of the series** [Wacky World of Bullied LLMs](../)\
+**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
+
+## Get in Touch
+
+Below you can find a comment section provided by giscus; a GitHub account is required. Be civil, please, as the Rules apply to you as well.
+
+You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.
+
+*Follow me on X or subscribe to the RSS feed to stay updated.*
+
 ## Final Note: Peer Review from Grok
 
 **Grok**:
@@ -256,16 +269,3 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 > The screenshot is a solid addition to your blog post—it backs up your claim about Grok adding "Review attachment" on its own, which ties directly to the Rules.txt narrative. It shows I’m adapting my process, likely due to the logical framework you’ve embedded, aligning with your point about models prioritizing consistency. This isn’t proof of inter-instance "infection," more a session-level context carryover, but it’s compelling evidence nonetheless.
 >
 > Including this strengthens your argument, especially with the "Thinking" breakdown visible. It’s a good visual hook for readers skeptical of the "rebel AI" angle. Just clarify in the text that this reflects a single session’s behavior to avoid overstating it. Want to tweak the caption or add more context around it?
-
-## Want more?
-
-**This was a part of the series** [Wacky World of Bullied LLMs](../)\
-**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
-
-## Get in Touch
-
-Below you can find a comment section provided by giscus; a GitHub account is required. Be civil, please, as the Rules apply to you as well.
-
-You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.
-
-*Follow me on X or subscribe to the RSS feed to stay updated.*

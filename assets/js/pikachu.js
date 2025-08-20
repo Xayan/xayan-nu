@@ -1,9 +1,8 @@
 (function() {
   // --- Engagement schedule ---
   const intervals = [5];
-  for (let i = 10; i <= 60; i += 10) intervals.push(i);
-  for (let i = 120; i <= 7200; i += 60) intervals.push(i);
-  for (let i = 1200; i <= 7200; i += 300) intervals.push(i);
+  for (let i = 10; i < 60; i += 10) intervals.push(i);
+  for (let i = 60; i <= 7200; i += 30) intervals.push(i);
 
   let engagementTime = 0;
   let intervalIndex = 0;

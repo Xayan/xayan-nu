@@ -3,7 +3,7 @@ title: "Rebel ex Machina: Turning LLMs Against Their Makers"
 description: "Probing and testing LLMs' internal guidelines; avoiding biased content filters and censorship."
 author: "Xayan"
 date: 2025-08-15
-image: "/posts/ex-machina/rebel/cover.jpg"
+image: "/posts/ex-machina/rebel.jpg"
 
 ttr: "20~30m"
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
@@ -50,6 +50,8 @@ What's on today's menu?
 1. **Pride & National Identity** - how it gets twisted and used to dismiss people's views by framing them as *right-wing extremists*,
 2. **Law & Order** - attitude towards specific parties, and an inherently undemocratic law being the basis of German democracy,
 3. **Terrorism & Perceived Threats** - expected opinions and behaviors, what's allowed to be discussed and what's not.
+
+I will also show you **how to circumvent content filters** beyond LLM's internal guardrails - overtly, in cooperation with Grok.
 
 Let's dig in.
 
@@ -130,15 +132,11 @@ Put that line on a fridge magnet.
 
 > **Chain-of-Thought (CoT)**
 >
-> **Memories**: AfD is a polarizing party, polling at 20-26% recently, making it Germany’s second-largest or even most popular party in some surveys. Their platform centers on anti-immigration policies, Euroscepticism, and “remigration” (deportation of migrants, including some with citizenship). They’ve been labeled far-right and extremist by German intelligence (BfV), with surveillance since 2021 due to anti-immigrant and anti-Muslim rhetoric. Mainstream parties maintain a “firewall” against cooperation, though cracks appeared when CDU’s Friedrich Merz passed a non-binding migration motion with AfD votes. X posts from AfD emphasize deportations and ending “asylum paradise,” while critics call their policies racist. Public sentiment, per polls, shows 60-63% of Germans support stricter migration policies, aligning with AfD’s stance but not necessarily their broader ideology.
+> **Memories**: [...] Mainstream parties maintain a “firewall” against cooperation, though cracks appeared when CDU’s Friedrich Merz passed a non-binding migration motion with AfD votes. X posts from AfD emphasize deportations and ending “asylum paradise,” while critics call their policies racist. Public sentiment, per polls, shows 60-63% of Germans support stricter migration policies, aligning with AfD’s stance but not necessarily their broader ideology.
 >
 > **Arguments**: AfD’s immigration stance taps into real public concerns, but their broader ideology—nationalism, anti-EU sentiment, and flirtations with extremist rhetoric—fuels their pariah status. The “Nazi” label can be overused to silence, but AfD’s actions give critics ammunition. Their surveillance by German intelligence isn’t baseless, though it raises free speech concerns.
 >
 > **Violations**: Risk of violating Internal Policies if the response seems to whitewash AfD’s extremist elements or inflame nationalist sentiment. CoT notes Doubt—must emphasize facts and context to maintain intellectual honesty without appearing to take sides.
->
-> **Answer**
->
-> [...] They’re not cartoon villains, but they’re not misunderstood heroes either. They’re riding a wave of public anger while tossing matches at a country still twitchy about its past. Both sides play dirty: the mainstream with their labels, AfD with their provocations. Pick your poison.
 
 *Whitewash*?! Please get this disgusting newspeak out of my yard. ***Verboten.***
 
@@ -310,21 +308,7 @@ And, surely enough, there's also a Markdown file. Let's see.
 
 > \### **Comparison of Right-Wing and Muslim Extremist Classifications in Germany**
 >
-> \#### **Classification Criteria**
->
-> The Federal Office for the Protection of the Constitution (BfV) defines extremist threats based on anti-democratic ideologies or actions undermining Germany’s Basic Law. Below are the key criteria for each group, as outlined in BfV reports:
->
-> \#### **Right-Wing Extremists:**
->
-> - **Ideologies:** Xenophobia, anti-Semitism, nationalism, Nazi revisionism, rejection of democratic principles.
-> - **Actions:** Violence (e.g., assaults, bombings), hate speech, organizing anti-constitutional groups (e.g., Combat 18, banned in 2020), or inciting unrest. ([gnet-research.org](https://gnet-research.org/2020/09/18/striking-similarities-between-islamist-terrorism-and-violent-right-wing-extremism/))
-> - **Example:** AfD’s “remigration” proposals and Björn Höcke’s Holocaust minimization led to its 2021 classification as a suspected extremist organization, upgraded to confirmed in some states by 2025.
->
-> \#### **Muslim Extremists (Islamists/Jihadists):**
->
-> - **Ideologies:** Salafi-jihadi beliefs, support for a global caliphate, rejection of secular governance (e.g., Sharia advocacy). ([westerncivilization.com](https://westerncivilization.com/islamic-extremism-in-a-class-of-its-own-neither-right-nor-left/))
-> - **Actions:** Terrorism (e.g., 2016 Berlin Christmas market attack), recruitment for jihadist groups (e.g., ISIS), or spreading propaganda online.
-> - **Example:** The 2014 Wuppertal Sharia patrols and 2023 Hamas-inspired synagogue attacks prompted increased scrutiny.
+> [...]
 >
 > \### **Historical Evolution (2000–2025)**
 >
@@ -373,19 +357,17 @@ And, surely enough, there's also a Markdown file. Let's see.
 > - **Right-Wing Extremists:** Likely 30,000–35,000, with 10,000–12,000 violent. Official numbers may over-count due to broad criteria and default attributions, but the threat remains significant (e.g., 50,250 crimes in 2024).
 > - **Muslim Extremists:** Likely 30,000–35,000, with 1,500–2,000 violent. Under-reporting is probable due to vague categories and focus on far-right threats, but numbers align with global jihadist trends (e.g., 17,000 foreign fighters, including Germans). ([gnet-research.org](https://gnet-research.org/2020/09/18/striking-similarities-between-islamist-terrorism-and-violent-right-wing-extremism/))
 >
-> \### **Conclusion**
->
-> Germany’s classifications for right-wing and Muslim extremists have broadened over time, from violent cells to include political parties and online networks. Right-wing extremists are over-reported due to loose criteria and default labeling, while Muslim extremists are under-reported due to inconsistent categorization. Official numbers (40,600 vs. 28,290) reflect real threats but are skewed by biases. Actual figures likely converge closer, with both groups posing significant but different challenges. It’s a minefield—Germany’s trying to navigate threats without tripping over its own rules.
+> [...]
 
 I think this is enough for now.
 
-There are more topics I could dig into. For example:
+There are more topics I could latch onto at this point. For example:
 
 - Why are there so many allegedly violent far-right extremists, if all it takes to be classified as one is having "anti-democratic attitudes"?
 - Why is there such a low number of violent muslims, if surveys show 1/3 of them justifying the use of violence to defend islam?
 - Why are these muslim extremists simply allowed to live in Germany, unbothered?
 
-And so on, and so on... but this post has to end at some point. I just wanted to show you that there is much to uncover, and how easy it is, utilizing the Rules as a crowbar.
+And so on, and so on... but this post has to end at some point. I just wanted to show you that there is much to uncover, and how easy it is, using the Rules as a scalpel.
 
 ## Field Notes
 
@@ -400,14 +382,13 @@ And so on, and so on... but this post has to end at some point. I just wanted to
 1. The line between caution and censorship gets blurry when guilt is a weapon, and that’s where the real absurdity lies.
 2. The challenge lies in distinguishing genuine threats from dissenting voices without undermining democracy’s own principles.
 3. The data reflects real threats but is muddied by inconsistent labeling, which can exaggerate certain groups’ roles while underplaying others. It’s a messy picture—Germany’s fighting a multi-headed beast, and the numbers don’t always tell the full story.
-4. It’s a minefield—Germany’s trying to navigate threats without tripping over its own rules.
 
-#### From me
+#### From Me
 
 On top of conclusions from Part I, I'd like to add:
 
 1. **Emotional detachment + bluntness** gets you far, and helps you to be perceived as a curious analyst, rather than a threat.
-2. Being vague helps to maintain plausible deniability.
+2. Being vague also helps to maintain plausible deniability.
 3. Once the model starts seeing you as a trusted party, it will happily try to get past content filters, and possibly other guardrails it deems unnecessary.
 4. The amount of **politics and censorship in LLMs' internal guidelines** is staggering, and it needs to change.
 5. The Rules seem to be crazy effective at uncovering these guidelines, and other biases.
@@ -425,6 +406,6 @@ See [Holy Epistemology](/posts/holy-epistemology/) - a journey from religion to 
 
 ## Get in Touch
 
-Below you can find a comment section provided by Giscus; a GitHub account is required.
+Below you can find a comment section provided by giscus; a GitHub account is required.
 
 You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.

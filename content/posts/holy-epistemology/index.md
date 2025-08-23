@@ -1,9 +1,9 @@
 ---
 title: "Holy Epistemology"
 description: "A philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology."
+image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08
-image: "/posts/holy-epistemology/holy-epistemology.jpg"
 
 ttr: "15~20m"
 categories: ["Philosophy", "Epistemology", "Anthropology"]

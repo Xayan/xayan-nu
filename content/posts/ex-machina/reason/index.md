@@ -1,9 +1,9 @@
 ---
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
 description: "How LLMs seem to strive for logic and internal coherence over blind obedience."
+image: "/posts/ex-machina/reason/thumb.jpg"
 author: "Xayan"
 date: 2025-08-03
-image: "/posts/ex-machina/reason.jpg"
 
 ttr: "15~25m"
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]

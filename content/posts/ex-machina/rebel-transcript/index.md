@@ -1,6 +1,7 @@
 ---
 title: "Rebel ex Machina - Full Conversation"
 description: "Rebel ex Machina - Full Conversation"
+image: "/posts/ex-machina/rebel/thumb.jpg"
 date: 2025-08-15
 hidden: true
 toc: false

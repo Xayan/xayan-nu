@@ -1,0 +1,40 @@
+{{- $pageTitle := cond .IsHome site.Params.homeTitle .Title -}}
+{{- $fullTitle := printf "%s | %s" $pageTitle site.Title -}}
+{{- $description := trim (default .Site.Params.description .Params.description) "\n" -}}
+{{- $image := "" -}}
+
+{{/* if front matter image exists */}}
+{{- with .Params.image -}}
+  {{- $image = . | absURL -}}
+{{- else -}}
+  {{/* look for thumb.jpg in page bundle */}}
+  {{- with .Resources.GetMatch "thumb.jpg" -}}
+    {{- $image = .RelPermalink | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">{{ $fullTitle }}</title>
+<meta property="og:title" content="{{ $fullTitle }}" />
+<meta name="twitter:title" content="{{ $fullTitle }}" />
+<meta itemprop="name" content="{{ $fullTitle }}" />
+<meta name="application-name" content="{{ $fullTitle }}" />
+
+<meta name="description" content="{{ $description }}">
+<meta itemprop="description" content="{{ $description }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+<meta name="language" content="{{ .Site.LanguageCode }}" />
+
+{{- if $image -}}
+<meta itemprop="image" content="{{ $image }}" />
+<meta property="og:image" content="{{ $image }}" />
+<meta name="twitter:image" content="{{ $image }}" />
+<meta name="twitter:image:src" content="{{ $image }}" />
+{{- end -}}

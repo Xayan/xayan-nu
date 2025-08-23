@@ -4,6 +4,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en-gb"
 enableEmoji = true
 ignoreErrors = ["additional-script-loading-error", "warning-goldmark-raw-html"]
+
 [menu]
 
 [[menu.main]]
@@ -41,7 +42,7 @@ workspace = "xayan-nu.work"
 path = "github.com/hugo-sid/hugo-blog-awesome"
 
 [params]
-
+homeTitle = "The Adversary's Guide to the Galaxy"
 sitename = "xayan.nu"
 description = "There are no stupid questions, only stupid people."
 defaultColor = "dark"

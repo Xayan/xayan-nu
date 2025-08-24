@@ -14,9 +14,9 @@ tags: ["religion", "theology", "cosmology", "simulation"]
 
 ## Intro
 
-The text below is a philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology.
+The text below is a philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology. I've written this piece with my book in mind, but given my progress on it... yeah, better just publish this single chapter as a standalone post.
 
-I've written this piece with my book in mind, but given my progress on it... yeah, better just publish this single chapter as a standalone post.
+The beginning is a bit direct and unapologetic, but later it spirals into something you haven't seen before. Trust me, it's worth it.
 
 *Ahem.*
 

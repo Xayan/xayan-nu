@@ -1,6 +1,10 @@
 {{- $pageTitle := cond .IsHome site.Params.homeTitle .Title -}}
 {{- $fullTitle := printf "%s | %s" $pageTitle site.Title -}}
 {{- $description := trim (default .Site.Params.description .Params.description) "\n" -}}
+
+{{/* Normalize locale to underscore as expected by OG (e.g., en_GB) */}}
+{{ $locale := replace .Site.LanguageCode "-" "_" }}
+
 {{- $image := "" -}}
 
 {{/* if front matter image exists */}}
@@ -29,7 +33,7 @@
 <meta name="twitter:description" content="{{ $description }}" />
 
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
-<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+<meta property="og:locale" content="{{ $locale }}" />
 <meta name="language" content="{{ .Site.LanguageCode }}" />
 
 {{- if $image -}}

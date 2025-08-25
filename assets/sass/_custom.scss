@@ -76,6 +76,16 @@ article {
       margin: 1em 0;
     }
 
+    h2 {
+      border-bottom: 1px solid $accent-dark;
+      font-size: 24px;
+    }
+
+    h3 {
+      margin-left: 0.5em;
+      font-size: 20px;
+    }
+
     a {
       color: $accent !important;
     }

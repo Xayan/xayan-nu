@@ -1,6 +1,6 @@
 baseURL = "https://xayan.nu/"
 title = "xayan.nu"
-languageCode = "en-us"
+languageCode = "en-gb"
 defaultContentLanguage = "en-gb"
 enableEmoji = true
 ignoreErrors = ["additional-script-loading-error", "warning-goldmark-raw-html"]
@@ -29,7 +29,6 @@ weight = 30
 
 home = ["html", "rss"]
 page = ["html"]
-rss = ["rss"]
 section = ["html"]
 taxonomy = ["html"]
 term = ["html"]
@@ -46,6 +45,7 @@ homeTitle = "The Adversary's Guide to the Galaxy"
 sitename = "xayan.nu"
 description = "There are no stupid questions, only stupid people."
 defaultColor = "dark"
+dateFormat = "2 Jan 2006"
 toc = true
 goToTop = true
 additionalScripts = ["js/pikachu.js"]
@@ -57,12 +57,16 @@ name = "Xayan"
 description = "There are no stupid questions, only stupid people."
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/Xayan/"
+name = "facebook"
+url = "https://www.facebook.com/xayan.nu"
 
 [[params.socialIcons]]
 name = "x"
 url = "https://x.com/xayan__"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Xayan/"
 
 [[params.socialIcons]]
 name = "Rss"

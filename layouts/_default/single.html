@@ -19,7 +19,7 @@
 					{{ with .GetTerms "categories" }}
 						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a>{{ end }}
 					{{ end }}
-				</p class="terms">
+				</p>
 			</header>
 			{{ partial "toc.html" .}}
 			<div class="page-content">

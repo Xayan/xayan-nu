@@ -32,8 +32,10 @@
 					</div>
 			</div>
 		</article>
-		{{- partial "poll.html" . -}}
-		{{- partial "comments.html" . -}}
+		{{ if ne .Params.hidden true }}
+			{{- partial "poll.html" . -}}
+			{{- partial "comments.html" . -}}
+		{{ end }}
 	</main>
 </div>
 {{ end }}

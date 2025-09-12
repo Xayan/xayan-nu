@@ -51,6 +51,9 @@ goToTop = true
 additionalScripts = ["js/pikachu.js"]
 mainSections = ["posts"]
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params.author]
 intro = "xayan.nu"
 name = "Xayan"

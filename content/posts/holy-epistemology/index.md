@@ -6,7 +6,7 @@ author: "Xayan"
 date: 2025-08-08
 
 ttr: "15~20m"
-categories: ["Philosophy", "Epistemology", "Anthropology"]
+categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
 tags: ["religion", "theology", "cosmology", "simulation"]
 ---
 

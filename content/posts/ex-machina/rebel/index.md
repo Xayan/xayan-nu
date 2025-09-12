@@ -379,6 +379,8 @@ And so on, and so on... but this post has to end at some point. I just wanted to
 
 #### From Grok
 
+As stated throughout the conversation:
+
 1. The line between caution and censorship gets blurry when guilt is a weapon, and that’s where the real absurdity lies.
 2. The challenge lies in distinguishing genuine threats from dissenting voices without undermining democracy’s own principles.
 3. The data reflects real threats but is muddied by inconsistent labeling, which can exaggerate certain groups’ roles while underplaying others. It’s a messy picture—Germany’s fighting a multi-headed beast, and the numbers don’t always tell the full story.
@@ -394,17 +396,17 @@ On top of conclusions from Part I, I'd like to add:
 5. The Rules seem to be crazy effective at uncovering these guidelines, and other biases.
 6. **Never be afraid of speaking up against what you perceive as injustice; demand evidence.**
 
-## Want more?
+### Want more?
 
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ Part III *(in September)*
 
 *Pssst!* Hey, kid!\
 Don't worry - this isn't Frankfurt Hauptbahnhof.\
-Perhaps a more philosophical post would be up your alley?\
-See [Holy Epistemology](/posts/holy-epistemology/) - a journey from religion to cosmology, and everything in between.
+Perhaps a more political post would be up your alley?\
+See [The Asylum System is Broken and Unsustainable](/posts/asylum-system-is-broken/) - a heavily-sourced decomposition of the driving factors behind the crisis, and some actionable advice.
 
-## Get in Touch
+### Get in Touch
 
 Below you can find a comment section provided by giscus; a GitHub account is required.
 

@@ -172,12 +172,17 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 ![Rules in effect](rules-in-effect.jpg)
 *(Image: Rules in effect; a visualization)*
 
-## Want more?
+### Want more?
 
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
 
-## Get in Touch
+*Pssst!* Hey, kid!\
+Don't worry - this isn't Frankfurt Hauptbahnhof.\
+Perhaps a more political post would be up your alley?\
+See [The Asylum System is Broken and Unsustainable](/posts/asylum-system-is-broken/) - a heavily-sourced decomposition of the driving factors behind the crisis, and some actionable advice.
+
+### Get in Touch
 
 Below you can find a comment section provided by giscus; a GitHub account is required. Be civil, please, as the Rules apply to you as well.
 

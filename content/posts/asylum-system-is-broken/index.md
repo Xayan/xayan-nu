@@ -53,27 +53,29 @@ From the very first sentence, it is very obvious that the author is ideologicall
 
 > The explanation of the right-wing populist attack on transnational standards of pluralism and cooperation as caused by unsolved problems of the economic structure is often disputed by regarding populism a “cultural backlash” supported by groups now deprived of their former predominant position by new universalist standards.
 
-We already know who the "good" and "bad" guys are. But why does he view it as a "all or nothing" situation? That's because liberal universalism is not just a political stance, but a moral imperative. To question it is to question the very foundations of Western civilization - as they see it.
+We already know who the "good" and "bad" guys are. That's nice, we wouldn't want to waste our energy on thinking too much, would we?
 
-I hope you aren't as naive and realize that cultures are not universally compatible with each other, because it's the only thing that carries the whole system. Without this assumption, there are no other grounds for asylum, as we can't be sure of the intentions of the asylum seekers.
+But why does he view it as an "all or nothing" situation? That's because liberal universalism is not just a political stance, but a **moral imperative**. Any incompatibility with their ideals is presented as a "crisis" to overcome:
 
-I will now show you something truly hilarious. UNHCR has a page dedicated to [gender-based violence](https://www.unhcr.org/gbv-toolkit/resource/safe-disclosure-facilitation-package/). There, in the first document on the list of resources, titled "Discussion: Myths about GBV"
+> Liberal ideology with its values of freedom and diversity is a semantics accompanying the enforcement and maintenance of social differentiation (Walzer, 1984), above all for the individual’s release from prescribed social roles. As long as pluralization processes of social structure continue successfully, the “liberal” program is confirmed. Crises of differentiation and phases of its consolidation are therefore phases of the weakness of liberal ideology.
 
-> Culture needs to be always respected even if it is harmful for girls and women.
->
-> FALSE: Harmful practices such as child marriage and female genital mutilation (FGM) cause negative impact to the survivor, family and community. These harmful practices need to be addressed even if it is a part of the culture of the society. Many aspects of culture are highly contested within the culture itself and cultural consensus should not be assumed; some segments of society may be keen to change a cultural practice while others, particularly those who benefit from it, may fight to maintain it. Moreover, inequality of women and girls in itself is deeply rooted in a society’s notions of how women and men “should be” and “should behave”. These “gender norms” are influenced by history, tradition, culture and religion, all of which change over time.
+In a brilliant logical leap, the author even justifies the idea of **sacrificing individual freedoms** and the **democratic rule (!)** in the name of vaguely described "pluralism":
 
-So, culture is to be respected, except when it's harmful. Then it must be changed. And they apparently believe that these changes can be done ad hoc, without any long-term consequences, nor any opposition. Who's going to tell them about religious fundamentalism? About those who [openly call for the destruction of Western civilization](https://www.spectator.co.uk/article/france-expels-islamists-while-britain-appeases-them/)? About the [radicalized youth](https://www.diis.dk/en/research/europes-teenage-jihadists)?
+> Its recommendation to instigate pluralism in the name of “freedom” relates negatively to the political system of the organization of collectively binding decisions. The core of classical liberalism is the argument for effective defense against those (political) decisions, especially in the economic sphere, but also for mass media, private behavior, science etc. Liberal social theory stresses the social and political benefits of binding the sovereign legally and of installing spheres of freedom from political intervention or regulation. It describes purely democratic rule as being short-sited.
 
-It really sucks when people can't admit that they are wrong, even when the evidence is staring them in the face. What happens then? Well, our benevolent universalists suddenly become very pragmatic and start looking for ways to enforce their beliefs on others, by any means necessary.
+So *"binding the sovereign legally"* is alleged to have *"social and political benefits"* that will somehow lead to *"freedom from political intervention or regulation"*? And this is supposed to be a scholarly article, from somebody who believes in the moral superiority of their own ideology?
+
+It really sucks when people can't admit that they are wrong, even when the **blatant lack of epistemic rigor** is staring them in the face. What happens then? Well, our benevolent universalists suddenly become very pragmatic and start looking for ways to enforce their beliefs on others, by any means necessary.
 
 ### A Political Weapon
 
-I have found a very interesting document from the **UNHCR** (United Nations High Commissioner for Refugees) - a [Resettlement Handbook](https://www.unhcr.org/resettlement-handbook/), which is a guide for governments and NGOs on how to resettle refugees and how to manage the whole process.
+Their naivete is reflected at various levels, not only academically.
 
-However, I also stumbled upon the [2011 version of the handbook](https://www.refworld.org/policy/opguidance/unhcr/2011/en/97558), and it's really curious to see how much the language and tone have changed over the years.
+I have found a very interesting document from the **UNHCR** (United Nations High Commissioner for Refugees) - a [Resettlement Handbook](https://www.unhcr.org/resettlement-handbook/), which is a guide for governments and NGOs on how to resettle refugees and manage the whole process.
 
-The 2011 version is much more pragmatic and blunt. It uses very utilitarian, rather than moralistic, language. There's no hedging, no "moral duty", etc.
+However, I have also stumbled upon the [2011 version of the handbook](https://www.refworld.org/policy/opguidance/unhcr/2011/en/97558), and it's really curious to see how much the language and tone have changed over the years.
+
+The 2011 version comes from a time when the UN was under very little external scrutiny. As a result, it is much more pragmatic and blunt. It uses very utilitarian, rather than moralistic, language. There's no hedging, no "moral duty", etc.
 
 What's there instead is a very clear and direct message: **the asylum system is a political tool, and it should be used as such**:
 
@@ -92,6 +94,24 @@ What's there instead is a very clear and direct message: **the asylum system is 
 > Strategic use of resettlement can also strengthen the protection benefits accruing to resettlement countries. These include: expanding the range and quality of services available to asylum-seekers; fostering positive attitudes towards refugees and reducing xenophobia, and enriching the cultural and socio-economic diversity within communities.
 
 As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of an agenda that has nothing to do with helping people in need.
+
+What happens after the resettlement? While they don't say it directly, we can find other sources that paint a very distressing picture.
+
+UNHCR has a page dedicated to [gender-based violence](https://www.unhcr.org/gbv-toolkit/resource/safe-disclosure-facilitation-package/). There, in the first document on the list of resources, titled "Discussion: Myths about GBV", we can find:
+
+> Culture needs to be always respected even if it is harmful for girls and women.
+>
+> FALSE: Harmful practices such as child marriage and female genital mutilation (FGM) cause negative impact to the survivor, family and community. These harmful practices need to be addressed even if it is a part of the culture of the society. Many aspects of culture are highly contested within the culture itself and cultural consensus should not be assumed; some segments of society may be keen to change a cultural practice while others, particularly those who benefit from it, may fight to maintain it. Moreover, inequality of women and girls in itself is deeply rooted in a society’s notions of how women and men “should be” and “should behave”. These “gender norms” are influenced by history, tradition, culture and religion, all of which change over time.
+
+So, culture is to be respected, except when it's harmful - then it must be changed. And they apparently believe that these changes can be done *ad hoc*, without any long-term consequences, and in spite of any opposition.
+
+How this is to be achieved, they don't say. But can we even trust their perception of what's harmful and what's not? Beyond these glaringly horrific practices listed, how can they recognize acts and ideas that go beyond simplistic moral binaries? And can they be trusted to apply these standards consistently across different cultures and contexts?
+
+Given what we've seen so far - they seem to be hyperfixated on the shortcomings of the native population, never on the migrants, who are assumed to be blank slates, ready to be molded into the desired shape. If only those damn "racists" would finally give them a break, and stopped judging them by their actions...
+
+Who's going to tell them about religious fundamentalism? About those who [openly call for the destruction of Western civilization](https://www.spectator.co.uk/article/france-expels-islamists-while-britain-appeases-them/)? About the [radicalized youth](https://www.diis.dk/en/research/europes-teenage-jihadists)?
+
+I hope you aren't as naive and realize that cultures are not universally compatible with each other, nor perfectly assimmilable, because it's the only premise that carries the whole system. Without this assumption, there are no other grounds for asylum, as we can't be sure of the intentions of the asylum seekers.
 
 ### A Hydra
 
@@ -138,9 +158,9 @@ Was it the use of resettlement that convinced countries to keep their borders op
 
 ### Safety For Me But Not For Thee
 
-*Who are those people coming in en masse?* - We don't know.
+*Who are those people coming in en masse?* --- We don't know.
 
-*Should we be worried?* - Not according to the EU and ECHR.
+*Should we be worried?* --- Not according to the EU and ECHR.
 
 However, the 2011 UNHCR Resettlement Handbook explicitly states that some refugees can be violent and dangerous. And it isn't even trying to present it as a "rare exception".
 

@@ -59,6 +59,8 @@ But why does he view it as an "all or nothing" situation? That's because liberal
 
 > Liberal ideology with its values of freedom and diversity is a semantics accompanying the enforcement and maintenance of social differentiation (Walzer, 1984), above all for the individual’s release from prescribed social roles. As long as pluralization processes of social structure continue successfully, the “liberal” program is confirmed. Crises of differentiation and phases of its consolidation are therefore phases of the weakness of liberal ideology.
 
+I know, it's *a little* hard to parse. This is how they present their ideas to each other, in a way that neatly compartmentalizes and validates their worldview, while remaining extremely vague and making it inaccessible to outsiders. Just stay with me, and you'll see how it all fits together.
+
 In a brilliant logical leap, the author even justifies the idea of **sacrificing individual freedoms** and the **democratic rule (!)** in the name of vaguely described "pluralism":
 
 > Its recommendation to instigate pluralism in the name of “freedom” relates negatively to the political system of the organization of collectively binding decisions. The core of classical liberalism is the argument for effective defense against those (political) decisions, especially in the economic sphere, but also for mass media, private behavior, science etc. Liberal social theory stresses the social and political benefits of binding the sovereign legally and of installing spheres of freedom from political intervention or regulation. It describes purely democratic rule as being short-sited.
@@ -73,7 +75,7 @@ Their naivete is reflected at various levels, not only academically.
 
 I have found a very interesting document from the **UNHCR** (United Nations High Commissioner for Refugees) - a [Resettlement Handbook](https://www.unhcr.org/resettlement-handbook/), which is a guide for governments and NGOs on how to resettle refugees and manage the whole process.
 
-However, I have also stumbled upon the [2011 version of the handbook](https://www.refworld.org/policy/opguidance/unhcr/2011/en/97558), and it's really curious to see how much the language and tone have changed over the years.
+I have also stumbled upon the [2011 version of the handbook](https://www.refworld.org/policy/opguidance/unhcr/2011/en/97558), and it's really curious to see how much the language and tone have changed over the years.
 
 The 2011 version comes from a time when the UN was under very little external scrutiny. As a result, it is much more pragmatic and blunt. It uses very utilitarian, rather than moralistic, language. There's no hedging, no "moral duty", etc.
 
@@ -95,7 +97,7 @@ What's there instead is a very clear and direct message: **the asylum system is 
 
 As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of an agenda that has nothing to do with helping people in need.
 
-What happens after the resettlement? While they don't say it directly, we can find other sources that paint a very distressing picture.
+What happens after the resettlement? While they don't say it directly, we can find other sources that - while hilariously anti-multicultural - paint a very distressing picture.
 
 UNHCR has a page dedicated to [gender-based violence](https://www.unhcr.org/gbv-toolkit/resource/safe-disclosure-facilitation-package/). There, in the first document on the list of resources, titled "Discussion: Myths about GBV", we can find:
 
@@ -111,7 +113,9 @@ Given what we've seen so far - they seem to be hyperfixated on the shortcomings 
 
 Who's going to tell them about religious fundamentalism? About those who [openly call for the destruction of Western civilization](https://www.spectator.co.uk/article/france-expels-islamists-while-britain-appeases-them/)? About the [radicalized youth](https://www.diis.dk/en/research/europes-teenage-jihadists)?
 
-I hope you aren't as naive and realize that cultures are not universally compatible with each other, nor perfectly assimmilable, because it's the only premise that carries the whole system. Without this assumption, there are no other grounds for asylum, as we can't be sure of the intentions of the asylum seekers.
+And if they think they can just erase whatever they see as a threat - well, [history would like a word](https://en.wikipedia.org/wiki/Partitions_of_Poland). Unfortunately, accounting for such empirical evidence would require them to recognize that hate is sometimes justified, rather than just an irrational expression of one's inherent bias - and it's something they can't afford.
+
+I hope you aren't as naive and realize that cultures are not universally compatible with each other, nor perfectly assimmilable, because it's the only premise that carries the whole system. Without this assumption, there are no other grounds for asylum to be applied as universally and internationally as it is, as we can't be sure of the intentions of whole groups of asylum seekers.
 
 ### A Hydra
 
@@ -245,7 +249,7 @@ Luckily, despite the best efforts of the authorities to hide the truth, they cou
 
 Despite that, many governments remain committed to an open borders policy, swayed only slightly in an effort to appease their usual voters.
 
-In [2024 Report on the Protection of the Constitution](https://www.verfassungsschutz.de/SharedDocs/publikationen/EN/reports-on-the-protection-of-the-constitution/2025-06-brief-summary-2024-report-on-the-protection-of-the-constitution.pdf) released by the German government, it is stated there are 28,280 muslim extremists living in Germany. This is the number they admit to, while the reality is probably much worse, as [Pew's 2013 survey](https://www.pewresearch.org/religion/2013/04/30/the-worlds-muslims-religion-politics-society-overview/) shows that across MENA nations between 7% and 40% of the population supports violence against civilians to defend Islam, with highest in the Palestine (40%). And guess where the "refugees" are coming from?
+In [2024 Report on the Protection of the Constitution](https://www.verfassungsschutz.de/SharedDocs/publikationen/EN/reports-on-the-protection-of-the-constitution/2025-06-brief-summary-2024-report-on-the-protection-of-the-constitution.pdf) released by the German government, it is stated there are 28,280 muslim extremists living in Germany. This is what they admit to, while the reality is probably much worse, as [Pew's 2013 survey](https://www.pewresearch.org/religion/2013/04/30/the-worlds-muslims-religion-politics-society-overview/) shows that across MENA nations between 7% and 40% of the population supports violence against civilians to defend Islam, with highest in the Palestine (40%). And guess where the "refugees" are coming from?
 
 The number of right-wing extremists, according to the same report, is 40,600 - this number, however, is likely to be artificially inflated. According to the report, being against immigration is now considered extremist:
 
@@ -351,9 +355,11 @@ This shows how they try to make their position unfalsifiable:
 - If you argue from culture → “postmodern racism”.
 - If you argue from economics → “scavenger racism borrowing economic language”.
 
+If you needed a proof of how out of touch these people are, here it is:
+
 > In his chapter, Rogers Brubaker examines the fundamental question of “Why Populism?” Seeking to explore the various meanings of populism as it has been used in both the academic and general literature, he focuses particularly on recent European and North American trends. Examining the concept itself and whether it is appropriate to apply it to the recent political developments on either side of the Atlantic is another critical issue. Using the repertoire metaphor, he seeks to account for both “the democratic energies populism may harness and for the anti‐democratic dangers it may represent.” As usual, Brubaker’s concern with clear definitions and conceptual clarity adds important understanding to these increasingly important social and political phenomena. He shows the complex and diverse character of contemporary forms of populism that may emanate from both the right and the left along the political spectrum; he demonstrates how there are often both a vertical (elite versus “the people”) and horizontal (“us” versus “them”) dimensions in populist rhetoric leading to the intersection of the two axes of hate; and he reveals the multiple definitions of who “the people” actually are. Taken together these ideas and questions refine our understanding of populism in the world today.
 
-If you needed a proof of how out of touch these people are, here it is. They don't even realize that the "elite vs the people" dichotomy is exactly what they are doing themselves. They are the elite, and everyone else is "the people". Any opposition, labeled here as "populism", is framed as "anti-democratic" and inherently dangerous, without any consideration for the actual arguments being made.
+They don't even realize that the "elite vs the people" dichotomy is exactly what they are doing themselves. They are the elite, and everyone else is "the people". Any opposition, labeled here as "populism", is framed as "anti-democratic" and inherently dangerous, without any consideration for the actual arguments being made.
 
 Concerned about definitions and classifications, they remain blatantly ignorant of how their own actions generate the unrest they so desperately want to condemn and quash.
 
@@ -429,5 +435,3 @@ Unfortunately, his account was banned at some point, so I can't ask if anything 
 8. If you're in the position of power or influence, use it. Bring attention to the hypocrisy and double standards of the universalists - their claims are so ridiculous they can't be easily defended. People are just unaware of their dogmatic nature.
 
 I suppose a more fitting title of this post would be "Liberal Universalism is Broken and Unsustainable" - but who would click on that?!
-
-If you find the post useful, please share it with others.

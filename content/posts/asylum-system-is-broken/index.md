@@ -21,6 +21,14 @@ With the number of asylum seekers increasing year by year, the strain on resourc
 
 And it's only going to get worse, because what once was a "non-binding agreement" is now being turned into coercion via legal and fiscal means, while those who speak up against it are being silenced and marginalized.
 
+Depending on your political stance, this post might be either illuminating or uncomfortable. I can assure you that **at no point** will I mock your beliefs or opinions - the system is my target, not you.
+
+But you have to try and keep up - this is a long and dense read, necessary for making a coherent and compelling argument that does not descend into any conspiracy theories. It might *sound like one*, but I promise you *it's not* - no secret societies, no Illuminati, no hidden agendas. Just average human beings, each one with their own beliefs, biases, and motivations - all interacting in a complex system that produces unintended consequences, because of a fundamental flaw in its design.
+
+This is my attempt at untangling that mess, with the hope - however dim - of finding a way out that doesn't end up in a civil war or a totalitarian regime.
+
+Fatalistic? Perhaps. But let me tell you the whole story first.
+
 ## Background
 
 ### Current State of Affairs
@@ -31,11 +39,15 @@ In 2020, the **ECHR** (European Court of Human Rights) has published a [Handbook
 
 It has 366 pages. The handbook, not the law itself.
 
-Since my position on this issue is quite clear, I won't go into the details like "who is eligible for asylum", "what are the rights of asylum seekers", etc. Instead, I'm going to show you why the system, as a whole, is a huge mess, an accessible loophole for anyone who wants to abuse it, and a giant problem for the host countries and their citizens.
+Since my position on this issue is quite clear, I won't go into the details like *"who is eligible for asylum"*, *"what are the rights of asylum seekers"*, etc. Instead, I'm going to show you why the system, as a whole, is a huge mess, an accessible loophole for anyone who wants to abuse it, and a giant problem for the host countries and their citizens.
 
-This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? Too bad I don't give a shit about such pathetic attempts at silencing dissent - and I'm going to show you why you shouldn't either.
+This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? *Too bad I don't give a shit* about such pathetic attempts at silencing dissent - and I'm going to show you why you shouldn't either.
 
-While the system is clearly broken, the response from those in power has been to double down on the same failed policies, instead of proposing a real alternative. How so?
+My goal is not to turn you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to **see the flaws** in the system more clearly. And that's an extremely valuable skill to have.
+
+Consider what I tell you *a thought experiment*, a mere *"what if"*, and then **decide for yourself** whether its implications align with your lived experience. So - if you're comfortable with not giving a shit about labels for a moment - let's continue.
+
+While the asylum system is clearly broken, the response from those in power has been to double down on the same failed policies, instead of proposing a real alternative. How so?
 
 ### A Naive Belief
 
@@ -43,7 +55,9 @@ I know why the Western elites cling to the asylum system so desperately.
 
 They believe that **every human, if given the opportunity and resources, would ultimately accept the values and norms of liberal democracy and adapt to the Western way of life**.
 
-This belief is unnamed, but usually attributed to the concept of **liberal universalism**. This idea suggests that liberal democratic values are not just Western ideals, but universal truths that should be embraced by all.
+This belief is unnamed, but usually attributed to the concept of **liberal universalism**, which has - as I will continue to argue throughout this post - little to do with **actual liberalism**, which is *NOT* the target of my critique.
+
+**Liberal universalism** is more *philosophical* than *political*: it suggests that liberal democratic values are not just Western ideals, but **universal truths** that should be embraced by all.
 
 Calling it an **ideology** would be an understatement. This feels like a **religious belief**, where the tenets are accepted without question.
 
@@ -113,7 +127,7 @@ Given what we've seen so far - they seem to be hyperfixated on the shortcomings 
 
 Who's going to tell them about religious fundamentalism? About those who [openly call for the destruction of Western civilization](https://www.spectator.co.uk/article/france-expels-islamists-while-britain-appeases-them/)? About the [radicalized youth](https://www.diis.dk/en/research/europes-teenage-jihadists)?
 
-And if they think they can just erase whatever they see as a threat - well, [history would like a word](https://en.wikipedia.org/wiki/Partitions_of_Poland). Unfortunately, accounting for such empirical evidence would require them to recognize that hate is sometimes justified, rather than just an irrational expression of one's inherent bias - and it's something they can't afford.
+And if they think they can just erase whatever they see as a threat - well, [history would like a word](https://en.wikipedia.org/wiki/Germanisation_of_Poles_during_the_Partitions). Unfortunately, accounting for such empirical evidence would require them to recognize that hate is sometimes justified, rather than just an irrational expression of one's inherent bias - and it's something they can't afford.
 
 I hope you aren't as naive and realize that cultures are not universally compatible with each other, nor perfectly assimmilable, because it's the only premise that carries the whole system. Without this assumption, there are no other grounds for asylum to be applied as universally and internationally as it is, as we can't be sure of the intentions of whole groups of asylum seekers.
 
@@ -136,8 +150,7 @@ Don't let them argue on their own terms. Reject the framing that paints any oppo
 
 Liberalism can exist just fine outside of their delusions. And, of course, there's nothing inherently wrong with nationalism. Both are, in fact, necessary for a healthy society that can find compromise and adapt to everchanging geopolitical landscape.
 
-![Proper treatment of human traffickers](arrest.png)
-(Image: Proper treatment of human traffickers, as demonstrated by the Polish Border Guard; source: [rp.pl](https://www.rp.pl/przestepczosc/art40846691-grupa-przestepcza-rozbita-pieniadze-z-migracji-plynely-do-grup-terrorystycznych))
+And, even though I spend so much time on validating this duality - I refuse to pick a side. First and foremost, I consider myself to be an anti-ideologue, and my motivation is to seek truth and understanding, rather than blindly follow any dogma. While I think this is a very reasonable stance, for the universalists it's unforgivable heresy - which baffles me the more I think about it.
 
 ## Problems
 
@@ -159,6 +172,9 @@ The 2011 Resettlement Handbook advocates for **open borders** directly:
 > Resettlement has also brought about positive results that go well beyond those that are usually viewed as a resettlement outcome. In the face of a continued influx of refugees, the use of resettlement has convinced countries of first asylum to keep open their borders [...] Overall, resettlement is a dynamic and flexible tool, and when done effectively and with strategic vision, the results of resettlement can be powerful beyond the direct impact on the persons resettled.
 
 Was it the use of resettlement that convinced countries to keep their borders open? Or was it the political pressure from the UN and the EU? So goddamn disingenuous.
+
+![Proper treatment of human traffickers](arrest.png)
+(Image: Proper treatment of human traffickers, as demonstrated by the Polish Border Guard; source: [rp.pl](https://www.rp.pl/przestepczosc/art40846691-grupa-przestepcza-rozbita-pieniadze-z-migracji-plynely-do-grup-terrorystycznych))
 
 ### Safety For Me But Not For Thee
 
@@ -361,7 +377,7 @@ If you needed a proof of how out of touch these people are, here it is:
 
 They don't even realize that the "elite vs the people" dichotomy is exactly what they are doing themselves. They are the elite, and everyone else is "the people". Any opposition, labeled here as "populism", is framed as "anti-democratic" and inherently dangerous, without any consideration for the actual arguments being made.
 
-Concerned about definitions and classifications, they remain blatantly ignorant of how their own actions generate the unrest they so desperately want to condemn and quash.
+Concerned about definitions and classifications, they remain strikingly ignorant of how their own actions generate the unrest they so desperately want to condemn and quash. That's an intellectual equivalent of a dog eating its own shit.
 
 And so on, and so on... there are 500+ pages of this bullshit. Every page is filled with the same gibberish revolving around the core idea of universalism, and their only role is to justify all kinds of "necessary evils" they engage in.
 
@@ -434,4 +450,4 @@ Unfortunately, his account was banned at some point, so I can't ask if anything 
 7. The working class is their weak point - as they admit. Just show them what the "elites" are up to, and that they don't care about regular people, focusing instead on their attempts at controlling the masses and consolidating power.
 8. If you're in the position of power or influence, use it. Bring attention to the hypocrisy and double standards of the universalists - their claims are so ridiculous they can't be easily defended. People are just unaware of their dogmatic nature.
 
-I suppose a more fitting title of this post would be "Liberal Universalism is Broken and Unsustainable" - but who would click on that?!
+Do you... feel enlightened now? Or do you think I'm a fucking idiot? Regardless, I want to hear your opinion - leave a comment below (a GitHub account is required), or reach out to me directly (X/FB in the footer).

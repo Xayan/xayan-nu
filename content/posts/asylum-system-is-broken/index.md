@@ -21,9 +21,9 @@ With the number of asylum seekers increasing year by year, the strain on resourc
 
 And it's only going to get worse, because what once was a "non-binding agreement" is now being turned into coercion via legal and fiscal means, while those who speak up against it are being silenced and marginalized.
 
-Depending on your political stance, this post might be either illuminating or uncomfortable. I can assure you that **at no point** will I mock your beliefs or opinions - the system is my target, not you.
+Depending on your political stance, this post might be either illuminating or uncomfortable - but I can assure you that **at no point** will I mock your beliefs or opinions - the system is my target, not you.
 
-But you have to try and keep up - this is a long and dense read, necessary for making a coherent and compelling argument that does not descend into any conspiracy theories. It might *sound like one*, but I promise you *it's not* - no secret societies, no Illuminati, no hidden agendas. Just average human beings, each one with their own beliefs, biases, and motivations - all interacting in a complex system that produces unintended consequences, because of a fundamental flaw in its design.
+But you have to try and keep up - this is a long and dense read, necessary for making a coherent and compelling argument that does not descend into any conspiracy theories. It might **sound like one**, but I promise you **it's not** - no secret societies, no Illuminati, no hidden agendas. Just *average human beings*, each one with their own *beliefs, biases, and motivations* - all interacting in a *complex system that produces unintended consequences*, because of **a fundamental flaw in its design**.
 
 This is my attempt at untangling that mess, with the hope - however dim - of finding a way out that doesn't end up in a civil war or a totalitarian regime.
 
@@ -41,9 +41,9 @@ It has 366 pages. The handbook, not the law itself.
 
 Since my position on this issue is quite clear, I won't go into the details like *"who is eligible for asylum"*, *"what are the rights of asylum seekers"*, etc. Instead, I'm going to show you why the system, as a whole, is a huge mess, an accessible loophole for anyone who wants to abuse it, and a giant problem for the host countries and their citizens.
 
-This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? *Too bad I don't give a shit* about such pathetic attempts at silencing dissent - and I'm going to show you why you shouldn't either.
+This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? Too bad *I don't give a shit* about such pathetic attempts at silencing dissent - and I'm going to show you why you shouldn't either.
 
-My goal is not to turn you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to **see the flaws** in the system more clearly. And that's an extremely valuable skill to have.
+Not for the purpose of turning you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to **see the flaws** in the system more clearly. And that's an extremely valuable skill to have.
 
 Consider what I tell you *a thought experiment*, a mere *"what if"*, and then **decide for yourself** whether its implications align with your lived experience. So - if you're comfortable with not giving a shit about labels for a moment - let's continue.
 
@@ -55,9 +55,9 @@ I know why the Western elites cling to the asylum system so desperately.
 
 They believe that **every human, if given the opportunity and resources, would ultimately accept the values and norms of liberal democracy and adapt to the Western way of life**.
 
-This belief is unnamed, but usually attributed to the concept of **liberal universalism**, which has - as I will continue to argue throughout this post - little to do with **actual liberalism**, which is *NOT* the target of my critique.
+This belief is unnamed, but usually attributed to the concept of **liberal universalism**. It has, notably, little to do with **actual liberalism**, which is NOT the object of my critique - please be mindful of this important distinction.
 
-**Liberal universalism** is more *philosophical* than *political*: it suggests that liberal democratic values are not just Western ideals, but **universal truths** that should be embraced by all.
+**Liberal universalism** is more *philosophical* than *political* -- it suggests that liberal democratic values are not just Western ideals, but **universal truths** that should be embraced by all.
 
 Calling it an **ideology** would be an understatement. This feels like a **religious belief**, where the tenets are accepted without question.
 
@@ -77,7 +77,7 @@ I know, it's *a little* hard to parse. This is how they present their ideas to e
 
 In a brilliant logical leap, the author even justifies the idea of **sacrificing individual freedoms** and the **democratic rule (!)** in the name of vaguely described "pluralism":
 
-> Its recommendation to instigate pluralism in the name of “freedom” relates negatively to the political system of the organization of collectively binding decisions. The core of classical liberalism is the argument for effective defense against those (political) decisions, especially in the economic sphere, but also for mass media, private behavior, science etc. Liberal social theory stresses the social and political benefits of binding the sovereign legally and of installing spheres of freedom from political intervention or regulation. It describes purely democratic rule as being short-sited.
+> Its recommendation to instigate pluralism in the name of “freedom” relates negatively to the political system of the organization of collectively binding decisions. The core of classical liberalism is the argument for effective defense against those (political) decisions, especially in the economic sphere, but also for mass media, private behavior, science etc. Liberal social theory stresses the social and political benefits of binding the sovereign legally and of installing spheres of freedom from political intervention or regulation. It describes purely democratic rule as being short-sited [original spelling].
 
 So *"binding the sovereign legally"* is alleged to have *"social and political benefits"* that will somehow lead to *"freedom from political intervention or regulation"*? And this is supposed to be a scholarly article, from somebody who believes in the moral superiority of their own ideology?
 
@@ -85,7 +85,7 @@ It really sucks when people can't admit that they are wrong, even when the **bla
 
 ### A Political Weapon
 
-Their naivete is reflected at various levels, not only academically.
+Their naivete is reflected at various levels, not only academically. What persists, is their strategic use of language - even though same in method, they differ in specificity. I'm not sure if I'm not reinventing code switching here, but bear with me.
 
 I have found a very interesting document from the **UNHCR** (United Nations High Commissioner for Refugees) - a [Resettlement Handbook](https://www.unhcr.org/resettlement-handbook/), which is a guide for governments and NGOs on how to resettle refugees and manage the whole process.
 
@@ -109,7 +109,7 @@ What's there instead is a very clear and direct message: **the asylum system is 
 >
 > Strategic use of resettlement can also strengthen the protection benefits accruing to resettlement countries. These include: expanding the range and quality of services available to asylum-seekers; fostering positive attitudes towards refugees and reducing xenophobia, and enriching the cultural and socio-economic diversity within communities.
 
-As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of an agenda that has nothing to do with helping people in need.
+As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of an agenda (universalism/multiculturalism) that has nothing to do with helping people in need.
 
 What happens after the resettlement? While they don't say it directly, we can find other sources that - while hilariously anti-multicultural - paint a very distressing picture.
 
@@ -131,9 +131,9 @@ And if they think they can just erase whatever they see as a threat - well, [his
 
 I hope you aren't as naive and realize that cultures are not universally compatible with each other, nor perfectly assimmilable, because it's the only premise that carries the whole system. Without this assumption, there are no other grounds for asylum to be applied as universally and internationally as it is, as we can't be sure of the intentions of whole groups of asylum seekers.
 
-### A Hydra
+### A Cathedral
 
-Every group involved reinforces the other:
+The policies are not made in a vacuum. There is a whole ecosystem of actors - each one with their own motivations and incentives - that perpetuate the system. While not necessarily coordinated, their actions still create a self-reinforcing cycle:
 
 1. Academics publish papers advocating for open borders and multiculturalism.
 2. NGOs lobby for more funding and more permissive policies.
@@ -144,13 +144,13 @@ Every group involved reinforces the other:
 7. Ideologically-aligned judges legitimize trafficking and block deportations.
 8. Media defend the system as moral and inevitable.
 
-Anyone trying to dissent is framed as a danger to "liberal democracy", regardless of how pragmatic or factual their position is.
+Anyone trying to dissent is framed as a danger to "liberal democracy", regardless of how pragmatic or factual their position is. It's no different from how religious zealots treat heretics.
 
 Don't let them argue on their own terms. Reject the framing that paints any opposition as "illiberal", as they like to call it.
 
 Liberalism can exist just fine outside of their delusions. And, of course, there's nothing inherently wrong with nationalism. Both are, in fact, necessary for a healthy society that can find compromise and adapt to everchanging geopolitical landscape.
 
-And, even though I spend so much time on validating this duality - I refuse to pick a side. First and foremost, I consider myself to be an anti-ideologue, and my motivation is to seek truth and understanding, rather than blindly follow any dogma. While I think this is a very reasonable stance, for the universalists it's unforgivable heresy - which baffles me the more I think about it.
+And, even though I spend so much time on validating this duality - I refuse to pick a side. First and foremost, I consider myself to be an anti-ideologue, and my motivation is to seek truth and understanding, rather than blindly follow any dogma. While I think this is a very reasonable stance, for the universalists it's inhumane - which baffles me the more I think about it.
 
 ## Problems
 
@@ -162,6 +162,9 @@ This is, of course, complete nonsense. Walls and fences are not perfect, but the
 
 - Hungary’s fence, completed in late 2015, was highly effective at reducing crossings at its specific border points, dropping from 441,515 in 2015 to under 20,000 by 2017.
 - Poland’s border wall, completed in 2022, reduced irregular crossings from a peak of ~40,000 attempts in 2021 to ~26,000 in 2023 and an estimated 14,000–20,000 in 2024.
+- Both countries also openly defy the ECHR and EU directives, by pushing back illegal migrants and refusing to process asylum claims.
+- This kind of argument usually gets dismissed as *"wah wah that only redirects the flow"*, but you have to ask yourself - **whose interests** does this kind of rhetoric serve? Most certainly not the sovereign nations.
+- Ultimately: **political will + popular support > moral grievances of the law**.
 
 These numbers could be even lower, if illegal crossing were not **actively encouraged**, as they are in the paper [Refugee Mobilization in the Nepal–India Borderlands: Porosity as Opportunity (Banki 2023)](https://academic.oup.com/jrs/article/38/2/297/7238803):
 
@@ -332,13 +335,13 @@ I think "malice" doesn't quite capture it, because the people pushing for these 
 
 Systemic rot? Institutional psychopathy? Treason, perhaps?
 
-Kuhn shows us that "equal treatment" is enough for them to justify any "necessary evil":
+Kuhn - the dude from earlier who deemed *"purely democratic rule"* as *"short-sighted"* - in the same paper says that *"equal treatment"* is enough to justify any *"necessary evil"*:
 
 > While particularism is never absent in politics, the point of ideological reference is the appreciated value of “equal treatment,” which justifies policies going in the “right” direction and makes others “a necessary evil.”
 
 They claim to despise reactionaries, but have become ultra-reactionary themselves while trying to save their crumbling facade. But because of their ideological rigidity and false beliefs, all of their responses are wildly misguided, and are never going to have the intended effect.
 
-And no, I don't think there's some "shadow government" behind it. The academics are mostly at fault - for their intellectual corruption. What we're seeing is the growing incompatibility of their worldview with reality, and their inability to confront it.
+The academics are mostly at fault - for their intellectual corruption. What we're seeing is the growing incompatibility of their worldview with reality, and their inability to confront it.
 
 It's a classic case of [Ouroboros](https://en.wikipedia.org/wiki/Ouroboros), where the system is consuming itself.
 
@@ -356,7 +359,6 @@ Just for fun, I've checked how many times certain words appear in the text:
 
 - "racism" - 321 times
 - "reason" - 83 times
-- "elite" - 76 times
 - "Marx" - 29 times
 
 Yep. They base their worldview not only on feelings rather than facts, but also on a fantasy book written by a long-dead commie.
@@ -377,7 +379,7 @@ If you needed a proof of how out of touch these people are, here it is:
 
 They don't even realize that the "elite vs the people" dichotomy is exactly what they are doing themselves. They are the elite, and everyone else is "the people". Any opposition, labeled here as "populism", is framed as "anti-democratic" and inherently dangerous, without any consideration for the actual arguments being made.
 
-Concerned about definitions and classifications, they remain strikingly ignorant of how their own actions generate the unrest they so desperately want to condemn and quash. That's an intellectual equivalent of a dog eating its own shit.
+Concerned about definitions and classifications, they remain strikingly ignorant of how their own actions generate the unrest they so desperately want to condemn and quash.
 
 And so on, and so on... there are 500+ pages of this bullshit. Every page is filled with the same gibberish revolving around the core idea of universalism, and their only role is to justify all kinds of "necessary evils" they engage in.
 
@@ -451,3 +453,15 @@ Unfortunately, his account was banned at some point, so I can't ask if anything 
 8. If you're in the position of power or influence, use it. Bring attention to the hypocrisy and double standards of the universalists - their claims are so ridiculous they can't be easily defended. People are just unaware of their dogmatic nature.
 
 Do you... feel enlightened now? Or do you think I'm a fucking idiot? Regardless, I want to hear your opinion - leave a comment below (a GitHub account is required), or reach out to me directly (X/FB in the footer).
+
+### That's Too Much, Man!
+
+Listen.
+
+I don't know how you're feeling right now. For me it was a journey, a labyrinth of mismatching narratives I had to put together on my own, rather than get hit in the face with. But I know that, ultimately, it's for the better.
+
+I need to reiterate the most important point of this post: all observed symptoms are emergent qualities of fundamentally flawed system(s). I said in the intro it only *sounds* like a conspiracy theory, didn't I?
+
+In fact, the complexity of the interconnectedness of these issues is what I perceive as an argument AGAINST a conspiracy. Nobody could orchestrate something this complex. Maaaybe the Crab People, but even they would struggle.
+
+So believe me now, when I tell you: the worst part of the ride is over. After every storm comes a calm. Take what you've learned here, and go forth with clarity, confidence, and a healthy dose of contempt for the dogmatic ideologues. Just don't do a 9/11 or some shit. And take care of yourself.

@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="wrapper post">
 	<main class="page-content" aria-label="Content">
-		<article>
-			<header class="header noselect">
+		<article class="post-article" aria-label="Article">
+			<header class="header noselect" aria-label="Header">
 				<h1 class="header-title">{{ .Title }}</h1>
 				<div class="post-meta">
 					{{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
@@ -14,28 +14,28 @@
 						<span>Time to Read: {{ . }}</span>
 					{{ end }}
 				</div>
-				<p id="terms">
-					{{ $sep := "<span class=\"noselect\">⬩</span>" | safeHTML }}
+				<p class="terms">
+					{{ $sep := "<span class=\"noselect\"> ⬩ </span>" | safeHTML }}
 					{{ with .GetTerms "categories" }}
 						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a>{{ end }}
 					{{ end }}
 				</p>
+				{{ partial "toc.html" . }}
 			</header>
-			{{ partial "toc.html" .}}
-			<div class="page-content">
-					{{ $wrapped := .Content
+			<section class="post-content">
+					{{ .Content
 						| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
 						| replaceRE `</table>` `</table></div>`
+						| safeHTML
 					}}
-					<div class="post-content">
-						{{ $wrapped | safeHTML }}
-					</div>
-			</div>
+			</section>
+			<section class="post-comments"></section>
+				{{ if ne .Params.hidden true }}
+					{{- partial "poll.html" . -}}
+					{{- partial "comments.html" . -}}
+				{{ end }}
+			</section>
 		</article>
-		{{ if ne .Params.hidden true }}
-			{{- partial "poll.html" . -}}
-			{{- partial "comments.html" . -}}
-		{{ end }}
 	</main>
 </div>
 {{ end }}

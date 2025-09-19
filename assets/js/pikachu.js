@@ -8,6 +8,7 @@
 
   let engagementTime = 0;
   let intervalIndex = 0;
+  let valued = false;
   let fired = [];
 
   // --- State machine ---
@@ -90,14 +91,13 @@
   }
 
   function watchForNewSession() {
-    const currentSessionId = (typeof posthog !== 'undefined' && posthog.get_session_id)
-      ? posthog.get_session_id()
-      : null;
+    const currentSessionId = posthog?.get_session_id?.() ?? null;
 
     if (currentSessionId && lastSessionId && currentSessionId !== lastSessionId) {
       console.log(`[Pikachu] Session changed: ${lastSessionId} → ${currentSessionId}`);
       engagementTime = 0;
       intervalIndex = 0;
+      valued = false;
       fired = [];
     }
 
@@ -161,6 +161,12 @@
       const visibleBottom = window.scrollY + vh();
       const ratio = Math.max(0, Math.min(1, visibleBottom / targetY));
       const percent = Math.floor(ratio * 100);
+
+      // Mark valued readers
+      if (!valued && percent >= 50 && engagementTime >= 600) {
+        sendPHEvent('valued', { percent: percent, seconds: engagementTime });
+        valued = true;
+      }
 
       // Find the highest threshold that is reached, not yet fired, and higher than current max
       let highestThreshold = null;

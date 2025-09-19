@@ -1,0 +1,22 @@
+{{/* Shortcode: chat.html */}}
+{{ $assistantName := .Get "assistant" | default "Assistant" }}
+{{ $userName := .Get "user" | default "User" }}
+
+<div class="chat">
+  {{/* Split text into blocks, each starting with 'user:' or 'assistant:' */}}
+  {{ $blocks := findRE `(?m)^(user|assistant):[\s\S]*?(.+)` .Inner }}
+  {{ range $blocks }}
+    {{ $line := . }}
+    {{ $parts := findRE `(?m)^(user|assistant):(.*)` $line }}
+    {{ if gt (len $parts) 0 }}
+      {{ $role := lower (replaceRE `(?m)^(user|assistant):.*` "${1}" $line) }}
+      {{ $displayName := cond (eq $role "assistant") $assistantName $userName }}
+      {{ $msg := replaceRE `(?m)^(user|assistant):` "" $line }}
+      {{ $msg  = replace $msg "\\n" "\n" }}   {{/* turn literal \n into newline */}}
+      <div class="message {{ $role }}">
+        <!--<strong>{{ $displayName }}:</strong>-->
+        <div class="content">{{ $msg | markdownify }}</div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

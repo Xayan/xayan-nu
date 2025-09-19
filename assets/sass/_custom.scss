@@ -1,6 +1,11 @@
 $accent: #33ffab;
 $accent-dark: #23ad73;
+$accent-ai: #1669bd;
+$font-color: #babdc4;
 $greyed-out: #596263;
+$chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
+$chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
+$chat-border-radius: 12px;
 
 .menu {
   .menu-icon {
@@ -13,7 +18,39 @@ $greyed-out: #596263;
   margin-bottom: 5.6rem;
 }
 
-article {
+main {
+  article.post-article {
+    font-size: 0.95em;
+
+    a {
+      color: $accent !important;
+    }
+
+    a:hover {
+      color: $accent-dark !important;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    h2 {
+      padding-left: 0.25em;
+      border-bottom: 1px solid $accent-dark;
+      font-size: 1.8em;
+    }
+
+    h3 {
+      padding-left: 0.25em;
+      font-size: 1.5em;
+    }
+
+    h4 {
+      padding-left: 0.25em;
+      font-size: 1.25em;
+    }
+  }
+
   .header {
     margin-top: 3.2em;
 
@@ -24,17 +61,9 @@ article {
       font-size: x-large;
     }
 
-    #terms {
+    .terms {
       color: $greyed-out;
       word-break: keep-all;
-
-      a {
-        color: $accent !important;
-      }
-
-      a:hover {
-        color: $accent-dark !important;
-      }
     }
   }
 
@@ -59,45 +88,66 @@ article {
       padding: 1em 0em 1em 2em;
       font-size: 0.9em;
     }
-
-      a {
-        color: $accent !important;
-      }
-
-      a:hover {
-        color: $accent-dark !important;
-      }
   }
 
-  .page-content {
-    font-size: 0.95em;
+  .chat {
+    .message {
+      display: inline-block;
+      position: relative;
+      overflow: visible;
 
-    p {
-      margin: 1em 0;
-    }
+      padding: 0 1em;
+      margin: 0.8em 0;
+      max-width: 90%;
+      min-width: 0;
 
-    h2 {
-      padding-left: 0.25em;
-      border-bottom: 1px solid $accent-dark;
-      font-size: 1.8em;
-    }
+      border: 0px solid;
 
-    h3 {
-      padding-left: 0.25em;
-      font-size: 1.5em;
-    }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+      }
 
-    h4 {
-      padding-left: 0.25em;
-      font-size: 1.25em;
-    }
+      &.user {
+        float: right;
+        border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
+        border-color: $accent-dark;
+        color: $font-color;
+        background-color: $chat-user-bg;
 
-    a {
-      color: $accent !important;
-    }
+        &::after {
+          bottom: 0;
+          right: -10px;
+          border-top: 20px solid transparent;
+          border-left: 12px solid $chat-user-bg;
+          z-index: 2;
+        }
+      }
 
-    a:hover {
-      color: $accent-dark !important;
+      &.assistant {
+        border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
+        border-color: $accent-ai;
+        color: $font-color;
+        background-color: $chat-assistant-bg;
+
+        &::after {
+          bottom: 0;
+          left: -10px;
+          border-top: 20px solid transparent;
+          border-right: 12px solid $chat-assistant-bg;
+          z-index: 2;
+        }
+      }
+
+      .content {
+        margin: 0;
+        font-size: 0.9em;
+
+        p, ul, ol {
+          margin: 0.4em inherit;
+        }
+      }
     }
   }
 }

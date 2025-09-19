@@ -1,14 +1,18 @@
 (function() {
   // --- Engagement schedule ---
   const intervals = [];
-  for (let i = 5; i < 60; i += 5) intervals.push(i);
-  for (let i = 60; i <= 7200; i += 30) intervals.push(i);
+  for (let i = 5; i < 20; i += 5) intervals.push(i);
+  for (let i = 20; i < 60; i += 10) intervals.push(i);
+  for (let i = 60; i < 600; i += 30) intervals.push(i);
+  for (let i = 600; i <= 7200; i += 60) intervals.push(i);
 
   let engagementTime = 0;
   let intervalIndex = 0;
+  let fired = [];
 
   // --- State machine ---
   let visible = (document.visibilityState === 'visible');
+  let lastSessionId = posthog?.get_session_id?.() || null;
   let idle = true;                 // start idle until first user activity
   let timer = null;                // setInterval id
   let idleTimer = null;            // setTimeout id
@@ -74,6 +78,8 @@
     // but guard anyway to be bulletproof.
     if (!visible || idle) return;
 
+    watchForNewSession();
+
     engagementTime += 1;
 
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
@@ -81,6 +87,21 @@
       sendPHEvent('engaged', { seconds: time });
       intervalIndex++;
     }
+  }
+
+  function watchForNewSession() {
+    const currentSessionId = (typeof posthog !== 'undefined' && posthog.get_session_id)
+      ? posthog.get_session_id()
+      : null;
+
+    if (currentSessionId && lastSessionId && currentSessionId !== lastSessionId) {
+      console.log(`[Pikachu] Session changed: ${lastSessionId} → ${currentSessionId}`);
+      engagementTime = 0;
+      intervalIndex = 0;
+      fired = [];
+    }
+
+    lastSessionId = currentSessionId;
   }
 
   // --- Visibility wiring ---
@@ -122,8 +143,8 @@
     const targetY = giscus ? window.pageYOffset + giscus.getBoundingClientRect().top :
                             Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
 
-    // only set up if page length is >= 2x viewport height
-    if (targetY < 2 * vh()) {
+    // only set up if page length is >= 4x viewport height
+    if (targetY < 4 * vh()) {
       console.log('[Pikachu] Skipping scroll tracking — page too short');
       return;
     } else {
@@ -135,19 +156,25 @@
 
     const thresholds = [];
     for (let p = 10; p <= 100; p += 10) thresholds.push(p);
-    const fired = {};
 
     window.addEventListener('scroll', () => {
       const visibleBottom = window.scrollY + vh();
       const ratio = Math.max(0, Math.min(1, visibleBottom / targetY));
       const percent = Math.floor(ratio * 100);
 
+      // Find the highest threshold that is reached, not yet fired, and higher than current max
+      let highestThreshold = null;
+      let currentMax = fired.length > 0 ? Math.max(...fired) : 0;
       thresholds.forEach(p => {
-        if (percent >= p && !fired[p]) {
-          sendPHEvent('scrolled', { percent: p });
-          fired[p] = true;
+        if (percent >= p && !fired.includes(p) && p > currentMax) {
+          highestThreshold = p;
         }
       });
+
+      if (highestThreshold !== null) {
+        sendPHEvent('scrolled', { percent: highestThreshold });
+        fired.push(highestThreshold);
+      }
     }, { passive: true });
   }
 

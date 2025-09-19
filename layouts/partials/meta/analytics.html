@@ -13,13 +13,14 @@
     api_host: 'https://pikachu.xayan.nu',
     ui_host: 'https://eu.posthog.com',
     defaults: '2025-05-24',
-    capture_pageview: 'history_change',
-    capture_pageleave: true,
     autocapture: true,
+    capture_pageview: true,
+    capture_pageleave: true,
     disable_session_recording: false,
     secure_cookie: true,
     persistence: 'localStorage+cookie',
     person_profiles: 'always',
+    session_idle_timeout_seconds: 2 * 60 * 60,
   });
 
   var cid = getCookie("phcid");

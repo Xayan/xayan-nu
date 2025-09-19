@@ -8,6 +8,8 @@
 
   let engagementTime = 0;
   let intervalIndex = 0;
+  let scrollDepth = 0;
+  let valued = false;
   let fired = [];
 
   // --- State machine ---
@@ -82,6 +84,12 @@
 
     engagementTime += 1;
 
+    // Mark valued readers
+    if (!valued && scrollDepth >= 75 && engagementTime >= 600) {
+      sendPHEvent('valued', { percent: scrollDepth, seconds: engagementTime });
+      valued = true;
+    }
+
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
       const time = intervals[intervalIndex];
       sendPHEvent('engaged', { seconds: time });
@@ -90,14 +98,13 @@
   }
 
   function watchForNewSession() {
-    const currentSessionId = (typeof posthog !== 'undefined' && posthog.get_session_id)
-      ? posthog.get_session_id()
-      : null;
+    const currentSessionId = posthog?.get_session_id?.() ?? null;
 
     if (currentSessionId && lastSessionId && currentSessionId !== lastSessionId) {
       console.log(`[Pikachu] Session changed: ${lastSessionId} → ${currentSessionId}`);
       engagementTime = 0;
       intervalIndex = 0;
+      valued = false;
       fired = [];
     }
 
@@ -160,13 +167,13 @@
     window.addEventListener('scroll', () => {
       const visibleBottom = window.scrollY + vh();
       const ratio = Math.max(0, Math.min(1, visibleBottom / targetY));
-      const percent = Math.floor(ratio * 100);
+      scrollDepth = Math.floor(ratio * 100);
 
       // Find the highest threshold that is reached, not yet fired, and higher than current max
       let highestThreshold = null;
       let currentMax = fired.length > 0 ? Math.max(...fired) : 0;
       thresholds.forEach(p => {
-        if (percent >= p && !fired.includes(p) && p > currentMax) {
+        if (scrollDepth >= p && !fired.includes(p) && p > currentMax) {
           highestThreshold = p;
         }
       });

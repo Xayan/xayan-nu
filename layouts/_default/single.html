@@ -35,6 +35,14 @@
 					{{- partial "comments.html" . -}}
 				{{ end }}
 			</section>
+
+			{{/* Inject valued event configuration for posts */}}
+			<script type="application/json" id="valued-config">
+			{
+				{{ if .Params.valued_time }}"valued_time": {{ .Params.valued_time }}{{ if .Params.valued_scroll }},{{ end }}{{ end }}
+				{{ if .Params.valued_scroll }}"valued_scroll": {{ .Params.valued_scroll }}{{ end }}
+			}
+			</script>
 		</article>
 	</main>
 </div>

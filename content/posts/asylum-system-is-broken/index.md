@@ -8,6 +8,10 @@ image: "/posts/asylum-system-is-broken/thumb.jpg"
 ttr: "30~45m"
 categories: ["Poli-Sci", "Sociology", "Law"]
 tags: ["europe", "migration", "eu", "un", "unhcr", "echr"]
+
+# Analytics configuration - longer read, higher time threshold
+valued_time: 480  # 8 minutes (extended time threshold for long form content)
+valued_scroll: 70 # 70% scroll depth
 ---
 
 ![Polish-Belarusian Border](polish-border.png)

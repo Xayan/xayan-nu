@@ -8,6 +8,10 @@ date: 2025-08-03
 ttr: "15~25m"
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 tags: ["ai", "prompt-engineering", "europe", "china"]
+
+# Analytics configuration
+valued_time: 300  # 5 minutes (deep engagement threshold)
+valued_scroll: 70 # 70% scroll depth
 ---
 
 ![Reason ex Machina](smarter-than-thee.jpg)

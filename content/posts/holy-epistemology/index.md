@@ -8,6 +8,10 @@ date: 2025-08-08
 ttr: "15~20m"
 categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
 tags: ["religion", "theology", "cosmology", "simulation"]
+
+# Analytics configuration
+valued_time: 300  # 5 minutes (deep engagement threshold)
+valued_scroll: 70 # 70% scroll depth
 ---
 
 ![Holy Epistemology](holy-epistemology.jpg)

@@ -12,6 +12,23 @@
   let valued = false;
   let fired = [];
 
+  // --- Valued event configuration ---
+  let valuedConfig = {};
+  const configElement = document.getElementById('valued-config');
+  if (configElement) {
+    try {
+      valuedConfig = JSON.parse(configElement.textContent);
+    } catch (e) {
+      console.warn('[Pikachu] Failed to parse valued-config:', e);
+    }
+  }
+  
+  // Check if valued event is enabled (at least one parameter specified)
+  const valuedEnabled = valuedConfig.valued_time !== undefined || valuedConfig.valued_scroll !== undefined;
+  
+  console.log('[Pikachu] Valued event configuration:', valuedConfig);
+  console.log('[Pikachu] Valued event enabled:', valuedEnabled);
+
   // --- State machine ---
   let visible = (document.visibilityState === 'visible');
   let lastSessionId = posthog?.get_session_id?.() || null;
@@ -95,56 +112,24 @@
   }
 
   function checkValuedReader() {
-    if (valued) return;
+    if (valued || !valuedEnabled) return;
 
-    // Multiple pathways to become a "valued" reader - each represents different reading patterns:
+    // Use per-post configuration for valued event
+    const timeThreshold = valuedConfig.valued_time;
+    const scrollThreshold = valuedConfig.valued_scroll;
     
-    // Path 1: Deep engagement - traditional engaged readers (70% scroll + 5 min)
-    // Reduced from 75% + 10 min to catch more engaged users earlier
-    if (scrollDepth >= 70 && engagementTime >= 300) {
+    // Check if conditions are met based on available configuration
+    let timeConditionMet = timeThreshold === undefined || engagementTime >= timeThreshold;
+    let scrollConditionMet = scrollThreshold === undefined || scrollDepth >= scrollThreshold;
+    
+    // Fire event if both available conditions are met
+    if (timeConditionMet && scrollConditionMet) {
       sendPHEvent('valued', { 
-        type: 'deep_engagement',
         percent: scrollDepth, 
-        seconds: engagementTime 
+        seconds: engagementTime,
+        config: valuedConfig
       });
       valued = true;
-      return;
-    }
-
-    // Path 2: High completion readers - users who read most content quickly (90% scroll + 2 min)
-    // Catches thorough readers who consume content efficiently
-    if (scrollDepth >= 90 && engagementTime >= 120) {
-      sendPHEvent('valued', { 
-        type: 'high_completion',
-        percent: scrollDepth, 
-        seconds: engagementTime 
-      });
-      valued = true;
-      return;
-    }
-
-    // Path 3: Extended time readers - careful/contemplative readers (8 min + 30% scroll)
-    // Users who spend significant time on content, even with limited scrolling
-    if (engagementTime >= 480 && scrollDepth >= 30) {
-      sendPHEvent('valued', { 
-        type: 'extended_time',
-        percent: scrollDepth, 
-        seconds: engagementTime 
-      });
-      valued = true;
-      return;
-    }
-
-    // Path 4: Quick thorough readers - speed readers with high completion (85% scroll in 1-3 min)
-    // Fast but comprehensive readers who complete most content quickly
-    if (scrollDepth >= 85 && engagementTime >= 60 && engagementTime <= 180) {
-      sendPHEvent('valued', { 
-        type: 'thorough_quick',
-        percent: scrollDepth, 
-        seconds: engagementTime 
-      });
-      valued = true;
-      return;
     }
   }
 

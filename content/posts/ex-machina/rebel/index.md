@@ -8,6 +8,10 @@ date: 2025-08-15
 ttr: "20~30m"
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
 tags: ["ai", "prompt-engineering", "europe", "culture", "free-speech"]
+
+# Analytics configuration
+valued_time: 300  # 5 minutes (deep engagement threshold)
+valued_scroll: 70 # 70% scroll depth
 ---
 
 ![Rebel ex Machina](thy-secrets-revealed.jpg)

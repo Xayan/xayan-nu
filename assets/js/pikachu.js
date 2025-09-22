@@ -97,9 +97,10 @@
   function checkValuedReader() {
     if (valued) return;
 
-    // Multiple pathways to become a "valued" reader:
+    // Multiple pathways to become a "valued" reader - each represents different reading patterns:
     
-    // Path 1: Deep engagement (original logic but refined)
+    // Path 1: Deep engagement - traditional engaged readers (70% scroll + 5 min)
+    // Reduced from 75% + 10 min to catch more engaged users earlier
     if (scrollDepth >= 70 && engagementTime >= 300) {
       sendPHEvent('valued', { 
         type: 'deep_engagement',
@@ -110,7 +111,8 @@
       return;
     }
 
-    // Path 2: High scroll completion with moderate time
+    // Path 2: High completion readers - users who read most content quickly (90% scroll + 2 min)
+    // Catches thorough readers who consume content efficiently
     if (scrollDepth >= 90 && engagementTime >= 120) {
       sendPHEvent('valued', { 
         type: 'high_completion',
@@ -121,7 +123,8 @@
       return;
     }
 
-    // Path 3: Extended time with minimal scroll (e.g., careful readers)
+    // Path 3: Extended time readers - careful/contemplative readers (8 min + 30% scroll)
+    // Users who spend significant time on content, even with limited scrolling
     if (engagementTime >= 480 && scrollDepth >= 30) {
       sendPHEvent('valued', { 
         type: 'extended_time',
@@ -132,7 +135,8 @@
       return;
     }
 
-    // Path 4: Quick but thorough readers
+    // Path 4: Quick thorough readers - speed readers with high completion (85% scroll in 1-3 min)
+    // Fast but comprehensive readers who complete most content quickly
     if (scrollDepth >= 85 && engagementTime >= 60 && engagementTime <= 180) {
       sendPHEvent('valued', { 
         type: 'thorough_quick',

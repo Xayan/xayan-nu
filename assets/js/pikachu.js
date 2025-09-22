@@ -84,16 +84,63 @@
 
     engagementTime += 1;
 
-    // Mark valued readers
-    if (!valued && scrollDepth >= 75 && engagementTime >= 600) {
-      sendPHEvent('valued', { percent: scrollDepth, seconds: engagementTime });
-      valued = true;
-    }
+    // Mark valued readers with improved logic
+    checkValuedReader();
 
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
       const time = intervals[intervalIndex];
       sendPHEvent('engaged', { seconds: time });
       intervalIndex++;
+    }
+  }
+
+  function checkValuedReader() {
+    if (valued) return;
+
+    // Multiple pathways to become a "valued" reader:
+    
+    // Path 1: Deep engagement (original logic but refined)
+    if (scrollDepth >= 70 && engagementTime >= 300) {
+      sendPHEvent('valued', { 
+        type: 'deep_engagement',
+        percent: scrollDepth, 
+        seconds: engagementTime 
+      });
+      valued = true;
+      return;
+    }
+
+    // Path 2: High scroll completion with moderate time
+    if (scrollDepth >= 90 && engagementTime >= 120) {
+      sendPHEvent('valued', { 
+        type: 'high_completion',
+        percent: scrollDepth, 
+        seconds: engagementTime 
+      });
+      valued = true;
+      return;
+    }
+
+    // Path 3: Extended time with minimal scroll (e.g., careful readers)
+    if (engagementTime >= 480 && scrollDepth >= 30) {
+      sendPHEvent('valued', { 
+        type: 'extended_time',
+        percent: scrollDepth, 
+        seconds: engagementTime 
+      });
+      valued = true;
+      return;
+    }
+
+    // Path 4: Quick but thorough readers
+    if (scrollDepth >= 85 && engagementTime >= 60 && engagementTime <= 180) {
+      sendPHEvent('valued', { 
+        type: 'thorough_quick',
+        percent: scrollDepth, 
+        seconds: engagementTime 
+      });
+      valued = true;
+      return;
     }
   }
 

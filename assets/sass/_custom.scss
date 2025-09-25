@@ -309,6 +309,7 @@ main {
       overflow: hidden;
       border-radius: 6px;
       flex-shrink: 0;
+      position: relative; // For mobile overlay positioning
 
       img {
         width: 100%;
@@ -335,6 +336,11 @@ main {
           opacity: 0.3;
         }
       }
+
+      // Mobile overlay (hidden on desktop)
+      .mobile-overlay {
+        display: none;
+      }
     }
 
     .post-card-content {
@@ -345,11 +351,6 @@ main {
     // Desktop-only elements
     .desktop-only {
       display: block;
-    }
-
-    // Mobile overlay (hidden on desktop)
-    .mobile-overlay {
-      display: none;
     }
 
     .post-card-main-content {
@@ -455,6 +456,44 @@ main {
         height: 180px;
         margin: 0 0 1rem 0;
         position: relative;
+
+        // Show mobile overlay within image
+        .mobile-overlay {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+          padding: 2rem 1rem 1rem 1rem;
+          color: white;
+
+          .post-card-title {
+            color: white;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            
+            a {
+              color: white;
+
+              &:hover {
+                color: $accent;
+                text-shadow: 0 0 8px rgba($accent, 0.8);
+              }
+            }
+          }
+
+          .post-card-categories {
+            margin-bottom: 0;
+
+            .category-tag {
+              background: rgba($accent, 0.9);
+              color: black;
+              font-weight: 600;
+              text-shadow: none;
+            }
+          }
+        }
       }
 
       .post-card-content {
@@ -464,44 +503,6 @@ main {
       // Hide desktop elements
       .desktop-only {
         display: none;
-      }
-
-      // Show mobile overlay
-      .mobile-overlay {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-        padding: 2rem 1rem 1rem 1rem;
-        color: white;
-
-        .post-card-title {
-          color: white;
-          font-size: 1.1rem;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-          
-          a {
-            color: white;
-
-            &:hover {
-              color: $accent;
-              text-shadow: 0 0 8px rgba($accent, 0.8);
-            }
-          }
-        }
-
-        .post-card-categories {
-          margin-bottom: 0;
-
-          .category-tag {
-            background: rgba($accent, 0.9);
-            color: black;
-            font-weight: 600;
-            text-shadow: none;
-          }
-        }
       }
 
       .post-card-main-content {

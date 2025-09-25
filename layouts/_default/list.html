@@ -16,7 +16,7 @@
         {{ $year := .Key }}
         <h2 class="post-year">{{ $year }}</h2>
         {{ range $index, $page := .Pages }}
-            {{ partial "postCard-variant1" (dict "Page" $page "Index" $index) }}
+            {{ partial "postCard" (dict "Page" $page "Index" $index) }}
         {{ end }}
         {{ end }}
       {{ end }}

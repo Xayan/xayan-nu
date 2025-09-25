@@ -26,8 +26,8 @@
 
             {{/* Show last 5 posts in reverse date order */}}
             {{- $posts := $pagesToShow.ByDate.Reverse -}}
-            {{- range first 5 $posts -}}
-                {{ partial "postCard" . }}
+            {{- range $index, $page := first 5 $posts -}}
+                {{ partial "postCard" (dict "Page" $page "Index" $index) }}
             {{- end -}}
 
             {{- if gt (len $posts) 5 -}}

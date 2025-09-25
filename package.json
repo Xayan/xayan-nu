@@ -33,6 +33,7 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "sass": "^1.93.2",
+    "typescript": "^5.9.2",
     "vite": "^7.1.7"
   }
 }

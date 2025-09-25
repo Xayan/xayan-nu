@@ -64,6 +64,10 @@ Due to Hugo's template system, many customizations required copying entire templ
   - Scroll depth tracking with smart thresholds
   - Engagement time measurement with idle detection
   - Session management and activity monitoring
+  - **Content selection tracking**: Captures user text selections and copy behavior
+    - `content-selected`: Fires 500ms after text selection (debounced)
+    - `content-copied`: Fires immediately on copy events (Ctrl/Cmd+C)
+    - Payload includes selected text (truncated to 255 chars), paragraph count, image sources, and link hrefs
 
 - **Per-Post Analytics Configuration**:
   ```yaml

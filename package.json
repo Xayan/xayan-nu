@@ -1,0 +1,28 @@
+{
+  "name": "xayan-nu",
+  "version": "1.0.0",
+  "description": "Personal website and blog built with Hugo and Vite",
+  "main": "src/js/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "hugo:dev": "hugo server",
+    "dev:all": "concurrently \"pnpm dev\" \"pnpm hugo:dev\"",
+    "build:all": "pnpm build && hugo --minify"
+  },
+  "keywords": [
+    "hugo",
+    "vite",
+    "blog",
+    "static-site"
+  ],
+  "author": "Xayan",
+  "license": "MIT",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "sass": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}

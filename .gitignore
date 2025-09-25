@@ -1,5 +1,10 @@
 /temp/
 
+# Vite build artifacts
+node_modules/
+static/dist/
+pnpm-lock.yaml
+
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,hugo
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,hugo
 

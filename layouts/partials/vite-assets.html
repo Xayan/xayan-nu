@@ -1,0 +1,22 @@
+{{/* Vite asset helper - reads the Vite manifest and includes assets */}}
+
+{{- $viteManifest := dict -}}
+{{- if fileExists "static/dist/.vite/manifest.json" -}}
+  {{- $viteManifest = getJSON "static/dist/.vite/manifest.json" -}}
+{{- end -}}
+
+{{/* Include CSS files from Vite build */}}
+{{- if and $viteManifest (index $viteManifest "src/css/main.scss") -}}
+  {{- $stylesFile := (index $viteManifest "src/css/main.scss").file -}}
+  <link rel="stylesheet" href="/dist/{{ $stylesFile }}">
+{{- end -}}
+
+{{/* Include JavaScript files from Vite build */}}
+{{- if and $viteManifest (index $viteManifest "src/js/main.js") -}}
+  {{- $jsFile := (index $viteManifest "src/js/main.js").file -}}
+  <script type="module" src="/dist/{{ $jsFile }}"></script>
+{{- else -}}
+  {{/* Fallback to existing assets if Vite build not available */}}
+  {{- $pikachu := resources.Get "js/pikachu.js" | resources.Minify -}}
+  <script src="{{ $pikachu.RelPermalink }}"></script>
+{{- end -}}

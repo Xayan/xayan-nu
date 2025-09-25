@@ -1,13 +1,19 @@
 ---
+# Metadata
 title: "Rebel ex Machina: Turning LLMs Against Their Makers"
 description: "Probing and testing LLMs' internal guidelines; avoiding biased content filters and censorship."
 image: "/posts/ex-machina/rebel/thumb.jpg"
 author: "Xayan"
 date: 2025-08-15
 
+# UI/UX
 ttr: "20~30m"
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
 tags: ["ai", "prompt-engineering", "europe", "culture", "free-speech"]
+
+# Analytics
+valued_time: 600 # 10 minutes
+valued_scroll: 50
 ---
 
 ![Rebel ex Machina](thy-secrets-revealed.jpg)

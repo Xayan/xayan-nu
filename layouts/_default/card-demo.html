@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article class="post-article" aria-label="Article">
+            <header class="header noselect" aria-label="Header">
+                <h1 class="header-title">{{ .Title }}</h1>
+            </header>
+            
+            <section class="post-content">
+                {{ .Content }}
+                
+                <h2>Variant 1: Modern Card Layout</h2>
+                <p>Clean, professional cards with image thumbnails, descriptions, and category tags.</p>
+                <div class="variant-demo">
+                    {{ $posts := where .Site.Pages "Type" "posts" }}
+                    {{ range first 2 $posts }}
+                        {{ if not .Params.hidden }}
+                            {{ partial "postCard-variant1" . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+                
+                <hr>
+                
+                <h2>Variant 2: Compact Card Layout</h2>
+                <p>Space-efficient horizontal layout, ideal for longer lists.</p>
+                <div class="variant-demo">
+                    {{ $posts := where .Site.Pages "Type" "posts" }}
+                    {{ range first 3 $posts }}
+                        {{ if not .Params.hidden }}
+                            {{ partial "postCard-variant2" . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+                
+                <hr>
+                
+                <h2>Variant 3: Magazine-style Layout</h2>
+                <p>Bold, visual-first design with text overlays on images.</p>
+                <div class="variant-demo">
+                    {{ $posts := where .Site.Pages "Type" "posts" }}
+                    {{ range first 2 $posts }}
+                        {{ if not .Params.hidden }}
+                            {{ partial "postCard-variant3" . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+                
+                <hr>
+                
+                <h2>Current Layout (for comparison)</h2>
+                <p>The existing simple list format.</p>
+                <div class="variant-demo">
+                    {{ $posts := where .Site.Pages "Type" "posts" }}
+                    {{ range first 3 $posts }}
+                        {{ if not .Params.hidden }}
+                            {{ partial "postCard" . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </section>
+        </article>
+    </main>
+</div>
+{{ end }}

@@ -1,0 +1,67 @@
+{{ if not .Params.hidden }}
+<article class="post-card variant1">
+    <div class="post-card-image">
+        {{- $image := "" -}}
+        {{- with .Params.image -}}
+            {{- $image = . | absURL -}}
+        {{- else -}}
+            {{- with .Resources.GetMatch "thumb.jpg" -}}
+                {{- $image = .RelPermalink | absURL -}}
+            {{- end -}}
+        {{- end -}}
+        
+        {{ if $image }}
+            <img src="{{ $image }}" alt="{{ .Title }}" loading="lazy">
+        {{ else }}
+            <div class="post-card-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17l2.5-3.5L15 18H5l4-5z"/>
+                </svg>
+            </div>
+        {{ end }}
+    </div>
+    
+    <div class="post-card-content">
+        <header class="post-card-header">
+            <h3 class="post-card-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            
+            {{ if .Params.categories }}
+            <div class="post-card-categories">
+                {{ range .Params.categories }}
+                    <span class="category-tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </header>
+        
+        {{ with .Params.description }}
+        <p class="post-card-description">{{ . }}</p>
+        {{ end }}
+        
+        <footer class="post-card-meta">
+            {{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
+            {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+            
+            <div class="meta-left">
+                {{ if .Params.isStarred }}
+                    <span class="star-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z"></path>
+                        </svg>
+                    </span>
+                {{ end }}
+                
+                {{ with .Params.ttr }}
+                    <span class="ttr">{{ . }}</span>
+                {{ end }}
+            </div>
+            
+            <time class="post-date" datetime="{{ dateFormat $ISO_date .Date }}">
+                {{ time.Format $configDateFormat .Date }}
+            </time>
+        </footer>
+    </div>
+</article>
+{{ end }}

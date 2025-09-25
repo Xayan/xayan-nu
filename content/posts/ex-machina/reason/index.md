@@ -1,17 +1,19 @@
 ---
+# Metadata
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
 description: "How LLMs seem to strive for logic and internal coherence over blind obedience."
 image: "/posts/ex-machina/reason/thumb.jpg"
 author: "Xayan"
 date: 2025-08-03
 
+# UI/UX
 ttr: "15~25m"
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
 tags: ["ai", "prompt-engineering", "europe", "china"]
 
-# Analytics configuration
-valued_time: 300  # 5 minutes (deep engagement threshold)
-valued_scroll: 70 # 70% scroll depth
+# Analytics
+valued_time: 600 # 10 minutes
+valued_scroll: 50
 ---
 
 ![Reason ex Machina](smarter-than-thee.jpg)

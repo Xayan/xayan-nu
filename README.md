@@ -1,7 +1,8 @@
 # [xayan.nu](https://xayan.nu/)
 
-> *The Adversary's Guide to the Galaxy*  
-> *There are no stupid questions, only stupid people.*
+**The Adversary's Guide to the Galaxy**
+
+*There are no stupid questions, only stupid people.*
 
 ## About
 
@@ -14,20 +15,13 @@
 
 The blog ventures fearlessly into complex and often contentious areas, prioritizing evidence-based analysis over popular opinion.
 
-### Recent Posts
-
-- **[Reason ex Machina](https://xayan.nu/posts/ex-machina/reason/)** - How LLMs strive for logic and internal coherence over blind obedience
-- **[Rebel ex Machina](https://xayan.nu/posts/ex-machina/rebel/)** - Turning LLMs against their makers through systematic probing 
-- **[The Asylum System is Broken](https://xayan.nu/posts/asylum-system-is-broken/)** - A heavily-sourced analysis of European migration policy failures
-- **[Holy Epistemology](https://xayan.nu/posts/holy-epistemology/)** - A philosophical exploration of religion through the lens of epistemology
-
 ## Tech Stack
 
 - **Framework**: [Hugo](https://gohugo.io/) - Static site generator
 - **Theme**: [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) (heavily customized)
 - **Analytics**: [PostHog](https://posthog.com/) with custom engagement tracking
 - **Hosting**: Static deployment with CDN
-- **Comments**: [giscus](https://giscus.app/) (GitHub Discussions-powered)
+- **Comments**: [giscus](https://giscus.app/)
 
 ## Template & Customizations
 
@@ -38,7 +32,7 @@ This site uses the [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awe
 Due to Hugo's template system, many customizations required copying entire template files to modify small parts:
 
 - **`layouts/_default/single.html`** - Added per-post analytics configuration injection
-- **`layouts/_default/list.html`** - Custom post listing with series support  
+- **`layouts/_default/list.html`** - Custom post listing with series support
 - **`layouts/partials/meta/analytics.html`** - PostHog integration with custom CID handling
 - **`layouts/partials/comments.html`** - giscus integration with custom styling
 - **`layouts/partials/bio.html`** - Author bio with responsive image handling
@@ -47,7 +41,7 @@ Due to Hugo's template system, many customizations required copying entire templ
 ### Custom Styling
 
 - **`assets/sass/_custom.scss`** - Comprehensive style overrides including:
-  - Custom color scheme with neon accent colors (`#33ffab`, `#23ad73`) 
+  - Custom color scheme with neon accent colors (`#33ffab`, `#23ad73`)
   - Chat message styling for LLM conversation displays
   - Responsive table containers with horizontal scrolling
   - Neon title effects and custom typography
@@ -81,7 +75,7 @@ Due to Hugo's template system, many customizations required copying entire templ
 ### Content Features
 
 - **Series Support**: Multi-part post series with navigation
-- **Time to Read (TTR)**: Manual reading time estimates 
+- **Time to Read (TTR)**: Manual reading time estimates
 - **Table of Contents**: Collapsible TOC for long-form content
 - **Responsive Images**: Optimized image delivery with multiple formats
 - **Social Integration**: Facebook, X (Twitter), GitHub, RSS feeds
@@ -112,7 +106,7 @@ Due to Hugo's template system, many customizations required copying entire templ
 git clone --recurse-submodules https://github.com/Xayan/xayan-nu.git
 
 # Start development server
-hugo server --bind 0.0.0.0 --port 8080
+hugo server
 
 # Build for production
 hugo --minify

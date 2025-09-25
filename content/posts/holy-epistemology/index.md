@@ -1,17 +1,19 @@
 ---
+# Metadata
 title: "Holy Epistemology"
 description: "A philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology."
 image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08
 
+# UI/UX
 ttr: "15~20m"
 categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
 tags: ["religion", "theology", "cosmology", "simulation"]
 
-# Analytics configuration
-valued_time: 300  # 5 minutes (deep engagement threshold)
-valued_scroll: 70 # 70% scroll depth
+# Analytics
+valued_time: 480 # 8 minutes
+valued_scroll: 80
 ---
 
 ![Holy Epistemology](holy-epistemology.jpg)

@@ -10,11 +10,13 @@
       {{- partial "poll.html" . -}}
         {{- partial "comments.html" . -}}
       {{ else }}
-        {{ range .Pages.GroupByDate "2006" }}
+        {{ $allPages := where site.RegularPages "Section" "posts" }}
+        {{ $filteredPages := where $allPages "Type" "ne" "series" }}
+        {{ range $filteredPages.GroupByDate "2006" }}
         {{ $year := .Key }}
         <h2 class="post-year">{{ $year }}</h2>
-        {{ range .Pages }}
-            {{ partial "postCard" . }}
+        {{ range $index, $page := .Pages }}
+            {{ partial "postCard-variant1" (dict "Page" $page "Index" $index) }}
         {{ end }}
         {{ end }}
       {{ end }}

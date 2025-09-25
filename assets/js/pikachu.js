@@ -226,4 +226,100 @@
   } else {
     setupScrollTracking();
   }
+
+  // --- Text Selection Analytics ---
+  // Tracks user text selections (content-selected with 500ms debounce) and copy events (content-copied).
+  // Captures selected text (truncated to 255 chars as first 126 + "..." + last 126 if longer),
+  // paragraph count, image sources, and link hrefs from within the selection ranges.
+
+  let selectionDebounceTimer = null;
+
+  function analyzeSelection() {
+    try {
+      const selection = window.getSelection();
+      if (!selection || selection.rangeCount === 0) return null;
+
+      // Get text content across all ranges
+      const text = selection.toString().trim();
+      if (!text || !text.replace(/\s/g, '')) return null; // Skip empty or whitespace-only selections
+
+      // Truncate text if longer than 255 characters
+      let truncatedText = text;
+      if (text.length > 255) {
+        truncatedText = text.substring(0, 126) + '...' + text.substring(text.length - 126);
+      }
+
+      // Collect DOM elements from all selection ranges
+      const tempContainer = document.createElement('div');
+      const imageSources = new Set();
+      const linkHrefs = new Set();
+      let paragraphCount = 0;
+
+      for (let i = 0; i < selection.rangeCount; i++) {
+        const range = selection.getRangeAt(i);
+        const clonedContent = range.cloneContents();
+        
+        // Create temporary container for querying
+        const rangeContainer = document.createElement('div');
+        rangeContainer.appendChild(clonedContent);
+
+        // Count paragraphs (including partially selected ones)
+        paragraphCount += rangeContainer.querySelectorAll('p').length;
+
+        // Collect image sources
+        rangeContainer.querySelectorAll('img').forEach(img => {
+          if (img.src && img.src.trim()) {
+            imageSources.add(img.src);
+          }
+        });
+
+        // Collect link hrefs
+        rangeContainer.querySelectorAll('a').forEach(link => {
+          if (link.href && link.href.trim()) {
+            linkHrefs.add(link.href);
+          }
+        });
+      }
+
+      return {
+        text: truncatedText,
+        paragraphs: paragraphCount,
+        images: Array.from(imageSources),
+        links: Array.from(linkHrefs)
+      };
+    } catch (error) {
+      console.warn('[Pikachu] Error analyzing selection:', error);
+      return null;
+    }
+  }
+
+  // Debounced selection change handler
+  function handleSelectionChange() {
+    if (selectionDebounceTimer) {
+      clearTimeout(selectionDebounceTimer);
+    }
+
+    selectionDebounceTimer = setTimeout(() => {
+      const payload = analyzeSelection();
+      if (payload) {
+        sendPHEvent('content-selected', payload);
+      }
+    }, 500);
+  }
+
+  // Copy event handler
+  function handleCopy() {
+    try {
+      const payload = analyzeSelection();
+      if (payload) {
+        sendPHEvent('content-copied', payload);
+      }
+    } catch (error) {
+      console.warn('[Pikachu] Error handling copy event:', error);
+    }
+  }
+
+  // Wire up event listeners
+  document.addEventListener('selectionchange', handleSelectionChange, { passive: true });
+  document.addEventListener('copy', handleCopy, { passive: true });
 })();

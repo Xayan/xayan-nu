@@ -1,13 +1,19 @@
 ---
+# Metadata
 title: "The Asylum System is Broken and Unsustainable"
 description: "And it's only going to get worse, because what once was a \"non-binding agreement\" is now being turned into coercion via legal and fiscal means, while those who speak up against it are being silenced and marginalized."
 author: "Xayan"
 date: 2025-09-12
 image: "/posts/asylum-system-is-broken/thumb.jpg"
 
+# UI/UX
 ttr: "30~45m"
 categories: ["Poli-Sci", "Sociology", "Law"]
 tags: ["europe", "migration", "eu", "un", "unhcr", "echr"]
+
+# Analytics
+valued_time: 900 # 15 minutes
+valued_scroll: 80
 ---
 
 ![Polish-Belarusian Border](polish-border.png)

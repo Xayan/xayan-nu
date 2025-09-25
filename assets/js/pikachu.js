@@ -12,6 +12,23 @@
   let valued = false;
   let fired = [];
 
+  // --- Valued event configuration ---
+  let valuedConfig = {};
+  const configElement = document.getElementById('valued-config');
+  if (configElement) {
+    try {
+      valuedConfig = JSON.parse(configElement.textContent);
+    } catch (e) {
+      console.warn('[Pikachu] Failed to parse valued-config:', e);
+    }
+  }
+  
+  // Check if valued event is enabled (at least one parameter specified)
+  const valuedEnabled = valuedConfig.valued_time !== undefined || valuedConfig.valued_scroll !== undefined;
+  
+  console.log('[Pikachu] Valued event configuration:', valuedConfig);
+  console.log('[Pikachu] Valued event enabled:', valuedEnabled);
+
   // --- State machine ---
   let visible = (document.visibilityState === 'visible');
   let lastSessionId = posthog?.get_session_id?.() || null;
@@ -84,16 +101,35 @@
 
     engagementTime += 1;
 
-    // Mark valued readers
-    if (!valued && scrollDepth >= 75 && engagementTime >= 600) {
-      sendPHEvent('valued', { percent: scrollDepth, seconds: engagementTime });
-      valued = true;
-    }
+    // Mark valued readers with improved logic
+    checkValuedReader();
 
     if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
       const time = intervals[intervalIndex];
       sendPHEvent('engaged', { seconds: time });
       intervalIndex++;
+    }
+  }
+
+  function checkValuedReader() {
+    if (valued || !valuedEnabled) return;
+
+    // Use per-post configuration for valued event
+    const timeThreshold = valuedConfig.valued_time;
+    const scrollThreshold = valuedConfig.valued_scroll;
+    
+    // Check if conditions are met based on available configuration
+    let timeConditionMet = timeThreshold === undefined || engagementTime >= timeThreshold;
+    let scrollConditionMet = scrollThreshold === undefined || scrollDepth >= scrollThreshold;
+    
+    // Fire event if both available conditions are met
+    if (timeConditionMet && scrollConditionMet) {
+      sendPHEvent('valued', { 
+        percent: scrollDepth, 
+        seconds: engagementTime,
+        config: valuedConfig
+      });
+      valued = true;
     }
   }
 

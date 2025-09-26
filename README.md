@@ -18,6 +18,7 @@ The blog ventures fearlessly into complex and often contentious areas, prioritiz
 ## Tech Stack
 
 - **Framework**: [Hugo](https://gohugo.io/) - Static site generator
+- **Build Tool**: [Vite](https://vitejs.dev/) - Modern build system and dev server
 - **Theme**: [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) (heavily customized)
 - **Analytics**: [PostHog](https://posthog.com/) with custom engagement tracking
 - **Hosting**: Static deployment with CDN
@@ -86,8 +87,10 @@ Due to Hugo's template system, many customizations required copying entire templ
 
 ### Development Features
 
-- **Hot Reload**: Hugo's built-in development server
-- **Asset Pipeline**: Sass compilation with custom variables
+- **Modern Build System**: Vite for fast builds and dependency management
+- **Hot Reload**: Hugo's built-in development server with Vite asset processing
+- **Asset Pipeline**: Vite + Hugo for JavaScript/CSS bundling and Sass compilation
+- **NPM Integration**: Easy dependency management and additional tooling
 - **SEO Optimization**: Meta tags, structured data, sitemap generation
 - **Progressive Enhancement**: Works without JavaScript, enhanced with it
 
@@ -109,11 +112,24 @@ Due to Hugo's template system, many customizations required copying entire templ
 # Clone with submodules
 git clone --recurse-submodules https://github.com/Xayan/xayan-nu.git
 
-# Start development server
-hugo server
+# Install dependencies
+npm install
 
-# Build for production
-hugo --minify
+# Start development server (Vite + Hugo with hot reload)
+npm run dev
+
+# Build for production (Vite assets + Hugo static site)
+npm run build
+
+# Preview production build
+npm run preview
+
+# Hugo-only commands (legacy, use npm scripts instead)
+hugo server          # Development server only
+hugo --minify        # Production build only
+
+# Clean build artifacts
+npm run clean
 ```
 
 ---

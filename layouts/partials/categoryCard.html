@@ -53,25 +53,20 @@
 					{{ end }}
 				</header>
 
+				<footer class="category-card-meta">
+					{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
+					{{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
+					{{ $count := len $page.Pages }}
+					<span class="ttr">{{ $page.Pages | len }} post{{ if ne $count 1 }}s{{ end }}</span>
+					<span class="noselect">⬩</span>
+					<time class="post-date" datetime="{{ dateFormat $ISO_date $page.Date }}">
+						Latest: {{ time.Format $configDateFormat $page.Date }}
+					</time>
+				</footer>
+
 				{{ with $page.Params.description }}
 				<p class="post-card-description">{{ . }}</p>
 				{{ end }}
-
-
-				<footer class="post-card-meta">
-					{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
-					{{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
-
-					<div class="meta-left">
-						{{ with $page.Params.ttr }}
-							<span class="ttr">{{ . }} read</span>
-						{{ end }}
-					</div>
-
-					<time class="post-date" datetime="{{ dateFormat $ISO_date $page.Date }}">
-						{{ time.Format $configDateFormat $page.Date }}
-					</time>
-				</footer>
 			</div>
 		</div>
 	</article>

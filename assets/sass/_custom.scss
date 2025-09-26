@@ -7,19 +7,29 @@ $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
 $chat-border-radius: 12px;
 
-.menu {
-  .menu-icon {
-    margin-right: 0.8em;
-  }
-}
-
 .author {
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
 }
 
-main {
-  article.post-article {
+.navbar {
+  .menu {
+    @include media-query($on-mobile) {
+      .menu-link {
+        display: block;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+      }
+
+      .menu-icon {
+        margin-right: 0.8em;
+      }
+    }
+  }
+}
+
+.page-content {
+  .post-content {
     font-size: 0.95em;
 
     a {
@@ -49,22 +59,40 @@ main {
       padding-left: 0.25em;
       font-size: 1.25em;
     }
+
+  .post-item {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    align-items: center;
+
+    .post-item-title {
+      font-size: 0.88em;
+      flex: 1; /* take remaining space */
+    }
+
+    .right-cols {
+      display: flex;
+      flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
+      gap: 1.2em; /* spacing between them */
+      flex-shrink: 0; /* don't shrink into left space */
+
+      time {
+        font-weight: bold;
+      }
+
+      .post-item-meta {
+        font-size: 0.75em;
+      }
+
+      .ttr {
+        font-style: italic;
+      }
+    }
+
+    a {
+      color: $accent !important;
+    }
   }
-
-  .header {
-    margin-top: 3.2em;
-
-    font-size: medium;
-
-    .header-title {
-      margin-bottom: 0.5em;
-      font-size: x-large;
-    }
-
-    .terms {
-      color: $greyed-out;
-      word-break: keep-all;
-    }
   }
 
   .toc {
@@ -89,101 +117,82 @@ main {
       font-size: 0.9em;
     }
   }
+}
 
-  .chat {
-    .message {
-      display: inline-block;
-      position: relative;
-      overflow: visible;
+.chat {
+  .message {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
 
-      padding: 0 1em;
-      margin: 0.8em 0;
-      max-width: 90%;
-      min-width: 0;
+    padding: 0 1em;
+    margin: 0.8em 0;
+    max-width: 90%;
+    min-width: 0;
 
-      border: 0px solid;
+    border: 0px solid;
 
-      &::before,
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &.user {
+      float: right;
+      border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
+      border-color: $accent-dark;
+      color: $font-color;
+      background-color: $chat-user-bg;
+
       &::after {
-        content: "";
-        position: absolute;
+        bottom: 0;
+        right: -10px;
+        border-top: 20px solid transparent;
+        border-left: 12px solid $chat-user-bg;
+        z-index: 2;
       }
+    }
 
-      &.user {
-        float: right;
-        border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
-        border-color: $accent-dark;
-        color: $font-color;
-        background-color: $chat-user-bg;
+    &.assistant {
+      border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
+      border-color: $accent-ai;
+      color: $font-color;
+      background-color: $chat-assistant-bg;
 
-        &::after {
-          bottom: 0;
-          right: -10px;
-          border-top: 20px solid transparent;
-          border-left: 12px solid $chat-user-bg;
-          z-index: 2;
-        }
+      &::after {
+        bottom: 0;
+        left: -10px;
+        border-top: 20px solid transparent;
+        border-right: 12px solid $chat-assistant-bg;
+        z-index: 2;
       }
+    }
 
-      &.assistant {
-        border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
-        border-color: $accent-ai;
-        color: $font-color;
-        background-color: $chat-assistant-bg;
+    .content {
+      margin: 0;
+      font-size: 0.9em;
 
-        &::after {
-          bottom: 0;
-          left: -10px;
-          border-top: 20px solid transparent;
-          border-right: 12px solid $chat-assistant-bg;
-          z-index: 2;
-        }
-      }
-
-      .content {
-        margin: 0;
-        font-size: 0.9em;
-
-        p, ul, ol {
-          margin: 0.4em inherit;
-        }
+      p, ul, ol {
+        margin: 0.4em inherit;
       }
     }
   }
 }
 
+.header {
+  margin: 4rem 0 2rem 0;
 
-.posts-item-note, .post-year {
-  font-size:1.2em;
-}
+  font-size: medium;
 
-.post-item {
-  display: flex;
-  flex-wrap: wrap; /* allow wrapping */
-  align-items: center;
-
-  .post-item-title {
-    font-size: 0.88em;
-    flex: 1; /* take remaining space */
+  .header-title {
+    margin-bottom: 0.5em;
+    font-size: x-large;
   }
 
-  .right-cols {
-    display: flex;
-    flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
-    gap: 1.2em; /* spacing between them */
-    flex-shrink: 0; /* don't shrink into left space */
-
-    time {
-      font-weight: bold;;
-    }
-
-    .post-item-meta {
-      font-size: 0.75em;
-    }
-
-    .ttr {
-      font-style: italic;
-    }
+  .terms {
+    color: $greyed-out;
+    word-break: keep-all;
   }
 }
 
@@ -214,6 +223,10 @@ main {
 
 .noselect {
   cursor: default;
+}
+
+.center {
+  text-align: center;
 }
 
 .footer {
@@ -275,605 +288,234 @@ main {
   }
 }
 
-// Post Card Variants
 .post-card {
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
   border-radius: 8px;
-  overflow: hidden;
   transition: all 0.3s ease;
+  min-height: calc(120px + 2rem);
+
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: visible; // Allow content to wrap around image
 
   &:hover {
     transform: translateY(-2px);
+    border-color: rgba($accent, 0.3);
+    box-shadow: 0 4px 16px rgba($accent, 0.1);
   }
 
-  // Variant 1: Modern Card Layout
-  &.variant1 {
-    position: relative;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: visible; // Allow content to wrap around image
+  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.25s ease;
 
     &:hover {
-      border-color: rgba($accent, 0.3);
-      box-shadow: 0 4px 16px rgba($accent, 0.1);
+      color: $accent !important;
+    }
+  }
+
+  // Default (left-aligned) layout
+  .post-card-image {
+    float: left;
+    width: 180px;
+    height: 120px;
+    margin: 1rem 1.5rem 1rem 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    flex-shrink: 0;
+    position: relative; // For mobile overlay positioning
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform-origin: center center;
+      will-change: transform;
+      transition: transform 0.3s ease;
     }
 
-    // Default (left-aligned) layout
+    // Mobile overlay (hidden on desktop)
+    .mobile-overlay {
+      display: none;
+    }
+  }
+
+
+  &:hover .post-card-image img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+
+  &:nth-child(even) .post-card-image {
+    float: right;
+    margin: 1rem 1rem 1rem 1.5rem;
+  }
+
+  .post-card-content {
+    padding: 1rem;
+  }
+
+  // Desktop-only elements
+  .desktop-only {
+    display: block;
+  }
+
+  .post-card-header {
+    margin-bottom: 0.8rem;
+  }
+
+  .post-card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .post-card-categories {
+    display: block;
+    margin: 0.25em 0;
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0rem 0.4rem;
+      margin: 0 0.1rem;
+      background: rgba($accent-dark, 0.2);
+      color: $accent-dark;
+      text-shadow: black 2px 2px 4px;
+      box-shadow: black 2px 2px 4px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .post-card-description {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: rgba($font-color, 0.8);
+  }
+
+  .post-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    clear: both;
+
+    .meta-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .ttr {
+      color: rgba($font-color, 0.7);
+      font-style: italic;
+      font-size: 0.8rem;
+    }
+
+    .post-date {
+      color: rgba($font-color, 0.7);
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+
+  .category-card-meta {
+    margin: 0.6em 0;
+    color: rgba($font-color, 0.7);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  &:nth-child(even) {
+    text-align: right;
+  }
+
+  @include media-query($on-mobile) {
     .post-card-image {
-      float: left;
-      width: 180px;
-      height: 120px;
-      margin: 1rem 1.5rem 1rem 1rem;
-      overflow: hidden;
-      border-radius: 6px;
-      flex-shrink: 0;
-      position: relative; // For mobile overlay positioning
+      float: right;
+      width: 100%;
+      height: 180px;
+      margin: 0 0 0.5em 0;
+      position: relative;
+      border-radius: 8px 8px 0 0;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
+      // Show mobile overlay within image
+      .mobile-overlay {
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 180px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        padding: 0rem 1rem 1rem 1rem;
+        color: white;
 
-      &:hover img {
-        transform: scale(1.05);
-      }
+        .post-card-categories {
+          margin-top: 0.6em;
+          float: right;
 
-      .post-card-placeholder {
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.05);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          .category-tag {
+            background: rgba($accent-dark, 0.6);
+            color: white;
+            font-weight: 600;
+          }
+        }
 
-        svg {
-          width: 24px;
-          height: 24px;
-          opacity: 0.3;
+        .post-card-title {
+          color: white;
+          font-size: 1.1rem;
+          position: inherit;
+          text-align: left;
+          margin: 0;
+          bottom: 1.6em;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         }
       }
+    }
 
-      // Mobile overlay (hidden on desktop)
-      .mobile-overlay {
-        display: none;
-      }
+    &:nth-child(even) .post-card-image {
+      float: right;
+      margin: 0 0 0.5em 0;
     }
 
     .post-card-content {
-      padding: 1rem;
-      overflow: hidden; // Enable text wrapping around floated image
+      padding: 0;
     }
 
-    // Desktop-only elements
+    // Hide desktop elements
     .desktop-only {
-      display: block;
+      display: none;
     }
 
     .post-card-main-content {
-      // Content will naturally wrap around the floated image
-    }
-
-    .post-card-header {
-      margin-bottom: 0.75rem;
-    }
-
-    .post-card-title {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.1rem;
-      font-weight: 600;
-      line-height: 1.3;
-
-      a {
-        color: $font-color;
-        text-decoration: none;
-        transition: color 0.2s ease;
-
-        &:hover {
-          color: $accent;
-        }
-      }
-    }
-
-    .post-card-categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem;
-      margin-bottom: 0.75rem;
-
-      .category-tag {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.5rem;
-        background: rgba($accent-dark, 0.2);
-        color: $accent-dark;
-        border-radius: 12px;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-      }
+      padding: 1rem;
     }
 
     .post-card-description {
-      margin: 0 0 1rem 0;
       font-size: 0.9rem;
-      line-height: 1.5;
-      color: rgba($font-color, 0.8);
-      text-align: justify;
+      text-align: left;
     }
 
     .post-card-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 1rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      clear: both; // Ensure meta appears below floated image
-
-      .meta-left {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .star-indicator {
-        svg {
-          width: 14px;
-          height: 14px;
-          color: $accent;
-        }
-      }
-
-      .ttr {
-        font-size: 0.75rem;
-        color: rgba($font-color, 0.7);
-        font-style: italic;
-      }
-
-      .post-date {
-        font-size: 0.75rem;
-        color: rgba($font-color, 0.7);
-        font-weight: 600;
-      }
+      margin-top: 0.75rem;
+      clear: none;
     }
 
-    // Right-aligned variant (every other post)
-    &.right-aligned {
-      .post-card-image {
-        float: right;
-        margin: 1rem 1rem 1rem 1.5rem;
-      }
-    }
-
-    // Mobile responsive
-    @media (max-width: 768px) {
-      .post-card-image {
-        float: none;
-        width: 100%;
-        height: 180px;
-        margin: 0 0 1rem 0;
-        position: relative;
-
-        // Show mobile overlay within image
-        .mobile-overlay {
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-          padding: 2rem 1rem 1rem 1rem;
-          color: white;
-
-          .post-card-title {
-            color: white;
-            font-size: 1.1rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-            
-            a {
-              color: white;
-
-              &:hover {
-                color: $accent;
-                text-shadow: 0 0 8px rgba($accent, 0.8);
-              }
-            }
-          }
-
-          .post-card-categories {
-            margin-bottom: 0;
-
-            .category-tag {
-              background: rgba($accent, 0.9);
-              color: black;
-              font-weight: 600;
-              text-shadow: none;
-            }
-          }
-        }
-      }
-
-      .post-card-content {
-        padding: 0;
-      }
-
-      // Hide desktop elements
-      .desktop-only {
-        display: none;
-      }
-
-      .post-card-main-content {
-        padding: 1rem;
-      }
-
-      .post-card-description {
-        font-size: 0.9rem;
-        text-align: left;
-      }
-
-      .post-card-meta {
-        margin-top: 0.75rem;
-        clear: none;
-      }
-
-      // Right-aligned has same behavior on mobile
-      &.right-aligned {
-        .post-card-image {
-          float: none;
-          margin: 0 0 1rem 0;
-        }
-      }
-    }
-  }
-
-  // Variant 2: Compact Card Layout
-  &.variant2 {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.01);
-    border-left: 3px solid transparent;
-    padding: 0.75rem;
-    transition: all 0.2s ease;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.03);
-      border-left-color: $accent;
-      transform: translateX(4px);
-    }
-
-    .post-card-image {
-      flex-shrink: 0;
-      width: 80px;
-      height: 80px;
-      border-radius: 6px;
-      overflow: hidden;
-      margin-right: 1rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .post-card-placeholder {
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.05);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg {
-          width: 20px;
-          height: 20px;
-          opacity: 0.4;
-        }
-      }
-    }
-
-    .post-card-content {
-      flex: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-width: 0; // Allow content to shrink
-    }
-
-    .post-card-main {
-      flex: 1;
-      min-width: 0; // Allow content to shrink
-    }
-
-    .post-card-title {
-      margin: 0 0 0.25rem 0;
-      font-size: 0.9rem;
-      font-weight: 600;
-
-      a {
-        color: $font-color;
-        text-decoration: none;
-        transition: color 0.2s ease;
-
-        &:hover {
-          color: $accent;
-        }
-      }
-    }
-
-    .post-card-categories {
-      display: flex;
-      gap: 0.25rem;
-      margin-bottom: 0.25rem;
-
-      .category-badge {
-        font-size: 0.6rem;
-        padding: 0.15rem 0.4rem;
-        background: rgba($accent-ai, 0.2);
-        color: lighten($accent-ai, 20%);
-        border-radius: 8px;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 0.3px;
-      }
-    }
-
-    .post-card-description {
-      margin: 0;
-      font-size: 0.75rem;
-      line-height: 1.3;
-      color: rgba($font-color, 0.6);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .post-card-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
-
-      .star-indicator {
-        svg {
-          width: 12px;
-          height: 12px;
-          color: $accent;
-        }
-      }
-
-      .meta-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.1rem;
-      }
-
-      .ttr {
-        font-size: 0.65rem;
-        color: rgba($font-color, 0.5);
-        font-style: italic;
-      }
-
-      .post-date {
-        font-size: 0.7rem;
-        color: rgba($font-color, 0.7);
-        font-weight: 600;
-      }
-    }
-
-    // Mobile responsive
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-
-      .post-card-image {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-        width: 60px;
-        height: 60px;
-      }
-
-      .post-card-content {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
-
-      .post-card-meta {
-        align-self: flex-end;
-      }
-    }
-  }
-
-  // Variant 3: Magazine-style Layout
-  &.variant3 {
-    .post-card-image {
-      position: relative;
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .post-card-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.3) 50%,
-        transparent 100%
-      );
-      display: flex;
-      align-items: flex-end;
-      padding: 2rem;
-      transition: background 0.3s ease;
-    }
-
-    &:hover .post-card-overlay {
-      background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.4) 50%,
-        rgba(0, 0, 0, 0.1) 100%
-      );
-    }
-
-    .post-card-content {
-      color: white;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-    }
-
-    .post-card-categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-
-      .category-pill {
-        font-size: 0.7rem;
-        padding: 0.4rem 0.8rem;
-        background: rgba($accent, 0.9);
-        color: black;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        backdrop-filter: blur(8px);
-      }
-    }
-
-    .post-card-title {
-      margin: 0 0 1rem 0;
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-
-      a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: $accent;
-          text-shadow: 0 0 20px rgba($accent, 0.5);
-        }
-      }
-    }
-
-    .post-card-description {
-      margin: 0 0 1.5rem 0;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .post-card-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-
-      .meta-left {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      .star-indicator {
-        svg {
-          width: 16px;
-          height: 16px;
-          color: $accent;
-          filter: drop-shadow(0 0 8px rgba($accent, 0.8));
-        }
-      }
-
-      .ttr {
-        font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.8);
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.3px;
-      }
-
-      .post-date {
-        font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.8);
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.3px;
-      }
-    }
-
-    .post-card-placeholder {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      svg {
-        width: 48px;
-        height: 48px;
-        opacity: 0.2;
-        color: white;
-      }
-    }
-
-    // Mobile responsive
-    @media (max-width: 768px) {
-      .post-card-image {
-        height: 250px;
-      }
-
-      .post-card-overlay {
-        padding: 1.5rem;
-      }
-
-      .post-card-title {
-        font-size: 1.25rem;
-      }
-
-      .post-card-description {
-        font-size: 0.85rem;
-      }
-
-      .post-card-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
-    }
-  }
-}
-
-// Demo page styling
-.variant-demo {
-  margin: 2rem 0;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.01);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-
-  .post-card {
-    margin-bottom: 1.5rem;
-
-    &:last-child {
-      margin-bottom: 0;
+    .category-card-meta {
+      text-align: left;
     }
   }
 }

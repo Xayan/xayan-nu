@@ -1,26 +1,30 @@
 {{- define "main" -}}
 <div class="wrapper list-page">
   <header class="header">
-    <h1 class="header-title neon-title center">{{ .Title }}</h1>
+    <h1 class="header-title center">{{ .Title }}</h1>
   </header>
   <main class="page-content" aria-label="Content">
-    <article class="post-article" aria-label="Article">
-      {{ if or (eq .Params.series_intro true) (eq .Type "series") }}
-        {{ .Content }}
+    {{ if (eq .Type "series") }}
+      {{ .Content }}
       {{- partial "poll.html" . -}}
-        {{- partial "comments.html" . -}}
-      {{ else }}
-        {{ $allPages := where site.RegularPages "Section" "posts" }}
-        {{ $filteredPages := where $allPages "Type" "ne" "series" }}
-        {{ range $filteredPages.GroupByDate "2006" }}
+      {{- partial "comments.html" . -}}
+    {{ else }}
+      <div class="list-content">
+      {{ range .Pages.GroupByDate "2006" }}
         {{ $year := .Key }}
-        <h2 class="post-year">{{ $year }}</h2>
-        {{ range $index, $page := .Pages }}
-            {{ partial "postCard" (dict "Page" $page "Index" $index) }}
-        {{ end }}
+        <h2 class="post-year center">{{ $year }}</h2>
+        {{ range .Pages }}
+          {{ if eq .Params.type "series" }}
+            {{ range .Pages }}
+              {{ partial "postCard" . }}
+            {{ end }}
+          {{ else }}
+            {{ partial "postCard" . }}
+          {{ end }}
         {{ end }}
       {{ end }}
-    </article>
+      </div>
+    {{ end }}
   </main>
 </div>
 {{- end -}}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="wrapper post">
 	<main class="page-content" aria-label="Content">
-		<article class="post-article" aria-label="Article">
+		<article class="post-content" aria-label="Article">
 			<header class="header noselect" aria-label="Header">
 				<h1 class="header-title">{{ .Title }}</h1>
 				<div class="post-meta">
@@ -17,7 +17,7 @@
 				<p class="terms">
 					{{ $sep := "<span class=\"noselect\"> ⬩ </span>" | safeHTML }}
 					{{ with .GetTerms "categories" }}
-						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a>{{ end }}
+						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.Params.ShortTitle | default $e.Title }}</a>{{ end }}
 					{{ end }}
 				</p>
 				{{ partial "toc.html" . }}

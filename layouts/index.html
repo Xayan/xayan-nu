@@ -18,7 +18,7 @@
     <div class="wrapper">
         {{ partial "bio" . }}
         <main aria-label="Content">
-            <h3 class="posts-item-note" aria-label="Recent Posts">{{ T "home.recent_posts" }}</h3>
+            <h2 class="center" aria-label="Recent Posts">Recent Posts</h2>
 
             {{/* collect posts from main sections, excluding hidden */}}
             {{- $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections -}}
@@ -26,8 +26,8 @@
 
             {{/* Show last 5 posts in reverse date order */}}
             {{- $posts := $pagesToShow.ByDate.Reverse -}}
-            {{- range first 5 $posts -}}
-                {{ partial "postCard" . }}
+            {{- range $index, $page := first 5 $posts -}}
+                {{ partial "postCard" (dict "Page" $page "Index" $index) }}
             {{- end -}}
 
             {{- if gt (len $posts) 5 -}}

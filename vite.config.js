@@ -1,7 +1,16 @@
 import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { resolve } from 'path';
 
 export default defineConfig({
+  // Plugins
+  plugins: [svelte({
+    compilerOptions: {
+      // Enable custom element compilation for better Hugo integration
+      customElement: true,
+    },
+  })],
+  
   // Build configuration
   build: {
     // Output to Hugo's static directory so it can be served

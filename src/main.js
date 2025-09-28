@@ -6,3 +6,6 @@ import '../assets/js/pikachu.js';
 
 // Import the main SCSS file
 import '../assets/sass/_custom.scss';
+
+// Import Svelte components
+import './components/TreeView.svelte';

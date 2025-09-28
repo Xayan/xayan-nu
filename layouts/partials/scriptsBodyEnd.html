@@ -1,0 +1,22 @@
+{{/* Scripts loaded at the end of body */}}
+
+{{/* Include Vite-built assets - check for specific files */}}
+{{ if fileExists "static/dist/js" }}
+  {{/* Find and include the main JS file */}}
+  {{ range (readDir "static/dist/js") }}
+    {{ if strings.HasPrefix .Name "main." }}
+      <script type="module" src="/dist/js/{{ .Name }}"></script>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{/* Fallback: include Hugo's built-in assets */}}
+  {{- with .Site.Params.additionalScripts -}}
+    {{- range . -}}
+      {{- $script := resources.Get . -}}
+      {{- if $script -}}
+        {{- $script = $script | minify | fingerprint -}}
+        <script src="{{ $script.RelPermalink }}"></script>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{ end }}

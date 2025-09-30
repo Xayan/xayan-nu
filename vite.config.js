@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { resolve } from 'path';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
+  publicDir: false,
+
   // Plugins
   plugins: [svelte({
     compilerOptions: {
@@ -10,13 +12,13 @@ export default defineConfig({
       customElement: true,
     },
   })],
-  
+
   // Build configuration
   build: {
     // Output to Hugo's static directory so it can be served
     outDir: './static/dist',
     emptyOutDir: true,
-    
+
     // Asset handling
     rollupOptions: {
       input: {
@@ -36,14 +38,14 @@ export default defineConfig({
         },
       },
     },
-    
+
     // Generate manifest for Hugo integration
     manifest: true,
-    
+
     // Development mode specific settings
     sourcemap: process.env.NODE_ENV === 'development',
   },
-  
+
   // CSS preprocessing
   css: {
     preprocessorOptions: {
@@ -53,7 +55,7 @@ export default defineConfig({
       },
     },
   },
-  
+
   // Development server (mainly for testing Vite builds)
   server: {
     port: 3001,

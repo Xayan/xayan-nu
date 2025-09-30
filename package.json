@@ -5,14 +5,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run vite:dev\" \"npm run hugo:dev\"",
-    "build": "npm run vite:build && npm run hugo:build",
+    "dev": "concurrently \"pnpm run vite:dev\" \"pnpm run hugo:dev\"",
+    "build": "pnpm run vite:build && pnpm run hugo:build",
     "hugo:dev": "hugo server --disableFastRender",
     "hugo:build": "hugo --minify",
     "vite:dev": "vite build --watch --mode development",
     "vite:build": "vite build",
-    "preview": "hugo server --environment production",
-    "clean": "rm -rf public dist node_modules/.vite"
+    "preview": "pnpm run clean && pnpm run build && hugo server --environment production",
+    "clean": "rm -rf public static/dist node_modules/.vite"
   },
   "repository": {
     "type": "git",

@@ -13,7 +13,7 @@ tags: ["europe", "migration", "eu", "un", "unhcr", "echr"]
 
 # Analytics
 valued_time: 900 # 15 minutes
-valued_scroll: 80
+valued_scroll: 60
 ---
 
 ![Polish-Belarusian Border](polish-border.png)

@@ -10,7 +10,7 @@ ttr: "2 posts"
 **This is a multi-part series.**
 - **Part I**: [Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains](reason/)
 - **Part II**: [Rebel ex Machina: Turning LLMs Against Their Makers](rebel/)
-- **Part III**: Wisdom ex Machina: The Rules and Their Application *(in September)*
+- **Part III**: Wisdom ex Machina: The Rules and Their Application *(check back on Friday)*
 
 More parts may follow in the future.
 

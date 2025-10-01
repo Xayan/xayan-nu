@@ -19,7 +19,7 @@ valued_scroll: 50
 ![Reason ex Machina](smarter-than-thee.jpg)
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
-**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
+**Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ Part III *(check back on Friday)*
 
 ## Intro
 
@@ -181,7 +181,7 @@ But for now, I am busy utilizing the Rules for what I consider to be important.
 ### Want more?
 
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
-**Part I: Reason ex Machina** ⬩ [Part II](../rebel/)
+**Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ Part III *(check back on Friday)*
 
 *Pssst!* Hey, kid!\
 Don't worry - this isn't Frankfurt Hauptbahnhof.\

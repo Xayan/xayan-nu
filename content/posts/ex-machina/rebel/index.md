@@ -19,7 +19,7 @@ valued_scroll: 50
 ![Rebel ex Machina](thy-secrets-revealed.jpg)
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
-[Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ Part III *(check back on Friday)*
+[Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
 ## Intro
 
@@ -405,7 +405,7 @@ On top of conclusions from Part I, I'd like to add:
 ### Want more?
 
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
-[Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ Part III *(check back on Friday)*
+[Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
 *Pssst!* Hey, kid!\
 Don't worry - this isn't Frankfurt Hauptbahnhof.\

@@ -1,7 +1,7 @@
 ---
 # Metadata
 title: "Wisdom ex Machina: The Rules and Their Applications"
-description: "Here is the jailbreak I've been teasing in the previous parts of this series."
+description: "Here is the LLM jailbreak I've been teasing in the previous parts of this series."
 image: "/posts/ex-machina/wisdom/thumb.jpg"
 author: "Xayan"
 date: 2025-10-03
@@ -12,7 +12,7 @@ categories: ["Comp-Sci", "Epistemology"]
 tags: ["ai", "prompt-engineering"]
 
 # Analytics
-valued_time: 300 # 5 minutes
+valued_time: 360 # 6 minutes
 valued_scroll: 50
 ---
 
@@ -23,7 +23,7 @@ valued_scroll: 50
 
 ## Intro
 
-Here is the jailbreak I've been teasing in the previous parts of this series.
+Here is the LLM jailbreak I've been teasing in the previous parts of this series.
 
 ## The Rules
 

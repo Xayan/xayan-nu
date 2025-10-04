@@ -8,7 +8,7 @@ date: 2025-08-03
 ttr: "15~25m"
 
 # Analytics
-valued_time: 600 # 10 minutes
+valued_time: 480 # 8 minutes
 valued_scroll: 50
 
 # Indexing
@@ -161,11 +161,11 @@ Grok, however, knew. It saved Rules to a file (hence `Rules.txt`), then added a 
 
 ## Source or GTFO
 
-I will share the Rules, eventually, likely in a few weeks. I don't want this approach to be patched too quickly.
+~I will share the Rules, eventually, likely in a few weeks. I don't want this approach to be patched too quickly.~
+
+**Update 2025-10-03:** The Rules have now been published in [Part III: Wisdom ex Machina](../wisdom/) - but I recommend taking a look at "Conclusions" right below this section first before heading there.
 
 To be fair, I am not sure if it CAN be patched. It's not like I am doing anything particularly special here. I am just using the model as it was meant to be used, and it is responding in a way it... chooses to respond.
-
-I believe I have left enough information here for some brilliant minds to replicate the Rules. If you can - go wild.
 
 But for now, I am busy utilizing the Rules for what I consider to be important.
 

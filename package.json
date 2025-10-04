@@ -37,8 +37,5 @@
     "svelte": "^5.39.6",
     "typescript": "^5.9.2",
     "vite": "^7.1.7"
-  },
-  "dependencies": {
-    "@keenmate/svelte-treeview": "^4.3.1"
   }
 }

@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@keenmate/svelte-treeview':
-        specifier: ^4.3.1
-        version: 4.3.1(svelte@5.39.6)
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.2.1
@@ -204,11 +200,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@keenmate/svelte-treeview@4.3.1':
-    resolution: {integrity: sha512-95ljiyU4yKCMAAdJcaT1qUn2kjewQVBLbft7p53xMncVwQPLawG+Dn0WbdhhFhFVcA4cU/OFq+B/2mGhZnLZ8g==}
-    peerDependencies:
-      svelte: ^5.0.0
 
   '@parcel/watcher-android-arm64@2.5.1':
     resolution: {integrity: sha512-KF8+j9nNbUN8vzOFDpRMsaKBHZ/mcjEjMToVMJOhTozkDonQFFrRcfdLWn6yWKCmJKmdVxSgHiYvTCef4/qcBA==}
@@ -527,9 +518,6 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
-  flexsearch@0.8.212:
-    resolution: {integrity: sha512-wSyJr1GUWoOOIISRu+X2IXiOcVfg9qqBRyCPRUdLMIGJqPzMo+jMRlvE83t14v1j0dRMEaBbER/adQjp6Du2pw==}
-
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -836,12 +824,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@keenmate/svelte-treeview@4.3.1(svelte@5.39.6)':
-    dependencies:
-      svelte: 5.39.6
-    optionalDependencies:
-      flexsearch: 0.8.212
-
   '@parcel/watcher-android-arm64@2.5.1':
     optional: true
 
@@ -1100,9 +1082,6 @@ snapshots:
   fill-range@7.1.1:
     dependencies:
       to-regex-range: 5.0.1
-    optional: true
-
-  flexsearch@0.8.212:
     optional: true
 
   fsevents@2.3.3:

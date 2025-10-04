@@ -1,0 +1,29 @@
+{{ $tree := .tree }}
+{{ $level := .level }}
+{{ $headingLevel := add $level 2 }}
+
+{{ if gt (len $tree) 0 }}
+  {{ range $node := $tree }}
+    <h{{ $headingLevel }}>{{ $node.Get "term" }}</h{{ $headingLevel }}>
+
+    {{ $items := $node.Get "items" }}
+    {{ if $items }}
+      <ul>
+        {{ range $items }}
+          <li>
+            {{ if .section }}
+              <a href="{{ .url }}#{{ .section | anchorize }}">{{ .title }} → {{ .section }}</a>: {{ .description | markdownify }}
+            {{ else }}
+              <a href="{{ .url }}">{{ .title }}</a>: {{ .description | markdownify }}
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+    {{ $subTree := ($node.Get "terms").Values }}
+    {{ if $subTree }}
+      {{ partial "tree.html" (dict "tree" $subTree "level" (add $level 1)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}

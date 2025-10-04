@@ -1,0 +1,8 @@
+{{/* Include Vite-built CSS if available */}}
+{{ if fileExists "static/dist/css" }}
+  {{ range (readDir "static/dist/css") }}
+    {{ if strings.HasPrefix .Name "main." }}
+      <link rel="stylesheet" href="/dist/css/{{ .Name }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,66 @@
+{{/* Shortcode: treeview.html */}}
+{{ $data := .Get "data" | default "[]" }}
+{{ $searchable := .Get "searchable" | default false }}
+{{ $expandedByDefault := .Get "expandedByDefault" | default false }}
+{{ $id := printf "treeview-%d" (now.Unix) }}
+
+{{/* If data is passed as inner content, use that instead */}}
+{{ if .Inner }}
+  {{ $data = .Inner }}
+{{ end }}
+
+{{/* Clean and prepare the data */}}
+{{ $data = $data | replaceRE `\n` "" | replaceRE `\s+` " " }}
+
+{{/* Convert boolean values to strings */}}
+{{ $searchableAttr := cond $searchable "true" "false" }}
+{{ $expandedAttr := cond $expandedByDefault "true" "false" }}
+
+<div class="treeview-wrapper">
+  <tree-view 
+    id="{{ $id }}"
+    searchable="{{ $searchableAttr }}"
+    expanded-by-default="{{ $expandedAttr }}"
+  ></tree-view>
+  
+  <script type="application/json" class="treeview-data" data-for="{{ $id }}">
+    {{ $data | safeJS }}
+  </script>
+</div>
+
+<script>
+  // Initialize the tree view when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    const treeView = document.getElementById('{{ $id }}');
+    const dataScript = document.querySelector('script[data-for="{{ $id }}"]');
+    
+    if (treeView && dataScript) {
+      try {
+        const data = JSON.parse(dataScript.textContent);
+        treeView.setAttribute('data', JSON.stringify(data));
+      } catch (e) {
+        console.error('Failed to parse tree data:', e);
+      }
+    }
+  });
+  
+  // Ensure the custom element is properly loaded
+  if (!customElements.get('tree-view')) {
+    console.warn('TreeView custom element not loaded. Make sure Vite assets are included.');
+  }
+</script>
+
+<style>
+  .treeview-wrapper {
+    margin: 1.5rem 0;
+  }
+  
+  tree-view {
+    display: block;
+    width: 100%;
+  }
+  
+  .treeview-data {
+    display: none;
+  }
+</style>

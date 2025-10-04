@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="wrapper list-page">
+  <header class="header">
+    <h1 class="header-title center">{{ .Title }}</h1>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="list-content">
+        {{ .Content }}
+
+        {{/* Initialize a scratch pad to build the hierarchical index */}}
+        {{ $liesIndex := newScratch }}
+
+        {{/* Iterate over all regular pages to find 'lies' in their front matter */}}
+        {{ range site.RegularPages }}
+          {{ if .Params.lies }}
+            {{ $page := . }}
+            {{/* Iterate over each 'lie' defined in the page's front matter */}}
+            {{ range .Params.lies }}
+              {{ $lie := . }}
+              {{ $entry := dict
+                "title" $page.Title
+                "url" $page.Permalink
+                "section" $lie.section
+                "description" $lie.description
+              }}
+
+              {{ $currentNode := $liesIndex }}
+              {{ $currentPath := "" }}
+
+              {{ range $i, $segment := $lie.category }}
+                {{ $isLast := eq (add $i 1) (len $lie.category) }}
+                {{ $currentPath = cond (eq $i 0) $segment (print $currentPath "." $segment) }}
+
+                {{/* Get or create the node for the current segment */}}
+                {{ $node := $currentNode.Get $segment }}
+                {{ if not $node }}
+                  {{ $node = newScratch }}
+                  {{ $node.Set "term" $segment }}
+                  {{ $node.Set "items" (slice) }}
+                  {{ $node.Set "terms" (newScratch) }}
+                  {{ $currentNode.Set $segment $node }}
+                {{ end }}
+
+                {{/* If it's the last segment, add the lie entry to this node's items */}}
+                {{ if $isLast }}
+                  {{ $node.Set "items" ($node.Get "items" | append $entry) }}
+                {{ end }}
+
+                {{/* Move to the next level in the hierarchy */}}
+                {{ $currentNode = $node.Get "terms" }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Recursive partial to render the nested list */}}
+        {{ partial "tree.html" (dict "tree" $liesIndex.Values "level" 0) }}
+
+    </div>
+  </main>
+</div>
+{{ end }}

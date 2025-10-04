@@ -7,6 +7,11 @@ $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
 $chat-border-radius: 12px;
 
+::selection {
+  background: $accent;
+  color: black;
+}
+
 .author {
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
@@ -29,6 +34,27 @@ $chat-border-radius: 12px;
 }
 
 .page-content {
+  p {
+    margin: 1em 0;
+    clear: both;
+  }
+
+  h2 {
+    padding-left: 0.25em;
+    border-bottom: 1px solid $accent-dark;
+    font-size: 1.8em;
+  }
+
+  h3 {
+    padding-left: 0.25em;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    padding-left: 0.25em;
+    font-size: 1.25em;
+  }
+
   .post-content {
     font-size: 0.95em;
 
@@ -39,26 +65,7 @@ $chat-border-radius: 12px;
     a:hover {
       color: $accent-dark !important;
     }
-
-    p {
-      margin: 1em 0;
-    }
-
-    h2 {
-      padding-left: 0.25em;
-      border-bottom: 1px solid $accent-dark;
-      font-size: 1.8em;
-    }
-
-    h3 {
-      padding-left: 0.25em;
-      font-size: 1.5em;
-    }
-
-    h4 {
-      padding-left: 0.25em;
-      font-size: 1.25em;
-    }
+  }
 
   .post-item {
     display: flex;
@@ -93,7 +100,6 @@ $chat-border-radius: 12px;
       color: $accent !important;
     }
   }
-  }
 
   .toc {
     padding: 0;
@@ -120,30 +126,34 @@ $chat-border-radius: 12px;
 }
 
 .chat {
-  .message {
-    display: inline-block;
-    position: relative;
-    overflow: visible;
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
 
-    padding: 0 1em;
-    margin: 0.8em 0;
+  .message {
+    display: block;
+
+    margin: 0.5rem 0;
     max-width: 90%;
     min-width: 0;
 
     border: 0px solid;
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-    }
+    .content {
+      margin: 0;
+      padding: 0 1em;
 
-    &.user {
-      float: right;
-      border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
-      border-color: $accent-dark;
-      color: $font-color;
-      background-color: $chat-user-bg;
+      display: inline-block;
+      position: relative;
+      overflow: visible;
+
+      font-size: 0.9em;
+      line-height: 1.5em;
+
+      p, ul, ol {
+        margin: 0.5em inherit;
+
+      }
 
       &::after {
         bottom: 0;
@@ -154,28 +164,46 @@ $chat-border-radius: 12px;
       }
     }
 
-    &.assistant {
-      border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
-      border-color: $accent-ai;
-      color: $font-color;
-      background-color: $chat-assistant-bg;
+    &.user {
+      float: right;
 
-      &::after {
-        bottom: 0;
-        left: -10px;
-        border-top: 20px solid transparent;
-        border-right: 12px solid $chat-assistant-bg;
-        z-index: 2;
+      .content {
+        border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
+        border-color: $accent-dark;
+        color: $font-color;
+        background-color: $chat-user-bg;
+
+        &::after {
+          bottom: 0;
+          left: -10px;
+          border-top: 20px solid transparent;
+          border-right: 12px solid $chat-user-bg;
+          z-index: 2;
+        }
+      }
+
+      &.assistant {
+        float: left;
+
+        .content {
+          border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
+          border-color: $accent-ai;
+          color: $font-color;
+          background-color: $chat-assistant-bg;
+
+          &::after {
+            bottom: 0;
+            left: -10px;
+            border-top: 20px solid transparent;
+            border-right: 12px solid $chat-assistant-bg;
+            z-index: 2;
+          }
+        }
       }
     }
 
-    .content {
-      margin: 0;
-      font-size: 0.9em;
-
-      p, ul, ol {
-        margin: 0.4em inherit;
-      }
+    .clear {
+      clear: both;
     }
   }
 }

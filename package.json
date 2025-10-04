@@ -1,0 +1,41 @@
+{
+  "name": "xayan-nu",
+  "version": "1.0.0",
+  "description": "Personal website and blog - The Adversary's Guide to the Galaxy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm run vite:dev\" \"pnpm run hugo:dev\"",
+    "build": "pnpm run vite:build && pnpm run hugo:build",
+    "hugo:dev": "hugo server --disableFastRender",
+    "hugo:build": "hugo --minify",
+    "vite:dev": "vite build --watch --mode development",
+    "vite:build": "vite build",
+    "preview": "pnpm run clean && pnpm run build && hugo server --environment production",
+    "clean": "rm -rf public static/dist node_modules/.vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xayan/xayan-nu.git"
+  },
+  "keywords": [
+    "blog",
+    "hugo",
+    "vite",
+    "static-site"
+  ],
+  "author": "Xayan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xayan/xayan-nu/issues"
+  },
+  "homepage": "https://xayan.nu",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "concurrently": "^9.2.1",
+    "sass": "^1.93.2",
+    "svelte": "^5.39.6",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
+  }
+}

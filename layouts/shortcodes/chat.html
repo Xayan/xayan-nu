@@ -12,11 +12,17 @@
       {{ $role := lower (replaceRE `(?m)^(user|assistant):.*` "${1}" $line) }}
       {{ $displayName := cond (eq $role "assistant") $assistantName $userName }}
       {{ $msg := replaceRE `(?m)^(user|assistant):` "" $line }}
-      {{ $msg  = replace $msg "\\n" "\n" }}   {{/* turn literal \n into newline */}}
+      {{ $msg = replace $msg "\\n" "\n" }}
+      {{ $msg = markdownify $msg }}
+      {{ if eq (len (findRE "<p[^>]*>" $msg)) 0 }}
+        {{ $msg = printf "<p>%s</p>" $msg | safeHTML }}
+      {{ end }}
+      {{/* Render the message block */}}
       <div class="message {{ $role }}">
-        <!--<strong>{{ $displayName }}:</strong>-->
-        <div class="content">{{ $msg | markdownify }}</div>
+        <!--<div class="name">{{ $displayName }}</div>-->
+        <div class="content">{{ $msg }}</div>
       </div>
+      <div class="clear"></div>
     {{ end }}
   {{ end }}
 </div>

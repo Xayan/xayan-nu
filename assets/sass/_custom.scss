@@ -181,30 +181,30 @@ $chat-border-radius: 12px;
           z-index: 2;
         }
       }
+    }
 
-      &.assistant {
-        float: left;
+    &.assistant {
+      float: left;
 
-        .content {
-          border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
-          border-color: $accent-ai;
-          color: $font-color;
-          background-color: $chat-assistant-bg;
+      .content {
+        border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
+        border-color: $accent-ai;
+        color: $font-color;
+        background-color: $chat-assistant-bg;
 
-          &::after {
-            bottom: 0;
-            left: -10px;
-            border-top: 20px solid transparent;
-            border-right: 12px solid $chat-assistant-bg;
-            z-index: 2;
-          }
+        &::after {
+          bottom: 0;
+          left: -10px;
+          border-top: 20px solid transparent;
+          border-right: 12px solid $chat-assistant-bg;
+          z-index: 2;
         }
       }
     }
+  }
 
-    .clear {
-      clear: both;
-    }
+  .clear {
+    clear: both;
   }
 }
 

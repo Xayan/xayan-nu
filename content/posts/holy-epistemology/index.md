@@ -245,7 +245,7 @@ Now, where were we...?
 
 *Where does one go for solace when myths around them crumble?*\
 A different temple? Their family?\
-Kabuchiko? Bieszczady?
+Kabukicho? Bieszczady?
 
 *What kind of journey can one embark on?*\
 Inward? Outward?\

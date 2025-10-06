@@ -30,6 +30,33 @@ $chat-border-radius: 12px;
         margin-right: 0.8em;
       }
     }
+
+    // Social icons in mobile menu overlay
+    .trigger-social-icons {
+      display: none; // Hidden on desktop
+
+      @include media-query($on-mobile) {
+        display: block;
+        margin-top: auto;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          margin: 0 0.5rem;
+          display: inline-block;
+
+          svg {
+            color: #888a90;
+            height: 28px;
+            width: 28px;
+            &:hover {
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

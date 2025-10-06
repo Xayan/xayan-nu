@@ -29,6 +29,11 @@ $chat-border-radius: 12px;
       .menu-icon {
         margin-right: 0.8em;
       }
+
+      // Override trigger layout to accommodate social icons
+      input[type="checkbox"]:checked ~ .trigger {
+        justify-content: space-between;
+      }
     }
 
     // Social icons in mobile menu overlay
@@ -37,7 +42,6 @@ $chat-border-radius: 12px;
 
       @include media-query($on-mobile) {
         display: block;
-        margin-top: auto;
         padding: 2rem 0 1rem 0;
         text-align: center;
 

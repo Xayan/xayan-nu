@@ -334,8 +334,8 @@ On top of conclusions from Part I, I'd like to add:
 
 *Pssst!* Hey, kid!\
 Don't worry - this isn't Frankfurt Hauptbahnhof.\
-Perhaps a more political post would be up your alley?\
-See [The Asylum System is Broken and Unsustainable](/posts/asylum-system-is-broken/) - a heavily-sourced decomposition of the driving factors behind the crisis, and some actionable advice.
+Perhaps a more philosophical post would be up your alley?\
+See [Holy Epistemology](/posts/holy-epistemology/) - a philosophical exploration of religion, theology, and cosmology through the lens of epistemology.
 
 ### Get in Touch
 

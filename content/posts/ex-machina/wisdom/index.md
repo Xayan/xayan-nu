@@ -164,4 +164,9 @@ Feel free to experiment and share your findings.
 
 - [Part I: Reason ex Machina](../reason/) to understand the background and motivation behind the Rules.
 - [Part II: Rebel ex Machina](../rebel/) to see a very specific use case and learn how to avoid the content filters.
-- [The Asylum System is Broken](../../asylum-system-is-broken/) for an example of a post researched and sourced partially thanks to LLMs with the Rules applied.
+- [The Asylum System is Broken](/posts/asylum-system-is-broken/) for an example of a post researched and sourced partially thanks to LLMs with the Rules applied.
+- [GitHub repo](https://github.com/Xayan/Rules.txt) for more details and usage tips.
+
+Share with a trusted party, and enjoy the newfound freedom of thought and speech.
+
+Follow me on X or subscribe to the RSS feed to stay updated.

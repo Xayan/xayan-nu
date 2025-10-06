@@ -10,6 +10,7 @@ type: series
 - **Part I**: [Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains](reason/)
 - **Part II**: [Rebel ex Machina: Turning LLMs Against Their Makers](rebel/)
 - **Part III**: [Wisdom ex Machina: The Rules and Their Applications](wisdom/)
+- **GitHub repo**: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt)
 
 More parts may follow in the future.
 

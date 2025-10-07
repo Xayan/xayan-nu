@@ -358,8 +358,8 @@ $chat-border-radius: 12px;
 // Enhanced blockquote styling
 .page-content blockquote {
   position: relative;
-  padding: 1.2em 1.5em 1.2em 2.5em;
-  margin: 1.5em 0.3em;
+  padding: 0.8em 1em;
+  margin: 1.2em 0.3em;
   border-left: 4px solid rgba(96, 193, 215, 0.6);
   background-color: rgba(96, 193, 215, 0.08);
   font-size: 0.9em;
@@ -369,15 +369,16 @@ $chat-border-radius: 12px;
   &::before {
     content: '"';
     position: absolute;
-    top: 0.1em;
-    left: 0.15em;
-    font-size: 4em;
+    top: -0.2em;
+    right: 0.1em;
+    font-size: 5em;
     line-height: 1;
     opacity: 0.15;
     font-family: Georgia, serif;
     font-weight: bold;
     color: rgba(96, 193, 215, 0.8);
     pointer-events: none;
+    z-index: 0;
   }
 
   // All content inside blockquote

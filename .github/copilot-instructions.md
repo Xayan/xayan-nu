@@ -51,7 +51,8 @@ Available at <https://github.com/gohugoio/hugoDocs>. Use the deepwiki MCP server
 
 - **Analytics**: Custom logic is used to watch for user activity and send custom events. See the file `assets/js/pikachu.js` for details.
 - **Theme**: The site uses a heavily-customized version of [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) theme.
-  - It is cloned into the `themes` directory, and overrides are applied in the directories `layouts` and `assets`.
+  - It is cloned into the `themes` directory as a Git submodule. **Important:** Always initialize submodules first with `git submodule init && git submodule update` before working on the project.
+  - Overrides are applied in the directories `layouts` and `assets`.
   - Custom styles are defined in `assets/sass/_custom.scss`.
 - **Shortcodes**:
   - `chat`: Embeds conversations with LLMs in a familiar but non-interactive format. Each line should follow the format `(user|assistant|system): message` and may contain any Markdown content to be rendered within the chat bubble.

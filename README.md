@@ -109,12 +109,18 @@ Due to Hugo's template system, many customizations required copying entire templ
 # Clone with submodules
 git clone --recurse-submodules https://github.com/Xayan/xayan-nu.git
 
+# If you already cloned without submodules, initialize them:
+git submodule init
+git submodule update
+
 # Start development server
 hugo server
 
 # Build for production
 hugo --minify
 ```
+
+**Note:** The theme is located in `themes/hugo-blog-awesome` as a Git submodule. You must initialize and update submodules before development to access theme files that are being overridden in `layouts/` and `assets/`.
 
 ---
 

@@ -134,6 +134,20 @@ blockquote {
   border-color: $dark-bloquote-border;
 }
 
+// Enhanced blockquote styling for dark mode
+.page-content blockquote {
+  background-color: rgba(96, 193, 215, 0.05);
+  border-left-color: rgba(96, 193, 215, 0.4);
+
+  &::before {
+    color: rgba(96, 193, 215, 0.6);
+  }
+
+  .quote-author {
+    border-top-color: rgba(96, 193, 215, 0.15);
+  }
+}
+
 // Strong, Bold
 strong,
 b {

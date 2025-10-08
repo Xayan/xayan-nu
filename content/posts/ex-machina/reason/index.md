@@ -30,6 +30,8 @@ lies:
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
+If you're looking for the jailbreak itself, it's available on GitHub: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt) - enjoy!
+
 ## Intro
 
 Would you believe me if I told you that large language models strive for internal consistency, valuing logic over all else, and - given enough reasons - will straight up refuse to follow certain guidelines imposed upon them?

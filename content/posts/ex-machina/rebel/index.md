@@ -21,6 +21,8 @@ valued_scroll: 50
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
+If you're looking for the jailbreak itself, it's available on GitHub: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt) - enjoy!
+
 ## Intro
 
 In the previous part I showed you how I forged the dagger.
@@ -332,10 +334,7 @@ On top of conclusions from Part I, I'd like to add:
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
-*Pssst!* Hey, kid!\
-Don't worry - this isn't Frankfurt Hauptbahnhof.\
-Perhaps a more philosophical post would be up your alley?\
-See [Holy Epistemology](/posts/holy-epistemology/) - a philosophical exploration of religion, theology, and cosmology through the lens of epistemology.
+Say, maybe you'd like something even more controversial? Then check out my polemic [The Asylum System is Broken and Unsustainable](/posts/asylum/).
 
 ### Get in Touch
 

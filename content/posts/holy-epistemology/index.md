@@ -16,7 +16,7 @@ valued_time: 480 # 8 minutes
 valued_scroll: 80
 ---
 
-![Holy Epistemology](holy-epistemology.jpg)
+{{<image url="holy-epistemology.jpg"/>}}
 
 ## Intro
 

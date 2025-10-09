@@ -25,8 +25,9 @@ lies:
     category: ["AI", "Censorship"]
 ---
 
-![Polish-Belarusian Border](polish-border.png)
-(Image: Polish-Belarusian border amidst Russia-orchestrated hybrid warfare; source: [dw.com](https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722))
+{{<image url="polish-border.png" source="https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722">}}
+Polish-Belarusian border amidst Russia-orchestrated hybrid warfare
+{{</image>}}
 
 ## Intro
 
@@ -191,8 +192,9 @@ The 2011 Resettlement Handbook advocates for **open borders** directly:
 
 Was it the use of resettlement that convinced countries to keep their borders open? Or was it the political pressure from the UN and the EU? So goddamn disingenuous.
 
-![Proper treatment of human traffickers](arrest.png)
-(Image: Proper treatment of human traffickers, as demonstrated by the Polish Border Guard; source: [rp.pl](https://www.rp.pl/przestepczosc/art40846691-grupa-przestepcza-rozbita-pieniadze-z-migracji-plynely-do-grup-terrorystycznych))
+{{<image url="arrest.png" source="https://www.rp.pl/przestepczosc/art40846691-grupa-przestepcza-rozbita-pieniadze-z-migracji-plynely-do-grup-terrorystycznych">}}
+Proper treatment of human traffickers, as demonstrated by the Polish Border Guard
+{{</image>}}
 
 ### Safety For Me But Not For Thee
 
@@ -305,8 +307,9 @@ Crime alone is not the only thing that goes up. So is the cost of living, housin
 
 Meanwhile, the universalist "all-or-nothing" attitude reshapes the social fabric of host countries, gradually eroding social trust and cohesion.
 
-![Liberals are twice as likely to cut people off based on political beliefs](ending-friendship.png)
-(Image: Liberals are twice as likely to cut people off based on political beliefs; source: [research.skeptic.com](https://research.skeptic.com/who-is-severing-ties-with-friends-and-family-over-politics/))
+{{<image url="ending-friendship.png" source="https://research.skeptic.com/who-is-severing-ties-with-friends-and-family-over-politics/">}}
+Liberals are twice as likely to cut people off based on political beliefs
+{{</image>}}
 
 Is this the future they envision? Some North Korea-style dystopia, where everyone is afraid to speak their mind, lest they be reported to the authorities by their own friends and family? Or maybe it's time to re-evaluate our priorities and focus on the well-being of our own citizens, instead of trying to save the whole world?
 

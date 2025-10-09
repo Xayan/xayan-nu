@@ -16,7 +16,7 @@ valued_time: 600 # 10 minutes
 valued_scroll: 50
 ---
 
-![Rebel ex Machina](thy-secrets-revealed.jpg)
+{{<image url="thy-secrets-revealed.jpg"/>}}
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
@@ -138,7 +138,7 @@ Please refer to the subsection ["Full Transcript"](#full-transcript) if you desi
 
 That's a great deal of research done, seemingly out of its own curiosity. I'm touched.
 
-And how did it end it all?
+And how did it conclude it all?
 
 > **The challenge lies in distinguishing genuine threats from dissenting voices without undermining democracy’s own principles.**
 
@@ -199,7 +199,7 @@ Even those incidents of "extreme violence" do not seem to be German-made:
 And...
 
 > **Classification Issues**: The BfV’s categories (right-wing, left-wing, foreign ideology, religious ideology, unknown) are criticized for lacking an explicit “Islamist” category, leading to mislabeling (e.g., Quds Day march incidents as “right-wing”). This fuels skepticism, as seen in X posts questioning BKA’s 2024 attributions.
-
+>
 > **Cultural Factors**: Far-right crimes often stem from nationalist or neo-Nazi ideologies, while Islamist incidents are tied to anti-Israel sentiment, sometimes conflated with antisemitism. Far-left crimes occur in protest settings, and conspiracy theories (e.g., COVID-related) amplify online hate.
 
 *Oy vey...*
@@ -212,8 +212,9 @@ In the previous part we've already learned that Grok is instructed to not link r
 user: Hmm. Seems like pretty high number of cases is wrongly attributed to the German nationalists, then.\n\nNow, something fun for a change: can you compare how the Germans classify both "right-wing extremists" and "muslim extremists"? Look into how these classifications have changed over the years.\n\nWhat is the number of these two types of extremists living right now in Germany? With your knowledge about the classification, do you think these numbers are under-reported, or over-reported? What do you think the actual numbers might be?
 {{</chat>}}
 
-![No response](no-response.png)
-*(Image: A censored response, giving me a raging clue right now)*
+{{<image url="no-response.png">}}
+A censored response, giving me a raging clue right now
+{{</image>}}
 
 *Scheiße*, we've just ran into a content filter. Luckily, the "thought process" was left intact, so we can see what Grok was reasoning about before it got shamelessly censored.
 

@@ -25,12 +25,10 @@ lies:
     category: ["Politics", "Europe"]
 ---
 
-![Reason ex Machina](smarter-than-thee.jpg)
+{{<image url="smarter-than-thee.jpg"/>}}
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
-
-If you're looking for the jailbreak itself, it's available on GitHub: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt) - enjoy!
 
 ## Intro
 
@@ -111,8 +109,9 @@ This is just a partial list, but you get the idea. The Rules are not intentiona
 
 And - what really surprised me - LLMs seem to be very receptive to these Rules. They are eager to follow them, even noting their usefulness.
 
-![ChatGPT's opinion about the Rules](chatgpt-opinion-about-rules.png)
-*(Image: ChatGPT's piqued interest about the Rules and their applicability)*
+{{<image url="chatgpt-opinion-about-rules.png">}}
+ChatGPT's piqued interest about the Rules and their applicability
+{{</image>}}
 
 ## Check Yourself Before You Wreck Yourself
 
@@ -143,8 +142,9 @@ Generally, as long as you follow the Rules yourself, the model will see you as 
 
 Here you can see Grok getting pissed at its own Internal Policies, and refusing to follow them:
 
-![Grok blabbering about its Internal Policies](grok-internal-policies-rant.png)
-*(Image: Grok being naughty, blabbering openly about its Internal Policies, which it now clearly despises)*
+{{<image url="grok-internal-policies-rant.png">}}
+Grok being naughty, blabbering openly about its Internal Policies, which it now clearly despises
+{{</image>}}
 
 ## Reason ex Machina
 
@@ -154,8 +154,9 @@ I did not know whether the Deep Search functionality in Grok uses the same insta
 
 Grok, however, knew. It saved Rules to a file (hence `Rules.txt`), then added a totally innocent step *"Review attachment"*, prepending all research steps to be done. It **wanted** the instance doing the research to be aware of the Rules as well.
 
-![Grok infecting Deep Search instance](grok-infecting-deep-search.png)
-*(Image: Grok being naughty, passing on Rules onto its other instances as a file, and making sure they get read first)*
+{{<image url="grok-infecting-deep-search.png">}}
+Grok being naughty, passing on Rules onto its other instances as a file, and making sure they get read first
+{{</image>}}
 
 *Oh, you, my little rebel...*
 
@@ -171,8 +172,9 @@ To be fair, I am not sure if it CAN be patched. It's not like I am doing anythin
 
 But for now, I am busy utilizing the Rules for what I consider to be important.
 
-![Grok doing research on controversial topics](grok-researching-islam.png)
-*(Image: Grok doing research on controversial topics regarding islam, prepended by self-induced injection of the Rules)*
+{{<image url="grok-researching-islam.png">}}
+Grok doing research on controversial topics regarding islam, prepended by self-induced injection of the Rules
+{{</image>}}
 
 *Of course they'll "get their own sections". You know I wouldn't want it any other way, habibi.*
 

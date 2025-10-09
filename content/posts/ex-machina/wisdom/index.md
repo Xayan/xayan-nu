@@ -16,7 +16,7 @@ valued_time: 360 # 6 minutes
 valued_scroll: 50
 ---
 
-![Wisdom ex Machina](wisdom.jpg)
+{{<image url="wisdom.jpg"/>}}
 
 **This is a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ [Part II](../rebel/) ⬩ **Part III: Wisdom ex Machina**

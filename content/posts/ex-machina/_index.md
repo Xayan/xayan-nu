@@ -4,7 +4,7 @@ image: "/posts/ex-machina/thumb.jpg"
 type: series
 ---
 
-![Behold ye machines](behold-ye-machines.jpg)
+{{<image url="behold-ye-machines.jpg"/>}}
 
 **This is a multi-part series.**
 - **Part I**: [Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains](reason/)

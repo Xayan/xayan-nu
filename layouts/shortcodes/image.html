@@ -1,0 +1,27 @@
+{{/* Shortcode: image.html */}}
+{{ $url := .Get "url" }}
+{{ $source := .Get "source" }}
+{{ $description := trim .Inner " \n\r\t" }}
+
+<figure class="image-shortcode">
+  <img src="{{ $url }}" alt="{{ $description }}" loading="lazy">
+  
+  {{ if or $description $source }}
+  <figcaption>
+    {{ if $description }}
+      {{ if $source }}
+        {{/* Both description and source */}}
+        {{ $parsedURL := urls.Parse $source }}
+        (Image: {{ $description | markdownify }}; source: <a href="{{ $source }}" target="_blank" rel="noopener noreferrer">{{ $parsedURL.Host }}</a>)
+      {{ else }}
+        {{/* Only description */}}
+        (Image: {{ $description | markdownify }})
+      {{ end }}
+    {{ else if $source }}
+      {{/* Only source */}}
+      {{ $parsedURL := urls.Parse $source }}
+      (Source: <a href="{{ $source }}" target="_blank" rel="noopener noreferrer">{{ $parsedURL.Host }}</a>)
+    {{ end }}
+  </figcaption>
+  {{ end }}
+</figure>

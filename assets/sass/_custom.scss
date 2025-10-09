@@ -164,6 +164,39 @@ $chat-border-radius: 12px;
   }
 }
 
+.image-shortcode {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgba($font-color, 0.85);
+    text-align: center;
+
+    a {
+      color: $accent;
+      text-decoration: none;
+      
+      &:hover {
+        color: $accent-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .chat {
   display: block;
   width: 100%;

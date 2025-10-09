@@ -54,6 +54,13 @@ Due to Hugo's template system, many customizations required copying entire templ
   - Markdown rendering within chat bubbles
   - Customizable participant names
 
+- **`layouts/shortcodes/image.html`** - Flexible image embedding with optional attribution
+  - Required `url` parameter for image source
+  - Optional `source` parameter for attribution (auto-extracts domain)
+  - Optional description via inner content (supports Markdown)
+  - Centered layout with rounded corners and shadow effects
+  - External links open in new tabs with proper `rel` attributes
+
 ## Implemented Functionality
 
 ### Analytics & Engagement Tracking

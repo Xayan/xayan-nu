@@ -1,7 +1,7 @@
 ---
 # Metadata
 title: "The Asylum System is Broken and Unsustainable"
-description: "And it's only going to get worse, because what once was a \"non-binding agreement\" is now being turned into coercion via legal and fiscal means, while those who speak up against it are being silenced and marginalized."
+description: "And it's only going to get worse, because what once was a \"non-binding agreement\" is now being turned into coercion via legal and fiscal means - like the EU's Migration Pact."
 image: "/posts/asylum-system-is-broken/thumb.jpg"
 author: "Xayan"
 date: 2025-09-12
@@ -31,21 +31,19 @@ Polish-Belarusian border amidst Russia-orchestrated hybrid warfare
 
 ## Intro
 
-The asylum system in Europe is fundamentally broken and unsustainable.
+The asylum system is fundamentally broken and unsustainable.
 
-With the number of asylum seekers increasing year by year, the strain on resources and infrastructure is becoming increasingly apparent.
+With the number of asylum seekers increasing year by year, the strain on resources and infrastructure is becoming increasingly apparent. And it's only going to get worse, because what once was a "non-binding agreement" is now being turned into coercion via legal and fiscal means - like the EU's Migration Pact.
 
-And it's only going to get worse, because what once was a "non-binding agreement" is now being turned into coercion via legal and fiscal means, while those who speak up against it are being silenced and marginalized.
+What I'm about to tell you is... complex, but necessary for making a coherent and compelling argument that does not descend into any conspiracy theories. Just *average human beings*, each one with their own *beliefs, biases, and motivations* - all interacting in a *complex system that produces unintended consequences*, because of **a fundamental flaw in its design**.
 
-What I'm about to tell you is... complex, but necessary for making a coherent and compelling argument that does not descend into any conspiracy theories. It might **sound like one**, but I promise you **it's not** - no secret societies, no Illuminati, no hidden agendas. Just *average human beings*, each one with their own *beliefs, biases, and motivations* - all interacting in a *complex system that produces unintended consequences*, because of **a fundamental flaw in its design**.
-
-This is my attempt at untangling that mess.
+This is my attempt at untangling that mess. I'll be going through some academic papers, official documents, and reports from various organizations, to highlight the most glaring incompatibilities and contradictions in the system.
 
 ## Background
 
 ### Current State of Affairs
 
-As it's typical for the European Union, the legal framework behind the asylum system is extremely complex and convoluted.
+As it's typical for the international law, and many regulations in the Western world, the legal framework behind the asylum system is extremely complex and convoluted.
 
 In 2020, the **ECHR** (European Court of Human Rights) has published a [Handbook on European law relating to asylum, borders and immigration](https://www.echr.coe.int/documents/d/echr/handbook_asylum_eng).
 
@@ -53,25 +51,23 @@ It has 366 pages. The handbook, not the law itself.
 
 Since my position on this issue is quite clear, I won't go into the details like *"who is eligible for asylum"*, *"what are the rights of asylum seekers"*, etc. Instead, I'm going to show you why the system, as a whole, is a huge mess, an accessible loophole for anyone who wants to abuse it, and a giant problem for the host countries and their citizens.
 
-This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? Too bad *I don't give a shit* about such pathetic attempts at silencing dissent - and I'm going to show you why you shouldn't either.
+This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? Too bad I don't care about such attempts at silencing dissent - and I'm going to show you why you shouldn't either.
 
 Not for the purpose of turning you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to **see the flaws** in the system more clearly. And that's an extremely valuable skill to have.
 
-Consider what I tell you *a thought experiment*, a mere *"what if"*, and then **decide for yourself** whether its implications align with your lived experience. So - if you're comfortable with not giving a shit about labels for a moment - let's continue.
-
-While the asylum system is clearly broken, the response from those in power has been to double down on the same failed policies, instead of proposing a real alternative. How so?
+Consider what I tell you *a thought experiment*, a mere *"what if"*, and then **decide for yourself** whether its implications align with your lived experience. So - if you're comfortable with not caring about labels for a moment - let's continue.
 
 ### A Naive Belief
 
-I know why the Western elites cling to the asylum system so desperately.
+Let me tell you **why** any kind of criticism of the asylum system is immediately dismissed as "undemocratic".
 
-They believe that **every human, if given the opportunity and resources, would ultimately accept the values and norms of liberal democracy and adapt to the Western way of life**.
+**Liberal universalism** - not to be confused with *actual liberalism* - is a **philosophical notion** that assumes that all people, when presented with the right opportunity and conditions for self-actualization, would eventually adapt to the Western way of life and what they call *"liberal democracy"*.
 
-This belief is attributed to the concept of **liberal universalism**. It has, notably, little to do with **actual liberalism**, which is NOT the object of my critique - please be mindful of this important distinction.
+It's not just a simple political stance - it suggests that liberal democratic values are not just Western ideals, but **universal truths** that should be eventually embraced by all people, regardless of their cultural or historical background.
 
-**Liberal universalism** is more *philosophical* than *political* -- it suggests that liberal democratic values are not just Western ideals, but **universal truths** that should be embraced by all.
+Everything that opposes universalism's underlying assumptions gets labelled as "illiberal", "populist", or "racist" - even if the opposition is based on **pragmatic concerns** rather than ideological ones.
 
-Calling it an **ideology** would be an understatement. This feels like a **religious belief**, where the tenets are accepted without question.
+Calling it an **ideology** would be an understatement. This feels like a **religious belief**, where the tenets are accepted without question. This belief is, unfortunately, commonly held among Western academics, bureaucrats, and politicians.
 
 I'd like you to take a look at the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn 2018)](https://sci-hub.se/https://www.tandfonline.com/doi/abs/10.1080/21931674.2018.1505590). It offers an interesting insight into the mind of one of the preachers.
 
@@ -93,7 +89,7 @@ In a brilliant logical leap, the author even justifies the idea of **sacrificing
 
 So *"binding the sovereign legally"* is alleged to have *"social and political benefits"* that will somehow lead to *"freedom from political intervention or regulation"*? And this is supposed to be a scholarly article, from somebody who believes in the moral superiority of their own ideology?
 
-It really sucks when people can't admit that they are wrong, even when the **blatant lack of epistemic rigor** is staring them in the face. What happens then? Well, our benevolent universalists suddenly become very pragmatic and start looking for ways to enforce their beliefs on others, by any means necessary.
+It really sucks when people can't admit that they are wrong, even when the **blatant lack of epistemic rigor** is staring them in the face. What happens then? Well, our benevolent universalists suddenly become very pragmatic and start looking for ways to enforce their beliefs on others.
 
 ### A Political Weapon
 
@@ -121,7 +117,7 @@ What's there instead is a very clear and direct message: **the asylum system is 
 >
 > Strategic use of resettlement can also strengthen the protection benefits accruing to resettlement countries. These include: expanding the range and quality of services available to asylum-seekers; fostering positive attitudes towards refugees and reducing xenophobia, and enriching the cultural and socio-economic diversity within communities.
 
-As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of an agenda (universalism/multiculturalism) that has nothing to do with helping people in need.
+As you can see, the instrumentalization of refugees is not only happening on the Polish-Belarusian border, but... everywhere, apparently - in the name of the universalist agenda that has nothing to do with helping people in need.
 
 What happens after the resettlement? While they don't say it directly, we can find other sources that - while hilariously anti-multicultural - paint a very distressing picture.
 
@@ -154,7 +150,9 @@ The policies are not made in a vacuum. There is a whole ecosystem of actors - ea
 5. Activists shield against any criticism, and facilitate contact between illegal migrants and NGOs.
 6. Human traffickers exploit the situation.
 7. Ideologically-aligned judges legitimize trafficking and block deportations.
-8. Media defend the system as moral and inevitable.
+8. Private companies profit from the influx of cheap labor.
+9. Media defend the system framing ideological claims as scientific or virtuous.
+10. Simple minds unknowingly spread propaganda thinking the societal changes are inevitable and morally just.
 
 Anyone trying to dissent is framed as a danger to "liberal democracy", regardless of how pragmatic or factual their position is. It's no different from how religious zealots treat heretics.
 
@@ -501,7 +499,7 @@ Listen.
 
 I don't know how you're feeling right now. For me it was a journey, a labyrinth of mismatching narratives I had to put together on my own, rather than get hit in the face with. But I know that, ultimately, it's for the better.
 
-I need to reiterate the most important point of this post: all observed symptoms are emergent qualities of fundamentally flawed system(s). I said in the intro it only *sounds* like a conspiracy theory, didn't I?
+I need to reiterate the most important point of this post: all observed symptoms are emergent qualities of fundamentally flawed system(s). Not a conspiracy with secret cabals, just a bunch of morons trying to do their best for the wrong reasons, and failing miserably at that.
 
 In fact, the complexity of the interconnectedness of these issues is what I perceive as an argument AGAINST a conspiracy. Nobody could orchestrate something this complex. Maaaybe the Crab People, but even they would struggle.
 

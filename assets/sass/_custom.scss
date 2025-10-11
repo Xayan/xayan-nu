@@ -1,8 +1,3 @@
-$accent: #33ffab;
-$accent-dark: #23ad73;
-$accent-ai: #1669bd;
-$font-color: #babdc4;
-$greyed-out: #596263;
 $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
 $chat-border-radius: 12px;
@@ -104,6 +99,16 @@ $chat-border-radius: 12px;
     a:hover {
       color: $accent-dark !important;
     }
+
+    .subhead {
+      display: block;
+      font-size: 1em;
+      font-weight: 400;
+      color: $gray;
+      font-style: italic;
+      margin-top: -0.4em;
+      margin-left: 1em;
+    }
   }
 
   .post-item {
@@ -188,7 +193,7 @@ $chat-border-radius: 12px;
     a {
       color: $accent;
       text-decoration: none;
-      
+
       &:hover {
         color: $accent-dark;
         text-decoration: underline;

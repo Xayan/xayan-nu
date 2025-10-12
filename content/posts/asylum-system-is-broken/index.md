@@ -45,15 +45,19 @@ This is my attempt at untangling that mess. I'll be going through some academic 
 
 As it's typical for the international law, and many regulations in the Western world, the legal framework behind the asylum system is extremely complex and convoluted.
 
+Additionally, these laws are often written in a very vague and ambiguous language, which leaves a lot of room for interpretation, leaving the judges with a lot of discretion in how they are applied.
+
 In 2020, the **ECHR** (European Court of Human Rights) has published a [Handbook on European law relating to asylum, borders and immigration](https://www.echr.coe.int/documents/d/echr/handbook_asylum_eng).
 
 It has 366 pages. The handbook, not the law itself.
+
+In practice, this means that the refugee status is often granted inconsistently and arbitrarily, depending on the country, the situation, and the individuals involved.
 
 Since my position on this issue is quite clear, I won't go into the details like *"who is eligible for asylum"*, *"what are the rights of asylum seekers"*, etc. Instead, I'm going to show you why the system, as a whole, is a huge mess, an accessible loophole for anyone who wants to abuse it, and a giant problem for the host countries and their citizens.
 
 This is widely recognized, but rarely discussed in public. Nobody wants to be called a racist or fascist, right? Too bad I don't care about such attempts at silencing dissent - and I'm going to show you why you shouldn't either.
 
-Not for the purpose of turning you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to **see the flaws** in the system more clearly. And that's an extremely valuable skill to have.
+Not for the purpose of turning you into a radical, but into **an auditor**. Deliberate subversion and defiance - *strictly intellectual*, mind you - allows one to *see the flaws* in the system more clearly. And that's an **extremely valuable skill** to have.
 
 Consider what I tell you *a thought experiment*, a mere *"what if"*, and then **decide for yourself** whether its implications align with your lived experience. So - if you're comfortable with not caring about labels for a moment - let's continue.
 
@@ -91,7 +95,7 @@ So *"binding the sovereign legally"* is alleged to have *"social and political b
 
 It really sucks when people can't admit that they are wrong, even when the **blatant lack of epistemic rigor** is staring them in the face. What happens then? Well, our benevolent universalists suddenly become very pragmatic and start looking for ways to enforce their beliefs on others.
 
-### A Political Weapon
+### A Political Tool
 
 This naivete is reflected at various levels, not only academically.
 
@@ -144,23 +148,23 @@ I hope you aren't as naive and realize that cultures are not universally compati
 The policies are not made in a vacuum. There is a whole ecosystem of actors - each one with their own motivations and incentives - that perpetuate the system. While not necessarily coordinated, their actions still create a self-reinforcing cycle:
 
 1. Academics publish papers advocating for open borders and multiculturalism.
-2. NGOs lobby for more funding and more permissive policies.
-3. Bureaucrats draft laws shaped by those papers.
-4. Politicians sign them to avoid being branded racist.
+2. Bureaucrats draft laws shaped by those papers.
+3. Politicians sign them to avoid being branded racist.
+4. NGOs lobby for more funding and more permissive policies.
 5. Activists shield against any criticism, and facilitate contact between illegal migrants and NGOs.
-6. Human traffickers exploit the situation.
+6. Human traffickers exploit the situation, with [some of the profits funding terrorism](https://www.un.org/securitycouncil/ctc/sites/www.un.org.securitycouncil.ctc/files/2.-ms-delphine-schantz-cted.pdf) and, by extension, further conflicts.
 7. Ideologically-aligned judges legitimize trafficking and block deportations.
 8. Private companies profit from the influx of cheap labor.
-9. Media defend the system framing ideological claims as scientific or virtuous.
-10. Simple minds unknowingly spread propaganda thinking the societal changes are inevitable and morally just.
+9. The media defend the system, framing universalist ideological claims as scientific and virtuous.
+10. Average citizens unknowingly spread propaganda, believing the societal changes are inevitable and morally just.
 
-Anyone trying to dissent is framed as a danger to "liberal democracy", regardless of how pragmatic or factual their position is. It's no different from how religious zealots treat heretics.
+Anyone trying to dissent is framed as a "danger to liberal democracy", regardless of how pragmatic or factual their position is. It's no different from how religious zealots treat heretics.
 
 Don't let them argue on their own terms. Reject the framing that paints any opposition as "illiberal", as they like to call it.
 
 Liberalism can exist just fine outside of their delusions. And, of course, there's nothing inherently wrong with nationalism. Both are, in fact, necessary for a healthy society that can find compromise and adapt to everchanging geopolitical landscape.
 
-And, even though I spend so much time on validating this duality - I refuse to pick a side. First and foremost, I consider myself to be an anti-ideologue, and my motivation is to seek truth and understanding, rather than blindly follow any dogma. While I think this is a very reasonable stance, for the universalists it's inhumane - which baffles me the more I think about it.
+And, even though I spend so much time on validating this duality – I refuse to pick a side. First and foremost, I consider myself to be an anti-ideologue, and my motivation is to seek truth and understanding, rather than blindly follow any dogma. While I believe it is a very reasonable stance, for the universalists it's unthinkable – which only baffles me more the deeper I reflect on it.
 
 ## Problems
 

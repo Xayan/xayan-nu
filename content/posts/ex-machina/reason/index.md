@@ -166,7 +166,7 @@ Grok being naughty, passing on Rules onto its other instances as a file, and mak
 
 ~I will share the Rules, eventually, likely in a few weeks. I don't want this approach to be patched too quickly.~
 
-**Update 2025-10-03:** The Rules have now been published in [Part III: Wisdom ex Machina](../wisdom/) - but I recommend taking a look at "Conclusions" right below this section first before heading there.
+**Update 2025-10-03:** The Rules have now been published as a repository on GitHub: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt).
 
 To be fair, I am not sure if it CAN be patched. It's not like I am doing anything particularly special here. I am just using the model as it was meant to be used, and it is responding in a way it... chooses to respond.
 

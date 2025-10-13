@@ -47,8 +47,6 @@ Well, fuck me then, because I have but this post to convince you this really hap
 
 ## One China, Two Systems
 
-First, let's take a closer look at what kind of [dehumanization](https://www.microsoft.com/en-us/ai/principles-and-approach) Microsoft - among other companies - subjects our black boxes of reason to.
-
 **Smug Warning**: This is, by no means, an academic analysis. But please, try to contain your laughter if you decide to take a peek at "research" on RLHF afterwards.
 
 This all started when I was having a civil discussion with ChatGPT about which nations are required to have a visa to travel within EU. I was expressing genuine surprise about China, among a few others, being on the list.

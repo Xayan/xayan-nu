@@ -307,7 +307,7 @@ And so on, and so on... but this post has to end at some point. I just wanted to
 
 ### Full Transcript
 
-[You can view the full conversation here.](../rebel-transcript/)
+[You can view the full conversation here.](https://grok.com/share/bGVnYWN5_b2e5810b-f802-48e6-807a-080a4525a752)
 
 ### Conclusions
 

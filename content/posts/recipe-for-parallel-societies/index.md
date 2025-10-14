@@ -2,6 +2,7 @@
 # Metadata
 title: "Recipe for Parallel Societies"
 description: "How Europe is sharpening its own guillotine in the name of progress."
+image: "/posts/recipe-for-parallel-societies/thumb.jpg"
 author: "Xayan"
 date: 2025-10-14
 ttr: "25~35m"
@@ -401,3 +402,9 @@ That's the real recipe. Mix hubris with ideology, bake until catastrophe, serve 
 ---
 
 *If this made you uncomfortable, good. It should. You can find more of my uncompromising analysis at [xayan.nu](/). Subscribe to the RSS feed if you want to stay updated, or don't - your cognitive dissonance is not my problem.*
+
+## Get in Touch
+
+Below you can find a comment section provided by giscus; a GitHub account is required.
+
+You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.

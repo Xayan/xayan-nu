@@ -75,7 +75,6 @@ $chat-border-radius: 12px;
 
   h2 {
     padding-left: 0.25em;
-    border-bottom: 1px solid $accent-dark;
     font-size: 1.8em;
   }
 
@@ -98,6 +97,10 @@ $chat-border-radius: 12px;
 
     a:hover {
       color: $accent-dark !important;
+    }
+
+    h2 {
+      border-bottom: 1px solid $accent-dark;
     }
 
     .subhead {
@@ -396,7 +399,7 @@ $chat-border-radius: 12px;
 // Enhanced blockquote styling
 .page-content blockquote {
   position: relative;
-  padding: 1.5em 0.5em 0.1em 1em;
+  padding: 1.5em 0.5em 0.5em 1em;
   margin: 1.2em 0.3em;
   border-left: 4px solid rgba(96, 193, 215, 0.6);
   background-color: rgba(96, 193, 215, 0.08);
@@ -555,8 +558,9 @@ $chat-border-radius: 12px;
   .post-card-description {
     margin: 0;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.2;
     color: rgba($font-color, 0.8);
+    display: inline;
   }
 
   .post-card-meta {

@@ -1,13 +1,10 @@
-{{- $isExternal := false -}}
-{{- $u := urls.Parse .Destination -}}
-{{- if strings.HasPrefix .Destination "http" -}}
-  {{- if not (strings.HasPrefix .Destination site.BaseURL) -}}
-    {{- $isExternal = true -}}
-  {{- end -}}
+{{ $u := urls.Parse .Destination }}
+{{ $base := urls.Parse site.BaseURL }}
+{{ $isHTTP := or (eq $u.Scheme "http") (eq $u.Scheme "https") }}
+{{ $isExternal := and $isHTTP (ne $u.Host $base.Host) }}
+
+{{- if $isExternal -}}
+  {{- printf "<a href=\"%s\" title=\"External link: %s\" target=\"_blank\" rel=\"noopener noreferrer\">%s</a>" (.Destination | safeURL) ($u.Host | htmlEscape) (.Text) | safeHTML -}}
+{{- else -}}
+  {{- printf "<a href=\"%s\">%s</a>" (.Destination | safeURL) (.Text) | safeHTML -}}
 {{- end -}}
-<a href="{{ .Destination | safeURL }}"
-  {{ if $isExternal }}
-    title="External link: {{ $u.Host }}"
-    target="_blank"
-    rel="noopener noreferrer"
-  {{ end }}>{{ .Text }}</a>

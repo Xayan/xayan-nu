@@ -52,6 +52,7 @@ params:
   dateFormat: "2 Jan 2006"
   toc: true
   goToTop: true
+  paginate: 0
   additionalScripts:
     - js/pikachu.js
   mainSections:

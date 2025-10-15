@@ -43,15 +43,11 @@
 					<h3 class="post-card-title">
 						<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 					</h3>
-
-					{{ if $page.Params.categories }}
-					<div class="post-card-categories">
-						{{ range $page.Params.categories }}
-						<span class="category-tag">{{ . }}</span>
-						{{ end }}
-					</div>
-					{{ end }}
 				</header>
+
+				{{ with $page.Params.description }}
+					<span class="post-card-description">{{ . }}</span>
+				{{ end }}
 
 				<footer class="category-card-meta">
 					{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
@@ -63,10 +59,6 @@
 						Latest: {{ time.Format $configDateFormat $page.Date }}
 					</time>
 				</footer>
-
-				{{ with $page.Params.description }}
-				<p class="post-card-description">{{ . }}</p>
-				{{ end }}
 			</div>
 		</div>
 	</article>

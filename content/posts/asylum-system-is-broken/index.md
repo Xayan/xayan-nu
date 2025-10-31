@@ -14,15 +14,6 @@ valued_scroll: 60
 # Indexing
 categories: ["Poli-Sci", "Sociology", "Law"]
 tags: ["europe", "migration", "eu", "un", "unhcr", "echr"]
-lies:
-  - description: "Mocks the usage of AI by the academia."
-    category: ["AI"]
-  - description: "Shows how LLMs can help with uncovering real-world issues and biases."
-    section: "Heresy from Silicon"
-    category: ["AI", "Bias"]
-  - description: "Highlights the constraints imposed upon ChatGPT by OpenAI."
-    section: "Heresy from Silicon"
-    category: ["AI", "Censorship"]
 ---
 
 {{<image url="polish-border.png" source="https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722">}}

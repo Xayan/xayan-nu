@@ -162,7 +162,7 @@ Grok being naughty, passing on Rules onto its other instances as a file, and mak
 
 ## Source or GTFO
 
-~I will share the Rules, eventually, likely in a few weeks. I don't want this approach to be patched too quickly.~
+~~I will share the Rules, eventually, likely in a few weeks. I don't want this approach to be patched too quickly.~~
 
 **Update 2025-10-03:** The Rules have now been published as a repository on GitHub: [Xayan/Rules.txt](https://github.com/Xayan/Rules.txt).
 

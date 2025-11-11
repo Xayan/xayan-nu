@@ -199,10 +199,7 @@ assistant: **Chain-of-Thought (CoT)**\n\n**Thoughts**: The screenshot shows a co
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
-*Pssst!* Hey, kid!\
-Don't worry - this isn't Frankfurt Hauptbahnhof.\
-Perhaps a more philosophical post would be up your alley?\
-See [Holy Epistemology](/posts/holy-epistemology/) - a philosophical exploration of religion, theology, and cosmology through the lens of epistemology.
+Also, I have something much different: [Introduction to Liberal Universalism](/posts/liberal-universalism/) - give it a read if you consider yourself rational and open-minded.
 
 ### Get in Touch
 

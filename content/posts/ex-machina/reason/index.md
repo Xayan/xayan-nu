@@ -199,7 +199,7 @@ assistant: **Chain-of-Thought (CoT)**\n\n**Thoughts**: The screenshot shows a co
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
-Also, I have something much different: [Introduction to Liberal Universalism](/posts/liberal-universalism/) - give it a read if you consider yourself rational and open-minded.
+Also, I have something much different for you: [Holy Epistemology](/posts/holy-epistemology/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
 
 ### Get in Touch
 

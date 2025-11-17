@@ -14,4 +14,6 @@ type: series
 
 More parts may follow in the future.
 
+I also invite you to check out [my other posts](/posts/).
+
 *Follow me on X or subscribe to the RSS feed to stay updated.*

@@ -335,10 +335,10 @@ On top of conclusions from Part I, I'd like to add:
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
-Also, I have something much different: [Introduction to Liberal Universalism](/posts/liberal-universalism/) - give it a read if you consider yourself rational and open-minded.
+Also, I have something much different for you: [The Asylum System is Broken and Unsustainable](/posts/asylum-system-is-broken/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
 
 ### Get in Touch
 
 Below you can find a comment section provided by giscus; a GitHub account is required.
 
-You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.
+You can also message me directly [via X](https://twitter.com/xayan__).

@@ -166,23 +166,7 @@ Only when I became an independent adult I was no longer burdened and was able to
 
 Now, all I want to tell you is: **it's okay to doubt yourself**. Especially so when it comes to the **unprovable**.
 
-### Lost, alone, in an unknown world
-
-Most people don't look for **logic** in stories. They don't remember **details**. They probably *don't even understand their **actual meaning*** in the first place.
-
-The only association in their heads is how these stories **make them feel**. And if you can make people feel good, they'll follow you - sometimes too eagerly. There's not much secret to it, really. You could probably start your own religion too. Whether it's through a shared myth  Many did.
-
-The **myth** they share - it's just **vibes**. A soundtrack of their minds. A part of them they don't want to abandon. Sunk cost fallacy.
-
-When shared by many, it starts to dominate the society. All religions have their own set of rules, beliefs, and practices meant to guide their followers through life and nudge them towards making the "right" decisions. For better or worse.
-
-It just so happens that the Abrahamic religions are the most popular ones that have spread around the world through... various means. I think this is the only place where I can feel something akin to so-called "colonizer's guilt" - despite not being a colonizer, nor religious. Interesting, isn't it?
-
-Consider this: how many people would be religious, if they weren't indoctrinated by their parents? If they had no assumption of what is "right" to believe - how many of them would be interested in exploring spirituality? Out of them, how many would feel inclined to join any kind of organized religion?
-
-**How many would choose one that uses fear as a motivator?**
-
-Want to see why they're doing this?\
+Want to see why they're doing all this?\
 I'll show you. Take my hand. Or maybe not, ew.
 
 ### Lost, alone, in an unknown Universe

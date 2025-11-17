@@ -1,65 +1,69 @@
 {{ $page := .Page }}
 {{ if not $page.Params.hidden }}
 	<article class="post-card">
-		<div class="post-card-image">
-			{{- $image := "" -}}
-			{{- with $page.Params.image -}}
-				{{- $image = . | absURL -}}
-			{{- else -}}
-				{{- with $page.Resources.GetMatch "thumb.jpg" -}}
-					{{- $image = .RelPermalink | absURL -}}
+		<div class="post-card-row">
+			<div class="post-card-image">
+				{{- $image := "" -}}
+				{{- with $page.Params.image -}}
+					{{- $image = . | absURL -}}
+				{{- else -}}
+					{{- with $page.Resources.GetMatch "thumb.jpg" -}}
+						{{- $image = .RelPermalink | absURL -}}
+					{{- end -}}
 				{{- end -}}
-			{{- end -}}
 
-				<a href="{{ $page.RelPermalink }}">
-			{{ if $image }}
-					<img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy">
-			{{ else }}
-					<svg class="post-card-image" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17l2.5-3.5L15 18H5l4-5z"/>
-					</svg>
-			{{ end }}
-				</a>
-
-			{{/* Mobile overlay positioned within the image container */}}
-			<div class="mobile-overlay">
-				{{ if $page.Params.categories }}
-				<div class="post-card-categories">
-					{{ range $page.Params.categories }}
-					<span class="category-tag">{{ . }}</span>
-					{{ end }}
-				</div>
+					<a href="{{ $page.RelPermalink }}">
+				{{ if $image }}
+						<img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy">
+				{{ else }}
+						<svg class="post-card-image" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17l2.5-3.5L15 18H5l4-5z"/>
+						</svg>
 				{{ end }}
+					</a>
 
-				<h3 class="post-card-title">
-					<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-				</h3>
-			</div>
-		</div>
+				{{/* Mobile overlay positioned within the image container */}}
+				<div class="mobile-overlay">
+					{{ if $page.Params.categories }}
+					<div class="post-card-categories">
+						{{ range $page.Params.categories }}
+						<span class="category-tag">{{ . }}</span>
+						{{ end }}
+					</div>
+					{{ end }}
 
-		<div class="post-card-content">
-			<div class="post-card-main-content">
-				<header class="post-card-header desktop-only">
 					<h3 class="post-card-title">
 						<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 					</h3>
-				</header>
+				</div>
+			</div>
 
-				{{ with $page.Params.description }}
-					<span class="post-card-description">{{ . }}</span>
-				{{ end }}
+			<div class="post-card-content">
+				<div class="post-card-main-content">
+					<header class="post-card-header desktop-only">
+						<h3 class="post-card-title">
+							<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+						</h3>
+					</header>
 
-				<footer class="category-card-meta">
-					{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
-					{{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
-					{{ $count := len $page.Pages }}
-					<span class="ttr">{{ $page.Pages | len }} post{{ if ne $count 1 }}s{{ end }}</span>
-					<span class="noselect">⬩</span>
-					<time class="post-date" datetime="{{ dateFormat $ISO_date $page.Date }}">
-						Latest: {{ time.Format $configDateFormat $page.Date }}
-					</time>
-				</footer>
+					{{ with $page.Params.description }}
+						<span class="post-card-description">{{ . }}</span>
+					{{ end }}
+				</div>
 			</div>
 		</div>
+		<footer class="post-card-meta">
+			{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
+			{{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
+			{{ $count := len $page.Pages }}
+			<div class="meta-item">
+				<span class="post-date">{{ $page.Pages | len }} post{{ if ne $count 1 }}s{{ end }}</span>
+			</div>
+			<div class="meta-item">
+				<time class="post-date" datetime="{{ dateFormat $ISO_date $page.Date }}">
+					Latest: {{ time.Format $configDateFormat $page.Date }}
+				</time>
+			</div>
+		</footer>
 	</article>
 {{ end }}

@@ -459,7 +459,6 @@ $chat-border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  overflow: visible; // Allow content to wrap around image
 
   &:hover {
     transform: translateY(-2px);
@@ -477,9 +476,14 @@ $chat-border-radius: 12px;
     }
   }
 
+  .post-card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   // Default (left-aligned) layout
   .post-card-image {
-    float: left;
     width: 180px;
     height: 120px;
     margin: 1rem 1.5rem 1rem 1rem;
@@ -510,13 +514,9 @@ $chat-border-radius: 12px;
     transition: transform 0.5s ease;
   }
 
-  &:nth-child(even) .post-card-image {
-    float: right;
-    margin: 1rem 1rem 1rem 1.5rem;
-  }
-
   .post-card-content {
     padding: 1rem;
+    flex: 1;
   }
 
   // Desktop-only elements
@@ -567,15 +567,12 @@ $chat-border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
-    padding-top: 0.75rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    clear: both;
 
-    .meta-left {
+    .meta-item {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      padding: 0.5em 1em;
     }
 
     .ttr {
@@ -598,11 +595,18 @@ $chat-border-radius: 12px;
     font-size: 0.9rem;
   }
 
-  &:nth-child(even) {
+  &:nth-child(even) .post-card-row {
+    flex-direction: row-reverse;
     text-align: right;
   }
 
   @include media-query($on-mobile) {
+    display: block;
+
+    .post-card-row {
+      display: block;
+    }
+
     .post-card-image {
       float: right;
       width: 100%;
@@ -647,13 +651,9 @@ $chat-border-radius: 12px;
       }
     }
 
-    &:nth-child(even) .post-card-image {
-      float: right;
-      margin: 0 0 0.5em 0;
-    }
-
     .post-card-content {
       padding: 0;
+      text-align: left;
     }
 
     // Hide desktop elements
@@ -668,11 +668,6 @@ $chat-border-radius: 12px;
     .post-card-description {
       font-size: 0.9rem;
       text-align: left;
-    }
-
-    .post-card-meta {
-      margin-top: 0.75rem;
-      clear: none;
     }
 
     .category-card-meta {

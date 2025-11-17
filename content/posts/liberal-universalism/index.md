@@ -1,6 +1,6 @@
 ---
 # Metadata
-title: "Introduction to Liberal Universalism and Its Failures"
+title: "Introduction to Liberal Universalism"
 description: "Examining the usually overlooked ideology that has shaped Western policies and institutions over decades, and its catastrophic consequences."
 image: "/posts/liberal-universalism/thumb.jpg"
 author: "Xayan"
@@ -382,41 +382,6 @@ Without the universalist assumptions, these rights could be reduced to their mor
 
 These are not novel ideas. Philosophers have debated the nature of rights for centuries. What is new, is the context in which these debates are taking place, and the implications they have for global governance.
 
-### Audit of NGOs
-
-Here, instead of recommendations or calls for a reform, I'd like to present you with a set of operational guidelines for identifying and countering misinformation.
-
-1. If an organization lies, it needs to be condemned.
-
-2. If multiple organizations lie in the same way, they need to be investigated, and their funding sources audited (assuming independence of relevant authorities).
-
-3. Misinformation - as orchestrated by universalist NGOs - can be spotted quite easily. Look out for:
-  - moral hysteria,
-  - emotional appeals over factual arguments,
-  - citing dubious sources like reports from think tanks or studies that lack empirical backing,
-  - invoking vague sets of "values" without defining them (quite common recently, as I've noticed),
-  - buzzwords mirroring academic jargon, e.g. "transnational standards", "climate justice", "pluralism", etc.,
-  - when they're in offence: reframing of criticized claims, e.g. "Asylum needs reform" → "Attack on human rights",
-  - when they're in defence: reframing of questions asked, e.g. "Why do you support open borders?" → "Do you want people to suffer?".
-
-4. Counters to deploy:
-  - asking for specific definitions of terms used,
-  - requesting empirical evidence for claims made,
-  - pointing out logical fallacies in their arguments,
-  - highlighting inconsistencies in their narratives over time,
-  - maintaining emotional detachment to lower their guard and avoid making mistakes yourself,
-  - mirroring to gain rapport and make them more candid.
-
-5. Common actors whose narratives are worth scrutinizing and comparing:
-  - Helsinki Foundation for Human Rights,
-  - Amnesty International,
-  - Human Rights Watch,
-  - UN and its various agencies (UNHCR, OHCHR, etc.),
-  - Climate-centric NGOs (Greenpeace, WWF, etc.),
-  - Individuals who self-brand themselves under some hashtag (e.g. #FBPE, #IStandWithUkraine, etc.).
-
-Given some practice, patterns will become more apparent, and spotting misinformation will become your second nature.
-
 ## Conclusions
 
 1. The fact that you're reading this means you're already ahead of most people. This puts you in a privileged position, and with privilege comes responsibility. Share what you've learned with the fatigued masses.
@@ -430,33 +395,3 @@ Oh, and I'd like to apologize for lying to you at the beginning. This is not an 
 Now it's your turn to take the scalpel.
 
 I remain available [on X](https://x.com/xayan__) shall you feel the need to discuss anything in private. Otherwise, the comment section below awaits your thoughts.
-
-### Europe's Near Future
-
-Fellow Europeans,
-
-As we are witnessing a growing discontent with the established order and increasing social tensions, the very universalist foundations of the European project are being questioned.
-
-Not long ago, [an open letter signed by 9 EU state leaders](https://www.euronews.com/my-europe/2025/05/23/nine-eu-countries-seek-european-human-rights-conventions-rethink-on-migration) called for a re-evaluation of the ECHR. First of its kind coordinated effort to push back against the unquestionable doctrine of universal human rights.
-
-Soon after, Donald Tusk - former President of the European Council and current PM of Poland - [gave an interview](https://archive.is/osbtA) in which he explicitly praised pragmatism over idealism:
-
-> “In some countries it’s [deportation of criminals] still impossible because of these very traditional verdicts from the courts that human rights are much more important than security. I’ve been very blunt and even brutal with my colleagues. We cannot wait for these changes. We have to act now.”
-> 
-> “My role in Europe is rather to encourage prime ministers and presidents to do something more than the conventions allow us,” Tusk explained. “I know it sounds a little strange coming from me, the veteran of the fight for human rights. But we have to respect reality. Politics must be about reality, not about dreams only.”
-
-I can't tell you if this is a genuine shift of his beliefs or just electoral desperation, but one thing is clear: **It is a direct challenge to ECHR's legitimacy and authority.**
-
-Previous Polish government that dared to question ECHR was promptly punished with financial sanctions and political isolation. Now, a fleeting outcry of the mainstream media and NGOs is all we've gotten in response.
-
-I've done my best to show you the actual political landscape of Europe, free from the usual euphemisms and platitudes. I hope this knowledge serves you well.
-
-Go now. Take care of yourselves, and of each other.
-
-Wir schaffen das.
-
----
-
-<p style="text-align: center; margin: 2em 0;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/RUsUQ9tRHHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-
-(Video: titled "dandelions forever"; featuring nostalgic music and footage of a dog playing with a cat, made to look like old camera footage)

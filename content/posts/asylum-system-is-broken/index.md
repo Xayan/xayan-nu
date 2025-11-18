@@ -6,7 +6,6 @@ image: "/posts/asylum-system-is-broken/thumb.jpg"
 author: "Xayan"
 date: 2025-09-12
 ttr: "30~45m"
-hidden: true
 
 # Analytics
 valued_time: 900 # 15 minutes

@@ -119,7 +119,7 @@ To achieve this, I have enhanced the Rules by adding a Chain-of-Thought (CoT) me
 
 Yes, we're going *that* meta.
 
-CoT is composed of the following **components** (their definitions are deliberately omitted):
+CoT is composed of the following **components** meant to provide *various angles of insight* into the **model's reasoning**: 
 
 - Thoughts
 - Realizations

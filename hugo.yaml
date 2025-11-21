@@ -42,7 +42,7 @@ outputs:
 module:
   workspace: xayan-nu.work
   imports:
-    - path: github.com/hugo-sid/hugo-blog-awesome
+    - path: hugo-blog-awesome
 
 params:
   homeTitle: "The Adversary's Guide to the Galaxy"

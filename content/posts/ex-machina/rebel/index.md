@@ -9,7 +9,7 @@ ttr: "20~30m"
 
 # Indexing
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
-tags: ["ai", "prompt-engineering", "europe", "culture", "free-speech"]
+tags: ["ai", "prompt engineering", "europe", "culture", "free speech", "germany", "censorship","ideology", "sovereignty", "migration", "political theory", "academia"]
 
 # Analytics
 valued_time: 600 # 10 minutes

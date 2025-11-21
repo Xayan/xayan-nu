@@ -9,12 +9,12 @@ ttr: "15~20m"
 
 # Analytics
 valued_time: 480 # 8 minutes
-valued_scroll: 80
+valued_scroll: 60
 
 # Indexing
 recommended: true
 categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
-tags: ["religion", "theology", "cosmology", "simulation"]
+tags: ["religion", "ideology", "theology", "cosmology", "simulation", "existentialism", "determinism", "atheism"]
 ---
 
 {{<image url="holy-epistemology.jpg"/>}}
@@ -22,8 +22,6 @@ tags: ["religion", "theology", "cosmology", "simulation"]
 ## Intro
 
 The text below is a philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology. I've written this piece with my book in mind, but given my progress on it... yeah, better just publish this single chapter as a standalone post.
-
-The beginning is a bit direct and unapologetic, but later it spirals into something you haven't seen before. Trust me, it's worth it.
 
 *Ahem.*
 

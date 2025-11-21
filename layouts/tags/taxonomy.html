@@ -1,0 +1,14 @@
+{{- define "main" -}}
+<div class="wrapper list-page">
+  <header class="header">
+    <h1 class="header-title center">{{ .Title }}</h1>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="list-content">
+      {{ range .Pages }}
+        {{ partial "tagCard" . }}
+      {{ end }}
+    </div>
+  </main>
+</div>
+{{- end -}}

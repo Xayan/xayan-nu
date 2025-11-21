@@ -14,7 +14,7 @@ valued_scroll: 50
 # Indexing
 recommended: true
 categories: ["Poli-Sci", "Philosophy", "Sociology"]
-tags: ["liberal universalism", "globalism", "international relations", "political theory", "Western values", "sovereignty", "culture"]
+tags: ["liberal universalism", "international relations", "political theory","sovereignty", "free speech", "culture", "ideology", "theology", "migration", "academia", "eu", "europe", "un", "ngo", "echr"]
 ---
 
 {{<image url="liberal-universalism.jpg"/>}}
@@ -143,11 +143,11 @@ Not an exhaustive list, but I think it covers most bases:
 
 | Category | Description | Examples |
 |----------|-------------|----------|
-| True Believers | Some genuinely believe in the ideals of liberal universalism and see it as a path to progress. | Verhofstadt calling for EU federalism |
-| Opportunists | Others may be in it for personal gain, leveraging the ideology to advance their careers or agendas. | NGO directors with 6-figure salaries |
-| The Fearful | The ones who realized something might be off, but are too afraid to speak out against the prevailing narrative due to social or professional pressures. | Academics who value job security over truth |
-| The Indifferent | Those who are simply going along with the flow, either because they don't care enough to question it or because they see no viable alternative. | Career bureaucrats processing paperwork |
-| Open Critics | Rare, but they do exist. People who see through the hypocrisy and are willing to challenge the status quo. | Listed later |
+| **True Believers** | Some genuinely believe in the ideals of liberal universalism and see it as a path to progress. | Verhofstadt calling for EU federalism |
+| **Opportunists** | Others may be in it for personal gain, leveraging the ideology to advance their careers or agendas. | NGO directors with 6-figure salaries |
+| **The Fearful** | The ones who realized something might be off, but are too afraid to speak out against the prevailing narrative due to social or professional pressures. | Academics who value job security over truth |
+| **The Indifferent** | Those who are simply going along with the flow, either because they don't care enough to question it or because they see no viable alternative. | Career bureaucrats processing paperwork |
+| **Open Critics** | Rare, but they do exist. People who see through the hypocrisy and are willing to challenge the status quo. | Listed later |
 
 However, due to in-group dynamics, their motivations often go unexamined. There are no incentives to question the status quo. Very little external scrutiny.
 

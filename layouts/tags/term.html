@@ -1,0 +1,15 @@
+{{- define "main" -}}
+<div class="wrapper list-page">
+  <main class="page-content" aria-label="Content">
+    {{ $slugTitle := trim (replaceRE "[^a-z]+" "-" (lower .Title)) "-" }}
+    <header class="header">
+      <h1 class="header-title center">#{{ $slugTitle }}</h1>
+    </header>
+    <div class="list-content">
+      {{ range .Pages }}
+        {{ partial "postCard" . }}
+      {{ end }}
+    </div>
+  </main>
+</div>
+{{- end -}}

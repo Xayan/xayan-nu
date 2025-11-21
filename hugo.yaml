@@ -25,6 +25,10 @@ menu:
       name: Categories
       url: /categories/
       weight: 30
+    - pageRef: tags
+      name: Tags
+      url: /tags/
+      weight: 40
 
 outputs:
   home:

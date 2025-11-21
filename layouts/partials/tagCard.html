@@ -1,0 +1,18 @@
+<article class="list-item">
+  {{/* format date string to create an ISO 8601 string */}}
+  {{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
+  {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+  {{ $isTermPage := eq .Kind "term" }}
+  {{ $slugTitle := trim (replaceRE "[^a-z]+" "-" (lower .Title)) "-" }}
+  <h4 class="list-item-title">
+      <a href="{{ .RelPermalink }}">#{{ $slugTitle }}</a>
+  </h4>
+  {{ if $isTermPage }}
+    {{ $count := len (default (slice) .Pages) }}
+    <span class="list-item-meta">{{ $count }} Post{{ if ne $count 1 }}s{{ end }}</span>
+  {{ end }}
+
+  <time class="list-item-meta" datetime="{{ dateFormat $ISO_date .Date }}">
+      {{ time.Format $configDateFormat .Date }}
+  </time>
+</article>

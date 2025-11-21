@@ -12,6 +12,7 @@ valued_time: 900 # 15 minutes
 valued_scroll: 60
 
 # Indexing
+recommended: true
 categories: ["Poli-Sci", "Sociology", "Law"]
 tags: ["europe", "migration", "eu", "un", "unhcr", "echr"]
 ---

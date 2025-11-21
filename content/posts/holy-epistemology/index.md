@@ -5,15 +5,16 @@ description: "A philosophical exploration of religion, theology, and cosmology -
 image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08
-
-# UI/UX
 ttr: "15~20m"
-categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
-tags: ["religion", "theology", "cosmology", "simulation"]
 
 # Analytics
 valued_time: 480 # 8 minutes
 valued_scroll: 80
+
+# Indexing
+recommended: true
+categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
+tags: ["religion", "theology", "cosmology", "simulation"]
 ---
 
 {{<image url="holy-epistemology.jpg"/>}}

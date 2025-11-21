@@ -12,6 +12,7 @@ valued_time: 1200 # 20 minutes
 valued_scroll: 50
 
 # Indexing
+recommended: true
 categories: ["Poli-Sci", "Philosophy", "Sociology"]
 tags: ["liberal universalism", "globalism", "international relations", "political theory", "Western values", "sovereignty", "culture"]
 ---
@@ -268,15 +269,13 @@ Rhetoric-heavy research with predetermined outcomes is one thing, but what happe
 
 EU agencies, UN bodies, and various NGOs often rely on academic studies to justify their actions. When these studies are biased or flawed, it leads to policies that may not be in the best interest of the populations they aim to serve.
 
-Recently, I've looked into some of that research.
+Recently, I've looked into some of that research - in particular, the economic impact of migration.
 
-| Flaw | Description | Examples | Potential Skew |
-|----------|-----------------------------------|----------------------------------|---------------|
-| **Data Opacity & Verification Barriers** | Raw datasets (e.g. tax/welfare registers) locked behind NDAs, ethics approvals, or institutional gates, preventing independent audits. Only insiders (universities/gov) can request access, breeding "black box" trust issues. | IMF 2025 WEO models use Eurostat/UNHCR aggregates without public code; Swedish SCB data for Ruist/Hansen studies gated via ethics boards (e.g., Lund suppression case). OECD Sweden Survey relies on anonymized LIS panels. | Underestimates negatives: Optimistic assumptions (e.g., 60% employment in 5 years) go unchallenged, inflating long-term positives by 10-20% in simulations. |
-| **Informal/Gray Market Underreporting** | Reliance on formal surveys/tax records ignores undeclared work (10-25% of EU GDP), where migrants (esp. refugees with work bans) accept sub-minimum wages, depressing local earnings without trace. | Dustmann et al. (2013) and IZA 2024 papers use formal employment data only; EU Parliament 2024 review flags it as a "major challenge" but doesn't adjust models. | Masks 1-3% wage drags for low-skill natives; econ benefits overstated (e.g., +0.2-0.5% GDP) by ignoring informal spillovers. |
-| **Static/Optimistic Assumptions** | Models assume "perfect integration" (e.g., quick skill matching, no cultural barriers) without dynamic testing; short-term costs recouped in 8-10 years, but ignore second-gen drags or policy failures. | DIW Berlin 2024 NPV calcs exclude family dependants; IMF 2024 staff paper assumes homogeneous skills for refugees, overlooking low-skill mismatches. | Tilts to positives: Sweden's 1-1.5% GDP drag (Ruist) holds, but EU-wide projections underplay Nordic-style persistence by 0.1-0.5%. |
-| **Crime Data Integration Flaws** | BKA stats (fed into econ models) misattribute via dual-citizen rules and entry errors, undercounting migrant-linked costs (policing/courts: €1-3B/year EU-wide). | IZA/DIW papers incorporate BKA without disaggregating migration background; 2025 ifo analysis notes 10-15% undercount from dual nationals. | Inflates net benefits: Real public safety costs 10-20% higher, adding 0.1-0.2% GDP to fiscal drags if fully traced. |
-| **Publication & Framing Biases** | "File-drawer" effects favor null/positive results; funding (e.g., UNHCR for OECD) or public priors frame immigrants as "contributors," downplaying negatives. | 2023 JEP review: 60-70% of papers emphasize upsides; Cambridge 2019 on welfare framing shows "immigrant costs" triggers overreactions in Nordic studies. | Consensus "mixed long-term" skewed pro-migration: Negatives (e.g., Sweden's SEK 25K-74K/person/year) underrepresented vs. positives. |
+| Flaw | Description | Examples |
+|------|-------------|----------|
+| **Data Opacity & Verification Barriers** | Raw datasets locked behind NDAs/ethics gates; Low reproducibility; Impossible to verify claims or challenge assumptions; Creating "black box" trust issues. | Swedish SCB data for various sociological studies [gated via ethics boards](https://www.scb.se/en/services/ordering-data-and-statistics/microdata/); German research on crime - used for shaping policy - raw data [restricted to select institutions](https://www.mpg.de/21007492/1026-stra-insights-into-unreported-crime-crucial-for-prevention-151860-x); [State-sponsored propaganda](https://www.ifo.de/en/cesifo/do-immigrants-affect-crime-evidence-panel-data-germany). |
+| **Gray Market Underreporting** | Reliance on formal surveys/tax records ignores undeclared work (10-25% of EU GDP), where migrants (esp. refugees with work bans) accept sub-minimum wages, depressing local earnings. | Dustmann et al. (2013) and IZA 2024 papers use formal employment data only; EU Parliament 2024 review flags it as a "major challenge" but doesn't adjust models. |
+| **Publication & Framing Biases** | "File-drawer" effects favor neutral/positive results; funding (e.g., UNHCR for OECD) or public priors frame immigrants as "contributors," downplaying negatives. | 2023 JEP review: 60-70% of papers emphasize upsides; Cambridge 2019 on welfare framing shows "immigrant costs" triggers overreactions in Nordic studies. | Consensus "mixed long-term" skewed pro-migration: Negatives (e.g., Sweden's SEK 25K-74K/person/year) underrepresented vs. positives. |
 | **Scope Exclusions** | Omits indirects like remittances leakage (20-40% earnings outflow), healthcare overuse (15-25% of costs), or housing inflation (5-10% rent hikes), bundling them vaguely into "fiscals". | OECD 2025 EU Survey flags but doesn't model second-gen education gaps; IMF WEO excludes irregulars, biasing toward "successful" cohorts. | Understates drags: Lifetime costs €60K-100K/person higher if unbundled, especially in welfare states. |
 
 This is not an exhaustive list of flaws within cited sources.
@@ -413,7 +412,7 @@ Here, instead of recommendations or calls for a reform, I'd like to present you 
   - Human Rights Watch,
   - UN and its various agencies (UNHCR, OHCHR, etc.),
   - Climate-centric NGOs (Greenpeace, WWF, etc.),
-  - Individuals who self-brand themselves under some hashtag (e.g. #FBPE, #IStandWithUkraine, etc.).
+  - Individuals who self-brand themselves under some hashtag (e.g. #FBPE).
 
 Given some practice, patterns will become more apparent, and spotting misinformation will become your second nature.
 

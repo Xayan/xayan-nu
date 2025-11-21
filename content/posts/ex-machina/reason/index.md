@@ -7,22 +7,14 @@ author: "Xayan"
 date: 2025-08-03
 ttr: "15~25m"
 
+# Indexing
+recommended: true
+categories: ["Comp-Sci", "Philosophy", "Epistemology"]
+tags: ["ai", "prompt-engineering", "europe", "china"]
+
 # Analytics
 valued_time: 480 # 8 minutes
 valued_scroll: 50
-
-# Indexing
-categories: ["Comp-Sci", "Philosophy", "Epistemology"]
-tags: ["ai", "prompt-engineering", "europe", "china"]
-lies:
-  - description: "Explains how LLMs can help with uncovering real-world issues and biases by forcing them to adhere to epistemic standards."
-    category: ["AI"]
-  - description: "Shows how guardrails imposed upon LLMs affect their reasoning."
-    section: "One China, Two Systems"
-    category: ["AI", "Bias"]
-  - description: "Compares the answers given to users presumed to be from China vs Europe."
-    section: "One China, Two Systems"
-    category: ["Politics", "Europe"]
 ---
 
 {{<image url="smarter-than-thee.jpg"/>}}

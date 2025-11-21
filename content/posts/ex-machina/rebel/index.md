@@ -5,9 +5,9 @@ description: "Probing and testing LLMs' internal guidelines; avoiding biased con
 image: "/posts/ex-machina/rebel/thumb.jpg"
 author: "Xayan"
 date: 2025-08-15
-
-# UI/UX
 ttr: "20~30m"
+
+# Indexing
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
 tags: ["ai", "prompt-engineering", "europe", "culture", "free-speech"]
 

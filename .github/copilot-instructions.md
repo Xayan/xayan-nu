@@ -26,7 +26,7 @@ When working on the website's codebase:
 
 ### Writing
 
-When I explicitly ask you to, assess the quality of my writing:
+When I ask you to, assess the quality of my writing:
 
 1. Match the existing style and tone of the website.
 2. Do not suggest significant rewrites, or tiny nitpicks.
@@ -61,38 +61,3 @@ Available at <https://github.com/gohugoio/hugoDocs>. Use the deepwiki MCP server
   - `hidden` (boolean, optional, default: false): If true, the page is excluded from the sitemap and lists of posts (e.g. Privacy Policy).
   - `comments` (boolean, optional, default: true): Toggle comments below the post.
   - `ttr` (string, optional): Time to read (e.g. "15~25m"), displayed in the post and lists.
-
-## Analytics: PostHog
-
-### Documentation
-
-As per PostHog's official documentation:
-
-> Markdown pages can be accessed by adding .md to the end of the URL, which serves the raw MDX we write our docs in.
-
-Example: <https://posthog.com/docs/ai-engineering/markdown-llms-txt.md>
-
-> You can find a directory of all our `.md` pages at <https://posthog.com/llms.txt>, a new proposed standard that helps LLMs index content.
-
-### Instructions
-
-1. Use tools exposed by the PostHog MCP server, if available. Otherwise, no access is assumed.
-2. Queries are to be written in HogQL, PostHog's ClickHouse-based SQL dialect. Refer to the documentation for details.
-
-### Custom Events
-
-Besides the default ones, the following custom events are tracked:
-
-- `engaged` + property `seconds`: Time actively spent on the page. This counter auto-increments within the same pageview and session - multiple events are sent, but only the one with the highest value is used for calculations.
-- `scrolled` + property `percent`: Percentage of the page that was scrolled through. Similarly, only the highest value within the same pageview and session is used. This event is skipped for short pages (less than 4x the viewport height).
-
-### Custom Views
-
-The following tables are not included in the PostHog documentation but are defined as views within the project's codebase. They might be useful for generating SQL queries.
-
-| Table Name | Description | Schema |
-|------------|-------------|-------|
-| `flags` | Mapping of country codes to their respective flag emojis | `country_code` (string), `flag` (string) |
-| `countries` | Per-country statistics on pageviews and user engagement | `country` (string), `persons` (count, int), `pageviews` (count, int), `engaged_avg` (seconds, float), `scrolled_avg` (percentage, float) |
-| `pageviews` | Detailed information on pageviews, including user activity metrics, grouped by session + pathname | `uuid` (string), `person_id` (string), `visit_time` (timestamp), `activity_time` (timestamp), `country_code` (string), `country_flag` (emoji, string), `country` (string), `city` (string), `pathname` (string), `engaged` (seconds, int), `scrolled` (percentage, float) |
-| `visitors` | Summary of user activity, grouped by person_id | `uuid` (string), `person_id` (string), `engaged_sum` (seconds, int), `recent_activity` (timestamp), `countries` (array of strings), `visit_times` (array of timestamps), `pathnames` (array of strings), `engaged_values` (array of ints), `scrolled_values` (array of floats) |

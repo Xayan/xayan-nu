@@ -18,22 +18,33 @@
     <div class="wrapper">
         {{ partial "bio" . }}
         <main class="page-content" aria-label="Content">
-            <h2 class="center" aria-label="Recent Posts">Recent Posts</h2>
-
             {{/* collect posts from main sections, excluding hidden */}}
             {{- $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections -}}
             {{- $pagesToShow = where $pagesToShow "Params.hidden" "ne" true -}}
+            {{- $recommendedPages := where $pagesToShow "Params.recommended" true -}}
+            {{- $hasRecommended := gt (len $recommendedPages) 0 -}}
 
-            {{/* Show last 5 posts in reverse date order */}}
-            {{- $posts := $pagesToShow.ByDate.Reverse -}}
-            {{- range $index, $page := first 5 $posts -}}
+            {{- $headingText := "Recent Posts" -}}
+            {{- $postsToDisplay := $pagesToShow.ByDate.Reverse -}}
+            {{- if $hasRecommended -}}
+                {{- $headingText = "Recommended Posts" -}}
+                {{- $postsToDisplay = $recommendedPages.ByDate.Reverse -}}
+            {{- else -}}
+                {{- $postsToDisplay = first 5 $postsToDisplay -}}
+            {{- end -}}
+
+            <h2 class="center" aria-label="{{ $headingText }}">{{ $headingText }}</h2>
+
+            {{/* Show recommended posts or fall back to the most recent five */}}
+            {{- $posts := $postsToDisplay -}}
+            {{- range $index, $page := $posts -}}
                 {{ partial "postCard" (dict "Page" $page "Index" $index) }}
             {{- end -}}
 
-            {{- if gt (len $posts) 5 -}}
+            {{- if gt (len $pagesToShow) 5 -}}
             <p style="text-align: center;">
                 {{- range $firstSection := (where .Site.Sections "Section" "in" (first 1 (.Site.Params.mainSections))) -}}
-                    <a href="{{ $firstSection.Permalink }}">See all posts ({{ len $posts }})</a>
+                    <a href="{{ $firstSection.Permalink }}">See all posts ({{ len $pagesToShow }})</a>
                 {{- end -}}
             </p>
             {{- end -}}

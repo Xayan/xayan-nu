@@ -3,7 +3,7 @@
   {{ partial "head.html" . }}
 
   {{ $defaultColor := .Site.Params.defaultColor | default "auto" }}
-  <body data-theme="{{ $defaultColor }}" class="notransition">
+  <body data-theme="{{ $defaultColor }}">
     {{ partial "scriptsBodyStart.html" . }}
     {{ partial "header.html" . }}
 

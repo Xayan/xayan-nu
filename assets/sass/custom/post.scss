@@ -64,6 +64,53 @@ $padding-multiplier: 0.4rem;
     margin-top: -0.4em;
     margin-left: 1em;
   }
+
+  blockquote {
+    position: relative;
+    padding: 2.5em 0.5em 0.5em 1em;
+    margin: 1.2em 0.3em;
+    border-left: 4px solid $blockquote-accent;
+    background-color: $blockquote-bg;
+    font-size: 0.9em;
+    border-radius: 8px;
+  
+    &::before {
+      content: '"';
+      position: absolute;
+      top: 0.1em;
+      left: 0.1em;
+      font-size: 4em;
+      line-height: 1;
+      opacity: 0.25;
+      font-family: Georgia, serif;
+      font-weight: bold;
+      color: $blockquote-quote;
+      pointer-events: none;
+      z-index: 0;
+    }
+  
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  
+    p:last-child {
+      &::before {
+        content: "";
+      }
+    }
+  
+    .quote-author {
+      display: block;
+      margin-top: 1em;
+      padding-top: 0.5em;
+      border-top: 1px solid $blockquote-divider;
+      font-style: italic;
+      font-size: 0.9em;
+      text-align: right;
+      opacity: 0.85;
+    }
+  }
 }
 
 .post-item {

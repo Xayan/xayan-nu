@@ -3,8 +3,16 @@
   color: black;
 }
 
-.noselect {
+.no-select {
   cursor: default;
+}
+
+// When the mobile nav overlay is open, lock page scroll.
+// JS is responsible for setting --scroll-y on <body> before adding .nav-open.
+body.nav-open {
+  position: fixed;
+  top: calc(-1 * var(--scroll-y, 0px));
+  width: 100%;
 }
 
 .center {
@@ -64,53 +72,6 @@ nav > ul {
   padding: 1em 0em 1em 2em;
   font-size: 0.9em;
 }
-  
-blockquote {
-  position: relative;
-  padding: 2.5em 0.5em 0.5em 1em;
-  margin: 1.2em 0.3em;
-  border-left: 4px solid $blockquote-accent;
-  background-color: $blockquote-bg;
-  font-size: 0.9em;
-  border-radius: 4px;
-
-  &::before {
-    content: '"';
-    position: absolute;
-    top: 0.1em;
-    left: 0.1em;
-    font-size: 4em;
-    line-height: 1;
-    opacity: 0.25;
-    font-family: Georgia, serif;
-    font-weight: bold;
-    color: $blockquote-quote;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  p:last-child {
-    &::before {
-      content: "";
-    }
-  }
-
-  .quote-author {
-    display: block;
-    margin-top: 1em;
-    padding-top: 0.5em;
-    border-top: 1px solid $blockquote-divider;
-    font-style: italic;
-    font-size: 0.9em;
-    text-align: right;
-    opacity: 0.85;
-  }
-}
 
 .scrollable-container {
   overflow-x: auto;
@@ -136,6 +97,12 @@ blockquote {
   }
 }
 
+.wrapper {
+  &.blurry {
+    animation: 0.5s linear forwards blur;
+  }
+}
+
 .author {
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
@@ -148,7 +115,6 @@ blockquote {
     @include link-styles($link-footer, $accent, false, false, false);
 
     svg {
-      
       @include link-styles($link-footer, $accent, false, false, false);
     }
   }
@@ -161,6 +127,11 @@ blockquote {
 
 .navbar {
   .menu {
+    .logo-image {
+      height: 25px;
+      width: auto;
+    }
+
     @include respond-mobile {
       .menu-link {
         display: block;
@@ -173,7 +144,31 @@ blockquote {
       }
 
       input[type="checkbox"]:checked ~ .trigger {
-        justify-content: space-between;
+        animation: 0.5s linear forwards fadein;
+        visibility: visible;
+      }
+
+      .trigger {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        visibility: visible;
+        background: #020617;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 0;
+          background-image: radial-gradient(circle 80vb at 50% 20%, rgba(57, 166, 158, 0.25), transparent);
+        }
+
+        > * {
+          position: relative;
+          z-index: 1;
+        }
       }
 
       .trigger-container {
@@ -197,13 +192,8 @@ blockquote {
           display: inline-block;
 
           svg {
-            color: #888a90;
-            height: 28px;
-            width: 28px;
-
-            &:hover {
-              color: $accent;
-            }
+            height: 30px;
+            width: 30px;
           }
         }
       }
@@ -270,4 +260,15 @@ blockquote {
   bottom: 24px;
   right: 24px;
   opacity: 0.5;
+}
+
+// Animation fade-out
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

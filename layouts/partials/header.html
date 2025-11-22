@@ -1,12 +1,12 @@
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
         <a href="{{ .Site.Home.Permalink }}" class="logo">
-            <img src="{{ .Site.Params.Logo | default "/logo.png" }}" height="20em" alt="{{ .Site.Title }}" class="logo-image"/>
+            <img src="{{ .Site.Params.Logo | default "/logo.png" }}" alt="{{ .Site.Title }}" class="logo-image"/>
         </a>
         <input type="checkbox" id="menu-trigger" class="menu-trigger" />
         <label for="menu-trigger">
             <span class="menu-icon">
-                {{ partial "svgs/menu.svg" (dict "height" 25 "width" 25) . }}
+                {{ partial "svgs/menu.svg" (dict "height" 30 "width" 30) . }}
             </span>
         </label>
 

@@ -1,3 +1,14 @@
+$accent: #33ffab;
+$accent-dark: #279265;
+$accent-ai: #1669bd;
+$font-color: #babdc4;
+$greyed-out: #596263;
+
+$link-page: #d6dae3;
+$link-post: $accent;
+$link-post-hover: $accent-dark;
+$link-footer: #9da3af;
+
 $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
 $chat-border-radius: 12px;
@@ -18,13 +29,16 @@ $chat-tail-width: 12px;
 @mixin link-styles($base, $hover, $important: false, $underline-hover: true, $keep-decoration: true) {
   $flag: if($important, '!important', null);
   color: $base #{$flag};
+  opacity: 1;
   @if not $keep-decoration {
     text-decoration: none;
   }
-  transition: color 0.25s ease;
+  transition: color 0.5s ease, opacity 0.5s ease;
 
   &:hover {
+    cursor: hand;
     color: $hover #{$flag};
+    opacity: 0.8;
     @if $underline-hover {
       text-decoration: underline;
     } @else if not $keep-decoration {
@@ -48,7 +62,6 @@ $chat-tail-width: 12px;
 }
 
 html {  
-  @import "custom/common";
   @import "custom/page";
   
   .page-content {

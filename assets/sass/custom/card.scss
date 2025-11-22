@@ -10,10 +10,6 @@
     box-shadow: 0 4px 16px rgba($accent, 0.1);
   }
 
-  a {
-    @include link-styles(white, $accent, true, false, false);
-  }
-
   .card-row {
     display: flex;
     flex-direction: row;
@@ -82,8 +78,8 @@
       font-size: 0.7rem;
       padding: 0rem 0.4rem;
       margin: 0 0.1rem;
-      background: rgba($accent-dark, 0.2);
-      color: $accent-dark;
+      background: rgba($accent-dark, 0.5);
+      color: lighten($accent-dark, 20%);
       text-shadow: black 2px 2px 4px;
       box-shadow: black 2px 2px 4px;
       border-radius: 8px;
@@ -164,8 +160,8 @@
           float: right;
 
           .category-tag {
-            background: rgba($accent-dark, 0.6);
-            color: white;
+            background: rgba($accent-dark, 0.7);
+            color: rgba($accent, 0.7);
             font-weight: 600;
           }
         }

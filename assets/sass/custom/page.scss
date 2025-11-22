@@ -152,6 +152,11 @@ blockquote {
       @include link-styles($link-footer, $accent, false, false, false);
     }
   }
+
+  .footer_copyright {
+    margin: 0.5rem 0;
+    padding: 0;
+  }
 }
 
 .navbar {
@@ -259,4 +264,10 @@ blockquote {
         -1em 0.125em 1.2em hsla(200, 100%, 65%, 0.18);
     }
   }
+}
+
+#totop {
+  bottom: 24px;
+  right: 24px;
+  opacity: 0.5;
 }

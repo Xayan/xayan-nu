@@ -22,17 +22,13 @@
 
   .list-item-title {
     flex: 1;
-    min-width: 0;
+    min-width: 96px;
     margin: 0;
     padding: 0;
     border: 0;
     font-weight: normal;
     font-size: inherit;
     letter-spacing: 0.1px;
-
-    @include respond-mobile {
-      max-width: 15rem;
-    }
 
     a {
       color: $dark-text-base-color;
@@ -49,9 +45,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex: 0 0 60px;
-    min-width: 90px;
+    text-align: left;
+    flex: 0 0 100px;
     margin-left: 0;
     color: $dark-gray;
     text-align: left;
@@ -69,6 +64,7 @@
     @include respond-mobile {
       flex: 0 0 auto;
       margin-left: 0;
+      width: 80px;
       text-align: left;
       align-items: flex-start;
 

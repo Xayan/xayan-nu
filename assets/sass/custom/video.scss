@@ -1,7 +1,7 @@
 .youtube-embed {
   --yt-max-width: 480px;
   --yt-margin: 2.25rem 0;
-  --yt-aspect-ratio: 4 / 3;
+  --yt-aspect-ratio: 16 / 9;
   --yt-padding: 75%;
 
   display: flex;
@@ -19,7 +19,7 @@
     width: 100%;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 12px rgba(208, 66, 66, 0.6);
     background-color: rgba(0, 0, 0, 0.85);
     aspect-ratio: var(--yt-aspect-ratio);
 

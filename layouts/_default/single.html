@@ -1,51 +1,49 @@
 {{ define "main" }}
-<div class="wrapper post">
-	<main class="page-content" aria-label="Content">
-		<article class="post-content" aria-label="Article">
-			<header class="header noselect" aria-label="Header">
-				<h1 class="header-title">{{ .Title }}</h1>
-				<div class="post-meta">
-					{{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
-					{{ with .Date }}
-						{{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
-						<time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }}</time>
-					{{ end }}
-					{{ with .Params.ttr }}
-						<span>Time to Read: {{ . }}</span>
-					{{ end }}
-				</div>
-				<p class="terms">
-					{{ $sep := "<span class=\"noselect\"> ⬩ </span>" | safeHTML }}
-					{{ with .GetTerms "categories" }}
-						{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.Params.ShortTitle | default $e.Title }}</a>{{ end }}
-					{{ end }}
-				</p>
-				{{ partial "toc.html" . }}
-			</header>
-			<section class="post-content">
-					{{ .Content
-						| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
-						| replaceRE `</table>` `</table></div>`
-						| safeHTML
-					}}
-			</section>
-			<section class="post-comments"></section>
-				{{ if ne .Params.hidden true }}
-					{{ partial "poll.html" . }}
-					<hr style="margin-top: 32px; margin-bottom: 32px;" />
-					{{ partial "share.html" . }}
-					{{ partial "comments.html" . }}
+<main class="wrapper page-content" aria-label="Content">
+	<article class="post-content" aria-label="Article">
+		<header class="header noselect" aria-label="Header">
+			<h1 class="header-title">{{ .Title }}</h1>
+			<div class="post-meta">
+				{{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+				{{ with .Date }}
+					{{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+					<time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }}</time>
 				{{ end }}
-			</section>
+				{{ with .Params.ttr }}
+					<span>Time to Read: {{ . }}</span>
+				{{ end }}
+			</div>
+			<p class="terms">
+				{{ $sep := "<span class=\"noselect\"> ⬩ </span>" | safeHTML }}
+				{{ with .GetTerms "categories" }}
+					{{ range $i, $e := . }}{{ if $i }}{{ $sep }}{{ end }}<a class="category" href="{{ $e.RelPermalink }}">{{ $e.Params.ShortTitle | default $e.Title }}</a>{{ end }}
+				{{ end }}
+			</p>
+			{{ partial "toc.html" . }}
+		</header>
+		<section class="post-content">
+				{{ .Content
+					| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
+					| replaceRE `</table>` `</table></div>`
+					| safeHTML
+				}}
+		</section>
+		<section class="post-comments"></section>
+			{{ if ne .Params.hidden true }}
+				{{ partial "poll.html" . }}
+				<hr style="margin-top: 32px; margin-bottom: 32px;" />
+				{{ partial "share.html" . }}
+				{{ partial "comments.html" . }}
+			{{ end }}
+		</section>
 
-			{{/* Inject valued event configuration for posts */}}
-			<script type="application/json" id="valued-config">
-			{
-				{{ if .Params.valued_time }}"valued_time": {{ .Params.valued_time }}{{ if .Params.valued_scroll }},{{ end }}{{ end }}
-				{{ if .Params.valued_scroll }}"valued_scroll": {{ .Params.valued_scroll }}{{ end }}
-			}
-			</script>
-		</article>
-	</main>
-</div>
+		{{/* Inject valued event configuration for posts */}}
+		<script type="application/json" id="valued-config">
+		{
+			{{ if .Params.valued_time }}"valued_time": {{ .Params.valued_time }}{{ if .Params.valued_scroll }},{{ end }}{{ end }}
+			{{ if .Params.valued_scroll }}"valued_scroll": {{ .Params.valued_scroll }}{{ end }}
+		}
+		</script>
+	</article>
+</main>
 {{ end }}

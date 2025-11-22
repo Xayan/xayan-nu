@@ -1,0 +1,78 @@
+.chat {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+
+  .message {
+    display: block;
+
+    margin: 0.5rem 0;
+    max-width: 90%;
+    min-width: 0;
+
+    border: 0px solid;
+
+    .content {
+      margin: 0;
+      padding: 0 1em;
+
+      display: inline-block;
+      position: relative;
+      overflow: visible;
+
+      font-size: 0.9em;
+      line-height: 1.5em;
+
+      p, ul, ol {
+        margin: 0.5em inherit;
+
+      }
+
+      &::after {
+        bottom: 0;
+        right: -10px;
+        border-top: 20px solid transparent;
+        border-left: 12px solid $chat-user-bg;
+        z-index: 2;
+      }
+    }
+
+    &.user {
+      float: right;
+
+      .content {
+        border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
+        border-color: $accent-dark;
+        color: $font-color;
+        background-color: $chat-user-bg;
+
+        &::after {
+          bottom: 0;
+          left: -10px;
+          border-top: 20px solid transparent;
+          border-right: 12px solid $chat-user-bg;
+          z-index: 2;
+        }
+      }
+    }
+
+    &.assistant {
+      float: left;
+
+      .content {
+        border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
+        border-color: $accent-ai;
+        color: $font-color;
+        background-color: $chat-assistant-bg;
+
+        &::after {
+          bottom: 0;
+          left: -10px;
+          border-top: 20px solid transparent;
+          border-right: 12px solid $chat-assistant-bg;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}

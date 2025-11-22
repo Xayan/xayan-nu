@@ -1,8 +1,8 @@
 {{ $page := .Page }}
 {{ if not $page.Params.hidden }}
-	<article class="post-card">
-		<div class="post-card-row">
-			<div class="post-card-image">
+	<article class="card">
+		<div class="card-row">
+			<div class="card-image">
 				{{- $image := "" -}}
 				{{- with $page.Params.image -}}
 					{{- $image = . | absURL -}}
@@ -16,7 +16,7 @@
 				{{ if $image }}
 						<img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy">
 				{{ else }}
-						<svg class="post-card-image" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+						<svg class="card-image" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
 							<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17l2.5-3.5L15 18H5l4-5z"/>
 						</svg>
 				{{ end }}
@@ -25,34 +25,34 @@
 				{{/* Mobile overlay positioned within the image container */}}
 				<div class="mobile-overlay">
 					{{ if $page.Params.categories }}
-					<div class="post-card-categories">
+					<div class="card-categories">
 						{{ range $page.Params.categories }}
 						<span class="category-tag">{{ . }}</span>
 						{{ end }}
 					</div>
 					{{ end }}
 
-					<h3 class="post-card-title">
+					<h3 class="card-title">
 						<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 					</h3>
 				</div>
 			</div>
 
-			<div class="post-card-content">
-				<div class="post-card-main-content">
-					<header class="post-card-header desktop-only">
-						<h3 class="post-card-title">
+			<div class="card-content">
+				<div class="card-main-content">
+					<header class="card-header desktop-only">
+						<h3 class="card-title">
 							<a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
 						</h3>
 					</header>
 
 					{{ with $page.Params.description }}
-						<span class="post-card-description">{{ . }}</span>
+						<span class="card-description">{{ . }}</span>
 					{{ end }}
 				</div>
 			</div>
 		</div>
-		<footer class="post-card-meta">
+		<footer class="card-meta">
 			{{ $ISO_date := "2006-01-02T15:04:05Z0700" }}
 			{{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
 			{{ $count := len $page.Pages }}

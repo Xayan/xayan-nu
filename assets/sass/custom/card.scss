@@ -1,0 +1,204 @@
+.card {
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+  min-height: calc(120px + 2rem);
+  @include card-panel;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba($accent, 0.3);
+    box-shadow: 0 4px 16px rgba($accent, 0.1);
+  }
+
+  a {
+    @include link-styles(white, $accent, true, false, false);
+  }
+
+  .card-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  // Default (left-aligned) layout
+  .card-image {
+    width: 180px;
+    height: 120px;
+    margin: 1rem 1.5rem 1rem 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    flex-shrink: 0;
+    position: relative; // For mobile overlay positioning
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform-origin: center center;
+      will-change: transform;
+      transition: transform 0.3s ease;
+    }
+
+    // Mobile overlay (hidden on desktop)
+    .mobile-overlay {
+      display: none;
+    }
+  }
+
+
+  &:hover .card-image img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+
+  .card-content {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  // Desktop-only elements
+  .desktop-only {
+    display: block;
+  }
+
+  .card-header {
+    margin-bottom: 0.8rem;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .card-categories {
+    display: block;
+    margin: 0.25em 0;
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0rem 0.4rem;
+      margin: 0 0.1rem;
+      background: rgba($accent-dark, 0.2);
+      color: $accent-dark;
+      text-shadow: black 2px 2px 4px;
+      box-shadow: black 2px 2px 4px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .card-description {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: rgba($font-color, 0.8);
+    display: inline;
+  }
+
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      padding: 0.5em 1em;
+    }
+
+    .ttr {
+      color: rgba($font-color, 0.7);
+      font-style: italic;
+      font-size: 0.8rem;
+    }
+
+    .post-date {
+      color: rgba($font-color, 0.7);
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+
+  &:nth-child(even) .card-row {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  @include respond-mobile {
+    display: block;
+
+    .card-row {
+      display: block;
+    }
+
+    .card-image {
+      float: right;
+      width: 100%;
+      height: 180px;
+      margin: 0 0 0.5em 0;
+      position: relative;
+      border-radius: 8px 8px 0 0;
+
+      // Show mobile overlay within image
+      .mobile-overlay {
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 180px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        padding: 0rem 1rem 1rem 1rem;
+        color: white;
+
+        .card-categories {
+          margin-top: 0.6em;
+          float: right;
+
+          .category-tag {
+            background: rgba($accent-dark, 0.6);
+            color: white;
+            font-weight: 600;
+          }
+        }
+
+        .card-title {
+          color: white;
+          font-size: 1.1rem;
+          position: inherit;
+          text-align: left;
+          margin: 0;
+          bottom: 1.6em;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+
+    .card-content {
+      padding: 0;
+      text-align: left;
+    }
+
+    // Hide desktop elements
+    .desktop-only {
+      display: none;
+    }
+
+    .card-main-content {
+      padding: 1rem;
+    }
+
+    .card-description {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  }
+}

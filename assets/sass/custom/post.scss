@@ -1,0 +1,101 @@
+$header-margin: 1.2rem;
+$padding-multiplier: 0.4rem;
+
+.post-content {
+  font-size: 0.95em;
+
+  a {
+    @include link-styles($accent, $accent-dark, true, false);
+  }
+
+  h2 {
+    margin-top: $header-margin;
+    padding-left: 0.1rem;
+    font-size: 1.8em;
+    border-bottom: 1px solid $accent-dark;
+  }
+
+  h3 {
+    margin-top: $header-margin;
+    padding-left: 1 * $padding-multiplier;
+    font-size: 1.6em;
+  }
+
+  h4 {
+    margin-top: $header-margin;
+    padding-left: 2 * $padding-multiplier;
+    font-size: 1.4em;
+  }
+
+  h5 {
+    margin-top: $header-margin;
+    padding-left: 3 * $padding-multiplier;
+    font-size: 1.25em;
+  }
+
+  h6 {
+    margin-top: $header-margin;
+    padding-left: 4 * $padding-multiplier;
+    font-size: 1.1em;
+  }
+
+  .header {
+    margin: 4rem 0 2rem 0;
+  
+    font-size: medium;
+  
+    .header-title {
+      margin-bottom: 0.5em;
+      font-size: x-large;
+    }
+  
+    .terms {
+      color: $greyed-out;
+      word-break: keep-all;
+    }
+  }
+
+  .subhead {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    color: $gray;
+    font-style: italic;
+    margin-top: -0.4em;
+    margin-left: 1em;
+  }
+}
+
+.post-item {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  align-items: center;
+
+  .post-item-title {
+    font-size: 0.88em;
+    flex: 1; /* take remaining space */
+  }
+
+  .right-cols {
+    display: flex;
+    flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
+    gap: 1.2em; /* spacing between them */
+    flex-shrink: 0; /* don't shrink into left space */
+
+    time {
+      font-weight: bold;
+    }
+
+    .post-item-meta {
+      font-size: 0.75em;
+    }
+
+    .ttr {
+      font-style: italic;
+    }
+  }
+
+  a {
+    @include link-styles($accent, $accent-dark, true, false);
+  }
+}

@@ -6,7 +6,7 @@
     </header>
     <hr/>
     <div class="list-content">
-      {{ range .Pages }}
+      {{ range .Pages.ByTitle }}
         {{ partial "tagCard" . }}
       {{ end }}
     </div>

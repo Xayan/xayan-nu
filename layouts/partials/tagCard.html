@@ -7,10 +7,9 @@
   <h4 class="list-item-title">
       <a href="{{ .RelPermalink }}">#{{ $slugTitle }}</a>
   </h4>
-  {{ if $isTermPage }}
-    {{ $count := len (default (slice) .Pages) }}
-    <span class="list-item-meta">{{ $count }} Post{{ if ne $count 1 }}s{{ end }}</span>
-  {{ end }}
+
+  {{ $count := len (default (slice) .Pages) }}
+  <span class="list-item-meta">{{ $count }} Post{{ if ne $count 1 }}s{{ end }}</span>
 
   <time class="list-item-meta" datetime="{{ dateFormat $ISO_date .Date }}">
       {{ time.Format $configDateFormat .Date }}

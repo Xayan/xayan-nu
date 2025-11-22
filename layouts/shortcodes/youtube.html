@@ -1,0 +1,106 @@
+{{/* 
+  Usage:
+    {{< youtube
+      id="VIDEO_ID"
+      title="Optional Title"
+      margin="Optional CSS margin"
+      maxWidth="Optional CSS max-width"
+      ratio="v:h"
+      start="seconds"
+      end="seconds"
+      loop="1"
+      controls="0"
+      query="additional=query&parameters=here"
+      class="additional-css-classes"
+    >}}
+*/}}
+{{- $videoID := "" -}}
+{{- if .IsNamedParams -}}
+  {{- $videoID = trim (.Get "id") " " -}}
+{{- else if ge (len .Params) 1 -}}
+  {{- $videoID = trim (index .Params 0) " " -}}
+{{- end -}}
+{{- if not $videoID -}}
+  {{- errorf "youtube shortcode requires a video id" -}}
+{{- end -}}
+
+{{- $title := .Get "title" | default "YouTube video player" -}}
+{{- $styleParts := slice -}}
+{{- with .Get "margin" -}}
+  {{- $styleParts = $styleParts | append (printf "--yt-margin:%s" .) -}}
+{{- end -}}
+{{- with .Get "maxWidth" -}}
+  {{- $styleParts = $styleParts | append (printf "--yt-max-width:%s" .) -}}
+{{- end -}}
+{{- $aspectValue := "" -}}
+{{- $paddingValue := "" -}}
+{{- $numberPattern := `^[0-9]+(\.[0-9]+)?$` -}}
+{{- with .Get "ratio" -}}
+  {{- $normalized := replaceRE `\s*[:xX/]\s*` ":" . -}}
+  {{- $parts := split $normalized ":" -}}
+  {{- if eq (len $parts) 2 -}}
+    {{- $wStr := trim (index $parts 0) " " -}}
+    {{- $hStr := trim (index $parts 1) " " -}}
+    {{- $wValid := gt (len (findRE $numberPattern $wStr)) 0 -}}
+    {{- $hValid := gt (len (findRE $numberPattern $hStr)) 0 -}}
+    {{- if and $wValid $hValid -}}
+      {{- $w := float $wStr -}}
+      {{- $h := float $hStr -}}
+      {{- if and (gt $w 0) (gt $h 0) -}}
+        {{- $aspectValue = printf "%g / %g" $w $h -}}
+        {{- $padding := mul (div $h $w) 100 -}}
+        {{- $paddingValue = printf "%.6f%%" $padding -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $aspectValue -}}
+      {{- $aspectValue = replaceRE `\s*[:xX/]\s*` " / " . -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $aspectValue = replaceRE `\s*[:xX/]\s*` " / " . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $aspectValue -}}
+  {{- $styleParts = $styleParts | append (printf "--yt-aspect-ratio:%s" .) -}}
+{{- end -}}
+{{- with $paddingValue -}}
+  {{- $styleParts = $styleParts | append (printf "--yt-padding:%s" .) -}}
+{{- end -}}
+{{- $styleAttr := "" -}}
+{{- if gt (len $styleParts) 0 -}}
+  {{- $styleAttr = delimit $styleParts ";" -}}
+{{- end -}}
+{{- $queryParams := slice "rel=0" "modestbranding=1" "playsinline=1" -}}
+{{- with .Get "start" -}}
+  {{- $queryParams = $queryParams | append (printf "start=%s" .) -}}
+{{- end -}}
+{{- with .Get "end" -}}
+  {{- $queryParams = $queryParams | append (printf "end=%s" .) -}}
+{{- end -}}
+{{- with .Get "loop" -}}
+  {{- $queryParams = $queryParams | append (printf "loop=%s" .) -}}
+{{- end -}}
+{{- with .Get "controls" -}}
+  {{- $queryParams = $queryParams | append (printf "controls=%s" .) -}}
+{{- end -}}
+{{- with .Get "query" -}}
+  {{- $queryParams = $queryParams | append . -}}
+{{- end -}}
+{{- $src := printf "https://www.youtube.com/embed/%s" $videoID -}}
+{{- if gt (len $queryParams) 0 -}}
+  {{- $src = printf "%s?%s" $src (delimit $queryParams "&") -}}
+{{- end -}}
+<div class="youtube-embed{{ with .Get `class` }} {{ . }}{{ end }}"{{ with $styleAttr }} style="{{ . | safeCSS }}"{{ end }}>
+  <div class="youtube-embed__container">
+    <div class="youtube-embed__frame">
+      <iframe
+        src="{{ $src }}"
+        title="{{ $title }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</div>

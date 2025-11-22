@@ -454,6 +454,4 @@ Go now. Take care of yourselves, and of each other.
 
 Wir schaffen das.
 
----
-
-<p style="text-align: center; margin: 2em 0;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/RUsUQ9tRHHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+{{<youtube id="RUsUQ9tRHHQ" ratio="4:3" maxWidth="480px" title="dandelions forever">}}

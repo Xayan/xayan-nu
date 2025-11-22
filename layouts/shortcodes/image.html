@@ -3,7 +3,7 @@
 {{ $source := .Get "source" }}
 {{ $description := trim .Inner " \n\r\t" }}
 
-<figure class="image-shortcode">
+<figure class="image">
   <img src="{{ $url }}" alt="{{ $description }}" loading="lazy">
   
   {{ if or $description $source }}

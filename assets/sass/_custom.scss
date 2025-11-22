@@ -9,6 +9,12 @@ $link-post: $accent;
 $link-post-hover: $accent-dark;
 $link-footer: #9da3af;
 
+$base-margin: 1.5rem;
+$narrow-margin: calc($base-margin / 1.5);
+$narrower-margin: calc($base-margin / 2);
+$wide-margin: calc($base-margin * 1.5);
+$wider-margin: calc($base-margin * 2);
+
 $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
 $chat-border-radius: 12px;
@@ -74,6 +80,7 @@ html {
     @import "custom/list";
 
     @import "custom/image";
+    @import "custom/video";
     @import "custom/chat";
   }
 }

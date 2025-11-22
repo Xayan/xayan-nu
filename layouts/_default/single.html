@@ -21,7 +21,6 @@
 			</p>
 			{{ partial "toc.html" . }}
 		</header>
-		<hr/>
 		<section class="post-content">
 				{{ .Content
 					| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
@@ -29,10 +28,10 @@
 					| safeHTML
 				}}
 		</section>
+		<hr/>
 		<section class="post-comments">
 			{{ if ne .Params.hidden true }}
 				{{ partial "poll.html" . }}
-				<hr/>
 				{{ partial "share.html" . }}
 				{{ partial "comments.html" . }}
 			{{ end }}

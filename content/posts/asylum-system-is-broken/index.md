@@ -1,6 +1,6 @@
 ---
 # Metadata
-title: "The Asylum System is Broken and Unsustainable"
+title: "Asylum System is Broken and Unsustainable"
 description: "And it's only going to get worse, because what once was a \"non-binding agreement\" is now being turned into coercion via legal and fiscal means - like the EU's Migration Pact."
 image: "/posts/asylum-system-is-broken/thumb.jpg"
 author: "Xayan"

@@ -221,11 +221,28 @@
     }, { passive: true });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupScrollTracking, { once: true });
-  } else {
-    setupScrollTracking();
+  function onDocumentReady(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+      fn();
+    }
   }
+
+  function setupShareTracking() {
+    const shareLinks = document.querySelectorAll('.shares > a[data-target]');
+    if (shareLinks.length === 0) return;
+
+    shareLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const target = link.getAttribute('data-target') || 'unknown';
+        sendPHEvent('shared', { target });
+      });
+    });
+  }
+
+  onDocumentReady(setupScrollTracking);
+  onDocumentReady(setupShareTracking);
 
   // --- Text Selection Analytics ---
   // Tracks user text selections (content-selected with 500ms debounce) and copy events (content-copied).

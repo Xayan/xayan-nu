@@ -31,8 +31,10 @@
 			</section>
 			<section class="post-comments"></section>
 				{{ if ne .Params.hidden true }}
-					{{- partial "poll.html" . -}}
-					{{- partial "comments.html" . -}}
+					{{ partial "poll.html" . }}
+					<hr style="margin-top: 32px; margin-bottom: 32px;" />
+					{{ partial "share.html" . }}
+					{{ partial "comments.html" . }}
 				{{ end }}
 			</section>
 

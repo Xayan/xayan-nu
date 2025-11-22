@@ -21,6 +21,7 @@
 			</p>
 			{{ partial "toc.html" . }}
 		</header>
+		<hr/>
 		<section class="post-content">
 				{{ .Content
 					| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
@@ -28,14 +29,15 @@
 					| safeHTML
 				}}
 		</section>
-		<section class="post-comments"></section>
+		<section class="post-comments">
 			{{ if ne .Params.hidden true }}
 				{{ partial "poll.html" . }}
-				<hr style="margin-top: 32px; margin-bottom: 32px;" />
+				<hr/>
 				{{ partial "share.html" . }}
 				{{ partial "comments.html" . }}
 			{{ end }}
 		</section>
+		<hr/> 
 
 		{{/* Inject valued event configuration for posts */}}
 		<script type="application/json" id="valued-config">

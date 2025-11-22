@@ -35,22 +35,26 @@ hr {
   margin: 2rem 0;
 }
 
-.header .header-title {
-  margin-bottom: 4rem;
+
+
+h1, h2, h3, h4, h5, h6, .header .header-title {
+  font-weight: 800;
+}
+
+h1, .header .header-title {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
 }
 
 h2 {
-  padding-left: 0.25em;
   font-size: 1.8em;
 }
 
 h3 {
-  padding-left: 0.25em;
   font-size: 1.5em;
 }
 
 h4 {
-  padding-left: 0.25em;
   font-size: 1.25em;
 }
 
@@ -133,12 +137,6 @@ blockquote {
     }
   }
 }
-
-// a#totop {
-//   opacity: 0.6;
-
-//   @include link-styles('white', $text-link-blue-active, true, false, false);
-// }
 
 .author {
   margin-top: 5.6rem;

@@ -1,22 +1,26 @@
 {{- define "main" -}}
 <div class="wrapper list-page">
-  <header class="header">
-    <h1 class="header-title center">{{ .Title }}</h1>
-  </header>
   <main class="page-content" aria-label="Content">
     {{ if (eq .Type "series") }}
-      {{ .Content }}
-      {{ partial "poll.html" . }}
+      <header class="header">
+        <h1 class="header-title center">{{ .Title }}</h1>
+      </header>
       <hr/>
+      {{ .Content }}
+      <hr/>
+      {{ partial "poll.html" . }}
       {{ partial "share.html" . }}
       {{ partial "comments.html" . }}
     {{ else }}
-      <div class="list-content">
+      <header class="header">
+        <h1 class="header-title center">{{ .Title }}</h1>
+      </header>
+      <hr/>
       {{ $allPosts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
       {{ range $allPosts.ByDate.Reverse }}
         {{ partial "postCard" . }}
       {{ end }}
-      </div>
+      <hr/>
     {{ end }}
   </main>
 </div>

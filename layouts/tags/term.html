@@ -5,11 +5,13 @@
     <header class="header">
       <h1 class="header-title center">#{{ $slugTitle }}</h1>
     </header>
+    <hr/>
     <div class="list-content">
       {{ range .Pages }}
         {{ partial "postCard" . }}
       {{ end }}
     </div>
+    <hr/>
   </main>
 </div>
 {{- end -}}

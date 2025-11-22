@@ -120,7 +120,10 @@
 
     if (state.intervalIndex < INTERVALS.length && state.engagementTime >= INTERVALS[state.intervalIndex]) {
       const seconds = INTERVALS[state.intervalIndex];
-      sendPHEvent('engaged', { seconds });
+      sendPHEvent('engaged', {
+        seconds,
+        percent: state.scrollDepth
+      });
       state.intervalIndex += 1;
     }
   }
@@ -209,7 +212,10 @@
       }, state.lastScrollMilestone);
 
       if (milestone > state.lastScrollMilestone) {
-        sendPHEvent('scrolled', { percent: milestone });
+        sendPHEvent('scrolled', {
+          percent: state.scrollDepth,
+          seconds: state.engagementTime
+        });
         state.lastScrollMilestone = milestone;
       }
     }, { passive: true });

@@ -13,12 +13,8 @@
     {{ else }}
       <div class="list-content">
       {{ $allPosts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-      {{ range $allPosts.GroupByDate "2006" }}
-        {{ $year := .Key }}
-        <h2 class="post-year center">{{ $year }}</h2>
-        {{ range .Pages.ByDate.Reverse }}
-          {{ partial "postCard" . }}
-        {{ end }}
+      {{ range $allPosts.ByDate.Reverse }}
+        {{ partial "postCard" . }}
       {{ end }}
       </div>
     {{ end }}

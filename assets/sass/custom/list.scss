@@ -1,11 +1,12 @@
 .list-item {
   display: flex;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-    gap: 1rem;
+  font-size: $base-font-size;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 5px;
+  padding-bottom: 6px;
 
   &:not(:first-child) {
     border-top: 1px solid $dark-light;
@@ -15,18 +16,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    font-size: $small-font-size;
     gap: 0.5rem;
   }
 
   .list-item-title {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: $base-font-size;
-    font-weight: normal;
-    letter-spacing: 0.1px;
     flex: 1;
     min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: inherit;
+    letter-spacing: 0.1px;
 
     @include respond-mobile {
       max-width: 15rem;
@@ -44,12 +46,16 @@
   }
 
   .list-item-meta {
-    min-width: 90px;
-    color: $dark-gray;
-    margin-left: 0;
-    text-align: left;
-    @include flex-column-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex: 0 0 60px;
+    min-width: 90px;
+    margin-left: 0;
+    color: $dark-gray;
+    text-align: left;
+    font-size: inherit;
     font-variant-numeric: tabular-nums;
 
     &:first-of-type {
@@ -62,11 +68,9 @@
 
     @include respond-mobile {
       flex: 0 0 auto;
-      width: auto;
       margin-left: 0;
       text-align: left;
       align-items: flex-start;
-      font-size: 16px;
 
       &:first-of-type {
         margin-left: 0;

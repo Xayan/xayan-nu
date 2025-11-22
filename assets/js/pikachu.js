@@ -1,222 +1,216 @@
 (function() {
-  // --- Engagement schedule ---
-  const intervals = [];
-  for (let i = 5; i < 20; i += 5) intervals.push(i);
-  for (let i = 20; i < 60; i += 10) intervals.push(i);
-  for (let i = 60; i < 600; i += 30) intervals.push(i);
-  for (let i = 600; i <= 7200; i += 60) intervals.push(i);
+  const LOG_PREFIX = '[Pikachu]';
+  const log = (...args) => console.log(LOG_PREFIX, ...args);
+  const warn = (...args) => console.warn(LOG_PREFIX, ...args);
 
-  let engagementTime = 0;
-  let intervalIndex = 0;
-  let scrollDepth = 0;
-  let valued = false;
-  let fired = [];
+  const INTERVALS = buildIntervals([
+    { start: 5, end: 20, step: 5 },
+    { start: 20, end: 60, step: 10 },
+    { start: 60, end: 600, step: 30 },
+    { start: 600, end: 7200, step: 60, inclusive: true }
+  ]);
 
-  // --- Valued event configuration ---
-  let valuedConfig = {};
-  const configElement = document.getElementById('valued-config');
-  if (configElement) {
+  const valuedConfig = readValuedConfig();
+  const valuedEnabled = hasValuedConfig(valuedConfig);
+  
+  log("Hi. Whatcha doing here? Care to take a peek into analytics' logs?");
+  log('Valued event configuration:', valuedConfig);
+  log('Valued event enabled:', valuedEnabled);
+
+  const state = {
+    engagementTime: 0,
+    intervalIndex: 0,
+    scrollDepth: 0,
+    valuedFired: false,
+    lastScrollMilestone: 0,
+    visible: document.visibilityState === 'visible',
+    idle: true,
+    timerId: null,
+    idleTimerId: null,
+    lastSessionId: posthog?.get_session_id?.() ?? null
+  };
+
+  const IDLE_LIMIT_MS = 60000;
+  const ACTIVITY_EVENTS = ['mousemove', 'pointermove', 'scroll', 'keydown', 'touchstart', 'pointerdown'];
+
+  function buildIntervals(ranges) {
+    const output = [];
+    ranges.forEach(({ start, end, step, inclusive }) => {
+      const comparator = inclusive ? (value, limit) => value <= limit : (value, limit) => value < limit;
+      for (let cursor = start; comparator(cursor, end); cursor += step) {
+        output.push(cursor);
+      }
+    });
+    return output;
+  }
+
+  function readValuedConfig() {
+    const element = document.getElementById('valued-config');
+    if (!element) return {};
+
     try {
-      valuedConfig = JSON.parse(configElement.textContent);
-    } catch (e) {
-      console.warn('[Pikachu] Failed to parse valued-config:', e);
+      return JSON.parse(element.textContent);
+    } catch (error) {
+      warn('Failed to parse valued-config:', error);
+      return {};
     }
   }
-  
-  // Check if valued event is enabled (at least one parameter specified)
-  const valuedEnabled = valuedConfig.valued_time !== undefined || valuedConfig.valued_scroll !== undefined;
-  
-  console.log('[Pikachu] Valued event configuration:', valuedConfig);
-  console.log('[Pikachu] Valued event enabled:', valuedEnabled);
 
-  // --- State machine ---
-  let visible = (document.visibilityState === 'visible');
-  let lastSessionId = posthog?.get_session_id?.() || null;
-  let idle = true;                 // start idle until first user activity
-  let timer = null;                // setInterval id
-  let idleTimer = null;            // setTimeout id
-  const idleLimit = 60000;         // 60s
-
-  console.log("[Pikachu] Hi. Whatcha doing here? Care to take a peek into analytics' logs?");
+  function hasValuedConfig(config) {
+    return config.valued_time !== undefined || config.valued_scroll !== undefined;
+  }
 
   function sendPHEvent(name, params = {}) {
-    console.log(`[Pikachu] ${name}`, params);
+    log(name, params);
 
     if (typeof posthog !== 'undefined' && posthog.capture) {
       posthog.capture(name, params);
     } else {
-      console.log(`[Pikachu] PostHog not loaded`);
+      log('PostHog not loaded');
     }
   }
 
   function startTimer() {
-    if (!timer) {
-      timer = setInterval(tick, 1000);
-      console.log("[Pikachu] Timer START");
+    if (!state.timerId) {
+      state.timerId = setInterval(tick, 1000);
+      log('Timer START');
     }
   }
 
   function stopTimer(reason) {
-    if (timer) {
-      clearInterval(timer);
-      timer = null;
-      console.log(`[Pikachu] Timer STOP (${reason})`);
+    if (state.timerId) {
+      clearInterval(state.timerId);
+      state.timerId = null;
+      log(`Timer STOP (${reason})`);
     }
   }
 
   function scheduleIdleTimeout() {
-    if (idleTimer) clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => {
-      idle = true;
-      console.log("[Pikachu] Became IDLE");
+    if (state.idleTimerId) clearTimeout(state.idleTimerId);
+    state.idleTimerId = setTimeout(() => {
+      state.idle = true;
+      log('Became IDLE');
       updateTimerState();
-    }, idleLimit);
+    }, IDLE_LIMIT_MS);
   }
 
   function markActivity(evtName) {
-    // Mark active and keep extending idle deadline
-    if (idle) {
-      idle = false;
-      console.log(`[Pikachu] Became ACTIVE via ${evtName}`);
+    if (state.idle) {
+      state.idle = false;
+      log(`Became ACTIVE via ${evtName}`);
       updateTimerState();
     }
     scheduleIdleTimeout();
   }
 
   function updateTimerState() {
-    // Only run timer when visible AND not idle
-    if (visible && !idle) {
+    if (state.visible && !state.idle) {
       startTimer();
     } else {
-      stopTimer(visible ? "idle" : "hidden");
+      stopTimer(state.visible ? 'idle' : 'hidden');
     }
   }
 
   function tick() {
-    // We only ever have a running timer when visible && !idle,
-    // but guard anyway to be bulletproof.
-    if (!visible || idle) return;
+    if (!state.visible || state.idle) return;
 
     watchForNewSession();
-
-    engagementTime += 1;
-
-    // Mark valued readers with improved logic
+    state.engagementTime += 1;
     checkValuedReader();
 
-    if (intervalIndex < intervals.length && engagementTime >= intervals[intervalIndex]) {
-      const time = intervals[intervalIndex];
-      sendPHEvent('engaged', { seconds: time });
-      intervalIndex++;
+    if (state.intervalIndex < INTERVALS.length && state.engagementTime >= INTERVALS[state.intervalIndex]) {
+      const seconds = INTERVALS[state.intervalIndex];
+      sendPHEvent('engaged', { seconds });
+      state.intervalIndex += 1;
     }
   }
 
   function checkValuedReader() {
-    if (valued || !valuedEnabled) return;
+    if (state.valuedFired || !valuedEnabled) return;
 
-    // Use per-post configuration for valued event
     const timeThreshold = valuedConfig.valued_time;
     const scrollThreshold = valuedConfig.valued_scroll;
-    
-    // Check if conditions are met based on available configuration
-    let timeConditionMet = timeThreshold === undefined || engagementTime >= timeThreshold;
-    let scrollConditionMet = scrollThreshold === undefined || scrollDepth >= scrollThreshold;
-    
-    // Fire event if both available conditions are met
-    if (timeConditionMet && scrollConditionMet) {
-      sendPHEvent('valued', { 
-        percent: scrollDepth, 
-        seconds: engagementTime,
+    const timeMet = timeThreshold === undefined || state.engagementTime >= timeThreshold;
+    const scrollMet = scrollThreshold === undefined || state.scrollDepth >= scrollThreshold;
+
+    if (timeMet && scrollMet) {
+      sendPHEvent('valued', {
+        percent: state.scrollDepth,
+        seconds: state.engagementTime,
         config: valuedConfig
       });
-      valued = true;
+      state.valuedFired = true;
     }
   }
 
   function watchForNewSession() {
     const currentSessionId = posthog?.get_session_id?.() ?? null;
-
-    if (currentSessionId && lastSessionId && currentSessionId !== lastSessionId) {
-      console.log(`[Pikachu] Session changed: ${lastSessionId} → ${currentSessionId}`);
-      engagementTime = 0;
-      intervalIndex = 0;
-      valued = false;
-      fired = [];
+    if (currentSessionId && state.lastSessionId && currentSessionId !== state.lastSessionId) {
+      log(`Session changed: ${state.lastSessionId} → ${currentSessionId}`);
+      resetSessionState();
     }
-
-    lastSessionId = currentSessionId;
+    state.lastSessionId = currentSessionId;
   }
 
-  // --- Visibility wiring ---
+  function resetSessionState() {
+    state.engagementTime = 0;
+    state.intervalIndex = 0;
+    state.valuedFired = false;
+    state.lastScrollMilestone = 0;
+  }
+
   document.addEventListener('visibilitychange', () => {
-    visible = (document.visibilityState === 'visible');
-    console.log(`[Pikachu] ${document.visibilityState}, time: ${engagementTime}s`);
+    state.visible = document.visibilityState === 'visible';
+    log(`${document.visibilityState}, time: ${state.engagementTime}s`);
     updateTimerState();
   });
 
-  // Some browsers fire pagehide when tab is closed or bfcached.
-  window.addEventListener('pagehide', () => { visible = false; updateTimerState(); });
-  window.addEventListener('pageshow', () => { visible = true; updateTimerState(); });
+  window.addEventListener('pagehide', () => { state.visible = false; updateTimerState(); });
+  window.addEventListener('pageshow', () => { state.visible = true; updateTimerState(); });
 
-  // --- Activity wiring ---
-  const activityEvents = [
-    'mousemove',    // desktop
-    'pointermove',
-    'scroll',       // reading
-    'keydown',      // typing
-    'touchstart',   // mobile tap
-    'pointerdown'
-  ];
-  activityEvents.forEach(evt =>
+  ACTIVITY_EVENTS.forEach(evt =>
     window.addEventListener(evt, () => markActivity(evt), { passive: true })
   );
 
-  // If the page starts visible, we still require an activity within 60s;
-  // any activity flips "idle" to false and starts the timer.
-  if (visible) {
-    console.log("[Pikachu] Page visible at load; waiting for activity...");
+  if (state.visible) {
+    log('Page visible at load; waiting for activity...');
   } else {
-    console.log("[Pikachu] Page hidden at load; will start when visible and active.");
+    log('Page hidden at load; will start when visible and active.');
   }
-  scheduleIdleTimeout(); // arm the idle timer so we have a deadline
+  scheduleIdleTimeout();
 
   function setupScrollTracking() {
     const vh = () => window.innerHeight;
     const giscus = document.querySelector('div.giscus');
-    const targetY = giscus ? window.pageYOffset + giscus.getBoundingClientRect().top :
-                            Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    const targetY = giscus
+      ? window.pageYOffset + giscus.getBoundingClientRect().top
+      : Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
 
-    // only set up if page length is >= 4x viewport height
     if (targetY < 4 * vh()) {
-      console.log('[Pikachu] Skipping scroll tracking — page too short');
+      log('Skipping scroll tracking — page too short');
       return;
-    } else {
-      console.log(
-        giscus ? '[Pikachu] Using giscus TOP as 100%:' : '[Pikachu] Using PAGE BOTTOM as 100%',
-        targetY
-      );
     }
 
+    log(giscus ? 'Using giscus TOP as 100%:' : 'Using PAGE BOTTOM as 100%', targetY);
+
     const thresholds = [];
-    for (let p = 10; p <= 100; p += 10) thresholds.push(p);
+    for (let percent = 10; percent <= 100; percent += 10) thresholds.push(percent);
 
     window.addEventListener('scroll', () => {
       const visibleBottom = window.scrollY + vh();
       const ratio = Math.max(0, Math.min(1, visibleBottom / targetY));
-      scrollDepth = Math.floor(ratio * 100);
+      state.scrollDepth = Math.floor(ratio * 100);
 
-      // Find the highest threshold that is reached, not yet fired, and higher than current max
-      let highestThreshold = null;
-      let currentMax = fired.length > 0 ? Math.max(...fired) : 0;
-      thresholds.forEach(p => {
-        if (scrollDepth >= p && !fired.includes(p) && p > currentMax) {
-          highestThreshold = p;
+      const milestone = thresholds.reduce((highest, percent) => {
+        if (state.scrollDepth >= percent && percent > highest) {
+          return percent;
         }
-      });
+        return highest;
+      }, state.lastScrollMilestone);
 
-      if (highestThreshold !== null) {
-        sendPHEvent('scrolled', { percent: highestThreshold });
-        fired.push(highestThreshold);
+      if (milestone > state.lastScrollMilestone) {
+        sendPHEvent('scrolled', { percent: milestone });
+        state.lastScrollMilestone = milestone;
       }
     }, { passive: true });
   }
@@ -244,11 +238,6 @@
   onDocumentReady(setupScrollTracking);
   onDocumentReady(setupShareTracking);
 
-  // --- Text Selection Analytics ---
-  // Tracks user text selections (content-selected with 500ms debounce) and copy events (content-copied).
-  // Captures selected text (truncated to 255 chars as first 126 + "..." + last 126 if longer),
-  // paragraph count, image sources, and link hrefs from within the selection ranges.
-
   let selectionDebounceTimer = null;
 
   function analyzeSelection() {
@@ -256,45 +245,31 @@
       const selection = window.getSelection();
       if (!selection || selection.rangeCount === 0) return null;
 
-      // Get text content across all ranges
       const text = selection.toString().trim();
-      if (!text || !text.replace(/\s/g, '')) return null; // Skip empty or whitespace-only selections
+      if (!text || !text.replace(/\s/g, '')) return null;
 
-      // Truncate text if longer than 255 characters
       let truncatedText = text;
       if (text.length > 255) {
         truncatedText = text.substring(0, 126) + '...' + text.substring(text.length - 126);
       }
 
-      // Collect DOM elements from all selection ranges
-      const tempContainer = document.createElement('div');
       const imageSources = new Set();
       const linkHrefs = new Set();
       let paragraphCount = 0;
 
-      for (let i = 0; i < selection.rangeCount; i++) {
+      for (let i = 0; i < selection.rangeCount; i += 1) {
         const range = selection.getRangeAt(i);
-        const clonedContent = range.cloneContents();
-        
-        // Create temporary container for querying
         const rangeContainer = document.createElement('div');
-        rangeContainer.appendChild(clonedContent);
+        rangeContainer.appendChild(range.cloneContents());
 
-        // Count paragraphs (including partially selected ones)
         paragraphCount += rangeContainer.querySelectorAll('p').length;
 
-        // Collect image sources
         rangeContainer.querySelectorAll('img').forEach(img => {
-          if (img.src && img.src.trim()) {
-            imageSources.add(img.src);
-          }
+          if (img.src && img.src.trim()) imageSources.add(img.src);
         });
 
-        // Collect link hrefs
         rangeContainer.querySelectorAll('a').forEach(link => {
-          if (link.href && link.href.trim()) {
-            linkHrefs.add(link.href);
-          }
+          if (link.href && link.href.trim()) linkHrefs.add(link.href);
         });
       }
 
@@ -305,38 +280,29 @@
         links: Array.from(linkHrefs)
       };
     } catch (error) {
-      console.warn('[Pikachu] Error analyzing selection:', error);
+      warn('Error analyzing selection:', error);
       return null;
     }
   }
 
-  // Debounced selection change handler
   function handleSelectionChange() {
-    if (selectionDebounceTimer) {
-      clearTimeout(selectionDebounceTimer);
-    }
+    if (selectionDebounceTimer) clearTimeout(selectionDebounceTimer);
 
     selectionDebounceTimer = setTimeout(() => {
       const payload = analyzeSelection();
-      if (payload) {
-        sendPHEvent('content-selected', payload);
-      }
+      if (payload) sendPHEvent('content-selected', payload);
     }, 500);
   }
 
-  // Copy event handler
   function handleCopy() {
     try {
       const payload = analyzeSelection();
-      if (payload) {
-        sendPHEvent('content-copied', payload);
-      }
+      if (payload) sendPHEvent('content-copied', payload);
     } catch (error) {
-      console.warn('[Pikachu] Error handling copy event:', error);
+      warn('Error handling copy event:', error);
     }
   }
 
-  // Wire up event listeners
   document.addEventListener('selectionchange', handleSelectionChange, { passive: true });
   document.addEventListener('copy', handleCopy, { passive: true });
 })();

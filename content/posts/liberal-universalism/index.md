@@ -8,7 +8,7 @@ date: 2025-11-11
 ttr: "45~60m"
 
 # Analytics
-valued_time: 1200 # 20 minutes
+valued_time: 900 # 15 minutes
 valued_scroll: 50
 
 # Indexing
@@ -69,7 +69,7 @@ The opposition, however small, has been steadily growing. So far limited to acad
 
 ## Thesis
 
-Throughout this post, I will argue why liberal universalism is fundamentally flawed, and why it should be viewed as extremist, rather than representative of any moderate, rational position.
+Throughout this post, I will argue why liberal universalism is fundamentally flawed, and why it should be viewed as totalizing orthodoxy, rather than representative of any moderate, rational position.
 
 I posit that both liberalism and conservatism can coexist and complement each other. What isn't compatible is the ideological orthodoxy that refuses to acknowledge the validity of alternative perspectives, blinded by its insatiable ambition of world domination against all odds.
 
@@ -128,12 +128,7 @@ This is where my analysis comes in ;)
 
 If not some shadowy cabal of deep state actors, then who could be so deeply hypocritical, yet self-righteous?
 
-There is no single answer to that question, but the most prominent proponents are often found within: 
-
-- academic institutions,
-- international organizations,
-- activist groups,
-- and certain political leaders that advocate for global governance.
+There is no single answer to that question, but the most prominent proponents are often found within: the academia (humanities), international orgs, and a number of political leaders.
 
 People who are supposedly educated, enlightened, and progressive.
 
@@ -142,18 +137,27 @@ How's that possible? Once again, no single answer. People are complex, and their
 Not an exhaustive list, but I think it covers most bases:
 
 | Category | Description | Examples |
-|----------|-------------|----------|
-| **True Believers** | Some genuinely believe in the ideals of liberal universalism and see it as a path to progress. | Verhofstadt calling for EU federalism |
-| **Opportunists** | Others may be in it for personal gain, leveraging the ideology to advance their careers or agendas. | NGO directors with 6-figure salaries |
-| **The Fearful** | The ones who realized something might be off, but are too afraid to speak out against the prevailing narrative due to social or professional pressures. | Academics who value job security over truth |
-| **The Indifferent** | Those who are simply going along with the flow, either because they don't care enough to question it or because they see no viable alternative. | Career bureaucrats processing paperwork |
-| **Open Critics** | Rare, but they do exist. People who see through the hypocrisy and are willing to challenge the status quo. | Listed later |
+|:--------:|-------------|----------|
+| **True Believers** | Some genuinely believe in the ideals of liberal universalism and see it as a path to progress. | EU federalists across governments and institutions; Policy-makers of the UN; Judiciaries blocking deportations |
+| **In-Group Opportunists** | They are in it for personal gain, leveraging the ideology to advance their careers or agendas. | NGO directors with 6-figure salaries; Corpos lobbying for cheap labor; Private media executives amplifying gov narratives |
+| **Chaos Exploiters** | Money- or power-driven individuals who take advantage of the system for personal gain, often at the expense of others. | Econ migrants exploiting open door policies and eroding high trust societies; Organized crime trafficking: sex, drugs, humans, [organs](https://emergencejournal.english.ucsb.edu/wp-content/uploads/2022/11/Framing-and-Representation.pdf) |
+| **Militant Activists** | Holding openly hostile views, and always choosing a fight over an argument - they see their actions as morally justified, and *"fucking shit up"* as *"just a hobby"*.  | [Radical](https://www.leftvoice.org/the-origins-of-antifa/) or [extremist NGOs](https://en.wikipedia.org/wiki/Muslim_Brotherhood); [Activists--Human traffickers](https://www.dw.com/en/poland-hajnowka-5-on-trial-for-aiding-desperate-refugees/a-72278407); Acts of subversion and sabotage against state legitimacy |
+| **Weary Bystanders** | The ones who realized something might be off, but are too afraid to speak out against the prevailing narrative due to social or professional pressures. | Academics valuing job security over truth; Self-censoring researchers/journalists/orgs; [Captured institutions withholding info](https://edition.cnn.com/2020/07/02/us/san-francisco-police-mug-shot-release-trnd) |
+| **Apathetic Masses** | Simply going along with the flow, either because they don't care enough to question it or because they see no viable alternative. | Career bureaucrats processing paperwork; Lower working classes busy with daily struggles; Status quo voters |
+| **Hopeless Cynics** | Those who have become disillusioned and see the system as irredeemable, but lack the motivation to effect change. | Me, whenever a new EU policy comes up; You? Perhaps less hopeless, once done reading and reflecting?  |
+| **Open Critics** | People who see through the hypocrisy and are willing to challenge the status quo. | Rare, but they do exist; Listed later |
 
-However, due to in-group dynamics, their motivations often go unexamined. There are no incentives to question the status quo. Very little external scrutiny.
+Of course, these categories are not mutually exclusive. People can fit into multiple categories, or shift between them over time. 
+
+Their motivations - regardless of their level of involvement - often go unexamined, because of the in-group dynamics and their own incentives, biases, and self-preservation.
+
+Thus, there are no incentives to question the status quo. Very little external scrutiny.
+
+So... who watches the watchmen?
 
 ### A Conspiracy That Isn't
 
-So I've just described this complex self-reinforcing belief system. There must be some ulterior motive behind it all, right? Some group (wink, wink) orchestrating this?
+I have just described this complex self-reinforcing belief system. There must be some ulterior motive behind it all, right? Some group *(wink, wink)* orchestrating this?
 
 Well... no. At least, I have not found anything that would indicate such thing.
 
@@ -203,13 +207,14 @@ First, let's reiterate the explicit ones:
 
 Stemming from these, we can identify several implicit ones, which might feel more familiar to you:
 
-| Implicit Assumption | Relevant Subsection | Description | Consequences |
-|---------------------|---------------------|-------------|--------------|
-| `I1 = E1 + E2` | Moral Superiority | Belief that liberal values are not only universal but also superior to all others. | Incessant moralizing, impossibility of genuine dialogue |
-| `I2 = E3 + E4` | Pseudoscience | Intellectual corruption of the academia | Prescriptive research with baked-in biases and predetermined outcomes |
-| `I3 = E1 + E3` | Ideological Capture of Institutions | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
-| `I4 = I1 + I2` | Manifest Destiny v2.0 | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
-| `I5 = I1 + I3` | Brave New World | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
+| Implicit Assumption | Description | Consequences |
+|:-------------------:|-------------|--------------|
+| <span>Moral Superiority</span><span>`I1 = E1 + E2`</span> | Belief that liberal values are not only universal but also superior to all others. | Incessant moralizing, impossibility of genuine dialogue |
+| <span>Pseudoscience</span><span>`I2 = E3 + E4`</span> | Intellectual corruption of the academia | Prescriptive research with baked-in biases and predetermined outcomes |
+| <span>Ideological Capture</span><span>`I3 = E1 + E3`</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
+| <span>Manifest Destiny v2</span><span>`I4 = I1 + I2`</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
+| <span>Brave New World</span><span>`I5 = I1 + I3`</span> | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
+
 
 These implicit assumptions are often the root cause of various pathologies observed in societies influenced by liberal universalism. Understanding the underlying, um... logic (being a bit generous here) allows us to realize how these pathologies are justified and understand why they're so fiercely defended.
 
@@ -272,7 +277,7 @@ EU agencies, UN bodies, and various NGOs often rely on academic studies to justi
 Recently, I've looked into some of that research - in particular, the economic impact of migration.
 
 | Flaw | Description | Examples |
-|------|-------------|----------|
+|:----:|-------------|----------|
 | **Data Opacity & Verification Barriers** | Raw datasets locked behind NDAs/ethics gates; Low reproducibility; Impossible to verify claims or challenge assumptions; Creating "black box" trust issues. | Swedish SCB data for various sociological studies [gated via ethics boards](https://www.scb.se/en/services/ordering-data-and-statistics/microdata/); German research on crime - used for shaping policy - raw data [restricted to select institutions](https://www.mpg.de/21007492/1026-stra-insights-into-unreported-crime-crucial-for-prevention-151860-x); [State-sponsored propaganda](https://www.ifo.de/en/cesifo/do-immigrants-affect-crime-evidence-panel-data-germany). |
 | **Gray Market Underreporting** | Reliance on formal surveys/tax records ignores undeclared work (10-25% of EU GDP), where migrants (esp. refugees with work bans) accept sub-minimum wages, depressing local earnings. | Dustmann et al. (2013) and IZA 2024 papers use formal employment data only; EU Parliament 2024 review flags it as a "major challenge" but doesn't adjust models. |
 | **Publication & Framing Biases** | "File-drawer" effects favor neutral/positive results; funding (e.g., UNHCR for OECD) or public priors frame immigrants as "contributors," downplaying negatives. | 2023 JEP review: 60-70% of papers emphasize upsides; Cambridge 2019 on welfare framing shows "immigrant costs" triggers overreactions in Nordic studies. | Consensus "mixed long-term" skewed pro-migration: Negatives (e.g., Sweden's SEK 25K-74K/person/year) underrepresented vs. positives. |
@@ -286,11 +291,18 @@ Optimistic long-term positives lure governments into over-openness, ignoring dra
 
 Positives get policy greenlights, while negatives hide in footnotes, leading to "surprise" crises like Sweden's gang surges or Denmark's DKK 27B welfare hole. In aging Europe (worker ratios halving by 2040), betting on biased economic research could deepen inflation or inequality, with low-skill natives hit hardest.
 
-### Manifest Destiny v2.0
+### Manifest Destiny v2
 
 Conquest. Colonization. Imperialism. Call it what you will, but the purpose remains the same: imposing one's values and systems onto others.
 
-While universalists explicitly reject these ideas, their actions often mirror them in practice. As liberal values turned out to not be as universally accepted as initially thought, the proponents were increasingly resorting to more coercive methods of spreading their ideology.
+While universalists explicitly reject these ideas, their actions often mirror them in practice. As liberal values turned out to not be as universally accepted as initially thought, the proponents were resorting to increasingly more coercive methods of spreading their sickness.
+
+Roughly, the process looks like this:
+
+1. Through political pressure they impose international law, allowing them to override national legal frameworks.
+2. The humanitarian framing convinces the academics and politicians that this is "the right thing to do".
+3. The activists are mobilized to push for policy changes and rebel against non-compliant states.
+4. The mainstream media - whether under the humanitarian spell, fiscal coercion, or good ol' threats - reinforce this belief among regular citizens.
 
 For the greater good, of course - as they describe in the paper [The politics of civil society narratives in authoritarian Vietnam (Vu & Le, 2022)](https://www.tandfonline.com/doi/full/10.1080/13569775.2022.2102320):
 
@@ -300,9 +312,22 @@ So the authoritarian states get to learn their lessons through artificial activi
 
 What about democracies that are not receptive to universalist ideas? Sadly, even Japan gets trashed in the article [Still a Negative Case? Japan’s Changing Refugee Policy (Rehm, 2024)](https://apjjf.org/2024/6/rehm):
 
-> In conclusion, given Japan’s very limited history of granting humanitarian protection, the recent efforts to provide swift support to displaced peoples from Myanmar, Afghanistan, and Ukraine are commendable. At the same time, Japan has granted such protection through case-by-case responses that were tailor-made to the specific circumstances of each country, oftentimes bypassing the formal asylum process. This does not serve to quell questions about Japan’s commitment to international refugee law. [...] As Japan continues to navigate global crises and geopolitical challenges by doubling down on values-based language that increasingly and explicitly underscores the principles of international law, the country must back its words with more action to truly become a positive case for people seeking refuge within its borders.
+> In conclusion, [...] the recent efforts [...] are commendable. At the same time, Japan has granted such protection [...] oftentimes bypassing the formal asylum process. This does not serve to quell questions about Japan’s commitment to international refugee law. [...] As Japan continues to navigate global crises and geopolitical challenges by doubling down on values-based language that increasingly and explicitly underscores the principles of international law, the country must back its words with more action to truly become a positive case for people seeking refuge within its borders.
 
-Through political pressure they impose international law, allowing them to override national legal frameworks. The humanitarian framing convinces the academics and politicians that this is "the right thing to do", and the media are then reinforcing this belief among regular citizens.
+If even Japan - out of all nations - can be pressured into compliance, how can any country resist the steamroller of liberal universalism?
+
+What really pisses me off is the effectiveness of this strategy. The academia moves at glacial pace and produces faulty research - yet still manages to steer entire nations?
+
+And the people in charge are seemingly unable or unwilling to stop it. Do they lack the courage? Insight? Integrity?
+
+***What do you think is worse?***
+
+- **Willful blindness** and refusal to act, while being complicit in working towards political agendas, because what else you can do?
+- Or remaining in **blissful ignorance**, while being unknowingly instrumentalized to achieve political goals through basic social engineering?
+
+Regardless of the answer - the consequences of both remain the same.
+
+Now, let me illuminate other paths forward to take - some very rough, muddy roads ahead.
 
 ## Treatment
 
@@ -436,13 +461,15 @@ Fellow Europeans,
 
 As we are witnessing a growing discontent with the established order and increasing social tensions, the very universalist foundations of the European project are being questioned.
 
-Not long ago, [an open letter signed by 9 EU state leaders](https://www.euronews.com/my-europe/2025/05/23/nine-eu-countries-seek-european-human-rights-conventions-rethink-on-migration) called for a re-evaluation of the ECHR. First of its kind coordinated effort to push back against the unquestionable doctrine of universal human rights.
+Not long ago, [an open letter signed by 9 EU state leaders](https://www.euronews.com/my-europe/2025/05/23/nine-eu-countries-seek-european-human-rights-conventions-rethink-on-migration) called for a **re-evaluation of the ECHR**. First of its kind coordinated effort to push back against the unquestionable doctrine of universal human rights.
 
-Soon after, Donald Tusk - former President of the European Council and current PM of Poland - [gave an interview](https://archive.is/osbtA) in which he explicitly praised pragmatism over idealism:
+Soon after, **Donald Tusk** - former President of the European Council and current PM of Poland - [gave an interview](https://archive.is/osbtA) in which he explicitly praised pragmatism over idealism:
 
-> “In some countries it’s [deportation of criminals] still impossible because of these very traditional verdicts from the courts that human rights are much more important than security. I’ve been very blunt and even brutal with my colleagues. We cannot wait for these changes. We have to act now.”
+> *“In some countries it’s [deportation of criminals] still impossible because of these very traditional verdicts from the courts that human rights are much more important than security. I’ve been very blunt and even brutal with my colleagues. **We cannot wait for these changes. We have to act now.**”*
 > 
-> “My role in Europe is rather to encourage prime ministers and presidents to do something more than the conventions allow us,” Tusk explained. “I know it sounds a little strange coming from me, the veteran of the fight for human rights. But we have to respect reality. Politics must be about reality, not about dreams only.”
+> *“My role in Europe is rather to encourage prime ministers and presidents to do something more than the conventions allow us,”* -- Tusk explained. -- *“I know it sounds a little strange coming from me, the veteran of the fight for human rights. But we have to respect reality. **Politics must be about reality, not about dreams only**.”*
+>
+> *~ Donald Tusk for The Sunday Times, October 2025*
 
 I can't tell you if this is a genuine shift of his beliefs or just electoral desperation, but one thing is clear: **It is a direct challenge to ECHR's legitimacy and authority.**
 

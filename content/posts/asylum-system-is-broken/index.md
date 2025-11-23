@@ -8,8 +8,8 @@ date: 2025-09-12
 ttr: "30~45m"
 
 # Analytics
-valued_time: 900 # 15 minutes
-valued_scroll: 60
+valued_time: 720 # 12 minutes
+valued_scroll: 50
 
 # Indexing
 recommended: true
@@ -293,11 +293,7 @@ Do you see what's going on here? Their own policies are creating extremists in a
 - Increasing social tensions and polarization, leading to more support for extremist groups.
 - Regarding any attempt at stopping this circle as extremist as well.
 
-And speaking of Palestinians...
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In 1992, Denmark took in 321 Palestinian refugees.<br><br>By 2019, 64% of them had been convicted of a crime. <br><br>34% of their children had also been convicted of a crime. <br><br>Source: Danish Ministry for Immigration and Integration</p>&mdash; Visegrád 24 (@visegrad24) <a href="https://twitter.com/visegrad24/status/1715307782587433099?ref_src=twsrc%5Etfw">October 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-Crime alone is not the only thing that goes up. So is the cost of living, housing prices, and social tensions. The quality of public services declines, as they are stretched thin trying to accommodate the new arrivals.
+Crime is not the only stat that goes up. So does the cost of living, housing prices, and social tensions. The quality of public services declines, as they are stretched thin trying to accommodate the new arrivals.
 
 Meanwhile, the universalist "all-or-nothing" attitude reshapes the social fabric of host countries, gradually eroding social trust and cohesion.
 

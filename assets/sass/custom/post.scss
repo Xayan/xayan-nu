@@ -7,41 +7,42 @@ $padding-multiplier: 0.4rem;
     @include link-styles($accent, $accent-dark, true, false);
   }
 
+  & > p, & > ul, & > ol {
+    padding: 0 4px;
+  }
+
   h2, h3, h4, h5, h6 {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: $base-margin;
-    margin-bottom: $narrowest-margin;
+    margin: $base-margin 0 0 0;
   }
 
   h2 {
-    padding-left: 0.1rem;
-    font-size: 1.8em;
+    padding-left: 0.5rem;
+    font-size: 1.75rem;
     border-bottom: 1px solid $accent-dark;
   }
-
+  
   h3 {
-    padding-left: 1 * $padding-multiplier;
-    font-size: 1.6em;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
   }
 
   h4 {
-    padding-left: 2 * $padding-multiplier;
-    font-size: 1.4em;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
   }
 
   h5 {
-    padding-left: 3 * $padding-multiplier;
-    font-size: 1.25em;
+    padding-left: 2.0rem;
+    font-size: 1.15rem;
   }
 
   h6 {
-    padding-left: 4 * $padding-multiplier;
-    font-size: 1.1em;
+    padding-left: 2.5rem;
+    font-size: 1.0rem;
   }
 
   .header {
-    margin: $base-margin 0 0 0;
+    margin: $narrow-margin 4px 0 4px;
   
     font-size: medium;
   
@@ -69,7 +70,7 @@ $padding-multiplier: 0.4rem;
   blockquote {
     position: relative;
     padding: 2.5em 0.5em 0.5em 1em;
-    margin: $narrow-margin auto;
+    margin: $narrow-margin 0;
     border-left: 4px solid $blockquote-accent;
     background-color: $blockquote-bg;
     font-size: 0.9em;

@@ -7,6 +7,10 @@
   cursor: default;
 }
 
+.no-wrap {
+  white-space:nowrap;
+}
+
 // When the mobile nav overlay is open, lock page scroll.
 body.nav-open {
   overflow: hidden;
@@ -253,8 +257,7 @@ nav > ul {
   }
 
   @include respond-mobile {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 12px;
   }
 }
 

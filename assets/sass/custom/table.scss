@@ -20,6 +20,7 @@ $cell-padding: 0.5rem 0.75rem;
   -webkit-overflow-scrolling: touch;
   padding: 0 0;
   margin: $narrow-margin 0;
+  border-radius: $border-radius;
   @include drop-shadow;
 
   table {
@@ -87,6 +88,12 @@ $cell-padding: 0.5rem 0.75rem;
       min-width: 80px;
       padding: $cell-padding;
       line-height: 1.4rem;
+    }
+
+    span {
+      white-space: nowrap;
+      display: inline-block;
+      padding: 4px 0;
     }
   }
 

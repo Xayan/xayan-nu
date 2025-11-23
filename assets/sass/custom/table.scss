@@ -1,0 +1,99 @@
+$table-bg: mix($dark-black, $table-base, 60%);
+
+$saturation-adjust: 10%;
+$row-factor: 1.5%;
+$cell-factor: 1%;
+
+$th-bg: lighten($table-bg, $row-factor * 4);
+$tr-even-bg: darken(desaturate(darken($table-bg, $row-factor * 5), $saturation-adjust), $row-factor);
+$tr-odd-bg: lighten(desaturate(darken($table-bg, $row-factor * 5), $saturation-adjust), $row-factor);
+
+$border-color: lighten(saturate($table-bg, 10%), 10%);
+$border: 0px solid $border-color;
+$border-radius: 16px;
+$cell-padding: 0.5rem 0.75rem;
+
+.scrollable-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0;
+  margin: $narrow-margin 0;
+  @include drop-shadow;
+
+  table {
+    width: 100%; 
+    padding: 0 0;
+    margin: 0 0;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: $border;
+    border-radius: $border-radius;
+    overflow: hidden;
+  
+    * {
+      border: 0;
+      background-clip: padding-border;
+      background-blend-mode: overlay;
+    }
+  
+    th {
+      font-size: 0.9rem;
+
+      &:nth-child(odd) {
+        background: $th-bg;
+      }
+
+      &:nth-child(even) {
+        background: darken($th-bg, $cell-factor * 2.5);
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          word-break: normal;
+          font-size: 0.8rem;
+    
+          &:first-child {
+            font-weight: bold;
+            text-align: middle;
+          }
+        }
+
+        &:nth-child(odd) td {
+          &:nth-child(odd) {
+            background: lighten($tr-odd-bg, $cell-factor);
+          }
+          &:nth-child(even) {
+            background: $tr-odd-bg;
+          }
+        }
+
+        &:nth-child(even) td {
+          &:nth-child(odd) {
+            background: lighten($tr-even-bg, $cell-factor);
+          }
+          &:nth-child(even) {
+            background: $tr-even-bg;
+          }
+        }
+      }
+    }
+
+    th, td {
+      min-width: 80px;
+      padding: $cell-padding;
+      line-height: 1.4rem;
+    }
+  }
+
+  .table-scroll th,
+  .table-scroll td {
+    @media (max-width: 768px){
+      white-space: nowrap;
+    }
+  }
+}

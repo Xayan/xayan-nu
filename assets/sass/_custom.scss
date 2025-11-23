@@ -3,17 +3,24 @@ $accent-dark: #279265;
 $accent-ai: #1669bd;
 $font-color: #babdc4;
 $greyed-out: #596263;
+$overlay-bg: rgba(47, 130, 125, 0.25);
+$table-base:  rgb(62, 83, 106);
 
 $link-page: #d6dae3;
 $link-post: $accent;
 $link-post-hover: $accent-dark;
 $link-footer: #9da3af;
 
-$base-margin: 1.5rem;
-$narrow-margin: calc($base-margin / 1.5);
-$narrower-margin: calc($base-margin / 2);
-$wide-margin: calc($base-margin * 1.5);
-$wider-margin: calc($base-margin * 2);
+$box-shadow-offset: 2px;
+$box-shadow-spread: 6px;
+$box-shadow-color: rgba(0, 0, 0, 0.8);
+
+$narrowest-margin: 0.25rem;
+$narrower-margin: 0.5rem;
+$narrow-margin: 1rem;
+$base-margin: 1.75rem;
+$wide-margin: 3rem;
+$wider-margin: 5rem;
 
 $chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
 $chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
@@ -30,6 +37,16 @@ $chat-tail-width: 12px;
   @include media-query($on-mobile) {
     @content;
   }
+}
+
+@mixin respond-tablet {
+  @include media-query($on-tablet) {
+    @content;
+  }
+}
+
+@mixin drop-shadow($offset: $box-shadow-offset, $spread: $box-shadow-spread, $color: $box-shadow-color) {
+  box-shadow: $offset $offset $spread $color;
 }
 
 @mixin link-styles($base, $hover, $important: false, $underline-hover: true, $keep-decoration: true) {
@@ -63,12 +80,13 @@ $chat-tail-width: 12px;
   position: relative;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  @include drop-shadow;
 }
 
-html {  
+html body {  
   @import "custom/page";
+
   
   .page-content {
     @import "custom/post";
@@ -78,6 +96,7 @@ html {
 
     @import "custom/card";
     @import "custom/list";
+    @import "custom/table";
 
     @import "custom/image";
     @import "custom/video";

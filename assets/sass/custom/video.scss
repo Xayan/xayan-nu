@@ -19,9 +19,8 @@
     width: 100%;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(208, 66, 66, 0.6);
-    background-color: rgba(0, 0, 0, 0.85);
     aspect-ratio: var(--yt-aspect-ratio);
+    @include drop-shadow(0, 12px, rgba(255, 0, 0, 0.75));
 
     @supports not (aspect-ratio: 1 / 1) {
       height: 0;

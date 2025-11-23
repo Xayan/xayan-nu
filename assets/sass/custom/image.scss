@@ -1,20 +1,26 @@
+$bg: rgb(0, 149, 255);
+$card-bg: mix($dark-black, $bg, 75%);
+
 .image {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  width: fit-content;
+  background: rgba($card-bg, 0.25);
+  border-radius: 8px;
+  margin: $narrow-margin auto;
+  @include drop-shadow(4px, 12px);
 
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.75);
   }
 
   figcaption {
-    margin-top: 0.75rem;
-    font-size: 0.9em;
+    margin: 0 auto;
+    padding: $narrowest-margin $narrowest-margin;
+    font-size: 0.9rem;
     font-style: italic;
     color: rgba($font-color, 0.85);
     text-align: center;

@@ -8,11 +8,8 @@
 }
 
 // When the mobile nav overlay is open, lock page scroll.
-// JS is responsible for setting --scroll-y on <body> before adding .nav-open.
 body.nav-open {
-  position: fixed;
-  top: calc(-1 * var(--scroll-y, 0px));
-  width: 100%;
+  overflow: hidden;
 }
 
 .center {
@@ -40,11 +37,16 @@ hr {
   border: 0;
   height: 2px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba($accent-dark, 0.5), rgba(0, 0, 0, 0));
-  margin: 1.5rem 0;
+  margin: $narrow-margin 0;
 }
 
 h1, h2, h3, h4, h5, h6, .header .header-title {
   font-weight: 800;
+  margin: $base-margin auto;
+}
+
+.header {
+  margin: $wider-margin auto $base-margin auto;
 }
 
 h1, .header .header-title {
@@ -64,48 +66,14 @@ h4 {
   font-size: 1.25em;
 }
 
-nav {
-  background-color: rgba(96, 193, 215, 0.1);
-}
-
 nav > ul {
   padding: 1em 0em 1em 2em;
   font-size: 0.9em;
 }
 
-.scrollable-container {
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-  -webkit-overflow-scrolling: touch;
-
-  table {
-    width: 100%;           /* fill container */
-    table-layout: auto;    /* browser figures out sensible column widths */
-    border-collapse: collapse;
-
-    td {
-      word-break: normal;
-    }
-  }
-
-  .table-scroll th,
-  .table-scroll td {
-    @media (max-width: 768px){
-      white-space: nowrap;
-    }
-  }
-}
-
-.wrapper {
-  &.blurry {
-    animation: 0.5s linear forwards blur;
-  }
-}
-
 .author {
-  margin-top: 5.6rem;
-  margin-bottom: 5.6rem;
+  margin-top: $wider-margin;
+  margin-bottom: $base-margin;
 }
 
 .footer {
@@ -115,7 +83,7 @@ nav > ul {
     @include link-styles($link-footer, $accent, false, false, false);
 
     svg {
-      @include link-styles($link-footer, $accent, false, false, false);
+      @include link-styles('white', $accent, false, false, false);
     }
   }
 
@@ -126,49 +94,149 @@ nav > ul {
 }
 
 .navbar {
+  max-width: 100%;
+  padding: 0;
+  min-height: 3.2rem;
+  border: none;
+  background: rgba(lighten($dark-black, 4%), 1);
+      
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    z-index: 0;
+    background-image: radial-gradient(circle 80vb at 25% 60px, $overlay-bg, transparent);
+  }
+
   .menu {
-    .logo-image {
-      height: 25px;
-      width: auto;
+    z-index: 5;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: inherit;
+    min-height: inherit;
+
+    input[type="checkbox"]:checked ~ .trigger {
+      background: none;
     }
 
-    @include respond-mobile {
+    .logo {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0 $narrow-margin;
+      height: 3.2rem;
+      vertical-align: middle;
+      z-index: 10;
+
+      .logo-image {
+        height: 28px;
+        width: auto;
+      }
+    }
+
+    .trigger {
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      line-height: 3.2rem;
+
+      .trigger-container {
+        padding: 0 $narrow-margin;
+      }
+
       .menu-link {
-        display: block;
-        box-sizing: border-box;
-        font-size: 1.6rem;
+        padding: 0 $narrower-margin;
+        z-index: 10;
+      }
+
+      // Social icons in mobile menu overlay
+      .trigger-social-icons {
+        display: none;
+      }
+    }
+  }
+
+  @include respond-mobile {
+    background: rgba(lighten($dark-black, 4%), 0.7);
+    
+    &::before {
+      height: 100%;
+      content: "";
+      position: absolute;
+      width: 100%;
+      inset: 0;
+      z-index: 0;
+      background-image: radial-gradient(circle 80vb at 25% 60px, $overlay-bg, transparent);
+    }
+
+    .menu {
+      position: fixed;
+      overflow: hidden;
+      margin: none;
+      height: 3.2rem;
+
+      .menu-link {
+        position: relative;
+        font-size: 1.5rem;
       }
 
       .menu-icon {
-        margin-right: 0.8em;
+        margin-right: $narrow-margin;
+        z-index: 10;
+
+        @include link-styles($link-page, $accent, false, false, false);
+
+        svg {
+          z-index: 10;
+          width: 28px;
+          height: 28px;
+        }
+      }
+      
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+        background-image: radial-gradient(circle 80vb at 25% 60px, $overlay-bg, transparent);
       }
 
-      input[type="checkbox"]:checked ~ .trigger {
-        animation: 0.5s linear forwards fadein;
-        visibility: visible;
+      &.expanded {
+        animation: 2s linear fade-in forwards;
+        height: 100%;
+        
+        .trigger .trigger-social-icons {
+          position: relative;
+          display: block;
+          opacity: 0.5;
+          bottom: 0;
+          padding: 2rem 0 1rem 0;
+          text-align: center;
+  
+          a {
+            text-decoration: none;
+            margin: 0 0.5rem;
+            display: inline-block;
+  
+            svg {
+              height: 36px;
+              width: 36px;
+            }
+          }
+
+        }
       }
 
       .trigger {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
+        position: relative;
         flex-direction: column;
         justify-content: center;
-        visibility: visible;
-        background: #020617;
-
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: 0;
-          background-image: radial-gradient(circle 80vb at 50% 20%, rgba(57, 166, 158, 0.25), transparent);
-        }
-
-        > * {
-          position: relative;
-          z-index: 1;
-        }
+        z-index: 1;
       }
 
       .trigger-container {
@@ -176,28 +244,17 @@ nav > ul {
         @include flex-column-center;
       }
     }
+  }
+}
 
-    // Social icons in mobile menu overlay
-    .trigger-social-icons {
-      display: none;
+.wrapper {
+  &.blurry {
+    filter: none;
+  }
 
-      @include respond-mobile {
-        display: block;
-        padding: 2rem 0 1rem 0;
-        text-align: center;
-
-        a {
-          text-decoration: none;
-          margin: 0 0.5rem;
-          display: inline-block;
-
-          svg {
-            height: 30px;
-            width: 30px;
-          }
-        }
-      }
-    }
+  @include respond-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -259,16 +316,6 @@ nav > ul {
 #totop {
   bottom: 24px;
   right: 24px;
-  opacity: 0.5;
-}
-
-// Animation fade-out
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+  opacity: 0.25;
+  z-index: 0;
 }

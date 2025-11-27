@@ -1,3 +1,17 @@
+$chat-user-hue: 140;
+$chat-assistant-hue: 220;
+$chat-border-radius: 12px;
+
+$chat-user-bg: hsla($chat-user-hue, 25%, 30%, 0.5);
+$chat-user-border: hsla($chat-user-hue, 20%, 40%, 0.8);
+$chat-user-fg: hsla($chat-user-hue, 10%, 75%, 0.8);
+$chat-user-alt-fg: hsla($chat-user-hue, 30%, 60%, 0.8);
+
+$chat-assistant-bg: hsla($chat-assistant-hue, 25%, 30%, 0.5);
+$chat-assistant-border: hsla($chat-assistant-hue, 20%, 40%, 0.8);
+$chat-assistant-fg: hsla($chat-assistant-hue, 10%, 75%, 0.8);
+$chat-assistant-alt-fg: hsla($chat-assistant-hue, 30%, 60%, 0.8);
+
 .chat {
   display: block;
   width: 100%;
@@ -5,12 +19,9 @@
 
   .message {
     display: block;
-
     margin: 0.5rem 0;
     max-width: 90%;
     min-width: 0;
-
-    border: 0px solid;
 
     .content {
       margin: 0;
@@ -23,9 +34,15 @@
       font-size: 0.9em;
       line-height: 1.5em;
 
-      p, ul, ol {
+      p,
+      ul,
+      ol {
         margin: 0.5em inherit;
+      }
 
+      b,
+      strong {
+        font-weight: 700;
       }
 
       &::after {
@@ -42,9 +59,18 @@
 
       .content {
         border-radius: $chat-border-radius $chat-border-radius 0 $chat-border-radius;
-        border-color: $accent-dark;
-        color: $font-color;
-        background-color: $chat-user-bg;
+        border: 1px solid $chat-user-border;
+        background: $chat-user-bg;
+
+        p,
+        li {
+          color: $chat-user-fg;
+        }
+
+        strong,
+        em {
+          color: $chat-user-alt-fg;
+        }
 
         &::after {
           bottom: 0;
@@ -61,9 +87,18 @@
 
       .content {
         border-radius: $chat-border-radius $chat-border-radius $chat-border-radius 0;
-        border-color: $accent-ai;
-        color: $font-color;
-        background-color: $chat-assistant-bg;
+        border: 1px solid $chat-assistant-border;
+        background: $chat-assistant-bg;
+
+        p,
+        li {
+          color: $chat-assistant-fg;
+        }
+
+        strong,
+        em {
+          color: $chat-assistant-alt-fg;
+        }
 
         &::after {
           bottom: 0;

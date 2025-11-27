@@ -17,5 +17,13 @@
         cbox.addEventListener("change", function () {
             toggleMenu(this.checked);
         });
+
+        // Add class based on URL pathname
+        const currentPathname = window.location.pathname;
+        if (currentPathname.match(/^\/posts\/.+?$/)) {
+            body.classList.add("is-post");
+        } else {
+            body.classList.add("is-page");
+        }
     });
 })();

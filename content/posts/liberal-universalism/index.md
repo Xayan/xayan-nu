@@ -6,6 +6,7 @@ image: "/posts/liberal-universalism/thumb.jpg"
 author: "Xayan"
 date: 2025-11-11
 ttr: "45~60m"
+hue: 10
 
 # Analytics
 valued_time: 900 # 15 minutes
@@ -21,27 +22,27 @@ tags: ["liberal universalism", "international relations", "political theory","so
 
 ## Intro
 
-In recent years I have noticed an increasing number of people who are looking for answers about the failures of Western civilization and its institutions.
+In recent years I have noticed an increasing number of people who are looking for answers about the **failures of Western civilization and its institutions**.
 
-People who suspect something is wrong, or are entirely disillusioned and hopeless. Trying to make sense of the chaos and articulate their frustrations, but with no clear direction.
+People who suspect *something is wrong*, or are *entirely disillusioned and hopeless*. Trying to make sense of the chaos and articulate their frustrations, but with no clear direction.
 
-Fascinatingly, it does not appear to be a partisan issue. Problems can be observed on both sides of the political spectrum, as long as one has an open mind and remains free of total ideological commitment.
+Fascinatingly, it **does not** appear to be a *partisan issue*. Problems can be observed on both sides of the political spectrum, as long as one has an open mind and remains free of total ideological commitment.
 
 **Liberals** say: *"nationalism!"*, *"populism!"*, *"racism!"*.
 
-**Conservatives** say: *"cultural Marxism!"*, *"globalism!"*, *"elites!"*.
+**Conservatives** say: *"cultural marxism!"*, *"globalism!"*, *"elites!"*.
 
-Both sides are partially correct about **the symptoms**, but remain blind to **the underlying disease**. What it likely means is that the current consistently deepening political divide is **artificial**, and driven by **a lack of clarity** - which I'm hoping to provide.
+Both sides are partially correct about *the symptoms*, but remain blind to **the underlying disease**. What it likely means is that the consistently deepening political divide is artificial, and driven by a *lack of clarity* - which I'm hoping to provide.
 
 First, let's establish what exactly is the subject of our analysis, and what it represents.
 
 ## Theory
 
-**Liberal universalism** is a philosophical notion that assumes the *universality* of **Western liberal values**, such as individual rights, democracy, pluralism, and the rule of law - ideals borrowing from the *Enlightenment era*.
+**Liberal universalism** is a philosophical notion that assumes the *universality of Western liberal values*, such as individual rights, democracy, pluralism, and the rule of law - ideals borrowing from the *Enlightenment era*.
 
 It is, notably, distinct from **liberalism**, being just one specific interpretation of the broader liberal tradition.
 
-Universalism's uniqueness lies in the assertion that these values are not only applicable within Western societies, but should be promoted and implemented globally.
+Universalism's uniqueness lies in the assertion that these values are not only applicable within Western societies, but should be *promoted and implemented globally*.
 
 A goal so noble it became the justification for every international overreach since 1945, and the foundation of a number of international institutions, such as: the United Nations, the World Bank, and the International Criminal Court.
 
@@ -49,42 +50,42 @@ And not without a reason - to fully understand its widespread adoption and influ
 
 ### Historical Baggage
 
-Liberal universalism emerged as a response to the horrors of the Second World War and the Holocaust.
+Liberal universalism emerged as a response to the horrors of the **Second World War** and the Holocaust.
 
-Originating in Europe and North America, its conception reflected the scars left by totalitarian regimes and the desire to prevent future atrocities, as well as post-colonial shifts in global power dynamics.
+Originating in Europe and North America, its conception reflected the *scars left by totalitarian regimes* and the desire to prevent future atrocities, as well as *post-colonial shifts* in global power dynamics.
 
-Its inherent emotional appeal and moral framework made it an attractive ideology for post-war reconstruction and international cooperation - at the same time making it resistant to criticism.
+Its inherent **emotional appeal** and **moral framework** made it an attractive ideology for post-war reconstruction and international cooperation - at the same time making it resistant to criticism.
 
 During the Cold War, it was portrayed as a bulwark against the spread of communism, further solidifying its position in Western political thought and embedding itself within international institutions, which rapidly expanded their influence with the backing of emerging superpowers.
 
-After the dissolution of the Soviet Union, liberal universalism had no more serious challengers and gained even more traction. It was seen as the triumphant ideology, as described in Francis Fukuyama's *"The End of History and the Last Man"* (1992), at which point it gained the status of a self-fulfilling prophecy.
+After the dissolution of the Soviet Union, liberal universalism had no more serious challengers and gained even more traction. It was seen as the triumphant ideology, as described in **Francis Fukuyama's** *"The End of History and the Last Man" (1992)*, at which point it gained the status of a self-fulfilling prophecy.
 
 ### Modern Times
 
-The 21st century brought mass migration on an unprecedented scale, terrorism, economic stagnation, and rising backlash from various groups — none of which fit the universalist script. Rather than adapt, the ideology doubled down, pathologizing dissent as "populism" and framing failures as crises or insufficient commitment.
+**The 21st century** brought a brand new set of challenges: *mass migration* on an unprecedented scale, *terrorism*, and *economic stagnation* — none of which fit the universalist script. Rather than adapt, the ideology doubled down, **pathologizing dissent as "populist backlash"** and framing failures as crises or insufficient commitment.
 
-Even though Fukuyama later acknowledged the *"internal contradictions of liberal democracy"*, he still views it as a system to be fixed, rather than abandoned. Many others cling onto the same belief, especially within academic and policy-making circles.
+Even though Fukuyama later acknowledged the *"internal contradictions of liberal democracy"*, he still views it as a system to be fixed, rather than abandoned. Many others cling onto the same belief, especially within **political and academic institutions**.
 
 The opposition, however small, has been steadily growing. So far limited to academic circles, it has not yet found a foothold in mainstream discourse. I hope to change that.
 
 ## Thesis
 
-Throughout this post, I will argue why liberal universalism is fundamentally flawed, and why it should be viewed as totalizing orthodoxy, rather than representative of any moderate, rational position.
+Throughout this post, I will argue why liberal universalism is *fundamentally flawed*, and why it should be viewed as **totalizing sectarianism**, rather than representative of any *moderate, rational position*.
 
-I posit that both liberalism and conservatism can coexist and complement each other. What isn't compatible is the ideological orthodoxy that refuses to acknowledge the validity of alternative perspectives, blinded by its insatiable ambition of world domination against all odds.
+I posit that **both liberalism and conservatism** can *coexist* and *complement* each other. What isn't compatible is the ideological orthodoxy that refuses to acknowledge the validity of alternative perspectives, blinded by its insatiable ambition of world domination against all odds.
 
-Our conflict is not between left and right, but between self-determined national sovereignty and global authoritarianism.
+Our conflict is **not** between left and right, but between *self-determined national sovereignty* and *global authoritarianism*.
 
-Through a careful analysis of primary sources, and supported by secondary sources, I will show you how liberal universalism:
+Through a careful yet critical analysis of primary sources, I will show you how liberal universalism:
 
-1. Self-imposes as a global governance model,
-2. Persists while remaining largely unnoticed,
-3. Encourages perception of its own superiority,
-4. Remains immune to change or adaptation,
-5. Corrupts academic foundations due to its assumptions,
-6. Produces prescriptive research with predetermined outcomes,
-7. Leads to imposition of Western values on other cultures,
-8. Results in various pathologies we can observe in today's world.
+1. **Self-imposes** as a global governance model,
+2. **Persists** while remaining *largely unnoticed*,
+3. **Encourages** its own *self-perceived superiority*,
+4. **Remains** immune to *change or adaptation*,
+5. **Corrupts** academic foundations due to its *underlying assumptions*,
+6. **Produces** prescriptive research with *predetermined outcomes*,
+7. **Leads** to *imposition* of Western values *on other cultures*,
+8. **Results** in *various pathologies* we can observe in today's world.
 
 Seems crazy? Well, I'd love you to prove me wrong. But if you can't... then perhaps it's time to reconsider what we've been told all along. And wouldn't that be something to behold?
 
@@ -92,15 +93,15 @@ Seems crazy? Well, I'd love you to prove me wrong. But if you can't... then perh
 
 For reasons that will become clear later, I'd like to expose myself shamelessly to you.
 
-I was born and raised in Poland, a post-Soviet country where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations, manifest as a collective skepticism towards grand ideologies and utopian promises.
+I was **born and raised in Poland**, a *post-Soviet country* where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations as well, manifest as a **collective skepticism** towards *grand ideologies and utopian promises*.
 
-Communists weren't the first to try. Our history is riddled with failed attempts at imposing various ideologies. Despite this - or perhaps because of it - our national identity remains resilient, shaped by centuries of struggle for sovereignty and self-determination.
+Communists weren't the first to try. Our history is riddled with failed attempts at imposing various ideologies. Despite this *- or perhaps because of it -* our **national identity** remains resilient, shaped by centuries of struggle for sovereignty and self-determination.
 
-Since Poland's accession to the European Union in 2004, I have observed the rapid transformation of my homeland under the influence of Western liberal values. Plenty of developments have been positive, but not all changes were welcomed by everyone.
+Since Poland's accession to the **European Union in 2004**, I have observed the rapid transformation of my homeland under the influence of Western liberal values. Plenty of developments have been positive, but not all changes were welcomed by everyone.
 
-One of these changes has been the increasing pressure to conform to the idealism of Western Europe, and the expectation to trust that this path leads to progress and prosperity - a worldview many of us see as deeply naive.
+One of these changes has been the increasing pressure to conform to the idealism of Western Europe, and the expectation to trust that *this path leads to progress and prosperity* - a worldview many of us see as **deeply naive**.
 
-Let's examine it more closely. 10 blade, please.
+Let's examine it more closely. *10 blade, please.*
 
 ## Diagnosis
 
@@ -108,17 +109,17 @@ If this is all so obvious and ever-present, why does nobody talk about it?
 
 ### Hidden in Plain Sight
 
-The name "liberal universalism" is little known outside of a limited number of academic circles.
+The name *"liberal universalism"* is **little known** outside of a limited number of academic circles.
 
-There are similar terms, such as "liberal internationalism" or "liberal international order", but they are not exactly the same. Nonetheless, they are largely absent from mainstream discourse, also being limited to certain fields of study.
+There are similar terms, such as *"liberal internationalism"* or *"liberal international order"*, but they are not exactly the same. Nonetheless, they are largely absent from mainstream discourse, also being limited to certain fields of study.
 
-There is "globalism", but that term is so overused that its understanding varies greatly. It might be interpreted as anything from economic globalization to conspiracy theories, making it an unreliable reference point.
+There is *"globalism"*, but that term is so overused that its understanding varies greatly. It might be interpreted as anything from economic globalization to conspiracy theories, making it an unreliable reference point.
 
-Therefore, the ideology remains largely invisible to the general public.
+Therefore, the ideology remains **largely invisible** to the general public.
 
-What is visible, are its underlying principles. These have been so deeply ingrained into the fabric of Western societies and international institutions over the past decades, that all people involved operate under the assumption that these are self-evident truths.
+What is visible, are its **underlying principles**. These have been so **deeply ingrained** into the fabric of Western societies and international institutions over the past decades, that all people involved operate under the assumption that these are self-evident truths.
 
-Since these principles are rarely questioned (because how dare you), their implications often go unnoticed, and universalism continues to evade public scrutiny.
+Since these principles are rarely questioned *(because how dare you)*, their **implications** often go **unnoticed**, and universalism continues to evade public scrutiny.
 
 Any criticism limited strictly to the insiders creates an echo chamber where dissenting voices are easily marginalized.
 
@@ -128,11 +129,11 @@ This is where my analysis comes in ;)
 
 If not some shadowy cabal of deep state actors, then who could be so deeply hypocritical, yet self-righteous?
 
-There is no single answer to that question, but the most prominent proponents are often found within: the academia (humanities), international orgs, and a number of political leaders.
+There is no single answer to that question, but the most prominent proponents are often found within: **the academia** *(humanities)*, **international orgs**, and a number of **political leaders**.
 
-People who are supposedly educated, enlightened, and progressive.
+People who are supposedly *educated, enlightened, and progressive*.
 
-How's that possible? Once again, no single answer. People are complex, and their motivations can be multifaceted. But they're still human, so we can identify a few common patterns known to drive human behavior thanks to basic understanding of psychology and social dynamics.
+How's that possible? Once again, no single answer. People are complex, and their motivations can be multifaceted. But they're still human, so we can identify a few *common patterns known to drive human behavior* thanks to basic understanding of psychology and social dynamics.
 
 Not an exhaustive list, but I think it covers most bases:
 
@@ -147,40 +148,40 @@ Not an exhaustive list, but I think it covers most bases:
 | **Hopeless Cynics** | Those who have become disillusioned and see the system as irredeemable, but lack the motivation to effect change. | Me, whenever a new EU policy comes up; You? Perhaps less hopeless, once done reading and reflecting?  |
 | **Open Critics** | People who see through the hypocrisy and are willing to challenge the status quo. | Rare, but they do exist; Listed later |
 
-Of course, these categories are not mutually exclusive. People can fit into multiple categories, or shift between them over time. 
+Of course, these are not mutually exclusive. People can fit into multiple categories, or shift between them over time. 
 
-Their motivations - regardless of their level of involvement - often go unexamined, because of the in-group dynamics and their own incentives, biases, and self-preservation.
+Their motivations *- regardless of their level of involvement -* often go unexamined, because of the **in-group dynamics** and their own **incentives, biases, and self-preservation**.
 
 Thus, there are no incentives to question the status quo. Very little external scrutiny.
 
-So... who watches the watchmen?
+So... *who watches the watchmen?*
 
 ### A Conspiracy That Isn't
 
-I have just described this complex self-reinforcing belief system. There must be some ulterior motive behind it all, right? Some group *(wink, wink)* orchestrating this?
+I have just described this **complex self-reinforcing belief system**. There must be some ulterior motive behind it all, right? Some group *(wink, wink)* orchestrating this?
 
 Well... no. At least, I have not found anything that would indicate such thing.
 
-It is more of an emergent phenomenon, arising from the interactions of various actors within the system, each pursuing their own interests and agendas.
+It is more of an **emergent phenomenon**, arising from the interactions of various actors within the system, each pursuing their own interests and agendas.
 
-Complex - absolutely. Far-reaching - for sure. But it's not hidden, nor driven by a single, uniform group. 
+*Complex* - absolutely. *Far-reaching* - for sure. But it's **not hidden**, nor driven by a single, uniform group. 
 
 It's openly described in:
 
-- academic papers from a number of disciplines,
-- publicly available UN documents,
-- various policy papers and reports from think tanks and NGOs,
-- the international law.
+- **academic papers** from a number of disciplines,
+- publicly available **UN documents**,
+- various **policy papers and reports** from think tanks and NGOs,
+- the **international law** and treaties.
 
 It's just that... few people even care about these, unless they already are a cog in the machine. And those who aren't, usually don't dare to question the supposedly humanitarian motives behind it all.
 
-Once stripped of its sanctity, what remains is a power structure like any other. One that seeks to maintain its influence and control, often at the expense of those it claims to help.
+Once stripped of its sanctity, what remains is a **power structure** like any other. One that seeks to maintain its influence and control, often at the expense of those it claims to help.
 
 ### Good vs Evil
 
-For an ideology that prides itself on rationality and progress, it is deeply ironic how much it relies on a simplistic binary worldview.
+For an ideology that prides itself on *rationality* and *progress*, it is deeply ironic how much it relies on a **simplistic binary worldview**.
 
-My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590).
+My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first sentence we can find:
 
 > The explanation of the right-wing populist attack on transnational standards of pluralism and cooperation as caused by unsolved problems of the economic structure is often disputed by regarding populism a “cultural backlash” supported by groups now deprived of their former predominant position by new universalist standards.
 
@@ -209,11 +210,11 @@ Stemming from these, we can identify several implicit ones, which might feel mor
 
 | Implicit Assumption | Description | Consequences |
 |:-------------------:|-------------|--------------|
-| <span>Moral Superiority</span><span>`I1 = E1 + E2`</span> | Belief that liberal values are not only universal but also superior to all others. | Incessant moralizing, impossibility of genuine dialogue |
-| <span>Pseudoscience</span><span>`I2 = E3 + E4`</span> | Intellectual corruption of the academia | Prescriptive research with baked-in biases and predetermined outcomes |
-| <span>Ideological Capture</span><span>`I3 = E1 + E3`</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
-| <span>Manifest Destiny v2</span><span>`I4 = I1 + I2`</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
-| <span>Brave New World</span><span>`I5 = I1 + I3`</span> | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
+| <span>**Moral Superiority**</span><span>**`I1 = E1 + E2`**</span> | Belief that liberal values are not only universal but also superior to all others. | Incessant moralizing, impossibility of genuine dialogue |
+| <span>**Pseudoscience**</span><span>**`I2 = E3 + E4`**</span> | Intellectual corruption of the academia | Prescriptive research with baked-in biases and predetermined outcomes |
+| <span>**Ideological Capture**</span><span>**`I3 = E1 + E3`**</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
+| <span>**Manifest Destiny v2**</span><span>**`I4 = I1 + I2`**</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
+| <span>**Brave New World**</span><span>**`I5 = I1 + I3`**</span> | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
 
 
 These implicit assumptions are often the root cause of various pathologies observed in societies influenced by liberal universalism. Understanding the underlying, um... logic (being a bit generous here) allows us to realize how these pathologies are justified and understand why they're so fiercely defended.
@@ -234,21 +235,21 @@ Yep, this is the echo of universalist moral superiority, usually accompanied by 
 
 ### Pseudoscience
 
-Perceived marginalization of certain groups, amplified by biased academic research, leads to distorted understanding of what constitutes as "rational" or even "scientific". Rather than objective pursuit of knowledge, science becomes a tool for validating preconceived notions and justifying ideological agendas.
+**Perceived marginalization** of certain groups, amplified by **biased academic research**, leads to distorted understanding of what constitutes as *"rational"* or even *"scientific"*. Rather than objective pursuit of knowledge, science becomes a tool for validating preconceived notions and justifying ideological agendas.
 
 As a result, papers like [Towards black methods in research with refugees (Rashid, 2025)](https://academic.oup.com/jrs/article/38/3/481/7900911) emerge.
 
-The what methods? Ok, fine, let's not judge the book by its cover. What is it about?
+The *what* methods? Ok, fine, let's not judge the book by its cover. What is it about?
 
 > **Abstract**
 >
 > [...] Thinking with empirical material from a research study engaging with forcibly displaced interlocutors from East and Central Africa and refugee resettlement personnel, the article illuminates critical methods of interpreting the experiences of refugees and forms of resettlement through the lenses of black studies and black feminist thought.
 
-Trying to present itself as empirical research, the article relies heavily on qualitative interviews. Interviews with people who have clear incentives to perpetuate the asylum system.
+Trying to present itself as empirical research, the article relies heavily on *qualitative interviews*. Interviews with people who have *clear incentives to perpetuate the asylum system*.
 
 Fine, maybe such information could be useful in some limited scope for understanding personal experiences.
 
-But... not far down in the "Introduction" section we can find an outright dismissal of actual empirical research:
+But... not far down in the *"Introduction"* we can find an outright **dismissal** of actual **empirical research**:
 
 > Moreover, in relation to experiences of black, brown, Indigenous, and people of colour, Patterson et al. (2016) discuss how approaches identified as ‘rigorous’ and ‘evidence-based’ are limited in their ability to consider intersecting identities such as gender, age, sexuality, class, race, ethnicity, and dis/ability among others.
 
@@ -358,13 +359,13 @@ As I was digging through various academic papers, I have noticed many recurring 
 
 2. A similar issue arises with limited **access to data** used to back claims being made.
   - One area where this is extremely prevalent is **criminology**. Usually citing *"privacy concerns"*, authors ignore the fact that anonymized datasets could be shared without compromising individual identities.
-  - Usually the raw data is available only *upon request*, and even then only to *select individuals or institutions*. In worst cases, access to data is **guarded by NDA agreements**.
+  - Usually the raw data is available only **upon request**, and even then only to *select individuals or institutions*. In worst cases, access to data is **guarded by NDA agreements**.
   - We all know *why* that is. If the reasoning behind the claims was sound, there would be no need to hide the data. This kind of unverifiable research should be rejected outright.
 
 3. Finally, there is the issue of **methodological transparency**.
-  - As of now, there are no standardized guidelines for stating the **hypotheses** (when dealing with empirical research) and **underlying assumptions** (in philosophy-adjacent fields) of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
+  - As of now, there are no standardized guidelines for stating the **hypotheses** *(when dealing with empirical research)* and **underlying assumptions** *(in philosophy-adjacent fields)* of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
   - If these were explicitly stated upfront, it would be easier to evaluate the **validity** of the research and its conclusions, and to differentiate between *objective findings* and *subjective interpretations*.
-  - Similar to the *"Thesis"* section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
+  - Similar to the *["Thesis"](#thesis)* section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
 
 If these three points were implemented, it would eliminate a significant portion of manipulative research.
 
@@ -384,25 +385,25 @@ In the report [Agenda towards transformative change for racial justice and equal
 
 In this single sentence we have calls for:
 
-- a **political change** ("renewed leadership and vision"),
-- to offer **preferential treatment** ("reparatory justice responses"),
-- maintaining **deliberate vagueness** ("creative"),
-- for the sake of **universalist assumptions** ("dismantling systemic racism"),
+- a **political change** (*"renewed leadership and vision"*),
+- to offer **preferential treatment** (*"reparatory justice responses"*),
+- maintaining **deliberate vagueness** (*"creative"*),
+- for the sake of **universalist assumptions** (*"dismantling systemic racism"*),
 - while the academic community still doesn't define "racism" in a clear and consistent manner.
 
 [Digging further](https://www.ohchr.org/en/press-releases/2025/09/urgent-push-needed-achieve-reparatory-justice-africans-and-people-african), we can learn what "reparatory justice responses" actually are:
 
 > The UN Human Rights Office today published a report calling on States and others to double down on delivering reparatory justice for Africans and people of African descent, including through formal apologies, truth-seeking, memorialisation, medical and psychosocial support and compensation
 
-Um... no, thank you? Call me back when you're democratically elected, ciao.
+Um... no, thank you? Call me back when you're democratically elected, *ciao*.
 
 This is a significant overreach, and an example of how the concept of human rights has been weaponized to justify actions of unproven effectiveness, the results of which are in no way quantifiable. As you have probably guessed by now, it is not explained at what point the "systemic racism" is considered "dismantled".
 
-Even worse - such measures often lead to further division and resentment among different groups, as the suggested measures are perceived as unfair or unjust by those who do not benefit from them.
+Even worse - such measures often lead to *further division and resentment* among different groups, as the suggested measures are perceived as unfair or unjust by those who do not benefit from them.
 
 Instead of arguing on a case-by-case basis, it is assumed that discrimination exists everywhere. Then, when nothing is done in response to perceived injustices, it encourages victimhood mentality and incites social unrest.
 
-Without the universalist assumptions, these rights could be reduced to their more fundamental form, in which they could - ironically - be applied more universally. A defensible framework for human rights would focus on *equalization of rights* (freedom from oppression) rather than attempts at *equalization of outcomes* (entitlement to resources).
+Without the universalist assumptions, these rights could be reduced to their more fundamental form, in which they could - ironically - be applied more universally. A defensible framework for human rights would focus on **equalization of rights** *(freedom from oppression)* rather than attempts at **equalization of outcomes** *(entitlement to resources)*.
 
 These are not novel ideas. Philosophers have debated the nature of rights for centuries. What is new, is the context in which these debates are taking place, and the implications they have for global governance.
 

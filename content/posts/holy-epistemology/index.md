@@ -6,6 +6,7 @@ image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08
 ttr: "15~20m"
+hue: 60
 
 # Analytics
 valued_time: 480 # 8 minutes
@@ -43,11 +44,11 @@ All I care about is verifiability of claims presented by various groups of peopl
 
 > **Epistemology** - a branch of philosophy, known as "the theory of knowledge", that aims to explain the limits of understanding. In practice, it employs empiricism (real world data and experiments), theoretical models, logic, and critical thinking to establish whether a piece of information should be considered a provable, testable claim, rather than one's opinion. This applies to all things in existence, as well as hypothetical or abstract models.
 
-One of the core aspects of **religion** is being *not falsifiable*. This, by extension, is also applied to the concept of **theology**. Theological claims are based on subjectivity rather than objectivity, allowing empiricism and logic to be replaced by unquantifiable: emotions, experiences, faith. Always open to interpretation, ready to be twisted in some other way when new scientific data contradicts it.
+One of the *core aspects* of religion is being **not falsifiable**. This, by extension, is also applied to the concept of *theology*. Theological claims are based on subjectivity rather than objectivity, allowing empiricism and logic to be replaced by unquantifiable: emotions, experiences, faith. Always open to interpretation, ready to be twisted in some other way when new scientific data contradicts it.
 
 Any attempts to argue with theologians from a scientific perspective are pointless. They use the argument of faith, shaping the discussion the way they want, or shutting it down entirely with simple "You don't have faith, so you don't understand". They call it "science", but it's actually three logical fallacies under a trench coat.
 
-I also want to broaden your horizon by showing you various philosophical concepts that suggest alternative answers. I don't expect you to just latch onto them - just think, for a moment. From **cosmology** to **existentialism**, stripping **sacrum** down to **profanum**. Some horrors and nice views along the way. All I'm asking for is an open mind.
+I also want to broaden your horizon by showing you various philosophical concepts that suggest alternative answers. I don't expect you to just latch onto them - just think, for a moment. From **cosmology** to **existentialism**, stripping *sacrum* down to *profanum*. Some horrors and nice views along the way. All I'm asking for is an open mind.
 
 Due to my cultural background, the only religion I had any significant contact with was catholicism. Because of that, some parts of my critique are presented through the lens of christianity. That, of course, doesn't mean other religions are any different - it's just the one I'm most "fluent" in, and where I know what kind of "tricks" to expect.
 

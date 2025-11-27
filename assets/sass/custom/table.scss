@@ -1,16 +1,16 @@
-$table-bg: mix($dark-black, $table-base, 60%);
+$table-bg: $bg;
 
 $saturation-adjust: 10%;
-$row-factor: 1.5%;
+$row-factor: 2.5%;
 $cell-factor: 1%;
 
-$th-bg: lighten($table-bg, $row-factor * 4);
-$tr-even-bg: darken(desaturate(darken($table-bg, $row-factor * 5), $saturation-adjust), $row-factor);
-$tr-odd-bg: lighten(desaturate(darken($table-bg, $row-factor * 5), $saturation-adjust), $row-factor);
+$th-bg: color-mix(in hsl, $table-bg, white 10%);
+$th-alt-bg: color-mix(in hsl, $table-bg, white 5%);
+$tr-even-bg: color-mix(in hsl, $table-bg, black 50%);
+$tr-odd-bg: color-mix(in hsl, $table-bg, black 25%);
 
-$border-color: lighten(saturate($table-bg, 10%), 10%);
+$border-color: color-mix(in hsl, $table-bg, white 10%);
 $border: 0px solid $border-color;
-$border-radius: 16px;
 $cell-padding: 0.5rem 0.75rem;
 
 .scrollable-container {
@@ -19,37 +19,47 @@ $cell-padding: 0.5rem 0.75rem;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
   padding: 0 0;
-  margin: $narrow-margin 0;
   border-radius: $border-radius;
-  @include drop-shadow;
+  @include card-panel;
 
   table {
-    width: 100%; 
+    width: 100%;
     padding: 0 0;
     margin: 0 0;
     table-layout: auto;
-    border-collapse: separate;
-    border-spacing: 2px;
+    border-collapse: collapse;
+
     border: $border;
+    outline: none;
     border-radius: $border-radius;
     overflow: hidden;
-  
+    border: 0;
+
     * {
       border: 0;
       background-clip: padding-border;
       background-blend-mode: overlay;
     }
-  
+
     th {
       font-size: 0.9rem;
+      color: $fg-light;
 
       &:nth-child(odd) {
         background: $th-bg;
       }
 
       &:nth-child(even) {
-        background: darken($th-bg, $cell-factor * 2.5);
+        background: $th-alt-bg;
       }
+    }
+
+    th,
+    td {
+      min-width: 80px;
+      padding: $cell-padding;
+      outline: 1px solid $dark-black;
+      line-height: 1.4rem;
     }
 
     tbody {
@@ -57,7 +67,7 @@ $cell-padding: 0.5rem 0.75rem;
         td {
           word-break: normal;
           font-size: 0.8rem;
-    
+
           &:first-child {
             font-weight: bold;
             text-align: middle;
@@ -66,7 +76,7 @@ $cell-padding: 0.5rem 0.75rem;
 
         &:nth-child(odd) td {
           &:nth-child(odd) {
-            background: lighten($tr-odd-bg, $cell-factor);
+            background: color-mix(in srgb, $tr-odd-bg, white 2.5%);
           }
           &:nth-child(even) {
             background: $tr-odd-bg;
@@ -75,19 +85,13 @@ $cell-padding: 0.5rem 0.75rem;
 
         &:nth-child(even) td {
           &:nth-child(odd) {
-            background: lighten($tr-even-bg, $cell-factor);
+            background: color-mix(in srgb, $tr-even-bg, white 0.5%);
           }
           &:nth-child(even) {
             background: $tr-even-bg;
           }
         }
       }
-    }
-
-    th, td {
-      min-width: 80px;
-      padding: $cell-padding;
-      line-height: 1.4rem;
     }
 
     span {
@@ -99,7 +103,7 @@ $cell-padding: 0.5rem 0.75rem;
 
   .table-scroll th,
   .table-scroll td {
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       white-space: nowrap;
     }
   }

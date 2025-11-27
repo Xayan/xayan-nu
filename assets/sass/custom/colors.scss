@@ -1,0 +1,136 @@
+$_hues: (
+  "_": $hue,
+  "blue": var(--hue, 240deg),
+  "cyan": var(--hue, 180deg),
+  "green": var(--hue, 120deg),
+  "yellow": var(--hue, 60deg),
+  "orange": var(--hue, 30deg),
+  "red": var(--hue, 0deg),
+  "purple": var(--hue, 270deg),
+  "pink": var(--hue, 300deg)
+);
+
+$_shades: (
+  "-lightest": 80%,
+  "-lighter": 70%,
+  "-light": 60%,
+  "-dark": 40%,
+  "-darker": 30%,
+  "-darkest": 20%
+);
+
+$_variants: (
+  "bg": (
+    sat: 25%,
+    light: 5%
+  ),
+  "fg": (
+    sat: 5%,
+    light: 50%,
+    map: $_shades
+  ),
+  "accent": (
+    sat: 35%,
+    light: 50%,
+    map: $_shades
+  )
+);
+
+// Helper to safely generate HSL whether hue is a number or a var() string
+@function safe-hsl($h, $s, $l) {
+  @if type-of($h) == "number" {
+    @return hsl($h, $s, $l);
+  } @else {
+    @return unquote("hsl(#{$h}, #{$s}, #{$l})");
+  }
+}
+
+@function get-variants($current-hue, $prefix: "_") {
+  $result: ();
+
+  @each $variant, $params in $_variants {
+    $sat: map-get($params, sat);
+    $light: map-get($params, light);
+    $map: map-get($params, map);
+
+    $color: safe-hsl($current-hue, $sat, $light);
+    $result: map-merge(
+      $result,
+      (
+        $variant: $color
+      )
+    );
+
+    @if $map != null {
+      @each $shade, $shade-lightness in $map {
+        $name: "#{$variant}#{$shade}";
+        $color: safe-hsl($current-hue, $sat, $shade-lightness);
+        $result: map-merge(
+          $result,
+          (
+            $name: $color
+          )
+        );
+      }
+    }
+  }
+  @return $result;
+}
+
+@mixin generate-palette($target-hue, $prefix: "_") {
+  // 1. Get the map of colors for this hue
+  $variant-map: get-variants($target-hue);
+
+  // 2. Loop through them to set CSS Vars and update global map
+  @each $name, $color in $variant-map {
+    $full-name: "#{$prefix}#{$name}";
+
+    // Output CSS Variable
+    --#{$full-name}: #{$color};
+  }
+}
+
+@mixin set-hue($target-hue: h("_")) {
+  :root {
+    --_hue: var(--hue, #{$target-hue});
+    @include generate-palette($target-hue);
+  }
+}
+
+@function h($name: "_") {
+  @return map-get($_hues, $name);
+}
+
+@function c($name, $prefix: "_", $fallback: red) {
+  @return var(--#{$prefix}#{$name}, $fallback);
+}
+
+@function accent-lightest($shade: null) {
+  @if $shade == null {
+    @return c("accent");
+  } @else {
+    @return c("accent-#{$shade}");
+  }
+}
+$bg: c("bg");
+
+$fg: c("fg");
+$fg-lightest: c("fg-lightest");
+$fg-lighter: c("fg-lighter");
+$fg-light: c("fg-light");
+$fg-dark: c("fg-dark");
+$fg-darker: c("fg-darker");
+$fg-darkest: c("fg-darkest");
+
+$accent: c("accent");
+$accent-lightest: c("accent-lightest");
+$accent-lighter: c("accent-lighter");
+$accent-light: c("accent-light");
+$accent-dark: c("accent-dark");
+$accent-darker: c("accent-darker");
+$accent-darkest: c("accent-darkest");
+
+@debug $accent;
+@debug $accent-dark;
+
+@include set-hue($hue);

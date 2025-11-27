@@ -1,105 +1,87 @@
-$accent: #33ffab;
-$accent-dark: #279265;
-$accent-ai: #1669bd;
-$font-color: #babdc4;
-$greyed-out: #596263;
-$overlay-bg: rgba(47, 130, 125, 0.25);
-$table-base:  rgb(62, 83, 106);
+@use "sass:meta";
 
-$link-page: #d6dae3;
-$link-post: $accent;
-$link-post-hover: $accent-dark;
-$link-footer: #9da3af;
+$_hue: 200;
+$_colors: ();
+
+$hue: var(--hue, #{$_hue}deg);
+
+@import "custom/functions";
+@import "custom/base";
+@import "custom/fonts";
+@import "custom/colors";
+@import "custom/animations";
+
+$fg: c("fg");
+$bg: c("bg");
+$accent: c("accent");
+$accent-dark: c("accent-dark");
+$border: c("border");
+
+$card-bg: $bg;
+$navbar-bg: $accent;
+$overlay-bg: hsl(175, 50%, 10%);
+
+$toc-bg: color-mix(in srgb, $bg 90%, black 5%);
+$toc-hover-bg: color-mix(in srgb, $toc-bg 95%, black 10%);
+
+$blockquote-bg: hsl(200, 50%, 10%);
+$blockquote-text-color: hsl(200, 50%, 80%);
+
+$border-radius: 8px;
 
 $box-shadow-offset: 2px;
-$box-shadow-spread: 6px;
-$box-shadow-color: rgba(0, 0, 0, 0.8);
+$box-shadow-spread: 12px;
+$box-shadow-color: rgba(0, 0, 0, 1);
 
-$narrowest-margin: 0.25rem;
-$narrower-margin: 0.5rem;
-$narrow-margin: 1rem;
-$base-margin: 1.75rem;
-$wide-margin: 3rem;
-$wider-margin: 5rem;
+$clear-margin: (
+  margin: 0 0 0 0
+);
+$clear-padding: (
+  padding: 0 0 0 0
+);
 
-$chat-user-bg: darken(desaturate($accent-dark, 40%), 25%);
-$chat-assistant-bg: darken(desaturate($accent-ai, 40%), 25%);
-$chat-border-radius: 12px;
-$blockquote-base: #60c1d7;
-$blockquote-accent: rgba($blockquote-base, 0.6);
-$blockquote-bg: rgba($blockquote-base, 0.08);
-$blockquote-quote: rgba($blockquote-base, 0.8);
-$blockquote-divider: rgba($blockquote-base, 0.2);
-$chat-tail-height: 20px;
-$chat-tail-width: 12px;
+$text-margin: (
+  default: $clear-margin,
+  mobile: (
+    margin: $gap-md $gap-xs
+  ),
+  tablet: (
+    margin: $gap-md $gap-sm
+  ),
+  desktop: (
+    margin: $gap-lg $gap-md
+  )
+);
 
-@mixin respond-mobile {
-  @include media-query($on-mobile) {
-    @content;
-  }
-}
+$header-margin: (
+  default: $clear-margin,
+  mobile: (
+    margin: $gap-xxl 0 $gap-lg 0
+  ),
+  tablet: (
+    margin: $gap-xxl 0 $gap-sm 0
+  ),
+  desktop: (
+    margin: $gap-3xl 0 $gap-sm 0
+  )
+);
 
-@mixin respond-tablet {
-  @include media-query($on-tablet) {
-    @content;
-  }
-}
-
-@mixin drop-shadow($offset: $box-shadow-offset, $spread: $box-shadow-spread, $color: $box-shadow-color) {
-  box-shadow: $offset $offset $spread $color;
-}
-
-@mixin link-styles($base, $hover, $important: false, $underline-hover: true, $keep-decoration: true) {
-  $flag: if($important, '!important', null);
-  color: $base #{$flag};
-  opacity: 1;
-  @if not $keep-decoration {
-    text-decoration: none;
-  }
-  transition: color 0.5s ease, opacity 0.5s ease;
-
-  &:hover {
-    cursor: hand;
-    color: $hover #{$flag};
-    opacity: 0.8;
-    @if $underline-hover {
-      text-decoration: underline;
-    } @else if not $keep-decoration {
-      text-decoration: none;
+html {
+  body {
+    &.is-page {
+      @include background-colors(hsla(calc(#{$hue} + 80deg), 0%, 2%, 1), hsla(200, 25%, 2.5%, 0.9));
     }
-  }
-}
 
-@mixin flex-column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+    &.is-post {
+      @include background-colors(hsla(calc(#{$hue} + 120deg), 10%, 1%, 1), hsla(calc(#{$hue}), 25%, 2.5%, 0.85));
+    }
 
-@mixin card-panel {
-  position: relative;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  @include drop-shadow;
-}
-
-html body {  
-  @import "custom/page";
-
-  
-  .page-content {
+    @import "custom/nav";
+    @import "custom/page";
     @import "custom/post";
-    
-    @import "custom/toc";
-    @import "custom/shares";
 
     @import "custom/card";
-    @import "custom/list";
     @import "custom/table";
-
-    @import "custom/image";
-    @import "custom/video";
     @import "custom/chat";
   }
 }

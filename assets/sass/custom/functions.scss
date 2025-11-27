@@ -1,0 +1,176 @@
+@use "sass:meta";
+@use "sass:string";
+@use "sass:color";
+
+/**
+ * Media Queries
+ */
+
+@mixin _media($min-width: null, $max-width: null) {
+  @if $min-width and $max-width {
+    @if ($min-width > $max-width) {
+      @error "Incompatible media query: min-width (#{$min-width}) is greater than max-width (#{$max-width}). No styles will be applied.";
+    } @else {
+      @media screen and (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+      }
+    }
+  } @else {
+    @if $min-width {
+      @media screen and (min-width: $min-width) {
+        @content;
+      }
+    }
+    @if $max-width {
+      @media screen and (max-width: $max-width) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin props-map($map) {
+  @each $property, $values in $map {
+    @include props($values);
+  }
+}
+
+@mixin props($values...) {
+  @each $set in $values {
+    @if $set != null and $set != () {
+      @each $property, $value in $set {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+@mixin on-default {
+  @content;
+}
+
+@mixin on-mobile {
+  @include _media(0, $on-mobile) {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @include _media($tablet-breakpoint, $on-desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @include _media($on-desktop) {
+    @content;
+  }
+}
+
+@mixin per-device($mobile: null, $tablet: null, $desktop: null, $default: null) {
+  @if $desktop != null and $desktop != () {
+    @include on-desktop {
+      @include props($desktop);
+    }
+  }
+
+  @if $tablet != null and $tablet != () {
+    @include on-tablet {
+      @include props($tablet);
+    }
+  }
+
+  @if $mobile != null and $mobile != () {
+    @include on-mobile {
+      @include props($mobile);
+    }
+  }
+
+  @if $default != null {
+    @include props($default);
+  }
+}
+
+@mixin on-devices($sets...) {
+  @each $set in $sets {
+    @include per-device($mobile: map-get($set, mobile), $tablet: map-get($set, tablet), $desktop: map-get($set, desktop), $default: map-get($set, default));
+  }
+}
+
+@mixin drop-shadow($offset: $box-shadow-offset, $spread: $box-shadow-spread, $color: $box-shadow-color) {
+  box-shadow: $offset $offset $spread $color;
+}
+
+@mixin link-styles($base, $hover, $keep-decoration: true, $underline-hover: false, $important: false) {
+  $flag: if($important, "!important", null);
+  color: $base #{$flag};
+  opacity: 1;
+  @if not $keep-decoration {
+    text-decoration: none;
+  }
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+
+  &:hover {
+    cursor: hand;
+    color: $hover #{$flag};
+
+    @if $underline-hover {
+      text-decoration: underline;
+    } @else if not $keep-decoration {
+      text-decoration: none;
+    }
+  }
+}
+
+/** 
+  * Utilities
+  */
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin background-colors($gradient-start, $gradient-end) {
+  background-blend-mode: normal;
+  background: linear-gradient($gradient-start, $gradient-end), url("images/background.png");
+}
+
+/**
+ * Custom Elements
+ */
+
+@mixin card-panel {
+  @include per-device(
+    (
+      margin-top: $gap-xs,
+      margin-bottom: $gap-xs,
+      max-width: 90vw
+    ),
+    (
+      margin-top: $gap-lg,
+      margin-bottom: $gap-lg,
+      max-width: 85vw
+    ),
+    (
+      margin-top: $gap-xxl,
+      margin-bottom: $gap-xxl,
+      max-width: 75vw
+    ),
+    (
+      margin-left: auto,
+      margin-right: auto
+    )
+  );
+
+  @include drop-shadow;
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: $border-radius;
+}

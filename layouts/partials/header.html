@@ -1,7 +1,7 @@
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
         <a href="{{ .Site.Home.Permalink }}" class="logo">
-            <img src="{{ .Site.Params.Logo | default "/logo.png" }}" alt="{{ .Site.Title }}" class="logo-image"/>
+            <img src="{{ .Site.Params.Logo | default "/images/logo.png" }}" alt="{{ .Site.Title }}" class="logo-image"/>
         </a>
         <input type="checkbox" id="menu-trigger" class="menu-trigger" />
         <label for="menu-trigger">
@@ -11,30 +11,15 @@
         </label>
 
         <div class="trigger">
-            <ul class="trigger-container">
+            <div class="trigger-links">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <li>
                     <a class="menu-link {{ if or ($currentPage.IsMenuCurrent "main" .)
                         ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}">
                         {{ .Name }}
                     </a>
-                    {{ if .HasChildren }}
-                    <ul>
-                        {{ range .Children }}
-                        <li>
-                            <a class="menu-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
-                                href="{{ .URL }}">
-                                {{ .Name }}
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                    {{ end }}
-                </li>
                 {{ end }}
-                <li></li>
-            </ul>
+            </div>
             <div class="trigger-social-icons">
                 {{- partial "socialIcons.html" site.Params.socialIcons -}}
             </div>

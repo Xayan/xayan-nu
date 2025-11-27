@@ -1,0 +1,60 @@
+@use "sass:meta";
+
+$gap-unit: 0.05rem;
+$gap-xxs: 4 * $gap-unit;
+$gap-xs: 8 * $gap-unit;
+$gap-sm: 12 * $gap-unit;
+$gap-md: 15 * $gap-unit;
+$gap-lg: 20 * $gap-unit;
+$gap-xl: 25 * $gap-unit;
+$gap-xxl: 30 * $gap-unit;
+$gap-3xl: 40 * $gap-unit;
+$gap-4xl: 50 * $gap-unit;
+$gap-5xl: 60 * $gap-unit;
+
+$border-radius: 6px;
+$card-border-radius: 10px;
+
+$_hues: (
+  // Use the variable $hue here, not #{hue}
+  "_": #{hue}deg,
+  "blue": 240deg,
+  "cyan": 180deg,
+  "green": 120deg,
+  "yellow": 60deg,
+  "orange": 30deg,
+  "red": 0deg,
+  "purple": 270deg,
+  "pink": 300deg
+);
+
+$_shades: (
+  "-lightest": 90%,
+  "-lighter": 75%,
+  "-light": 60%,
+  "-dark": 40%,
+  "-darker": 25%,
+  "-darkest": 10%
+);
+
+$_variants: (
+  "bg": (
+    sat: 25%,
+    light: 5%
+  ),
+  "fg": (
+    sat: 5%,
+    light: 50%,
+    map: $_shades
+  ),
+  "accent": (
+    sat: 75%,
+    light: 50%,
+    map: $_shades
+  ),
+  "border": (
+    sat: 10%,
+    light: 50%,
+    map: $_shades
+  )
+);

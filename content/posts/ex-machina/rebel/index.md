@@ -6,6 +6,7 @@ image: "/posts/ex-machina/rebel/thumb.jpg"
 author: "Xayan"
 date: 2025-08-15
 ttr: "20~30m"
+hue: 25
 
 # Indexing
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]

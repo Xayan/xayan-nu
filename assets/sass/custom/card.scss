@@ -1,29 +1,58 @@
+$card-hue: var(--card-hue, $hue);
+$card-bg: var(--card-bg, hsla($card-hue, 10%, 20%, 0.8));
+$card-fg: var(--card-fg, hsla($card-hue, 10%, 80%, 0.9));
+$card-accent: var(--card-accent, hsl($card-hue, 50%, 50%));
+$card-accent-light: var(--card-accent-light, hsl($card-hue, 50%, 65%));
+$card-accent-dark: var(--card-accent-dark, hsl($card-hue, 50%, 35%));
+
 .card {
-  margin: 1.5rem 0;
+  @include card-panel;
+
   transition: all 0.3s ease;
   min-height: calc(120px + 2rem);
-  @include card-panel;
+  background: color-mix(in srgb, $card-bg 15%, transparent);
+  border: 1px solid color-mix(in srgb, $card-accent-dark 50%, transparent 100%);
 
   &:hover {
     transform: translateY(-2px);
-    border: 1px solid rgba($accent-dark, 0.75);
+    background: color-mix(in srgb, $card-bg 50%, transparent);
+    border: 1px solid color-mix(in srgb, $card-accent-dark 80%, transparent);
 
-    @include drop-shadow(0px, 8px, rgba($accent-dark, 0.75));
+    @include drop-shadow(0px, 4px, color-mix(in srgb, $card-accent-dark 25%, transparent));
+  }
+
+  &:nth-child(odd) .card-row {
+    flex-direction: row-reverse;
+    text-align: right;
   }
 
   .card-row {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    line-height: 1.5em;
   }
 
-  // Default (left-aligned) layout
+  .card-content,
+  .card-image {
+    @include per-device(
+      (
+        margin: $gap-md
+      ),
+      (
+        margin: $gap-md
+      ),
+      (
+        margin: $gap-lg
+      )
+    );
+  }
+
   .card-image {
     width: 180px;
     height: 120px;
-    margin: 1rem 1.5rem 1rem 1rem;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: $border-radius;
     flex-shrink: 0;
     position: relative; // For mobile overlay positioning
 
@@ -43,14 +72,12 @@
     }
   }
 
-
   &:hover .card-image img {
-    transform: scale(1.075);
+    transform: scale(1.05);
     transition: transform 0.5s ease;
   }
 
   .card-content {
-    padding: 1rem;
     flex: 1;
   }
 
@@ -60,33 +87,37 @@
   }
 
   .card-header {
-    margin-bottom: 0.8rem;
+    margin: 0;
   }
 
   .card-title {
     margin: 0;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.3;
+
+    a {
+      @include link-styles($fg-light, $card-accent-light);
+    }
   }
 
   .card-categories {
     display: block;
-    margin: 0.25em 0;
+    margin: 0.4em 0;
 
     .category-tag {
       display: inline-block;
-      font-size: 0.7rem;
-      padding: 0rem 0.4rem;
-      margin: 0 0.1rem;
-      background: rgba($accent-dark, 0.5);
-      color: lighten($accent-dark, 20%);
-      text-shadow: black 2px 2px 4px;
-      box-shadow: black 2px 2px 4px;
-      border-radius: 8px;
+      font-size: 0.75rem;
+      padding: 0.4em;
+      line-height: 0.8em;
+      margin: 0 0.15rem;
+      border-radius: $border-radius;
+      background: hsla(var(--card-hue), 40%, 40%, 0.7);
+      color: $card-fg;
+      text-shadow: black 3px 3px 8px;
       text-transform: uppercase;
       font-weight: 500;
-      letter-spacing: 0.5px;
+      letter-spacing: 0px;
     }
   }
 
@@ -94,7 +125,6 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.2;
-    color: rgba($font-color, 0.8);
     display: inline;
   }
 
@@ -103,6 +133,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: $fg-darker;
 
     .meta-item {
       display: flex;
@@ -111,37 +142,32 @@
     }
 
     .ttr {
-      color: rgba($font-color, 0.7);
       font-style: italic;
       font-size: 0.8rem;
     }
 
     .post-date {
-      color: rgba($font-color, 0.7);
       font-weight: bold;
       font-size: 0.9rem;
     }
   }
+}
 
-  &:nth-child(even) .card-row {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-
-  @include respond-mobile {
+@include on-mobile {
+  .card {
     display: block;
+    margin: $gap-xxl $gap-xxl;
 
     .card-row {
       display: block;
     }
 
     .card-image {
-      float: right;
       width: 100%;
       height: 180px;
-      margin: 0 0 0.5em 0;
       position: relative;
-      border-radius: 8px 8px 0 0;
+      border-radius: $border-radius $border-radius 0 0;
+      margin: 0;
 
       // Show mobile overlay within image
       .mobile-overlay {
@@ -152,45 +178,39 @@
         left: 0;
         right: 0;
         height: 180px;
+
         background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-        padding: 0rem 1rem 1rem 1rem;
-        color: white;
+        color: $fg-lightest;
 
         .card-categories {
-          margin-top: 0.6em;
+          margin-top: 0.5em;
+          margin-right: 0.75em;
           float: right;
 
           .category-tag {
-            background: rgba($accent-dark, 0.8);
-            color: rgba($accent, 0.8);
-            font-weight: 600;
+            padding: 0.6em 0.6em;
           }
         }
 
         .card-title {
-          color: white;
-          font-size: 1.1rem;
           position: inherit;
-          text-align: left;
-          margin: 0;
-          bottom: 1.6em;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+          margin: 0 1em;
+          bottom: 0.8em;
+          a {
+            color: $fg-lightest;
+            text-shadow: black 3px 3px 8px;
+          }
         }
       }
     }
 
     .card-content {
-      padding: 0;
       text-align: left;
     }
 
     // Hide desktop elements
     .desktop-only {
       display: none;
-    }
-
-    .card-main-content {
-      padding: 1rem;
     }
 
     .card-description {

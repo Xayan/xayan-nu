@@ -1,26 +1,41 @@
 $padding-multiplier: 0.4rem;
 
 .post-content {
-  font-size: 0.90rem;
+  font-size: 0.9rem;
+
+  & > p {
+    @include on-devices($text-margin);
+    color: $fg;
+    font-weight: 300;
+  }
 
   a {
-    @include link-styles($accent, $accent-dark, true, false);
+    @include link-styles($accent-light, $accent-darker);
+    font-style: italic;
+    font-weight: 375;
   }
 
-  & > p, & > ul, & > ol {
-    padding: 0 4px;
+  strong,
+  b {
+    color: $accent;
+    font-weight: 450;
   }
 
-  h2, h3, h4, h5, h6 {
-    margin: $base-margin 0 0 0;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include on-devices($header-margin);
+    color: $fg-lighter;
+    line-height: 1.4em;
   }
 
   h2 {
-    padding-left: 0.5rem;
     font-size: 1.75rem;
-    border-bottom: 1px solid $accent-dark;
+    border-bottom: solid 1px $fg-darkest;
   }
-  
+
   h3 {
     padding-left: 0.5rem;
     font-size: 1.5rem;
@@ -32,120 +47,321 @@ $padding-multiplier: 0.4rem;
   }
 
   h5 {
-    padding-left: 2.0rem;
+    padding-left: 2rem;
     font-size: 1.15rem;
   }
 
   h6 {
     padding-left: 2.5rem;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .header {
-    margin: $narrow-margin 4px 0 4px;
-  
+    margin: 0 0 $gap-lg 0;
+    text-align: center;
     font-size: medium;
-  
+
     .header-title {
-      margin-bottom: 0.5em;
-      font-size: x-large;
+      color: $accent-lightest;
+
+      @include per-device(
+        (
+          margin: $gap-lg 0 $gap-sm,
+          font-size: 1.75rem,
+          font-weight: 350
+        ),
+        (
+          margin: $gap-3xl 0 $gap-sm,
+          font-size: 2rem,
+          font-weight: 300
+        ),
+        (
+          overflow-x: show,
+          margin: $gap-5xl 0 $gap-sm,
+          font-size: 2.5rem,
+          font-weight: 250,
+          letter-spacing: -1px
+        )
+      );
     }
-  
-    .terms {
-      color: $greyed-out;
+
+    .header-meta {
+      margin: $gap-xs auto $gap-xxs auto;
+      color: $fg-dark;
+
+      & > * {
+        margin: 0 $gap-lg;
+
+        @include per-device(
+          (
+            font-size: 0.875rem
+          ),
+          (
+            font-size: 1rem
+          ),
+          (
+            font-size: 1.125rem
+          )
+        );
+      }
+    }
+
+    .header-terms {
+      margin: $gap-xxs auto $gap-sm auto;
       word-break: keep-all;
+
+      span {
+        color: $fg-dark;
+      }
+
+      a {
+        @include link-styles($accent-light, $accent-dark, true, false);
+        font-style: normal;
+      }
+
+      @include per-device(
+        (
+          font-size: 1rem
+        ),
+        (
+          font-size: 1.125rem
+        ),
+        (
+          font-size: 1.25rem
+        )
+      );
     }
   }
 
-  .subhead {
-    display: block;
-    font-size: 1em;
-    font-weight: 400;
-    color: $gray;
-    font-style: italic;
-    margin-top: -0.4em;
-    margin-left: 1em;
+  .toc {
+    @include card-panel;
+
+    background: $bg;
+    color: $fg;
+    font-size: 0.9rem;
+
+    width: max-content;
+    min-width: 50vw;
+    padding: 0;
+    margin-bottom: $gap-lg;
+    text-align: left;
+
+    ::marker {
+      color: $accent-dark;
+    }
+
+    summary {
+      margin: 0;
+      padding: $gap-xxs $gap-lg;
+      cursor: pointer;
+
+      &:hover {
+        background: color-mix(in srgb, $bg 90%, $accent 20%);
+      }
+
+      b {
+        color: $fg;
+      }
+    }
+
+    nav {
+      margin: $gap-xs;
+      padding: 0 $gap-xl;
+      min-width: 320px;
+      cursor: default;
+
+      ul {
+        line-height: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: $gap-xxs 0;
+
+        li {
+          padding: $gap-xxs 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          a {
+            font-style: normal;
+          }
+        }
+      }
+    }
   }
 
   blockquote {
+    @include card-panel;
+
     position: relative;
-    padding: 2.5em 0.5em 0.5em 1em;
-    margin: $narrow-margin 0;
-    border-left: 4px solid $blockquote-accent;
-    background-color: $blockquote-bg;
-    font-size: 0.9em;
+    padding: 0.5em 1em 0.5em 1.2em;
+    overflow: visible;
+    font-size: 0.8rem;
     border-radius: 8px;
-    @include drop-shadow;
-  
+
     &::before {
       content: '"';
       position: absolute;
-      top: 0.1em;
-      left: 0.1em;
-      font-size: 4em;
+      top: 0em;
+      right: 0.125em;
+      font-size: 5.4em;
       line-height: 1;
-      opacity: 0.25;
-      font-family: Georgia, serif;
-      font-weight: bold;
-      color: $blockquote-quote;
+      opacity: 0.3;
+      font-family: "Roboto", serif;
+      font-style: italic;
+      font-weight: 400;
       pointer-events: none;
       z-index: 0;
     }
-  
-    > * {
+    * {
       position: relative;
       z-index: 1;
+      color: hsla(189, 20%, 50%, 0.8);
     }
-  
+
+    > * {
+      margin: 0.5em 0;
+    }
+
+    ul {
+      margin: 0 $gap-md;
+    }
+
     p:last-child {
       &::before {
         content: "";
       }
     }
-  
-    .quote-author {
+  }
+
+  .image {
+    @include card-panel;
+
+    display: block;
+    width: min-content;
+
+    img {
+      overflow: auto;
       display: block;
-      margin-top: 1em;
-      padding-top: 0.5em;
-      border-top: 1px solid $blockquote-divider;
-      font-style: italic;
-      font-size: 0.9em;
-      text-align: right;
-      opacity: 0.85;
+      margin: 0;
+      height: fit-content;
+      width: fit-content;
+
+      @include per-device(
+        (
+          max-width: 90vw
+        ),
+        (
+          max-width: 80vw
+        ),
+        (
+          max-width: 60vw
+        ),
+        (
+          max-width: 80vw
+        )
+      );
+    }
+
+    figcaption {
+      margin: 0 auto;
+      padding: $gap-xs $gap-sm;
+      text-align: center;
+      font-style: normal;
+      color: color-mix(in srgb, $fg 85%, transparent);
     }
   }
-}
 
-.post-item {
-  display: flex;
-  flex-wrap: wrap; /* allow wrapping */
-  align-items: center;
+  .youtube-embed {
+    --yt-max-width: 480px;
+    --yt-aspect-ratio: 16 / 9;
+    --yt-padding: 75%;
 
-  .post-item-title {
-    font-size: 0.88em;
-    flex: 1; /* take remaining space */
-  }
-
-  .right-cols {
     display: flex;
-    flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
-    gap: 1.2em; /* spacing between them */
-    flex-shrink: 0; /* don't shrink into left space */
+    justify-content: center;
+    width: 100%;
 
-    time {
-      font-weight: bold;
+    &__container {
+      width: 100%;
+      max-width: var(--yt-max-width);
     }
 
-    .post-item-meta {
-      font-size: 0.75em;
+    &__frame {
+      @include card-panel;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+      aspect-ratio: var(--yt-aspect-ratio);
+      @include drop-shadow(0, 8px, rgba(255, 0, 0, 0.75));
+
+      @supports not (aspect-ratio: 1 / 1) {
+        height: 0;
+        padding-bottom: var(--yt-padding);
+      }
     }
 
-    .ttr {
-      font-style: italic;
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+  .shares {
+    margin: $gap-md 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem, 2vw, 2rem);
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 1px 8px rgb(0, 0, 0);
+
+      &::after {
+        content: none;
+      }
     }
   }
 
-  a {
-    @include link-styles($accent, $accent-dark, true, false);
+  .post-item {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    align-items: center;
+
+    a {
+      @include link-styles(var(--accent, #{$accent}), var(--accent-dark, #{$accent-dark}), true, false);
+    }
+
+    .post-item-title {
+      font-size: 0.88em;
+      flex: 1; /* take remaining space */
+    }
+
+    .right-cols {
+      display: flex;
+      flex-wrap: nowrap; /* keep 2 right columns on same line until wrapping */
+      gap: 1.2em; /* spacing between them */
+      flex-shrink: 0; /* don't shrink into left space */
+
+      time {
+        font-weight: bold;
+      }
+
+      .post-item-meta {
+        font-size: 0.75em;
+      }
+
+      .ttr {
+        font-style: italic;
+      }
+    }
   }
 }

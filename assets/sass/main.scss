@@ -17,7 +17,7 @@ $gray: #6b7886;
 $white: #fff;
 
 //////////////// 2. Dark Colors /////////////////
-$dark-text-base-color: #babdc4;
+$dark-text-base-color: #9398a4;
 $dark-text-link-blue: #77a8fd;
 $dark-text-link-blue-active: #5292ff;
 $dark-bloquote-border: #4a4d56;
@@ -28,8 +28,8 @@ $dark-toc-bg: #323232;
 $dark-go-top-bg: #676767b3;
 $dark-go-top-bg-hover: #676767;
 
-$dark-black: #151016;
-$dark-white: #eaeaea;
+$dark-black: hsl(210, 17%, 2%);
+$dark-white: #d5eae6;
 $dark-light: #1b1d25;
 $dark-smoke: #4a4d56;
 $dark-gray: #767f87;
@@ -49,27 +49,29 @@ $bold-weight: 700;
 // $black-weight: 900; // uncomment if necessary
 
 //////////////// 4.Responsive design (media queries) /////////////////
-$wide-size: 890px;
-$narrow-size: 720px;
 
 // Padding unit
 $spacing-full: 30px;
 $spacing-half: $spacing-full / 2;
 
-// Screen sizes
-$on-mobile: 680px;
-$on-tablet: 800px;
-$on-desktop: 1024px;
-$on-widescreen: 1152px;
+$wide-size: 920px;
+$narrow-size: 800px;
+$desktop-breakpoint: 800px;
+$tablet-breakpoint: 560px;
+
+$on-mobile: $tablet-breakpoint - 1px;
+$tablet-min: $tablet-breakpoint;
+$tablet-max: $desktop-breakpoint - 1px;
+$on-desktop: $desktop-breakpoint;
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
 @mixin relative-font-size($ratio) {
-    font-size: $base-font-size * $ratio;
+  font-size: $base-font-size * $ratio;
 }
 
 //////////////// 5. Import all sass files /////////////////

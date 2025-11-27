@@ -6,3 +6,12 @@
     {{ end }}
   {{ end }}
 {{ end }}
+
+{{ with .Params.hue }}
+  {{ $cleanHue := strings.TrimSuffix "deg" (printf "%v" .) }}
+  <style>
+    :root {
+      --hue: {{ $cleanHue }}deg;
+    }
+  </style>
+{{ end }}

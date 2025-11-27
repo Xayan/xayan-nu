@@ -5,9 +5,10 @@ description: "Here is the LLM jailbreak I've been teasing in the previous parts 
 image: "/posts/ex-machina/wisdom/thumb.jpg"
 author: "Xayan"
 date: 2025-10-03
+ttr: "10~15m"
+hue: 75
 
 # UI/UX
-ttr: "10~15m"
 categories: ["Comp-Sci", "Epistemology"]
 tags: ["ai", "prompt-engineering"]
 

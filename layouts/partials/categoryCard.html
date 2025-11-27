@@ -1,6 +1,12 @@
 {{ $page := .Page }}
+{{ $hue := $page.Params.hue }}
+{{ $cardHueStyle := "" }}
+{{ with $hue }}
+	{{ $cleanHue := strings.TrimSuffix "deg" (printf "%v" .) }}
+	{{ $cardHueStyle = printf "--card-hue:%sdeg;" $cleanHue | safeCSS }}
+{{ end }}
 {{ if not $page.Params.hidden }}
-	<article class="card">
+	<article class="card"{{ if $cardHueStyle }} style="{{ $cardHueStyle }}"{{ end }}>
 		<div class="card-row">
 			<div class="card-image">
 				{{- $image := "" -}}

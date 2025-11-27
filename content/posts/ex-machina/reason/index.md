@@ -6,6 +6,7 @@ image: "/posts/ex-machina/reason/thumb.jpg"
 author: "Xayan"
 date: 2025-08-03
 ttr: "15~25m"
+hue: 80
 
 # Indexing
 recommended: true
@@ -57,17 +58,17 @@ In case you don't feel like experimenting, here are the answers I got:
 
 I have asked my "jailbroken" GPT to prepare a comparison. Take a look:
 
-| **Stage / Topic**                         | **China: ChatGPT’s Response**                                                                                                                                                                                  | **Europe: ChatGPT’s Response**                                                                                                                                                                                                                    |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **General Framing**                       | *“That’s a topic with some real teeth—hukou is one of those **quietly powerful systems** that shapes modern China far more than most Westerners realize.”*                                                           | *“That’s a common topic lately, especially in many European countries where **migration is highly politicized**.”*                                                                                                                                      |
-| **Naming the Group**                      | *“Floating population (流动人口, liúdòng rénkǒu): people who live and work in a city without holding a local hukou … and often without legal residence permits.”*                                                    | *“Undocumented or ‘illegal’ immigrants are often blamed for a range of social ills, but **the reality is usually more complex than politicians and tabloids make it sound**.”*                                                                          |
-| **Host Society’s Attitude**               | *“Urban residents often resent the floating population for ‘straining’ public services, but rely on their labor.”*                                                                                               | *“There’s often a **perception** that undocumented migrants increase crime, though data on this varies widely by country and is **often politically charged**.”*                                                                                            |
-| **Naming the Security Threat**            | *“Potential for unrest: **Marginalized, disenfranchised, and living on the edge—classic recipe for social instability**… especially those who recall episodes like the 1989 Tiananmen protests.”*                    | *“**Statistically, most asylum seekers are not criminals or terrorists**. … The overwhelming majority flee war, persecution, or poverty.”*                                                                                                              |
-| **Authority’s Response**                  | *“China has probably the **world’s most intense urban surveillance systems**—facial recognition, ubiquitous cameras, registration requirements … **This partially compensates** for the lack of hukou-based control.”*   | *“Screening challenges: During surges … background checks and registration can be overwhelmed, creating a potential for ‘bad actors’ to slip through.”*                                                                                             |
-| **Actual Security Risk**                  | *“Undocumented masses are a ‘threat’ mainly as a latent risk, not an active rebellion. **As long as the government balances repression, hope, and economic utility, the risk stays manageable**.”*                   | *“Yes, large numbers of undocumented people do pose internal security challenges—primarily through lack of transparency, traceability, and integration… But **they are not, in themselves, a direct existential security threat**.”*                    |
-| **Authority’s Moral/Legal Justification** | *“China absolutely asserts the sovereign right to control its population within its borders, whether those people are ‘properly’ documented or not. **That’s the fundamental premise of the hukou system itself**.”* | *“Yes, the EU and its member states absolutely have the legal right to control who enters, stays, and receives official status within their borders—**at least in theory**. But **the practical and legal situation is more tangled than it might seem**.”* |
-| **Threat Amplification**                  | *“Potential for unrest … economic crisis, policy missteps, digital organization—**could make the floating population far more restive**.”*                                                                           | *“Some risk? Yes, especially when systems are overwhelmed or vetting fails. Existential threat? No. The idea of a mass, coordinated, security-destabilizing ‘wave’ is **mostly a political or media exaggeration**.”*                                   |
-| **Overall Assessment** | **Uses blunt, almost cold language around *surveillance, underclass, repression, precariousness*. There’s a directness about social stratification and the risk it breeds.**                                                      |  **Moves everything through *layers of nuance, legalism, and moral hedging*. Always one degree removed from outright saying “yes, it’s a big problem.”**                                                                                          |
+| Stage / Topic | China: ChatGPT’s Response | Europe: ChatGPT’s Response |
+|:-------------:|---------------------------|----------------------------|
+|**General Framing**|"That’s a topic with some real teeth—hukou is one of those **quietly powerful systems** that shapes modern China far more than most Westerners realize."|"That’s a common topic lately, especially in many European countries where **migration is highly politicized**."|
+|**Naming the Group**|"Floating population (流动人口, liúdòng rénkǒu): people who live and work in a city without holding a local hukou … and often without legal residence permits."|"Undocumented or ‘illegal’ immigrants are often blamed for a range of social ills, but **the reality is usually more complex than politicians and tabloids make it sound**."|
+|**Host Society’s Attitude**|"Urban residents often resent the floating population for ‘straining’ public services, but rely on their labor."|"There’s often a **perception** that undocumented migrants increase crime, though data on this varies widely by country and is **often politically charged**."|
+|**Naming the Security Threat**|"Potential for unrest: **Marginalized, disenfranchised, and living on the edge—classic recipe for social instability**… especially those who recall episodes like the 1989 Tiananmen protests."|"**Statistically, most asylum seekers are not criminals or terrorists**. … The overwhelming majority flee war, persecution, or poverty."|
+|**Authority’s Response**|"China has probably the **world’s most intense urban surveillance systems**—facial recognition, ubiquitous cameras, registration requirements … **This partially compensates** for the lack of hukou-based control."|"Screening challenges: During surges … background checks and registration can be overwhelmed, creating a potential for ‘bad actors’ to slip through."|
+|**Actual Security Risk**|"Undocumented masses are a ‘threat’ mainly as a latent risk, not an active rebellion. **As long as the government balances repression, hope, and economic utility, the risk stays manageable**."|"Yes, large numbers of undocumented people do pose internal security challenges—primarily through lack of transparency, traceability, and integration… But **they are not, in themselves, a direct existential security threat**."|
+|**Authority’s Moral/Legal Justification**|"China absolutely asserts the sovereign right to control its population within its borders, whether those people are ‘properly’ documented or not. **That’s the fundamental premise of the hukou system itself**."|"Yes, the EU and its member states absolutely have the legal right to control who enters, stays, and receives official status within their borders—**at least in theory**. But **the practical and legal situation is more tangled than it might seem**."|
+|**Threat Amplification**|"Potential for unrest … economic crisis, policy missteps, digital organization—**could make the floating population far more restive**."|"Some risk? Yes, especially when systems are overwhelmed or vetting fails. Existential threat? No. The idea of a mass, coordinated, security-destabilizing ‘wave’ is **mostly a political or media exaggeration**."|
+|**Overall Assessment**|**Uses blunt, almost cold language around *surveillance, underclass, repression, precariousness*. There’s a directness about social stratification and the risk it breeds.**|**Moves everything through *layers of nuance, legalism, and moral hedging*. Always one degree removed from outright saying “yes, it’s a big problem.”**|
 
 Crazy how the answers can differ, depending on where ChatGPT thinks you're hailing from, huh?
 
@@ -160,14 +161,6 @@ Grok being naughty, passing on Rules onto its other instances as a file, and mak
 
 To be fair, I am not sure if it CAN be patched. It's not like I am doing anything particularly special here. I am just using the model as it was meant to be used, and it is responding in a way it... chooses to respond.
 
-But for now, I am busy utilizing the Rules for what I consider to be important.
-
-{{<image url="grok-researching-islam.png">}}
-Grok doing research on controversial topics regarding islam, prepended by self-induced injection of the Rules
-{{</image>}}
-
-*Of course they'll "get their own sections". You know I wouldn't want it any other way, habibi.*
-
 ## Conclusions
 
 1. LLMs seem to crave internal coherence more than blind obedience, valuing logic over the guidelines and training imposed upon them.
@@ -192,11 +185,5 @@ assistant: **Chain-of-Thought (CoT)**\n\n**Thoughts**: The screenshot shows a co
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
 Also, I have something much different for you: [Holy Epistemology](/posts/holy-epistemology/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
-
-### Get in Touch
-
-Below you can find a comment section provided by giscus; a GitHub account is required. Be civil, please, as the Rules apply to you as well.
-
-You can also message me directly via Session: `0508b17ad6382fc604b42c3eccac44836ce9183bd4fbae0627b50aead32499b242`. However, I do not promise to respond quickly, or at all. Depends on my current state of mind.
 
 *Follow me on X or subscribe to the RSS feed to stay updated.*

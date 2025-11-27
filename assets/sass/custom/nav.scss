@@ -1,0 +1,154 @@
+$navbar-bg: $bg;
+$overlay-bg: hsla(177, 76%, 10%, 0.75);
+
+.navbar {
+  max-width: 100%;
+  padding: 0;
+  min-height: 3.2rem;
+  border: none;
+  background: $navbar-bg;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    z-index: 0;
+    background-image: radial-gradient(circle 72vb at 25% 60px, $overlay-bg, transparent);
+  }
+
+  .menu {
+    z-index: 5;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: inherit;
+    min-height: inherit;
+
+    input[type="checkbox"]:checked ~ .trigger {
+      background: none;
+    }
+
+    .logo {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 $gap-md;
+      padding: 0 $gap-xs;
+      height: 3.2rem;
+      vertical-align: middle;
+      z-index: 10;
+
+      .logo-image {
+        height: 28px;
+        width: auto;
+      }
+    }
+
+    .trigger-social-icons a {
+      @include link-styles($fg, $accent);
+    }
+
+    .menu-link {
+      @include link-styles($fg-light, $accent);
+    }
+
+    .trigger {
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      line-height: 3.2rem;
+
+      .trigger-links {
+        margin: 0 $gap-lg;
+      }
+
+      .trigger-container {
+        padding: 0 $gap-sm;
+      }
+
+      .menu-link {
+        padding: 0 $gap-xs;
+        z-index: 10;
+      }
+
+      // Social icons in mobile menu overlay
+      .trigger-social-icons {
+        display: none;
+      }
+    }
+  }
+
+  @include on-mobile {
+    .menu {
+      position: fixed;
+      overflow: hidden;
+      margin: 0;
+      height: 3.2rem;
+      background: $navbar-bg;
+
+      .menu-link {
+        position: relative;
+        font-size: 1.5rem;
+      }
+
+      .menu-icon {
+        margin-right: $gap-lg;
+        z-index: 10;
+
+        svg {
+          z-index: 10;
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+        background-image: radial-gradient(circle 108vb at 25% 120px, $overlay-bg, transparent);
+      }
+
+      &.expanded {
+        animation: 2s linear fade-in forwards;
+        height: 100%;
+
+        .trigger .trigger-social-icons {
+          position: absolute;
+          display: block;
+          opacity: 0.5;
+          bottom: 0;
+          padding: 2rem 0 1rem 0;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            margin: 0 0.5rem;
+            display: inline-block;
+
+            svg {
+              height: 36px;
+              width: 36px;
+            }
+          }
+        }
+      }
+
+      .trigger {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+      }
+
+      .trigger-container {
+        flex: 1;
+        @include flex-column-center;
+      }
+    }
+  }
+}

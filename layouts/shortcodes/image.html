@@ -12,10 +12,10 @@
       {{ if $source }}
         {{/* Both description and source */}}
         {{ $parsedURL := urls.Parse $source }}
-        Image: {{ $description | markdownify }} — Source: <a href="{{ $source }}" target="_blank" rel="noopener noreferrer">{{ $parsedURL.Host }}</a>
+        <strong>Image:</strong> {{ $description | markdownify }} <span class="no-wrap">— Source:</span> <a href="{{ $source }}" class="no-wrap" target="_blank" rel="noopener noreferrer">{{ $parsedURL.Host }}</a>
       {{ else }}
         {{/* Only description */}}
-        Image: {{ $description | markdownify }}
+        <strong>Image:</strong> {{ $description | markdownify }}
       {{ end }}
     {{ else if $source }}
       {{/* Only source */}}

@@ -3,16 +3,21 @@ $padding-multiplier: 0.4rem;
 .post-content {
   font-size: 0.9rem;
 
-  & > p {
+  p {
     @include on-devices($text-margin);
-    color: $fg;
-    font-weight: 300;
+    color: $fg-light;
+    font-weight: 350;
+  }
+
+  em {
+    color: color-mix(in hsl, $fg-light 75%, $accent-dark 50%);
+    font-style: italic;
   }
 
   a {
-    @include link-styles($accent-light, $accent-darker);
+    @include link-styles($accent-lighter, $accent-darker);
     font-style: italic;
-    font-weight: 375;
+    font-weight: 400;
   }
 
   strong,
@@ -62,7 +67,7 @@ $padding-multiplier: 0.4rem;
     font-size: medium;
 
     .header-title {
-      color: $accent-lightest;
+      color: $fg-lighter;
 
       @include per-device(
         (

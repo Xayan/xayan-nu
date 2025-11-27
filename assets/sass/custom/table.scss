@@ -12,6 +12,7 @@ $tr-odd-bg: color-mix(in hsl, $table-bg, black 25%);
 $border: 1px solid color-mix(in hsl, $table-bg, white 10%);
 
 .scrollable-container {
+  @include card-panel;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;

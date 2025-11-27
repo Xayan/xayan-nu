@@ -68,14 +68,6 @@ $header-margin: (
 
 html {
   body {
-    &.is-page {
-      @include background-colors(hsla(calc(#{$hue} + 80deg), 0%, 2%, 1), hsla(200, 25%, 2.5%, 0.9));
-    }
-
-    &.is-post {
-      @include background-colors(hsla(calc(#{$hue} + 120deg), 10%, 1%, 1), hsla(calc(#{$hue}), 25%, 2.5%, 0.85));
-    }
-
     @import "custom/nav";
     @import "custom/page";
     @import "custom/post";

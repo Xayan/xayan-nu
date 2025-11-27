@@ -4,8 +4,8 @@
   const warn = (...args) => console.warn(LOG_PREFIX, ...args);
 
   const INTERVALS = buildIntervals([
-    { start: 5, end: 20, step: 5 },
-    { start: 20, end: 60, step: 10 },
+    { start: 10, end: 30, step: 10 },
+    { start: 30, end: 60, step: 15 },
     { start: 60, end: 600, step: 30 },
     { start: 600, end: 7200, step: 60, inclusive: true }
   ]);
@@ -31,11 +31,16 @@
     visibleEntries: [],
     visibleSnapshot: [],
     lastActivityAt: Date.now(),
-    leftSent: false
+    leftSent: false,
+    posthogSeen: false,
+    utmCleaned: false,
+    idleSince: null
   };
 
   const IDLE_LIMIT_MS = 60000;
   const ACTIVITY_EVENTS = ['mousemove', 'pointermove', 'scroll', 'keydown', 'touchstart', 'pointerdown'];
+  const VISIBLE_OFFSET_MIN = -25;
+  const VISIBLE_OFFSET_MAX = 125;
 
   function buildIntervals(ranges) {
     const output = [];
@@ -73,14 +78,14 @@
   }
 
   function updateVisibleEntries(entries = []) {
-    state.visibleEntries = entries;
+    state.visibleEntries = filterEntriesByOffset(entries);
     if (!state.visibleSnapshot.length) {
-      state.visibleSnapshot = entries.slice();
+      state.visibleSnapshot = state.visibleEntries.slice();
     }
   }
 
   function updateVisibleSnapshot(entries = []) {
-    state.visibleSnapshot = entries.slice();
+    state.visibleSnapshot = filterEntriesByOffset(entries);
   }
 
   function getVisibleSnapshot() {
@@ -91,12 +96,49 @@
       return state.visibleEntries.slice();
     }
     const mapEntries = window.PikachuVisibleMap?.entries ?? [];
-    return mapEntries.slice();
+    return filterEntriesByOffset(mapEntries);
+  }
+
+  function filterEntriesByOffset(entries = []) {
+    return entries.filter(entry => {
+      if (!entry) return false;
+      if (typeof entry['offset-pt'] !== 'number') return true;
+      return entry['offset-pt'] >= VISIBLE_OFFSET_MIN && entry['offset-pt'] <= VISIBLE_OFFSET_MAX;
+    });
   }
 
   function getIdleSecondsSinceActivity() {
-    const elapsed = Math.max(0, Date.now() - state.lastActivityAt);
+    const reference = state.idle && state.idleSince ? state.idleSince : Date.now();
+    const elapsed = Math.max(0, reference - state.lastActivityAt);
     return Math.round(elapsed / 1000);
+  }
+
+  function ensureUTMCleanup() {
+    if (state.utmCleaned) return;
+    cleanupUTMParams();
+    state.utmCleaned = true;
+  }
+
+  function markPosthogSeen() {
+    if (state.posthogSeen) return;
+    state.posthogSeen = true;
+    ensureUTMCleanup();
+  }
+
+  function cleanupUTMParams() {
+    if (typeof window === 'undefined' || !window.history?.replaceState) return;
+    const url = new URL(window.location.href);
+    const params = url.searchParams;
+    const removal = [];
+    params.forEach((_, key) => {
+      if (key.toLowerCase().startsWith('utm_')) removal.push(key);
+    });
+    if (removal.length === 0) return;
+    removal.forEach(key => params.delete(key));
+    const query = params.toString();
+    const nextUrl = `${url.origin}${url.pathname}${query ? `?${query}` : ''}${url.hash}`;
+    window.history.replaceState({}, '', nextUrl);
+    log('Removed UTM parameters from URL');
   }
 
   function initVisibleTracking() {
@@ -115,9 +157,11 @@
 
     const client = getPosthog();
     if (client?.capture) {
+      markPosthogSeen();
       client.capture(name, params);
     } else {
       log('PostHog not loaded');
+      ensureUTMCleanup();
     }
   }
 
@@ -127,10 +171,12 @@
     const client = getPosthog();
     if (!client) {
       log('PostHog not loaded');
+      ensureUTMCleanup();
       return;
     }
 
     if (typeof client.sendBeacon === 'function') {
+      markPosthogSeen();
       client.sendBeacon(name, params);
       return;
     }
@@ -141,6 +187,10 @@
 
   function sendLeftEvent(trigger) {
     if (state.leftSent) return;
+    if (state.engagementTime < 10) {
+      log('Skipping left event due to insufficient engagement time');
+      return;
+    }
     state.leftSent = true;
     log('Sending left event', { trigger, snapshot: getVisibleSnapshot() });
     sendPHBeacon('left', withEngagement({
@@ -170,6 +220,7 @@
     if (updateTimestamp) state.lastActivityAt = Date.now();
     state.idleTimerId = setTimeout(() => {
       state.idle = true;
+      state.idleSince = Date.now();
       log('Became IDLE');
       updateTimerState();
     }, IDLE_LIMIT_MS);
@@ -178,6 +229,7 @@
   function markActivity(evtName) {
     if (state.idle) {
       state.idle = false;
+      state.idleSince = null;
       log(`Became ACTIVE via ${evtName}`);
       updateTimerState();
     }
@@ -259,7 +311,12 @@
   });
 
   window.addEventListener('pagehide', () => {
+    const wasVisible = state.visible;
     state.visible = false;
+    if (!wasVisible) {
+      log('Skipping left event; tab not visible during pagehide');
+      return;
+    }
     sendLeftEvent('pagehide');
     updateTimerState();
   });

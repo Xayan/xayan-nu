@@ -6,7 +6,7 @@ image: "/posts/liberal-universalism/thumb.jpg"
 author: "Xayan"
 date: 2025-11-11
 ttr: "45~60m"
-hue: 10
+hue: 2
 
 # Analytics
 valued_time: 900 # 15 minutes
@@ -22,11 +22,11 @@ tags: ["liberal universalism", "international relations", "political theory","so
 
 ## Intro
 
-In recent years I have noticed an increasing number of people who are looking for answers about the **failures of Western civilization and its institutions**.
+In recent years I have noticed an increasing number of people who are looking for answers about various failures of Western civilization and its institutions.
 
-People who suspect *something is wrong*, or are *entirely disillusioned and hopeless*. Trying to make sense of the chaos and articulate their frustrations, but with no clear direction.
+People who suspect *something may be wrong*, or are *entirely disillusioned and hopeless*. Trying to make sense of the chaos and articulate their frustrations, but with no clear direction.
 
-Fascinatingly, it **does not** appear to be a *partisan issue*. Problems can be observed on both sides of the political spectrum, as long as one has an open mind and remains free of total ideological commitment.
+Fascinatingly, it **does not** appear to be a partisan issue. Problems can be observed on both sides of the political spectrum, as long as one has *an open mind* and remains *free of total ideological commitment*.
 
 **Liberals** say: *"nationalism!"*, *"populism!"*, *"racism!"*.
 
@@ -62,7 +62,7 @@ After the dissolution of the Soviet Union, liberal universalism had no more seri
 
 ### Modern Times
 
-**The 21st century** brought a brand new set of challenges: *mass migration* on an unprecedented scale, *terrorism*, and *economic stagnation* — none of which fit the universalist script. Rather than adapt, the ideology doubled down, **pathologizing dissent as "populist backlash"** and framing failures as crises or insufficient commitment.
+**The 21st century** brought a brand new set of challenges: *mass migration* on an unprecedented scale, *terrorism*, and *economic stagnation* -- none of which fit the universalist script. Rather than adapt, the ideology doubled down, **pathologizing dissent as "populist backlash"** and framing failures as crises or insufficient commitment.
 
 Even though Fukuyama later acknowledged the *"internal contradictions of liberal democracy"*, he still views it as a system to be fixed, rather than abandoned. Many others cling onto the same belief, especially within **political and academic institutions**.
 
@@ -93,7 +93,7 @@ Seems crazy? Well, I'd love you to prove me wrong. But if you can't... then perh
 
 For reasons that will become clear later, I'd like to expose myself shamelessly to you.
 
-I was born and raised in Poland, a *post-Soviet country* where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations as well, manifest as a **collective skepticism** towards *grand ideologies and utopian promises*.
+I was born and raised in **Poland**, a *post-Soviet country* where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations as well, manifest as a **collective skepticism** towards *grand ideologies and utopian promises*.
 
 Communists weren't the first to try. Our history is riddled with failed attempts at imposing various ideologies. Despite this *- or perhaps because of it -* our **national identity** remains resilient, shaped by centuries of struggle for sovereignty and self-determination.
 
@@ -101,7 +101,7 @@ Since Poland's accession to the **European Union in 2004**, I have observed the 
 
 One of these changes has been the increasing pressure to conform to the idealism of Western Europe, and the expectation to trust that *this path leads to progress and prosperity* - a worldview many of us see as **deeply naive**.
 
-Let's examine it more closely. 10 blade, please.
+Let's examine it more closely. *10 blade, please.*
 
 ## Diagnosis
 
@@ -175,13 +175,11 @@ Their motivations *- regardless of their level of involvement -* often go unexam
 
 Thus, there are no incentives to question the status quo. Very little external scrutiny.
 
-So... *who watches the watchmen?*
-
 ### Good vs Evil
 
 For an ideology that prides itself on *rationality* and *progress*, it is deeply ironic how much it relies on a **simplistic binary worldview**.
 
-My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first sentence we rea:
+My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first it says:
 
 > The explanation of the right-wing populist attack on transnational standards of pluralism and cooperation as caused by unsolved problems of the economic structure is often disputed by regarding populism a “cultural backlash” supported by groups now deprived of their former predominant position by new universalist standards.
 
@@ -355,7 +353,7 @@ As I was digging through various academic papers, I have noticed many recurring 
 
 - These influences do not have to be regarded as a bad thing per se. The point is twofold: to be able to evaluate whether the author remains objective despite their personal beliefs, and to provide a motivation for the author for self-reflection.
 - If the academia operated under the assumption that all research is inherently biased, it would be easier to identify potential issues and address them accordingly.
-- This is the reason why I've included the *"Personal Stakes"* subsection earlier - to demonstrate what it could look like. Decide for yourself whether such anchoring of reasoning in personal experience invalidates it or makes it more credible.
+- This is the reason why I've included the ["Personal Stakes"](#personal-stakes) subsection earlier - to demonstrate what it could look like. Decide for yourself whether such anchoring of reasoning in personal experience invalidates it or makes it more credible.
 
 2. A similar issue arises with limited **access to data** used to back claims being made.
 
@@ -367,7 +365,7 @@ As I was digging through various academic papers, I have noticed many recurring 
 
 - As of now, there are no standardized guidelines for stating the **hypotheses** *(when dealing with empirical research)* and **underlying assumptions** *(in philosophy-adjacent fields)* of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
 - If these were explicitly stated upfront, it would be easier to evaluate the **validity** of the research and its conclusions, and to differentiate between *objective findings* and *subjective interpretations*.
-- Similar to the *["Thesis"](#thesis)* section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
+- Similar to the ["Thesis"](#thesis) section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
 
 If these three points were implemented, it would eliminate a significant portion of manipulative research.
 
@@ -399,7 +397,7 @@ In this single sentence we have calls for:
 
 Um... no, thank you? Call me back when you're democratically elected, *ciao*.
 
-This is a significant overreach, and an example of how the concept of human rights has been weaponized to justify actions of unproven effectiveness, the results of which are in no way quantifiable. As you have probably guessed by now, it is not explained at what point the "systemic racism" is considered "dismantled".
+This is a **significant overreach**, and an example of how the concept of human rights has been weaponized to justify actions of unproven effectiveness, the results of which are in no way quantifiable. As you have probably guessed by now, it is not explained at what point the "systemic racism" is considered "dismantled".
 
 Even worse - such measures often lead to *further division and resentment* among different groups, as the suggested measures are perceived as unfair or unjust by those who do not benefit from them.
 

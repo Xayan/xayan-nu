@@ -15,7 +15,7 @@ valued_scroll: 50
 # Indexing
 recommended: true
 categories: ["Poli-Sci", "Sociology", "Law"]
-tags: ["europe", "migration", "eu", "un", "ngo", "unhcr", "echr", "liberal universalism", "political theory", "international relations", "asylum system", "borders", "human trafficking", "refugees", "academia", "sovereignty", "ideology", "culture"]
+tags: ["europe", "migration", "eu", "un", "ngo", "unhcr", "echr", "liberal universalism", "political theory", "international relations", "asylum system", "borders", "human trafficking", "refugees", "academia", "sovereignty", "ideology", "culture", "poland"]
 ---
 
 {{<image url="polish-border.png" source="https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722">}}

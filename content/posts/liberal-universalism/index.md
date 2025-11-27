@@ -93,7 +93,7 @@ Seems crazy? Well, I'd love you to prove me wrong. But if you can't... then perh
 
 For reasons that will become clear later, I'd like to expose myself shamelessly to you.
 
-I was **born and raised in Poland**, a *post-Soviet country* where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations as well, manifest as a **collective skepticism** towards *grand ideologies and utopian promises*.
+I was born and raised in Poland, a *post-Soviet country* where the communist ambitions of the USSR left deep scars on the national psyche. These scars, well known to other Eastern European nations as well, manifest as a **collective skepticism** towards *grand ideologies and utopian promises*.
 
 Communists weren't the first to try. Our history is riddled with failed attempts at imposing various ideologies. Despite this *- or perhaps because of it -* our **national identity** remains resilient, shaped by centuries of struggle for sovereignty and self-determination.
 
@@ -101,7 +101,7 @@ Since Poland's accession to the **European Union in 2004**, I have observed the 
 
 One of these changes has been the increasing pressure to conform to the idealism of Western Europe, and the expectation to trust that *this path leads to progress and prosperity* - a worldview many of us see as **deeply naive**.
 
-Let's examine it more closely. *10 blade, please.*
+Let's examine it more closely. 10 blade, please.
 
 ## Diagnosis
 
@@ -117,7 +117,7 @@ There is *"globalism"*, but that term is so overused that its understanding vari
 
 Therefore, the ideology remains **largely invisible** to the general public.
 
-What is visible, are its **underlying principles**. These have been so **deeply ingrained** into the fabric of Western societies and international institutions over the past decades, that all people involved operate under the assumption that these are self-evident truths.
+What is visible, are its **underlying principles**. These have been so *deeply ingrained* into the fabric of Western societies and international institutions over the past decades, that most people involved operate under the assumption that these are some self-evident truths.
 
 Since these principles are rarely questioned *(because how dare you)*, their **implications** often go **unnoticed**, and universalism continues to evade public scrutiny.
 
@@ -125,11 +125,32 @@ Any criticism limited strictly to the insiders creates an echo chamber where dis
 
 This is where my analysis comes in ;)
 
+### A Conspiracy That Isn't
+
+I have just described this **complex self-reinforcing belief system**. There must be some ulterior motive behind it all, right? Some group *(wink, wink)* orchestrating this?
+
+Well... no. At least, I have not found anything that would indicate such thing.
+
+It is more of an **emergent phenomenon**, arising from the interactions of various actors within the system, each pursuing their own interests and agendas.
+
+*Complex* - absolutely. *Far-reaching* - for sure. But it's **not hidden**, nor driven by a single, uniform group.
+
+It's openly described in:
+
+- **academic papers** from a number of disciplines,
+- publicly available **UN documents**,
+- various **policy papers and reports** from think tanks and NGOs,
+- the **international law** and treaties.
+
+It's just that... few people even care about these, unless they already are a cog in the machine. And those who aren't, usually don't dare to question the supposedly humanitarian motives behind it all.
+
+Once stripped of its sanctity, what remains is a **power structure** like any other. One that seeks to maintain its influence and control, often at the expense of those it claims to help.
+
 ### Unusual Suspects
 
 If not some shadowy cabal of deep state actors, then who could be so deeply hypocritical, yet self-righteous?
 
-There is no single answer to that question, but the most prominent proponents are often found within: **the academia** *(humanities)*, **international orgs**, and a number of **political leaders**.
+There is no single answer to that question, but the most prominent proponents are often found within: **the academia** (humanities), **international orgs**, and a wide array of **political leaders**.
 
 People who are supposedly *educated, enlightened, and progressive*.
 
@@ -148,7 +169,7 @@ Not an exhaustive list, but I think it covers most bases:
 | **Hopeless Cynics** | Those who have become disillusioned and see the system as irredeemable, but lack the motivation to effect change. | Me, whenever a new EU policy comes up; You? Perhaps less hopeless, once done reading and reflecting?  |
 | **Open Critics** | People who see through the hypocrisy and are willing to challenge the status quo. | Rare, but they do exist; Listed later |
 
-Of course, these are not mutually exclusive. People can fit into multiple categories, or shift between them over time. 
+Of course, these are not mutually exclusive. People can fit into multiple categories, or shift between them over time.
 
 Their motivations *- regardless of their level of involvement -* often go unexamined, because of the **in-group dynamics** and their own **incentives, biases, and self-preservation**.
 
@@ -156,32 +177,11 @@ Thus, there are no incentives to question the status quo. Very little external s
 
 So... *who watches the watchmen?*
 
-### A Conspiracy That Isn't
-
-I have just described this **complex self-reinforcing belief system**. There must be some ulterior motive behind it all, right? Some group *(wink, wink)* orchestrating this?
-
-Well... no. At least, I have not found anything that would indicate such thing.
-
-It is more of an **emergent phenomenon**, arising from the interactions of various actors within the system, each pursuing their own interests and agendas.
-
-*Complex* - absolutely. *Far-reaching* - for sure. But it's **not hidden**, nor driven by a single, uniform group. 
-
-It's openly described in:
-
-- **academic papers** from a number of disciplines,
-- publicly available **UN documents**,
-- various **policy papers and reports** from think tanks and NGOs,
-- the **international law** and treaties.
-
-It's just that... few people even care about these, unless they already are a cog in the machine. And those who aren't, usually don't dare to question the supposedly humanitarian motives behind it all.
-
-Once stripped of its sanctity, what remains is a **power structure** like any other. One that seeks to maintain its influence and control, often at the expense of those it claims to help.
-
 ### Good vs Evil
 
 For an ideology that prides itself on *rationality* and *progress*, it is deeply ironic how much it relies on a **simplistic binary worldview**.
 
-My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first sentence we can find:
+My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first sentence we rea:
 
 > The explanation of the right-wing populist attack on transnational standards of pluralism and cooperation as caused by unsolved problems of the economic structure is often disputed by regarding populism a “cultural backlash” supported by groups now deprived of their former predominant position by new universalist standards.
 
@@ -215,7 +215,6 @@ Stemming from these, we can identify several implicit ones, which might feel mor
 | <span>**Ideological Capture**</span><span>**`I3 = E1 + E3`**</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
 | <span>**Manifest Destiny v2**</span><span>**`I4 = I1 + I2`**</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
 | <span>**Brave New World**</span><span>**`I5 = I1 + I3`**</span> | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
-
 
 These implicit assumptions are often the root cause of various pathologies observed in societies influenced by liberal universalism. Understanding the underlying, um... logic (being a bit generous here) allows us to realize how these pathologies are justified and understand why they're so fiercely defended.
 
@@ -260,7 +259,7 @@ Can we fix it? Shit, I hope so.
 Another prominent example is [De-Bordering Solidarity: Civil Society Actors Assisting Refused Asylum Seekers in Small Cities (Dimitriadis & Ambrosini, 2022)](https://academic.oup.com/jrs/article/36/3/430/6752076) which openly encourages the subversion of state policies:
 
 > **Introduction**
-> 
+>
 > [...] We use the concept of ‘de-bordering solidarity’ (Ambrosini 2021, 2022), which indicates the various actions of help towards immigrants undertaken by actors in civil society in contesting asylum policies and borders in practice, through support activities which challenge borders’ closure and exclusion of irregular immigrants from social services (Dimitriadis et al. 2021). This concept emphasizes that these deeds can have a political meaning, although the people involved often do not (apparently) aim to achieve political transformations, or do not declare this openly (Fleischmann 2020).
 
 Despite being well aware of the political implications of their actions, the authors apparently see no issue with pursuing them anyway, all while instrumentalizing activists seemingly unaware of the broader consequences.
@@ -321,10 +320,10 @@ What really pisses me off is the effectiveness of this strategy. The academia mo
 
 And the people in charge are seemingly unable or unwilling to stop it. Do they lack the courage? Insight? Integrity?
 
-***What do you think is worse?***
+**What do you think is worse?**
 
-- **Willful blindness** and refusal to act, while being complicit in working towards political agendas, because what else you can do?
-- Or remaining in **blissful ignorance**, while being unknowingly instrumentalized to achieve political goals through basic social engineering?
+- *Willful blindness* and refusal to act, while being complicit in working towards political agendas, because what else you can do?
+- Or remaining in *blissful ignorance*, while being unknowingly instrumentalized to achieve political goals through basic social engineering?
 
 Regardless of the answer - the consequences of both remain the same.
 
@@ -340,7 +339,7 @@ Instead of treating the symptoms, we would have to address the root causes. This
 
 This post is NOT meant to be a comprehensive blueprint for change. Its main purpose is the diagnosis of the problem, presented in a way that is accessible to a broad audience.
 
-In every country the situation is different, and the specific strategies would have to be tailored to local contexts. The "Treatment" section is meant to show that change is possible, and can be achieved through cooperative action. 
+In every country the situation is different, and the specific strategies would have to be tailored to local contexts. The "Treatment" section is meant to show that change is possible, and can be achieved through cooperative action.
 
 Crazy to think research doesn't have to present a prescriptive one-size-fits-all solution all the time, huh?
 
@@ -353,19 +352,22 @@ Therefore, addressing the issues within academia is crucial and likely to have a
 As I was digging through various academic papers, I have noticed many recurring patterns, and their examination led me to think that most glaring issues can be solved through a combination of transparency and accountability. Without having to resort to direct state oversight or censorship - assuming the willingness to change exists, of course.
 
 1. The concept of **conflict of interests** is quite narrow in its scope. It usually focuses on financial incentives, but there are other types of influences that can affect research outcomes.
-  - These influences do not have to be regarded as a bad thing per se. The point is twofold: to be able to evaluate whether the author remains objective despite their personal beliefs, and to provide a motivation for the author for self-reflection.
-  - If the academia operated under the assumption that all research is inherently biased, it would be easier to identify potential issues and address them accordingly.
-  - This is the reason why I've included the *"Personal Stakes"* subsection earlier - to demonstrate what it could look like. Decide for yourself whether such anchoring of reasoning in personal experience invalidates it or makes it more credible.
+
+- These influences do not have to be regarded as a bad thing per se. The point is twofold: to be able to evaluate whether the author remains objective despite their personal beliefs, and to provide a motivation for the author for self-reflection.
+- If the academia operated under the assumption that all research is inherently biased, it would be easier to identify potential issues and address them accordingly.
+- This is the reason why I've included the *"Personal Stakes"* subsection earlier - to demonstrate what it could look like. Decide for yourself whether such anchoring of reasoning in personal experience invalidates it or makes it more credible.
 
 2. A similar issue arises with limited **access to data** used to back claims being made.
-  - One area where this is extremely prevalent is **criminology**. Usually citing *"privacy concerns"*, authors ignore the fact that anonymized datasets could be shared without compromising individual identities.
-  - Usually the raw data is available only **upon request**, and even then only to *select individuals or institutions*. In worst cases, access to data is **guarded by NDA agreements**.
-  - We all know *why* that is. If the reasoning behind the claims was sound, there would be no need to hide the data. This kind of unverifiable research should be rejected outright.
+
+- One area where this is extremely prevalent is **criminology**. Usually citing *"privacy concerns"*, authors ignore the fact that anonymized datasets could be shared without compromising individual identities.
+- Usually the raw data is available only **upon request**, and even then only to *select individuals or institutions*. In worst cases, access to data is **guarded by NDA agreements**.
+- We all know *why* that is. If the reasoning behind the claims was sound, there would be no need to hide the data. This kind of unverifiable research should be rejected outright.
 
 3. Finally, there is the issue of **methodological transparency**.
-  - As of now, there are no standardized guidelines for stating the **hypotheses** *(when dealing with empirical research)* and **underlying assumptions** *(in philosophy-adjacent fields)* of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
-  - If these were explicitly stated upfront, it would be easier to evaluate the **validity** of the research and its conclusions, and to differentiate between *objective findings* and *subjective interpretations*.
-  - Similar to the *["Thesis"](#thesis)* section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
+
+- As of now, there are no standardized guidelines for stating the **hypotheses** *(when dealing with empirical research)* and **underlying assumptions** *(in philosophy-adjacent fields)* of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
+- If these were explicitly stated upfront, it would be easier to evaluate the **validity** of the research and its conclusions, and to differentiate between *objective findings* and *subjective interpretations*.
+- Similar to the *["Thesis"](#thesis)* section of my post, a clear articulation of these elements would enhance the overall rigor of academic work.
 
 If these three points were implemented, it would eliminate a significant portion of manipulative research.
 
@@ -416,29 +418,32 @@ Here, instead of recommendations or calls for a reform, I'd like to present you 
 **2. If multiple organizations lie in the same way, they need to be investigated, and their funding sources audited (assuming cooperation of relevant authorities).**
 
 **3. Misinformation - as orchestrated by universalist NGOs - can be spotted quite easily. Look out for:**
-  - moral hysteria,
-  - emotional appeals over factual arguments,
-  - citing dubious sources like reports from think tanks or studies that lack empirical backing,
-  - invoking vague sets of "values" without defining them (quite common recently, as I've noticed),
-  - buzzwords mirroring academic jargon, e.g. "transnational standards", "climate justice", "pluralism", etc.,
-  - when they're in offence: reframing of criticized claims, e.g. "Asylum needs reform" → "Attack on human rights",
-  - when they're in defence: reframing of questions asked, e.g. "Why do you support open borders?" → "Do you want people to suffer?".
+
+- moral hysteria,
+- emotional appeals over factual arguments,
+- citing dubious sources like reports from think tanks or studies that lack empirical backing,
+- invoking vague sets of "values" without defining them (quite common recently, as I've noticed),
+- buzzwords mirroring academic jargon, e.g. "transnational standards", "climate justice", "pluralism", etc.,
+- when they're in offence: reframing of criticized claims, e.g. "Asylum needs reform" → "Attack on human rights",
+- when they're in defence: reframing of questions asked, e.g. "Why do you support open borders?" → "Do you want people to suffer?".
 
 **4. Counters to deploy:**
-  - asking for specific definitions of terms used,
-  - requesting empirical evidence for claims made,
-  - pointing out logical fallacies in their arguments,
-  - highlighting inconsistencies in their narratives over time,
-  - maintaining emotional detachment to lower their guard and avoid making mistakes yourself,
-  - mirroring to gain rapport and make them more candid.
+
+- asking for specific definitions of terms used,
+- requesting empirical evidence for claims made,
+- pointing out logical fallacies in their arguments,
+- highlighting inconsistencies in their narratives over time,
+- maintaining emotional detachment to lower their guard and avoid making mistakes yourself,
+- mirroring to gain rapport and make them more candid.
 
 **5. Common actors whose narratives are worth scrutinizing and comparing:**
-  - Helsinki Foundation for Human Rights,
-  - Amnesty International,
-  - Human Rights Watch,
-  - UN and its various agencies (UNHCR, OHCHR, etc.),
-  - Climate-centric NGOs (Greenpeace, WWF, etc.),
-  - Individuals who self-brand themselves under some hashtag (e.g. #FBPE).
+
+- Helsinki Foundation for Human Rights,
+- Amnesty International,
+- Human Rights Watch,
+- UN and its various agencies (UNHCR, OHCHR, etc.),
+- Climate-centric NGOs (Greenpeace, WWF, etc.),
+- Individuals who self-brand themselves under some hashtag (e.g. #FBPE).
 
 Given some practice, patterns will become more apparent, and spotting misinformation will become your second nature.
 
@@ -467,7 +472,7 @@ Not long ago, [an open letter signed by 9 EU state leaders](https://www.euronews
 Soon after, **Donald Tusk** - former President of the European Council and current PM of Poland - [gave an interview](https://archive.is/osbtA) in which he explicitly praised pragmatism over idealism:
 
 > *“In some countries it’s [deportation of criminals] still impossible because of these very traditional verdicts from the courts that human rights are much more important than security. I’ve been very blunt and even brutal with my colleagues. **We cannot wait for these changes. We have to act now.**”*
-> 
+>
 > *“My role in Europe is rather to encourage prime ministers and presidents to do something more than the conventions allow us,”* -- Tusk explained. -- *“I know it sounds a little strange coming from me, the veteran of the fight for human rights. But we have to respect reality. **Politics must be about reality, not about dreams only**.”*
 >
 > *~ Donald Tusk for The Sunday Times, October 2025*

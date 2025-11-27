@@ -105,13 +105,6 @@ $_variants: (
   @return var(--#{$prefix}#{$name}, $fallback);
 }
 
-@function accent-lightest($shade: null) {
-  @if $shade == null {
-    @return c("accent");
-  } @else {
-    @return c("accent-#{$shade}");
-  }
-}
 $bg: c("bg");
 
 $fg: c("fg");
@@ -129,8 +122,5 @@ $accent-light: c("accent-light");
 $accent-dark: c("accent-dark");
 $accent-darker: c("accent-darker");
 $accent-darkest: c("accent-darkest");
-
-@debug $accent;
-@debug $accent-dark;
 
 @include set-hue($hue);

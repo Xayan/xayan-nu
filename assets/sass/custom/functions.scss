@@ -139,21 +139,17 @@
   background: linear-gradient($gradient-start, $gradient-end), url("images/background.png");
 }
 
-/**
- * Custom Elements
- */
-
 @mixin card-panel {
   @include per-device(
     (
-      margin-top: $gap-xs,
-      margin-bottom: $gap-xs,
+      margin-top: $gap-md,
+      margin-bottom: $gap-md,
       max-width: 90vw
     ),
     (
       margin-top: $gap-lg,
       margin-bottom: $gap-lg,
-      max-width: 85vw
+      max-width: 80vw
     ),
     (
       margin-top: $gap-xxl,
@@ -170,7 +166,8 @@
 
   display: block;
   position: relative;
-  overflow: hidden;
+  overflow: scroll-x;
+  width: auto;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: $border-radius;
 }

@@ -3,10 +3,11 @@
   font-weight: 400;
   animation: lights 5s linear infinite;
   color: hsla(230, 100%, 90%, 0.65);
+  letter-spacing: -0.5px;
 
   @include per-device(
     (
-      font-size: 1.4rem
+      font-size: 1.5rem
     ),
     (
       font-size: 1.6rem

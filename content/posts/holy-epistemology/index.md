@@ -6,7 +6,7 @@ image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08
 ttr: "15~20m"
-hue: 60
+hue: 300
 
 # Analytics
 valued_time: 480 # 8 minutes

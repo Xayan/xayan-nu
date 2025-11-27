@@ -1,9 +1,11 @@
 $card-hue: var(--card-hue, $hue);
 $card-bg: var(--card-bg, hsla($card-hue, 10%, 20%, 0.8));
-$card-fg: var(--card-fg, hsla($card-hue, 10%, 80%, 0.9));
-$card-accent: var(--card-accent, hsl($card-hue, 50%, 50%));
-$card-accent-light: var(--card-accent-light, hsl($card-hue, 50%, 65%));
-$card-accent-dark: var(--card-accent-dark, hsl($card-hue, 50%, 35%));
+$card-fg: var(--card-fg, hsla($card-hue, 20%, 60%, 0.8));
+$card-accent: var(--card-accent, hsl($card-hue, 40%, 50%));
+$card-accent-lighter: var(--card-accent-lighter, hsla($card-hue, 40%, 80%, 0.8));
+$card-accent-light: var(--card-accent-light, hsla($card-hue, 40%, 65%, 0.8));
+$card-accent-dark: var(--card-accent-dark, hsla($card-hue, 40%, 35%, 0.8));
+$card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
 
 .card {
   @include card-panel;
@@ -97,26 +99,26 @@ $card-accent-dark: var(--card-accent-dark, hsl($card-hue, 50%, 35%));
     line-height: 1.3;
 
     a {
-      @include link-styles($fg-light, $card-accent-light);
+      @include link-styles($fg-lighter, $card-accent-light);
     }
   }
 
   .card-categories {
     display: block;
-    margin: 0.4em 0;
+    margin: $gap-xs 0;
 
     .category-tag {
       display: inline-block;
-      font-size: 0.75rem;
-      padding: 0.4em;
-      line-height: 0.8em;
-      margin: 0 0.15rem;
+      font-size: 0.85rem;
+      padding: 0.2em 0.4em;
+      margin: 0 $gap-xxs;
+      line-height: 1em;
       border-radius: $border-radius;
-      background: hsla(var(--card-hue), 40%, 40%, 0.7);
+      background: hsla(var(--card-hue), 25%, 20%, 0.75);
+      border-radius: 5px;
       color: $card-fg;
-      text-shadow: black 3px 3px 8px;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 0px;
     }
   }
@@ -133,7 +135,7 @@ $card-accent-dark: var(--card-accent-dark, hsl($card-hue, 50%, 35%));
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: $fg-darker;
+    color: $fg-light;
 
     .meta-item {
       display: flex;
@@ -151,71 +153,282 @@ $card-accent-dark: var(--card-accent-dark, hsl($card-hue, 50%, 35%));
       font-size: 0.9rem;
     }
   }
-}
 
-@include on-mobile {
-  .card {
-    display: block;
-    margin: $gap-xxl $gap-xxl;
-
-    .card-row {
+  @include on-mobile {
+    & {
       display: block;
-    }
+      margin: $gap-xxl auto;
 
-    .card-image {
-      width: 100%;
-      height: 180px;
-      position: relative;
-      border-radius: $border-radius $border-radius 0 0;
-      margin: 0;
-
-      // Show mobile overlay within image
-      .mobile-overlay {
+      .card-row {
         display: block;
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        left: 0;
-        right: 0;
+      }
+
+      .card-image {
+        width: 100%;
         height: 180px;
+        position: relative;
+        margin: 0;
 
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-        color: $fg-lightest;
+        // Show mobile overlay within image
+        .mobile-overlay {
+          display: block;
+          position: absolute;
+          pointer-events: none;
+          top: 0;
+          left: 0;
+          height: 180px;
+          width: 100%;
 
-        .card-categories {
-          margin-top: 0.5em;
-          margin-right: 0.75em;
-          float: right;
+          background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+          color: $fg-lightest;
 
-          .category-tag {
-            padding: 0.6em 0.6em;
+          .card-categories {
+            margin: $gap-xs;
+            top: 0;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 0.25em;
+
+            .category-tag {
+              background: hsla(var(--card-hue), 20%, 25%, 0.75);
+              color: $card-accent-lighter;
+              margin: $gap-xxs 0;
+              font-size: 0.8rem;
+              padding: 0.4em 0.6em;
+              text-shadow: 0px 0px 3px black;
+              box-shadow: 2px 2px 2px $black;
+            }
+          }
+
+          .card-title {
+            position: inherit;
+            margin: 0 1em;
+            bottom: 0.8em;
+            text-align: left;
+
+            a {
+              color: $fg-lightest;
+              text-shadow: black 3px 3px 8px;
+            }
           }
         }
+      }
 
-        .card-title {
-          position: inherit;
-          margin: 0 1em;
-          bottom: 0.8em;
+      .card-content {
+        text-align: left;
+      }
+
+      // Hide desktop elements
+      .desktop-only {
+        display: none;
+      }
+
+      .card-description {
+        font-size: 0.9rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.page-content {
+  .toc {
+    @include card-panel;
+
+    background: $bg;
+    color: $fg;
+    font-size: 0.9rem;
+
+    width: fit-content;
+    min-width: 50vw;
+    padding: 0;
+    margin-bottom: $gap-lg;
+    text-align: left;
+
+    ::marker {
+      color: $accent-dark;
+    }
+
+    summary {
+      margin: 0;
+      padding: $gap-xxs $gap-lg;
+      cursor: pointer;
+
+      &:hover {
+        background: color-mix(in srgb, $bg 90%, $accent 20%);
+      }
+
+      b {
+        color: $fg;
+      }
+    }
+
+    nav {
+      margin: $gap-xs;
+      padding: 0 $gap-xl;
+      min-width: 320px;
+      cursor: default;
+
+      ul {
+        line-height: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: $gap-xxs 0;
+
+        li {
+          padding: $gap-xxs 0;
+          margin-top: 0;
+          margin-bottom: 0;
           a {
-            color: $fg-lightest;
-            text-shadow: black 3px 3px 8px;
+            font-style: normal;
           }
         }
       }
     }
+  }
 
-    .card-content {
-      text-align: left;
+  blockquote {
+    @include card-panel;
+
+    position: relative;
+    padding: 0.5em 1em 0.5em 1.2em;
+    overflow: visible;
+    font-size: 0.8rem;
+    border-radius: 8px;
+
+    &::before {
+      content: '"';
+      position: absolute;
+      top: 0em;
+      right: 0.125em;
+      font-size: 5.4em;
+      line-height: 1;
+      opacity: 0.3;
+      font-family: "Roboto", serif;
+      font-style: italic;
+      font-weight: 400;
+      pointer-events: none;
+      z-index: 0;
     }
 
-    // Hide desktop elements
-    .desktop-only {
-      display: none;
+    * {
+      color: hsla(189, 20%, 50%, 0.8);
     }
 
-    .card-description {
-      font-size: 0.9rem;
-      text-align: left;
+    > * {
+      margin: 0.5em 0;
+    }
+
+    ul {
+      margin: 0 $gap-md;
+    }
+
+    p:last-child {
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  .image {
+    @include card-panel;
+
+    display: block;
+    width: min-content;
+
+    img {
+      overflow: auto;
+      display: block;
+      margin: 0;
+      height: fit-content;
+      width: fit-content;
+
+      @include per-device(
+        (
+          max-width: 90vw
+        ),
+        (
+          max-width: 80vw
+        ),
+        (
+          max-width: 60vw
+        ),
+        (
+          max-width: 80vw
+        )
+      );
+    }
+
+    figcaption {
+      margin: 0 auto;
+      padding: $gap-xs $gap-sm;
+      text-align: center;
+      font-style: normal;
+      color: color-mix(in srgb, $fg 85%, transparent);
+    }
+  }
+
+  .youtube-embed {
+    --yt-max-width: 480px;
+    --yt-aspect-ratio: 16 / 9;
+    --yt-padding: 75%;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__container {
+      width: 100%;
+      max-width: var(--yt-max-width);
+    }
+
+    &__frame {
+      @include card-panel;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+      aspect-ratio: var(--yt-aspect-ratio);
+      @include drop-shadow(0, 8px, rgba(255, 0, 0, 0.75));
+
+      @supports not (aspect-ratio: 1 / 1) {
+        height: 0;
+        padding-bottom: var(--yt-padding);
+      }
+    }
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .shares {
+    margin: $gap-md 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem, 2vw, 2rem);
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 1px 8px rgb(0, 0, 0);
+
+      &::after {
+        content: none;
+      }
     }
   }
 }

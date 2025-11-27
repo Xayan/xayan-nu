@@ -58,6 +58,7 @@ params:
   goToTop: true
   paginate: 0
   additionalScripts:
+    - js/visible-map.js
     - js/pikachu.js
   mainSections:
     - posts

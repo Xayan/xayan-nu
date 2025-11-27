@@ -27,7 +27,11 @@
     idle: true,
     timerId: null,
     idleTimerId: null,
-    lastSessionId: posthog?.get_session_id?.() ?? null
+    lastSessionId: getPosthog()?.get_session_id?.() ?? null,
+    visibleEntries: [],
+    visibleSnapshot: [],
+    lastActivityAt: Date.now(),
+    leftSent: false
   };
 
   const IDLE_LIMIT_MS = 60000;
@@ -60,14 +64,90 @@
     return config.valued_time !== undefined || config.valued_scroll !== undefined;
   }
 
+  function withEngagement(payload = {}) {
+    return {
+      ...payload,
+      seconds: state.engagementTime,
+      percent: state.scrollDepth
+    };
+  }
+
+  function updateVisibleEntries(entries = []) {
+    state.visibleEntries = entries;
+    if (!state.visibleSnapshot.length) {
+      state.visibleSnapshot = entries.slice();
+    }
+  }
+
+  function updateVisibleSnapshot(entries = []) {
+    state.visibleSnapshot = entries.slice();
+  }
+
+  function getVisibleSnapshot() {
+    if (state.visibleSnapshot.length > 0) {
+      return state.visibleSnapshot.slice();
+    }
+    if (state.visibleEntries.length > 0) {
+      return state.visibleEntries.slice();
+    }
+    const mapEntries = window.PikachuVisibleMap?.entries ?? [];
+    return mapEntries.slice();
+  }
+
+  function getIdleSecondsSinceActivity() {
+    const elapsed = Math.max(0, Date.now() - state.lastActivityAt);
+    return Math.round(elapsed / 1000);
+  }
+
+  function initVisibleTracking() {
+    console.log("Initializing visible tracking");
+    document.addEventListener('pikachu:visible-map', event => {
+      updateVisibleEntries(event?.detail?.entries ?? []);
+    });
+
+    document.addEventListener('pikachu:visible-update', event => {
+      updateVisibleSnapshot(event?.detail?.visible ?? []);
+    });
+  }
+
   function sendPHEvent(name, params = {}) {
     log(name, params);
 
-    if (typeof posthog !== 'undefined' && posthog.capture) {
-      posthog.capture(name, params);
+    const client = getPosthog();
+    if (client?.capture) {
+      client.capture(name, params);
     } else {
       log('PostHog not loaded');
     }
+  }
+
+  function sendPHBeacon(name, params = {}) {
+    log(`${name} (beacon)`, params);
+
+    const client = getPosthog();
+    if (!client) {
+      log('PostHog not loaded');
+      return;
+    }
+
+    if (typeof client.sendBeacon === 'function') {
+      client.sendBeacon(name, params);
+      return;
+    }
+
+    warn('PostHog sendBeacon unavailable; falling back to capture');
+    sendPHEvent(name, params);
+  }
+
+  function sendLeftEvent(trigger) {
+    if (state.leftSent) return;
+    state.leftSent = true;
+    log('Sending left event', { trigger, snapshot: getVisibleSnapshot() });
+    sendPHBeacon('left', withEngagement({
+      visible: getVisibleSnapshot(),
+      idle: getIdleSecondsSinceActivity(),
+      trigger
+    }));
   }
 
   function startTimer() {
@@ -85,8 +165,9 @@
     }
   }
 
-  function scheduleIdleTimeout() {
+  function scheduleIdleTimeout(updateTimestamp = false) {
     if (state.idleTimerId) clearTimeout(state.idleTimerId);
+    if (updateTimestamp) state.lastActivityAt = Date.now();
     state.idleTimerId = setTimeout(() => {
       state.idle = true;
       log('Became IDLE');
@@ -100,6 +181,7 @@
       log(`Became ACTIVE via ${evtName}`);
       updateTimerState();
     }
+    state.lastActivityAt = Date.now();
     scheduleIdleTimeout();
   }
 
@@ -147,7 +229,8 @@
   }
 
   function watchForNewSession() {
-    const currentSessionId = posthog?.get_session_id?.() ?? null;
+    const client = getPosthog();
+    const currentSessionId = client?.get_session_id?.() ?? null;
     if (currentSessionId && state.lastSessionId && currentSessionId !== state.lastSessionId) {
       log(`Session changed: ${state.lastSessionId} → ${currentSessionId}`);
       resetSessionState();
@@ -163,24 +246,45 @@
   }
 
   document.addEventListener('visibilitychange', () => {
-    state.visible = document.visibilityState === 'visible';
+    const becameVisible = document.visibilityState === 'visible';
+    state.visible = becameVisible;
+    if (becameVisible) {
+      state.leftSent = false;
+    } else {
+      log('Visibility hidden, preparing to send left event');
+      sendLeftEvent('visibilitychange');
+    }
     log(`${document.visibilityState}, time: ${state.engagementTime}s`);
     updateTimerState();
   });
 
-  window.addEventListener('pagehide', () => { state.visible = false; updateTimerState(); });
-  window.addEventListener('pageshow', () => { state.visible = true; updateTimerState(); });
+  window.addEventListener('pagehide', () => {
+    state.visible = false;
+    sendLeftEvent('pagehide');
+    updateTimerState();
+  });
+  window.addEventListener('pageshow', () => {
+    state.visible = true;
+    state.leftSent = false;
+    scheduleIdleTimeout(true);
+    updateTimerState();
+  });
 
-  ACTIVITY_EVENTS.forEach(evt =>
-    window.addEventListener(evt, () => markActivity(evt), { passive: true })
-  );
+  try {
+    ACTIVITY_EVENTS.forEach(evt =>
+      window.addEventListener(evt, () => markActivity(evt), { passive: true })
+    );
 
-  if (state.visible) {
-    log('Page visible at load; waiting for activity...');
-  } else {
-    log('Page hidden at load; will start when visible and active.');
+    if (state.visible) {
+      log('Page visible at load; waiting for activity...');
+    } else {
+      log('Page hidden at load; will start when visible and active.');
+    }
+    scheduleIdleTimeout(true);
+    initVisibleTracking();
+  } catch (initError) {
+    warn('Failed to initialize activity tracking:', initError);
   }
-  scheduleIdleTimeout();
 
   function setupScrollTracking() {
     const vh = () => window.innerHeight;
@@ -236,7 +340,7 @@
     shareLinks.forEach(link => {
       link.addEventListener('click', () => {
         const target = link.getAttribute('data-target') || 'unknown';
-        sendPHEvent('shared', { target });
+        sendPHEvent('shared', withEngagement({ target }));
       });
     });
   }
@@ -296,14 +400,14 @@
 
     selectionDebounceTimer = setTimeout(() => {
       const payload = analyzeSelection();
-      if (payload) sendPHEvent('content-selected', payload);
+      if (payload) sendPHEvent('content-selected', withEngagement(payload));
     }, 500);
   }
 
   function handleCopy() {
     try {
       const payload = analyzeSelection();
-      if (payload) sendPHEvent('content-copied', payload);
+      if (payload) sendPHEvent('content-copied', withEngagement(payload));
     } catch (error) {
       warn('Error handling copy event:', error);
     }
@@ -312,3 +416,8 @@
   document.addEventListener('selectionchange', handleSelectionChange, { passive: true });
   document.addEventListener('copy', handleCopy, { passive: true });
 })();
+  function getPosthog() {
+    if (typeof window === 'undefined') return null;
+    if (typeof window.posthog === 'undefined') return null;
+    return window.posthog;
+  }

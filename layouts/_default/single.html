@@ -22,11 +22,11 @@
 			{{ partial "toc.html" . }}
 		</header>
 		<section class="post-content">
-				{{ .Content
-					| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
-					| replaceRE `</table>` `</table></div>`
-					| safeHTML
-				}}
+			{{ .Content
+				| replaceRE `(?s)<table([^>]*)>` `<div class="scrollable-container"><table$1>`
+				| replaceRE `</table>` `</table></div>`
+				| safeHTML
+			}}
 		</section>
 		<hr/>
 		<section class="post-comments">

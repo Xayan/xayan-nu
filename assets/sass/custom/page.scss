@@ -156,6 +156,20 @@
     }
   }
 
+  .header {
+    @include per-device(
+      (
+        margin-top: 4rem
+      ),
+      (
+        margin: $gap-3xl 0 0 0
+      ),
+      (
+        margin: $gap-5xl 0 0 0
+      )
+    );
+  }
+
   .list-content {
     display: table;
     width: max-content;

@@ -15,7 +15,10 @@ valued_scroll: 60
 # Indexing
 recommended: true
 categories: ["Philosophy", "Epistemology", "Anthropology", "Sociology"]
-tags: ["religion", "ideology", "theology", "cosmology", "simulation", "existentialism", "determinism", "atheism"]
+tags: [
+  "religion", "ideology", "theology", "atheism",
+  "cosmology", "simulation", "existentialism", "determinism"
+]
 ---
 
 {{<image url="holy-epistemology.jpg"/>}}
@@ -34,6 +37,7 @@ The text below is a philosophical exploration of religion, theology, and cosmolo
 > ~ Futurama, S03E20 *"Godfellas"*
 
 Don't worry - this isn't criticism of religion itself, but of:
+
 - blind dogmatism,
 - lies of religious organizations,
 - hypocrisy of religious authority,
@@ -116,6 +120,7 @@ I will show you why they're so difficult to work with.
 **Theology** is alleged by many theologians to be a field of science. That's nothing but wishful thinking.
 
 First, I would like to propose following hypotheses:
+
 1. Theology is not a field of science.
 2. Theology is a branch of philosophy, built around thinking about religious belief and what faith means.
 3. Theologians-preachers, who claim scientific implications of theology, exhibit ideological affinity to their religion. They will 100% go to hell.

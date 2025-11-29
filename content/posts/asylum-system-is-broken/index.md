@@ -15,7 +15,11 @@ valued_scroll: 50
 # Indexing
 recommended: true
 categories: ["Poli-Sci", "Sociology", "Law"]
-tags: ["europe", "migration", "eu", "un", "ngo", "unhcr", "echr", "liberal universalism", "political theory", "international relations", "asylum system", "borders", "human trafficking", "refugees", "academia", "sovereignty", "ideology", "culture", "poland"]
+tags: [
+  "europe", "eu", "poland", "sweden", "un", "unhcr", "echr", "ngo", "academia",
+  "migration", "asylum system", "human trafficking", "refugees", "political theory",
+  "liberal universalism", "sovereignty", "culture", "ideology", "theology", "critical theory", "free speech"
+]
 ---
 
 {{<image url="polish-border.png" source="https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722">}}
@@ -486,7 +490,7 @@ If you'd like to continue this conversation with ChadGPT, you can do so here: [h
 
 Do you... feel enlightened now? Or do you think I'm a fucking idiot? Regardless, I want to hear your opinion - leave a comment below (a GitHub account is required), or reach out to me directly (X/FB in the footer).
 
-### That's Too Much, Man!
+### That's Too Much, Man
 
 Listen.
 

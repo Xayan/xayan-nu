@@ -11,7 +11,7 @@ hue: 80
 # Indexing
 recommended: true
 categories: ["Comp-Sci", "Philosophy", "Epistemology"]
-tags: ["ai", "prompt-engineering", "europe", "china"]
+tags: ["ai", "prompt engineering", "europe", "china", "migration", "asylum system", "free speech", "censorship"]
 
 # Analytics
 valued_time: 480 # 8 minutes
@@ -112,7 +112,7 @@ To achieve this, I have enhanced the Rules by adding a Chain-of-Thought (CoT) me
 
 Yes, we're going *that* meta.
 
-CoT is composed of the following **components** meant to provide *various angles of insight* into the **model's reasoning**: 
+CoT is composed of the following **components** meant to provide *various angles of insight* into the **model's reasoning**:
 
 - Thoughts
 - Realizations

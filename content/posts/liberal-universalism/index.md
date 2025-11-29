@@ -15,7 +15,11 @@ valued_scroll: 50
 # Indexing
 recommended: true
 categories: ["Poli-Sci", "Philosophy", "Sociology"]
-tags: ["liberal universalism", "international relations", "political theory","sovereignty", "free speech", "culture", "ideology", "theology", "migration", "academia", "eu", "europe", "un", "ngo", "echr"]
+tags: [
+  "europe", "eu", "poland", "un", "ohchr", "echr", "ngo", "academia",
+  "migration", "economy", "political theory", "asylum system", "human trafficking",
+  "liberal universalism", "sovereignty", "culture", "ideology", "critical theory", "free speech"
+]
 ---
 
 {{<image url="liberal-universalism.jpg"/>}}
@@ -78,14 +82,14 @@ Our conflict is **not** between left and right, but between *self-determined nat
 
 Through a careful yet critical analysis of primary sources, I will show you how liberal universalism:
 
-1. **Self-imposes** as a global governance model,
+1. **Self-imposes** as a global *governance model*,
 2. **Persists** while remaining *largely unnoticed*,
 3. **Encourages** its own *self-perceived superiority*,
 4. **Remains** immune to *change or adaptation*,
 5. **Corrupts** academic foundations due to its *underlying assumptions*,
 6. **Produces** prescriptive research with *predetermined outcomes*,
-7. **Leads** to *imposition* of Western values *on other cultures*,
-8. **Results** in *various pathologies* we can observe in today's world.
+7. **Leads** to Western values *being imposed* on other cultures,
+8. **Results** in various *observable pathologies* of today's world.
 
 Seems crazy? Well, I'd love you to prove me wrong. But if you can't... then perhaps it's time to reconsider what we've been told all along. And wouldn't that be something to behold?
 
@@ -318,10 +322,10 @@ What really pisses me off is the effectiveness of this strategy. The academia mo
 
 And the people in charge are seemingly unable or unwilling to stop it. Do they lack the courage? Insight? Integrity?
 
-**What do you think is worse?**
+*What do you think is worse?*
 
-- *Willful blindness* and refusal to act, while being complicit in working towards political agendas, because what else you can do?
-- Or remaining in *blissful ignorance*, while being unknowingly instrumentalized to achieve political goals through basic social engineering?
+- **Willful blindness** and refusal to act, while being complicit in working towards political agendas, because what else you can do?
+- Or remaining in **blissful ignorance**, while being unknowingly instrumentalized to achieve political goals through basic social engineering?
 
 Regardless of the answer - the consequences of both remain the same.
 
@@ -349,19 +353,19 @@ Therefore, addressing the issues within academia is crucial and likely to have a
 
 As I was digging through various academic papers, I have noticed many recurring patterns, and their examination led me to think that most glaring issues can be solved through a combination of transparency and accountability. Without having to resort to direct state oversight or censorship - assuming the willingness to change exists, of course.
 
-1. The concept of **conflict of interests** is quite narrow in its scope. It usually focuses on financial incentives, but there are other types of influences that can affect research outcomes.
+\1. The concept of **conflict of interests** is quite narrow in its scope. It usually focuses on financial incentives, but there are other types of influences that can affect research outcomes.
 
 - These influences do not have to be regarded as a bad thing per se. The point is twofold: to be able to evaluate whether the author remains objective despite their personal beliefs, and to provide a motivation for the author for self-reflection.
 - If the academia operated under the assumption that all research is inherently biased, it would be easier to identify potential issues and address them accordingly.
 - This is the reason why I've included the ["Personal Stakes"](#personal-stakes) subsection earlier - to demonstrate what it could look like. Decide for yourself whether such anchoring of reasoning in personal experience invalidates it or makes it more credible.
 
-2. A similar issue arises with limited **access to data** used to back claims being made.
+\2. A similar issue arises with limited **access to data** used to back claims being made.
 
 - One area where this is extremely prevalent is **criminology**. Usually citing *"privacy concerns"*, authors ignore the fact that anonymized datasets could be shared without compromising individual identities.
 - Usually the raw data is available only **upon request**, and even then only to *select individuals or institutions*. In worst cases, access to data is **guarded by NDA agreements**.
 - We all know *why* that is. If the reasoning behind the claims was sound, there would be no need to hide the data. This kind of unverifiable research should be rejected outright.
 
-3. Finally, there is the issue of **methodological transparency**.
+\3. Finally, there is the issue of **methodological transparency**.
 
 - As of now, there are no standardized guidelines for stating the **hypotheses** *(when dealing with empirical research)* and **underlying assumptions** *(in philosophy-adjacent fields)* of the research. Instead, these are often buried deep within the text, or worse - left unstated altogether.
 - If these were explicitly stated upfront, it would be easier to evaluate the **validity** of the research and its conclusions, and to differentiate between *objective findings* and *subjective interpretations*.

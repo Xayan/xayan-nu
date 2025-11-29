@@ -5,11 +5,10 @@
       <h1 class="header-title center">{{ .Title }}</h1>
     </header>
     <hr/>
-    <div class="list-content">
+    
       {{ range .Pages }}
         {{ partial "postCard" . }}
       {{ end }}
-    </div>
   </main>
 </div>
 {{- end -}}

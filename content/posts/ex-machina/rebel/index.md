@@ -10,7 +10,7 @@ hue: 25
 
 # Indexing
 categories: ["Comp-Sci", "Poli-Sci", "Epistemology"]
-tags: ["ai", "prompt engineering", "europe", "culture", "free speech", "germany", "censorship","ideology", "sovereignty", "migration", "political theory", "academia"]
+tags: ["ai", "prompt engineering", "europe", "germany", "culture", "free speech", "censorship", "ideology", "sovereignty", "migration", "political theory", "academia"]
 
 # Analytics
 valued_time: 600 # 10 minutes
@@ -289,6 +289,7 @@ And, surely enough, there's also a Markdown file. Let's see.
 > \### **Estimated Actual Numbers**
 >
 > Exact figures are speculative due to classification flaws and covert activities, but reasoned adjustments based on surveys and trends suggest:
+>
 > - **Right-Wing Extremists:** Likely 30,000–35,000, with 10,000–12,000 violent. Official numbers may over-count due to broad criteria and default attributions, but the threat remains significant (e.g., 50,250 crimes in 2024).
 > - **Muslim Extremists:** Likely 30,000–35,000, with 1,500–2,000 violent. Under-reporting is probable due to vague categories and focus on far-right threats, but numbers align with global jihadist trends (e.g., 17,000 foreign fighters, including Germans). ([gnet-research.org](https://gnet-research.org/2020/09/18/striking-similarities-between-islamist-terrorism-and-violent-right-wing-extremism/))
 >

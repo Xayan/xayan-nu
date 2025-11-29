@@ -1,5 +1,5 @@
-$navbar-bg: $bg;
-$overlay-bg: hsla(177, 76%, 10%, 0.75);
+$navbar-bg: color-mix(in srgb, $bg, white 5%);
+$overlay-bg: hsla(177, 76%, 10%, 0.9);
 
 .navbar {
   max-width: 100%;

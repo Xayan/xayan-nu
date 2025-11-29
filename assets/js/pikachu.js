@@ -165,6 +165,16 @@
     }
   }
 
+  function sendRedditPixelEvent(name, params = {}) {
+    if (typeof window === 'undefined' || typeof window.rdt === 'undefined') {
+      log('Reddit Pixel not loaded');
+      return;
+    }
+
+    window.rdt('track', name, params);
+    log(`Reddit Pixel: ${name}`, params);
+  }
+
   function sendPHBeacon(name, params = {}) {
     log(`${name} (beacon)`, params);
 
@@ -254,11 +264,15 @@
 
     if (state.intervalIndex < INTERVALS.length && state.engagementTime >= INTERVALS[state.intervalIndex]) {
       const seconds = INTERVALS[state.intervalIndex];
+      state.intervalIndex += 1;
       sendPHEvent('engaged', {
         seconds,
         percent: state.scrollDepth
       });
-      state.intervalIndex += 1;
+      sendRedditPixelEvent('engaged', {
+        seconds,
+        percent: state.scrollDepth
+      });
     }
   }
 

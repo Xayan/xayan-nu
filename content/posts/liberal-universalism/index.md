@@ -214,8 +214,8 @@ Stemming from these, we can identify several implicit ones, which might feel mor
 |:-------------------:|-------------|--------------|
 | <span>**Moral Superiority**</span><span>**`I1 = E1 + E2`**</span> | Belief that liberal values are not only universal but also superior to all others. | Incessant moralizing, impossibility of genuine dialogue |
 | <span>**Pseudoscience**</span><span>**`I2 = E3 + E4`**</span> | Intellectual corruption of the academia | Prescriptive research with baked-in biases and predetermined outcomes |
-| <span>**Ideological Capture**</span><span>**`I3 = E1 + E3`**</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, two-tiered justice systems |
-| <span>**Manifest Destiny v2**</span><span>**`I4 = I1 + I2`**</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty by overriding national legal frameworks |
+| <span>**Ideological Capture**</span><span>**`I3 = E1 + E3`**</span> | Co-opting of key institutions to control the dominant narrative | DEI initiatives, media suppression, [two-tiered justice systems](https://humanists.uk/2025/09/24/anti-blasphemy-attacker-who-lost-his-temper-spared-jail/) |
+| <span>**Manifest Destiny v2**</span><span>**`I4 = I1 + I2`**</span> | An excuse for imposing Western values on other cultures through political pressure or economic incentives. | Destruction of national sovereignty, [authoritarian drift of international law](https://www.cambridge.org/core/journals/american-journal-of-international-law/article/imperial-overstretch-of-international-law/8583D7B4F50B335B8F3D7DC935E2289F) |
 | <span>**Brave New World**</span><span>**`I5 = I1 + I3`**</span> | Vision of a "transnational world" with no borders, where everyone would supposedly live in harmony. | Erosion of cultural and national identities |
 
 These implicit assumptions are often the root cause of various pathologies observed in societies influenced by liberal universalism. Understanding the underlying, um... logic (being a bit generous here) allows us to realize how these pathologies are justified and understand why they're so fiercely defended.
@@ -488,5 +488,9 @@ I've done my best to show you the actual political landscape of Europe, free fro
 Go now. Take care of yourselves, and of each other.
 
 Wir schaffen das.
+
+### P.S.
+
+I am preparing something *even better*. Come back in a **few days**.
 
 {{<youtube id="RUsUQ9tRHHQ" ratio="4:3" maxWidth="480px" title="dandelions forever">}}

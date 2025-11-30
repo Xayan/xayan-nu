@@ -285,12 +285,18 @@
     const scrollMet = scrollThreshold === undefined || state.scrollDepth >= scrollThreshold;
 
     if (timeMet && scrollMet) {
+      state.valuedFired = true;
+      
       sendPHEvent('valued', {
         percent: state.scrollDepth,
         seconds: state.engagementTime,
         config: valuedConfig
       });
-      state.valuedFired = true;
+      sendRedditPixelEvent('valued', {
+        percent: state.scrollDepth,
+        seconds: state.engagementTime,
+        config: valuedConfig
+      });
     }
   }
 

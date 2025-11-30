@@ -243,7 +243,7 @@ $card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
     overflow: hidden;
 
     width: fit-content;
-    min-width: 280px;
+    min-width: 200px;
     padding: 0;
     margin-bottom: $gap-lg;
     text-align: left;
@@ -337,34 +337,32 @@ $card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
     @include card-panel;
 
     display: block;
-    width: min-content;
+    width: fit-content;
+
+    @include per-device(
+      (
+        max-width: 95%
+      ),
+      (
+        max-width: 90%
+      ),
+      (
+        max-width: 80%
+      ),
+      (
+        max-width: 80%
+      )
+    );
 
     img {
-      overflow: auto;
+      overflow: hidden;
       display: block;
-      margin: 0;
-      height: fit-content;
-      width: fit-content;
-
-      @include per-device(
-        (
-          max-width: 90vw
-        ),
-        (
-          max-width: 80vw
-        ),
-        (
-          max-width: 60vw
-        ),
-        (
-          max-width: 80vw
-        )
-      );
     }
 
     figcaption {
-      margin: 0 auto;
-      padding: $gap-xs $gap-sm;
+      padding: 0;
+      overflow: hidden;
+      margin: $gap-xxs $gap-sm;
       text-align: center;
       font-style: normal;
       color: color-mix(in srgb, $fg 85%, transparent);

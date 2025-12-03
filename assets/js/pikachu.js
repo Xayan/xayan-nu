@@ -171,8 +171,13 @@
       return;
     }
 
-    window.rdt('track', name, params);
-    log(`Reddit Pixel: ${name}`, params);
+    if(Object.keys(params).length === 0) {
+      window.rdt('track', name);
+      log(`Reddit Pixel: ${name}`);
+    } else {
+      window.rdt('track', name, params);
+      log(`Reddit Pixel: ${name}`, params);
+    }
   }
 
   function sendPHBeacon(name, params = {}) {
@@ -269,10 +274,7 @@
         seconds,
         percent: state.scrollDepth
       });
-      sendRedditPixelEvent('engaged', {
-        seconds,
-        percent: state.scrollDepth
-      });
+      sendRedditPixelEvent('ViewContent');
     }
   }
 
@@ -292,11 +294,8 @@
         seconds: state.engagementTime,
         config: valuedConfig
       });
-      sendRedditPixelEvent('valued', {
-        percent: state.scrollDepth,
-        seconds: state.engagementTime,
-        config: valuedConfig
-      });
+
+      sendRedditPixelEvent('Lead');
     }
   }
 
@@ -402,14 +401,6 @@
     }, { passive: true });
   }
 
-  function onDocumentReady(fn) {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fn, { once: true });
-    } else {
-      fn();
-    }
-  }
-
   function setupShareTracking() {
     const shareLinks = document.querySelectorAll('.shares > a[data-target]');
     if (shareLinks.length === 0) return;
@@ -422,8 +413,21 @@
     });
   }
 
+  function sendVisitEvent() {
+    sendRedditPixelEvent('PageVisit');
+  }
+
+  function onDocumentReady(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+      fn();
+    }
+  }
+
   onDocumentReady(setupScrollTracking);
   onDocumentReady(setupShareTracking);
+  onDocumentReady(sendVisitEvent);
 
   let selectionDebounceTimer = null;
 

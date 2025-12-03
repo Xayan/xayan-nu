@@ -16,14 +16,18 @@ $padding-multiplier: 0.4rem;
 
   a {
     @include link-styles($accent-lighter, $accent-darker);
-    font-style: italic;
     font-weight: 400;
   }
 
   strong,
   b {
     color: $accent;
-    font-weight: 450;
+    font-weight: 500;
+  }
+
+  li {
+    color: $fg-light;
+    font-weight: 350;
   }
 
   h2,
@@ -121,7 +125,6 @@ $padding-multiplier: 0.4rem;
 
       a {
         @include link-styles($accent-light, $accent-dark, true, false);
-        font-style: normal;
       }
 
       @include per-device(

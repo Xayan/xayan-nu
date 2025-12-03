@@ -1,10 +1,26 @@
-{{ $u := urls.Parse .Destination }}
-{{ $base := urls.Parse site.BaseURL }}
-{{ $isHTTP := or (eq $u.Scheme "http") (eq $u.Scheme "https") }}
-{{ $isExternal := and $isHTTP (ne $u.Host $base.Host) }}
+{{- $u := urls.Parse .Destination -}}
+{{- $base := urls.Parse site.BaseURL -}}
+{{- $isHTTP := or (eq $u.Scheme "http") (eq $u.Scheme "https") -}}
+{{- $isExternal := and $isHTTP (ne $u.Host $base.Host) -}}
+
+{{/* Configure internal path prefixes that should open in a new tab. */}}
+{{- $internalNewTabPrefixes := slice
+  "/docs"
+-}}
+
+{{- $openInternalInNewTab := false -}}
+{{- if not $isExternal -}}
+  {{- range $prefix := $internalNewTabPrefixes -}}
+    {{- if hasPrefix $u.Path $prefix -}}
+      {{- $openInternalInNewTab = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 
 {{- if $isExternal -}}
   {{- printf "<a href=\"%s\" title=\"External link: %s\" target=\"_blank\" rel=\"noopener noreferrer\">%s</a>" (.Destination | safeURL) ($u.Host | htmlEscape) (.Text) | safeHTML -}}
+{{- else if $openInternalInNewTab -}}
+  {{- printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">%s</a>" (.Destination | safeURL) (.Text) | safeHTML -}}
 {{- else -}}
   {{- printf "<a href=\"%s\">%s</a>" (.Destination | safeURL) (.Text) | safeHTML -}}
 {{- end -}}

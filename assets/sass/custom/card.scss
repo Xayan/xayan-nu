@@ -315,15 +315,21 @@ $card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
     }
 
     * {
-      color: hsla(190, 15%, 60%, 0.8);
+      color: hsla(190, 15%, 70%, 0.8);
     }
 
     > * {
-      margin: 0.5em 0;
+      margin: $gap-xxs 0;
     }
 
-    ul {
-      margin: 0 $gap-md;
+    ul,
+    ol {
+      margin: $gap-xxs 0 $gap-xxs $gap-md;
+    }
+
+    b,
+    strong {
+      color: hsla(190, 15%, 85%, 0.8);
     }
 
     p:last-child {
@@ -337,6 +343,7 @@ $card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
     @include card-panel;
 
     display: block;
+    overflow: hidden;
     width: fit-content;
 
     @include per-device(
@@ -355,8 +362,7 @@ $card-accent-darker: var(--card-accent-darker, hsla($card-hue, 40%, 30%, 0.8));
     );
 
     img {
-      overflow: hidden;
-      display: block;
+      border-radius: 0;
     }
 
     figcaption {

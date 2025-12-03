@@ -6,11 +6,9 @@
       <h1 class="header-title center">#{{ $slugTitle }}</h1>
     </header>
     <hr/>
-    <div class="list-content">
-      {{ range .Pages }}
-        {{ partial "postCard" . }}
-      {{ end }}
-    </div>
+    {{ range .Pages }}
+      {{ partial "postCard" . }}
+    {{ end }}
     <hr/>
   </main>
 </div>

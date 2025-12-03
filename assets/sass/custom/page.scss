@@ -150,6 +150,8 @@
     a {
       @include link-styles($fg, $accent-dark);
 
+      font-style: inherit;
+
       &:hover {
         cursor: hand;
       }
@@ -172,7 +174,6 @@
 
   .list-content {
     display: table;
-    width: max-content;
     margin: 0 auto;
     padding: 0 $gap-lg;
     border-collapse: collapse;
@@ -183,7 +184,7 @@
 
       > * {
         display: table-cell;
-        padding: 0.5rem $gap-lg;
+        padding: $gap-xs $gap-lg;
         vertical-align: middle;
       }
 

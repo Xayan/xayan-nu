@@ -489,8 +489,11 @@ Go now. Take care of yourselves, and of each other.
 
 Wir schaffen das.
 
-### P.S.
+{{<youtube id="RUsUQ9tRHHQ" ratio="4:3" maxWidth="480px"/>}}
 
-I am preparing something *even better*. Come back in a **few days**.
+### Further Reading
 
-{{<youtube id="RUsUQ9tRHHQ" ratio="4:3" maxWidth="480px" title="dandelions forever">}}
+If you'd like to learn more about how liberal universalism affects various aspects of society, here are other posts I wrote:
+
+- [Mutually Assured Misinformation](/posts/mutually-assured-misinformation/) - how the EU is trying to control the narrative around migration through media capture and propaganda.
+- [The Asylum System is Broken](/posts/asylum-system-is-broken/) - an evaluation of the current asylum system in Europe, supported by the analysis of UNHCR's own documents.

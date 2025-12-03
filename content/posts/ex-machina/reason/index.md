@@ -6,7 +6,7 @@ image: "/posts/ex-machina/reason/thumb.jpg"
 author: "Xayan"
 date: 2025-08-03
 ttr: "15~25m"
-hue: 80
+hue: 100
 
 # Indexing
 recommended: true

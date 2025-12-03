@@ -2,7 +2,6 @@
   Usage:
     {{< youtube
       id="VIDEO_ID"
-      title="Optional Title"
       margin="Optional CSS margin"
       maxWidth="Optional CSS max-width"
       ratio="v:h"
@@ -12,7 +11,7 @@
       controls="0"
       query="additional=query&parameters=here"
       class="additional-css-classes"
-    >}}
+    >}} title text {{</ youtube >}}
 */}}
 {{- $videoID := "" -}}
 {{- if .IsNamedParams -}}
@@ -24,7 +23,7 @@
   {{- errorf "youtube shortcode requires a video id" -}}
 {{- end -}}
 
-{{- $title := .Get "title" | default "YouTube video player" -}}
+{{- $title := .Inner | default "YouTube video player" -}}
 {{- $styleParts := slice -}}
 {{- with .Get "margin" -}}
   {{- $styleParts = $styleParts | append (printf "--yt-margin:%s" .) -}}

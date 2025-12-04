@@ -183,7 +183,7 @@ Thus, there are no incentives to question the status quo. Very little external s
 
 For an ideology that prides itself on *rationality* and *progress*, it is deeply ironic how much it relies on a **simplistic binary worldview**.
 
-My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first it says:
+My favorite example of this is the paper [Liberal universalism in crisis: The nationalist populist challenge of transnational political standards (Kuhn, 2018)](https://www.tandfonline.com/doi/full/10.1080/21931674.2018.1505590). Literally in the first sentence it says:
 
 > The explanation of the right-wing populist attack on transnational standards of pluralism and cooperation as caused by unsolved problems of the economic structure is often disputed by regarding populism a “cultural backlash” supported by groups now deprived of their former predominant position by new universalist standards.
 

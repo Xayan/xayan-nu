@@ -2,7 +2,7 @@
 # Metadata
 title: "Mutually Assured Misinformation"
 description: "Unveiling the strategies behind EU's efforts in shaping public perceptions in the name of \"protecting democracy\", as evidenced by the JRC report on \"navigating migration narratives\"."
-image: "/posts/mutually-assured-misinformation/thumb.jpg"
+image: "/posts/mutually-assured-misinformation/thumb2.jpg"
 author: "Xayan"
 date: 2025-12-03
 ttr: "30~40 min"

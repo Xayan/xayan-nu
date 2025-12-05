@@ -2,7 +2,7 @@
 # Metadata
 title: "Mutually Assured Misinformation"
 description: "Unveiling the strategies behind EU's efforts in shaping public perceptions in the name of \"protecting democracy\", as evidenced by the JRC report on \"navigating migration narratives\"."
-image: "/posts/mutually-assured-misinformation/thumb.jpg"
+image: "/posts/mutually-assured-misinformation/thumb2.jpg"
 author: "Xayan"
 date: 2025-12-03
 ttr: "30~40 min"
@@ -44,7 +44,7 @@ This mission creep *- from nuclear to social engineering -* reflects EU's increa
 
 ## The Report
 
-Ok, that's enough background. Let's dive into the report itself. It's available [here (PDF)](/docs/jrc/migration-narratives/).
+Ok, that's enough background. Let's dive into the report itself. It's available [here (PDF)](/docs/jrc/JRC_Navigating-migration-narratives.pdf).
 
 *(**Note**: I will be referencing specific sections by their page numbers as they appear in the PDF, not the report's own numbering in the footer - so you can find them easily.)*
 
@@ -68,11 +68,11 @@ Only to immediately pivot onto their own hyperbolic framing:
 
 Ooh, "super-narratives", fancy. Like "super-spreaders"? I kinda get it, I use similar rhetorical flourishes. On my *blog*, not in an *official EU report*.
 
-Then, they say:
+Then, they claim to "foster narratives":
 
-> the report equips policymakers and communication professionals with practical insights to foster **narratives** that promote an evidence-based understanding of migration.
+> [...] the report equips policymakers and communication professionals with practical insights to foster **narratives** that promote an evidence-based understanding of migration.
 
-Only to shoot themselves in the foot on the next page:
+Only to shoot themselves in the foot on the next page by defining narratives as:
 
 > **Narratives** are selective depictions of reality. They focus on certain aspects of issues while ignoring others.
 
@@ -82,7 +82,7 @@ Imagine what they could achieve using EU's vast resources, were they actually c
 
 ### Chapter 1: Introduction
 
-Chapter 1 starts on page 15. After some "poor refugees" rhetoric, they tell us why this report was created in the first place:
+Chapter 1 starts on page 15, where they tell us why this report was created in the first place:
 
 > Migration remains high on the EU political agenda. The implementation of the Pact on Migration and Asylum, which aims to help protect people, secure borders, and ensure fair and efficient procedures, is one of the main priorities for the European Commission 2024-2029.
 
@@ -93,17 +93,17 @@ Rather than evaluating the actual effectiveness of the Pact and its impact on mi
 - Ensures fairness - for whom?
 - Ensures efficiency - in what way?
 
-Those questions are left unanswered, making it clear that the report's purpose is not to provide objective analysis, but to support pre-existing policy goals.
+Those questions are left unanswered, let alone raised - making it clear that the report's purpose is not to provide objective analysis, but to support pre-existing policy goals.
 
 They also list things they consider to be problematic in achieving their goals. For example:
 
 > The media often sets the narrative agenda by choosing which stories to highlight and how to present them.
 
-Oof. Can't have such competition, can we? Also:
+Can't have such competition, can we? Also:
 
 > Social media platforms often prominently amplify right-wing voices through algorithms that prioritise engagement, elevating extreme positions.
 
-Right-wing voices = a problem to be solved. Ties back nicely to their earlier *"us vs them"* framing - just not in the way they intended.
+Right-wing voices = "extreme positions" = a problem to be solved. Ties back nicely to their earlier *"us vs them"* framing - just not in the way they intended.
 
 > Navigating a landscape filled with emotional, political and media-driven challenges requires strategic communication and efforts to build trust with the public.
 
@@ -435,9 +435,9 @@ Catch me [on X](https://x.com/@xayan__), if you'd like to discuss something in p
 
 Be well, and take care of yourselves out there - because they surely won't.
 
-### To Authors
+### To Report Authors
 
-*(**Note**: Prior to publishing this post, I have reached out to the report's authors via email, to give them a chance to respond to my critique, as per the journalistic standard of the right to reply. I have received no response.)*
+*(**Note**: Prior to publishing, I reached out to all 12 authors via email, as per the journalistic standard of the right to reply, offering them a chance to defend their work. I have received no response.)*
 
 Let me address you here, then.
 
@@ -445,4 +445,4 @@ Remember this: your work is shaping EU policies and, by extension, the worldview
 
 Look at [Sweden](https://www.lemonde.fr/en/international/article/2025/06/09/sweden-s-teen-hitmen-are-on-the-rise_6742139_4.html), [Germany](https://www.dw.com/en/germany-sees-rise-in-sexual-violence-and-youth-offenses/a-72116932), [France](https://www.france24.com/en/france/20250521-muslim-brotherhood-movement-poses-threat-to-national-cohesion-french-govt-report-says), [the UK](https://www.theguardian.com/society/2025/jun/16/grooming-gangs-in-uk-thrived-in-culture-of-ignorance-casey-report-says), and think whether this is the legacy you want to leave behind.
 
-Even small acts of courage and defiance against ideologically corrupt structures can lead to significant shifts over time.
+Even small acts of courage and defiance against ideologically corrupt structures can lead to significant shifts over time, you know what I'm sayin'?

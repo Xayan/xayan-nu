@@ -184,6 +184,6 @@ assistant: **Chain-of-Thought (CoT)**\n\n**Thoughts**: The screenshot shows a co
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
-Also, I have something much different for you: [Introduction to Liberal Universalism](/posts/liberal-universalism/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
+Also, I have something much different for you: [Mutually Assured Misinformation](/posts/mutually-assured-misinformation/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
 
 *Follow me on X or subscribe to the RSS feed to stay updated.*

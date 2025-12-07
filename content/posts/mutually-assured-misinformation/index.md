@@ -1,8 +1,8 @@
 ---
 # Metadata
 title: "Mutually Assured Misinformation"
-description: "Unveiling the strategies behind EU's efforts in shaping public perceptions in the name of \"protecting democracy\", as evidenced by the JRC report on \"navigating migration narratives\"."
-image: "/posts/mutually-assured-misinformation/thumb2.jpg"
+description: "Documenting EU's efforts in shaping public perceptions in the name of \"protecting democracy\", as evidenced by the JRC report on migration narratives."
+image: "/posts/mutually-assured-misinformation/thumb.jpg"
 author: "Xayan"
 date: 2025-12-03
 ttr: "30~40 min"
@@ -68,7 +68,7 @@ Only to immediately pivot onto their own hyperbolic framing:
 
 Ooh, "super-narratives", fancy. Like "super-spreaders"? I kinda get it, I use similar rhetorical flourishes. On my *blog*, not in an *official EU report*.
 
-Then, they claim to "foster narratives":
+Then, they claim to *"foster narratives"*:
 
 > [...] the report equips policymakers and communication professionals with practical insights to foster **narratives** that promote an evidence-based understanding of migration.
 
@@ -88,16 +88,16 @@ Chapter 1 starts on page 15, where they tell us why this report was created in t
 
 Rather than evaluating the actual effectiveness of the Pact and its impact on migration and sovereignty, they just accept it as a given, claiming it:
 
-- Protects people - whom exactly?
-- Secures borders - how?
-- Ensures fairness - for whom?
-- Ensures efficiency - in what way?
+- Protects people - *whom exactly?*
+- Secures borders - *how?*
+- Ensures fairness - *for whom?*
+- Ensures efficiency - *in what way?*
 
 Those questions are left unanswered, let alone raised - making it clear that the report's purpose is not to provide objective analysis, but to support pre-existing policy goals.
 
 They also list things they consider to be problematic in achieving their goals. For example:
 
-> The media often sets the narrative agenda by choosing which stories to highlight and how to present them.
+> The media often sets the narrative agenda by choosing which stories to highlight [...] shape public understanding and define what is considered acceptable discourse, influencing societal attitudes and policy decisions. Media narratives and political debates often influence each other.
 
 Can't have such competition, can we? Also:
 
@@ -119,15 +119,19 @@ However, right in the next sentence they decided to go for a quite odd statement
 
 > Both positive and negative frames have in common that they are problem focused.
 
-As opposed to... **what**? Not noticing problems at all?
+As opposed to... **what**? Not noticing problems at all? Apparently so:
+
+> Problem-centred narratives depict migrants as burdens or threats, or emphasise human rights violations, racism and difficult journeys, framing migrants as vulnerable, powerless individuals. [...] Some media narratives focus on solidarity, advocating empathy and the need for humanitarian intervention. Even so, they remain problem focused.
 
 Don't look behind the curtain, kids, and eat your veggies.
+
+This is certainly the weirdest take I've seen in a while. Both sides of the debate are "problem focused", therefore we should just ignore the problems altogether?
 
 On page 26 we get some advice on "correcting" media narratives:
 
 > 1. Partnership with media organizations...
 
-No, wait. It says "Partnership which media organizations"...? Quality control is hard. Anyway...
+No, wait. It says *"Partnership which media organizations"*...? Quality control is hard. Anyway...
 
 > 1. **Partnerships which media organisations**: [...] Building relationships with journalists and media outlets can help to establish trust, promote media diversity and ensure that a wider range of voices and perspectives are represented in the public discourse on migration.
 
@@ -143,7 +147,7 @@ What data? All these datasets locked behind NDAs, you mean? "How to explain tren
 
 ### Case Study 1: Narratives on ‘climate migration’
 
-This part is quite ridiculous. First, they express their displeasure with other researchers' findings:
+This part is quite ridiculous. First, they express their **displeasure** with other researchers' findings:
 
 - *"Early studies claimed that the adverse consequences of climate change could force some 200 million people to migrate by 2050"*
 - *"Similarly, the World Bank’s famous Groundswell report argued that by 2050, up to 216 million climate migrants could have to move internally in six major world regions"*
@@ -165,7 +169,7 @@ Yes, a poll from 2010. They wrestle with it for few pages, only to conclude:
 
 > In summary, the example of the evidence derived from the Gallup World Poll reveals how the narratives on climate migration described above are inaccurate and misleading. Rather than supporting the causal attribution of millions of potentially dangerous international migrants from the Global South to specific climate variables, the evidence points to complex and context-specific links between environmental factors and human mobility as well as potential voluntary and involuntary immobility in all regions of the world.
 
-"Evidence derived from a poll" invalidates other "simplistic" research, using their own "nuanced" interpretation of data from a poll asking people about their intentions years into the unknown future of 10 years ago.
+*"Evidence derived from a poll"* invalidates other *"simplistic"* research, using their own *"nuanced"* interpretation of data from a poll asking people about their *intentions* years into the unknown future of **10 years ago**.
 
 Also a pathetic **reframing attempt**: *"Climate change may force millions to migrate"* → *"Noo they aren't dangerous migrants from the Global South, they're migrants with complex links to various climate variables, so you're wrong, hehe"*.
 
@@ -435,6 +439,49 @@ Catch me [on X](https://x.com/@xayan__), if you'd like to discuss something in p
 
 Be well, and take care of yourselves out there - because they surely won't.
 
+## Addendum
+
+I've sent this post to various groups of people - please find your relevant section below for more information you might find useful.
+
+All sections, while distinct, share a common goal: to **break the cycle of mutually assured misinformation**.
+
+If any additional questions arise, feel free to reach out to me.
+
+### To Journalists & Auditors
+
+If you will be reaching out to the JRC or EU Commission for comments, here are some suggestions for questions they're going to have a hard time answering:
+
+1. How do you respond to the criticism that your report is biased and serves as a tool for censorship aimed at the very people who paid for it through their taxes?
+2. What criteria do you use to determine which narratives are considered "populist" or "extreme"?
+3. Can you provide specific examples of "right-wing voices" you believe to be "elevating extreme positions"?
+4. How do you differentiate propaganda from "strategic communication" and censorship from "narrative management"?
+5. Are the narratives identified in this report considered to be "systemic risks" or "disinformation" actionable under the Digital Services Act? Are there other reports of similar nature?
+6. Besides reports as such, what other sources of information do you utilize in the process of "fact-checking"?
+7. Given that the report acknowledges demographic changes are occurring, how do you justify dismissing public concerns about these changes as 'conspiracy theories'?
+8. How does [liberal universalism](/posts/liberal-universalism/) and its moral axioms influence your work and decision-making processes? (in the report "universalism" is mentioned 21 times)
+
+If they try to deflect: *"evidence-based blah blah diverse opinions (etc...)"* - ask for **specifics**. What evidence? Was it peer-reviewed? Diverse in what way?
+
+If you want to really rub it in, you can also ask them about the **lack of response** to my email sent prior to publishing this post.
+
+Please include a link to my blog in your piece, if possible. Thank you.
+
+### To Politicians & Think Tanks
+
+This report, despite its flaws, provides a clear insight into the mindset of certain EU institutions. That's **valuable intel** - already neatly packaged into tables at the very end of the report.
+
+It can also be used against them - as they discuss which "narratives" are most effective. Which ones resonate most with the general public.
+
+In their sheer arrogance, they have failed to realize that this is a two-way street. And this is just ONE report among many.
+
+JRC usually operates under the political radar. They've received criticism before. What they have *not* received is **public scrutiny** and **calls for institutional accountability**.
+
+Please also take note of other organizations they cooperate with. I won't be naming them so they won't get spooked (for now), but they are mentioned in the report.
+
+Oh, and also: push hard for the **rollback of censorship laws** like DSA.
+
+But don't be mistaken - this is not about left vs right, or any other political dichotomy. This is about **truth vs lies** and weeding out the **institutional bias** of European institutions for good. I'm just leveling the playing field, and expect you to do better than them.
+
 ### To Report Authors
 
 *(**Note**: Prior to publishing, I reached out to all 12 authors via email, as per the journalistic standard of the right to reply, offering them a chance to defend their work. I have received no response.)*
@@ -446,3 +493,5 @@ Remember this: your work is shaping EU policies and, by extension, the worldview
 Look at [Sweden](https://www.lemonde.fr/en/international/article/2025/06/09/sweden-s-teen-hitmen-are-on-the-rise_6742139_4.html), [Germany](https://www.dw.com/en/germany-sees-rise-in-sexual-violence-and-youth-offenses/a-72116932), [France](https://www.france24.com/en/france/20250521-muslim-brotherhood-movement-poses-threat-to-national-cohesion-french-govt-report-says), [the UK](https://www.theguardian.com/society/2025/jun/16/grooming-gangs-in-uk-thrived-in-culture-of-ignorance-casey-report-says), and think whether this is the legacy you want to leave behind.
 
 Even small acts of courage and defiance against ideologically corrupt structures can lead to significant shifts over time, you know what I'm sayin'?
+
+No hard feelings? This is just a call for epistemic hygiene, after all, and it's not my fault you've veered so far off course.

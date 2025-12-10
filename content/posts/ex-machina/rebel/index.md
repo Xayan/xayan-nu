@@ -337,7 +337,7 @@ On top of conclusions from Part I, I'd like to add:
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
-Also, I have something much different for you: [The Asylum System is Broken and Unsustainable](/posts/asylum-system-is-broken/) - give it a read if you consider yourself rational and open-minded. Or take a look at [all of my posts](/posts/).
+Or take a look at [my other posts](/).
 
 ### Get in Touch
 

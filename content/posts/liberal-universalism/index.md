@@ -5,8 +5,8 @@ description: "Examining the usually overlooked ideology that has shaped Western 
 image: "/posts/liberal-universalism/thumb.jpg"
 author: "Xayan"
 date: 2025-11-11
-ttr: "45~60m"
-hue: 2
+ttr: "30~40m"
+hue: 25
 
 # Analytics
 valued_time: 900 # 15 minutes
@@ -166,7 +166,7 @@ Not an exhaustive list, but I think it covers most bases:
 |:--------:|-------------|----------|
 | **True Believers** | Some genuinely believe in the ideals of liberal universalism and see it as a path to progress. | EU federalists across governments and institutions; Policy-makers of the UN; Judiciaries blocking deportations |
 | **In-Group Opportunists** | They are in it for personal gain, leveraging the ideology to advance their careers or agendas. | NGO directors with 6-figure salaries; Corpos lobbying for cheap labor; Private media executives amplifying gov narratives |
-| **Chaos Exploiters** | Money- or power-driven individuals who take advantage of the system for personal gain, often at the expense of others. | Econ migrants exploiting open door policies and eroding high trust societies; Organized crime trafficking: sex, drugs, humans, [organs](https://emergencejournal.english.ucsb.edu/wp-content/uploads/2022/11/Framing-and-Representation.pdf) |
+| **Chaos Exploiters** | Money- or power-driven individuals who take advantage of the system for personal gain, often at the expense of others. | Econ migrants exploiting open door policies and eroding high trust societies; Organized crime trafficking: sex, drugs, humans, [organs](https://www.reuters.com/world/europe/poland-arrests-ukrainian-woman-convicted-selling-56-human-kidneys-2025-03-11/) |
 | **Militant Activists** | Holding openly hostile views, and always choosing a fight over an argument - they see their actions as morally justified, and *"fucking shit up"* as *"just a hobby"*.  | [Radical](https://www.leftvoice.org/the-origins-of-antifa/) or [extremist NGOs](https://en.wikipedia.org/wiki/Muslim_Brotherhood); [Activists--Human traffickers](https://www.dw.com/en/poland-hajnowka-5-on-trial-for-aiding-desperate-refugees/a-72278407); Acts of subversion and sabotage against state legitimacy |
 | **Weary Bystanders** | The ones who realized something might be off, but are too afraid to speak out against the prevailing narrative due to social or professional pressures. | Academics valuing job security over truth; Self-censoring researchers/journalists/orgs; [Captured institutions withholding info](https://edition.cnn.com/2020/07/02/us/san-francisco-police-mug-shot-release-trnd) |
 | **Apathetic Masses** | Simply going along with the flow, either because they don't care enough to question it or because they see no viable alternative. | Career bureaucrats processing paperwork; Lower working classes busy with daily struggles; Status quo voters |

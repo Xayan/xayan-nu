@@ -492,6 +492,6 @@ Remember this: your work is shaping EU policies and, by extension, the worldview
 
 Look at [Sweden](https://www.lemonde.fr/en/international/article/2025/06/09/sweden-s-teen-hitmen-are-on-the-rise_6742139_4.html), [Germany](https://www.dw.com/en/germany-sees-rise-in-sexual-violence-and-youth-offenses/a-72116932), [France](https://www.france24.com/en/france/20250521-muslim-brotherhood-movement-poses-threat-to-national-cohesion-french-govt-report-says), [the UK](https://www.theguardian.com/society/2025/jun/16/grooming-gangs-in-uk-thrived-in-culture-of-ignorance-casey-report-says), and think whether this is the legacy you want to leave behind.
 
-Even small acts of courage and defiance against ideologically corrupt structures can lead to significant shifts over time, you know what I'm sayin'?
+Even small acts of courage and defiance against ideologically corrupt structures can lead to significant shifts over time.
 
 No hard feelings? This is just a call for epistemic hygiene, after all, and it's not my fault you've veered so far off course.

@@ -4,8 +4,8 @@
   const warn = (...args) => console.warn(LOG_PREFIX, ...args);
 
   const INTERVALS = buildIntervals([
-    { start: 10, end: 30, step: 10 },
-    { start: 30, end: 60, step: 15 },
+    { start: 5, end: 20, step: 5 },
+    { start: 20, end: 60, step: 10 },
     { start: 60, end: 600, step: 30 },
     { start: 600, end: 7200, step: 60, inclusive: true }
   ]);
@@ -274,7 +274,10 @@
         seconds,
         percent: state.scrollDepth
       });
-      sendRedditPixelEvent('ViewContent');
+
+      if(seconds % 60 === 0) {
+        sendRedditPixelEvent('ViewContent');
+      }
     }
   }
 

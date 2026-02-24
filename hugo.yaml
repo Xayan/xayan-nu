@@ -67,13 +67,15 @@ params:
     name: Xayan
     description: "There are no stupid questions, only stupid people."
   socialIcons:
-    - name: x
-      url: "https://x.com/xayan__"
     - name: reddit
       url: "https://reddit.com/user/Xayan"
+    - name: x
+      url: "https://x.com/xayan__"
     - name: github
       url: "https://github.com/Xayan/"
-    - name: Rss
+    - name: email
+      url: "mailto:damian@xayan.nu"
+    - name: rss
       url: /index.xml
 
 markup:

@@ -4,6 +4,7 @@
   const warn = (...args) => console.warn(LOG_PREFIX, ...args);
 
   const INTERVALS = buildIntervals([
+    { start: 1, end: 5, step: 2 },
     { start: 5, end: 20, step: 5 },
     { start: 20, end: 60, step: 10 },
     { start: 60, end: 600, step: 30 },

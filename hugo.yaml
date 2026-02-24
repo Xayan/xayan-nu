@@ -69,6 +69,8 @@ params:
   socialIcons:
     - name: x
       url: "https://x.com/xayan__"
+    - name: reddit
+      url: "https://reddit.com/user/Xayan"
     - name: github
       url: "https://github.com/Xayan/"
     - name: Rss

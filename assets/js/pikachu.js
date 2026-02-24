@@ -288,7 +288,7 @@
     const timeThreshold = valuedConfig.valued_time;
     const scrollThreshold = valuedConfig.valued_scroll;
     const timeMet = timeThreshold === undefined || state.engagementTime >= timeThreshold;
-    const scrollMet = scrollThreshold === undefined || state.scrollDepth >= scrollThreshold;
+    const scrollMet = scrollThreshold === undefined || state.scrollDepth >= scrollThreshold || state.lastScrollMilestone >= scrollThreshold;
 
     if (timeMet && scrollMet) {
       state.valuedFired = true;

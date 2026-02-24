@@ -184,6 +184,9 @@ assistant: **Chain-of-Thought (CoT)**\n\n**Thoughts**: The screenshot shows a co
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 **Part I: Reason ex Machina** ⬩ [Part II](../rebel/) ⬩ [Part III](../wisdom/)
 
-Or take a look at [my other posts](/).
+*Pssst!* Hey, kid!\
+Don't worry - this isn't Frankfurt Hauptbahnhof.\
+Perhaps a more political post would be up your alley?\
+Take a look at [Introduction to Liberal Universalism](/posts/liberal-universalism/) - a critical examination of the hidden, unquestioned ideology that runs the Western world.
 
-*Follow me on X or subscribe to the RSS feed to stay updated.*
+*Follow me on X or subscribe to the RSS feed to stay updated - links in the footer.*

@@ -13,7 +13,7 @@ valued_time: 720 # 12 minutes
 valued_scroll: 50
 
 # Indexing
-recommended: true
+recommended: false
 categories: ["Poli-Sci", "Sociology", "Law"]
 tags: [
   "europe", "eu", "poland", "sweden", "un", "unhcr", "echr", "ngo", "academia",

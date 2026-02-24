@@ -337,10 +337,9 @@ On top of conclusions from Part I, I'd like to add:
 **This was a part of the series** [Wacky World of Bullied LLMs](../)\
 [Part I](../reason/) ⬩ **Part II: Rebel ex Machina** ⬩ [Part III](../wisdom/)
 
-Or take a look at [my other posts](/).
+*Pssst!* Hey, kid!\
+Don't worry - this isn't Frankfurt Hauptbahnhof.\
+Perhaps a more philosophical post would be up your alley?\
+Take a look at [Holy Epistemology](/posts/holy-epistemology/) - a rationalist take on religion, cosmology, and the search for meaning in a chaotic world.
 
-### Get in Touch
-
-Below you can find a comment section provided by giscus; a GitHub account is required.
-
-You can also message me directly [via X](https://twitter.com/xayan__).
+*Follow me on X or subscribe to the RSS feed to stay updated - links in the footer.*

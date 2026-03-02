@@ -1,6 +1,25 @@
 {{- $pageTitle := cond .IsHome site.Params.homeTitle .Title -}}
 {{- $fullTitle := printf "%s | %s" $pageTitle site.Title -}}
-{{- $description := trim (default .Site.Params.description .Params.description) "\n" -}}
+
+{{- /* Default description: front matter or site param */ -}}
+{{- $defaultDescription := trim (default .Site.Params.description .Params.description) "\n" -}}
+{{- $description := $defaultDescription -}}
+
+{{- /* Dynamic descriptions for taxonomy and section pages.
+     Configure templates in site params (optional):
+     site.Params.meta.taxonomy = "Posts about %s"
+     site.Params.meta.section.posts = "All posts in %s"
+     The templates must include a single %s placeholder for the term/section name.
+*/ -}}
+{{- if eq .Kind "taxonomy" -}}
+  {{- $tpl := default "Posts about %s" .Site.Params.meta.taxonomy -}}
+  {{- $description = printf $tpl .Title -}}
+{{- else if eq .Kind "section" -}}
+  {{- $sectionTpl := index .Site.Params.meta.section .Section -}}
+  {{- if $sectionTpl -}}
+    {{- $description = printf $sectionTpl .Title -}}
+  {{- end -}}
+{{- end -}}
 
 {{/* Normalize locale to underscore as expected by OG (e.g., en_GB) */}}
 {{ $locale := replace .Site.LanguageCode "-" "_" }}

@@ -78,6 +78,11 @@ params:
     - name: rss
       url: /index.xml
 
+  meta:
+    taxonomy: "The list of all %s available on xayan.nu"
+    section:
+      posts: "The list of all Posts in %s available on xayan.nu"
+
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:

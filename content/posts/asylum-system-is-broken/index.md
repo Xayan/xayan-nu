@@ -22,7 +22,7 @@ tags: [
 ]
 ---
 
-{{<image url="polish-border.png" source="https://www.dw.com/en/poland-strengthens-belarus-border-after-wagner-chief-arrival/a-66094722">}}
+{{<image url="polish-border.jpg" source="https://www.gov.pl/web/premier/premier-mateusz-morawiecki-zapora-na-granicy-z-bialorusia-to-wyraz-naszej-skutecznosci-i-przewidywalnosci">}}
 Polish-Belarusian border amidst Russia-orchestrated hybrid warfare
 {{</image>}}
 

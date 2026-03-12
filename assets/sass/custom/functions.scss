@@ -93,7 +93,12 @@
 
 @mixin on-devices($sets...) {
   @each $set in $sets {
-    @include per-device($mobile: map-get($set, mobile), $tablet: map-get($set, tablet), $desktop: map-get($set, desktop), $default: map-get($set, default));
+    @include per-device(
+      $mobile: map-get($set, mobile),
+      $tablet: map-get($set, tablet),
+      $desktop: map-get($set, desktop),
+      $default: map-get($set, default)
+    );
   }
 }
 
@@ -124,7 +129,7 @@
   }
 }
 
-/** 
+/**
   * Utilities
   */
 

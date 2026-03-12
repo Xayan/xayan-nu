@@ -1,7 +1,17 @@
 $padding-multiplier: 0.4rem;
 
 .post-content {
-  font-size: 0.9rem;
+  @include per-device(
+    (
+      font-size: 1rem
+    ),
+    (
+      font-size: 1rem
+    ),
+    (
+      font-size: 1.1rem
+    )
+  );
 
   p {
     @include on-devices($text-margin);

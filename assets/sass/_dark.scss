@@ -59,9 +59,9 @@ table {
 }
 
 // Inline code
-li>code,
-p>code {
-  font-size: 0.9em;
+li > code,
+p > code {
+  font-size: 1em;
   padding: 1px 3px;
   position: relative;
   top: -1px;
@@ -167,7 +167,7 @@ b {
       background-color: $dark-black;
       border-color: $dark-light;
 
-      input[type="checkbox"]:checked~.trigger {
+      input[type="checkbox"]:checked ~ .trigger {
         background: $dark-black;
       }
     }

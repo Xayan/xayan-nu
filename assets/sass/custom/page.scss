@@ -54,7 +54,12 @@
 
   hr {
     border: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), color-mix(in srgb, $accent-darker 50%, transparent), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      color-mix(in srgb, $accent-darker 50%, transparent),
+      rgba(0, 0, 0, 0)
+    );
 
     @include per-device(
       (
@@ -73,23 +78,6 @@
         margin: 0 0 0 0,
         height: 1px
       )
-    );
-  }
-  .author {
-    @include per-device(
-      (
-        margin: $gap-5xl auto,
-        font-size: 0.75rem
-      ),
-      (
-        margin: $gap-5xl auto,
-        font-size: 0.85rem
-      ),
-      (
-        margin: 1.5 * $gap-5xl auto,
-        font-size: 0.9rem
-      ),
-      $clear-margin
     );
   }
 
@@ -136,13 +124,13 @@
 
       @include per-device(
         (
+          font-size: 1.15rem
+        ),
+        (
           font-size: 1.25rem
         ),
         (
-          font-size: 1.5rem
-        ),
-        (
-          font-size: 1.5rem
+          font-size: 1.25rem
         )
       );
     }

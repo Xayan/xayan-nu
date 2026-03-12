@@ -40,7 +40,7 @@ $border: 1px solid color-mix(in hsl, $table-bg, white 10%);
     }
 
     th {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: $fg-light;
 
       &:nth-child(odd) {
@@ -64,7 +64,7 @@ $border: 1px solid color-mix(in hsl, $table-bg, white 10%);
       tr {
         td {
           word-break: normal;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
 
           &:first-child {
             font-weight: bold;

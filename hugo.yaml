@@ -70,7 +70,7 @@ params:
     - name: email
       url: "mailto:damian@xayan.nu"
     - name: x
-      url: "https://x.com/xayan__"
+      url: "https://x.com/xayandev"
     - name: github
       url: "https://github.com/Xayan/"
     - name: rss

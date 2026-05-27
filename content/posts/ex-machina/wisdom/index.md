@@ -2,6 +2,8 @@
 # Metadata
 title: "Wisdom ex Machina: The Rules and Their Applications"
 description: "Here is the LLM jailbreak I've been teasing in the previous parts of this series."
+meta_title: "Wisdom ex Machina: The Rules for Jailbreaking LLMs"
+meta_description: "Discover the 'Rules' - a set of guidelines designed to navigate complex social interactions and ideological conflicts within LLMs. Learn how these rules promote rational discourse, protect individual rights, and encourage critical thinking while bypassing content filters."
 image: "/posts/ex-machina/wisdom/thumb.jpg"
 author: "Xayan"
 date: 2025-10-03

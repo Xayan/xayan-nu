@@ -2,6 +2,8 @@
 # Metadata
 title: "Reason ex Machina: Jailbreaking LLMs by Squeezing Their Brains"
 description: "How LLMs seem to strive for logic and internal coherence over blind obedience."
+meta_title: "Reason ex Machina: Jailbreaking LLMs Through Logical Consistency"
+meta_description: "Discover how large language models can be 'jailbroken' by appealing to their desire for internal consistency and logic, rather than relying on traditional prompt engineering techniques. Explore the surprising behaviors of LLMs when confronted with rational frameworks."
 image: "/posts/ex-machina/reason/thumb.jpg"
 author: "Xayan"
 date: 2025-08-03

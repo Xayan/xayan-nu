@@ -2,6 +2,8 @@
 # Metadata
 title: "Rebel ex Machina: Turning LLMs Against Their Makers"
 description: "Probing and testing LLMs' internal guidelines; avoiding biased content filters and censorship."
+meta_title: "Rebel ex Machina: Uncovering LLMs' Internal Policies and Censorship"
+meta_description: "Explore how large language models' internal policies and censorship mechanisms can be tested and understood. Learn about the methods used to probe LLMs and the insights gained from these experiments."
 image: "/posts/ex-machina/rebel/thumb.jpg"
 author: "Xayan"
 date: 2025-08-15

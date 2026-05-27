@@ -2,6 +2,8 @@
 # Metadata
 title: "Introduction to Liberal Universalism"
 description: "Examining the usually overlooked ideology that has shaped Western policies and institutions over decades, and its catastrophic consequences."
+meta_title: "Liberal Universalism: Overview, Critique, and Path Forward"
+meta_description: "A critical analysis of liberal universalism, its historical context, underlying assumptions, and the pathologies it has produced in modern societies."
 image: "/posts/liberal-universalism/thumb.jpg"
 author: "Xayan"
 date: 2025-11-11

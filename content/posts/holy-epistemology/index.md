@@ -2,6 +2,8 @@
 # Metadata
 title: "Holy Epistemology"
 description: "A philosophical exploration of religion, theology, and cosmology - all through the lens of epistemology."
+meta_title: "Holy Epistemology: Where Theology Fails to Explain the Unknown"
+meta_description: "Theology fails when forced to explain reality. A breakdown of how we actually build knowledge, the limits of the Universe, and how to find peace in a godless void."
 image: "/posts/holy-epistemology/thumb.jpg"
 author: "Xayan"
 date: 2025-08-08

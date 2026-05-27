@@ -1,9 +1,16 @@
 {{- $pageTitle := cond .IsHome site.Params.homeTitle .Title -}}
-{{- $fullTitle := printf "%s | %s" $pageTitle site.Title -}}
+{{- $fullTitle := $pageTitle -}}
+{{- if .Params.meta_title -}}
+  {{- $fullTitle = .Params.meta_title -}}
+{{- end -}}
+{{- $ogTitle := printf "%s | %s" $pageTitle site.Title -}}
 
 {{- /* Default description: front matter or site param */ -}}
 {{- $defaultDescription := trim (default .Site.Params.description .Params.description) "\n" -}}
 {{- $description := $defaultDescription -}}
+{{- if .Params.meta_description -}}
+  {{- $description = .Params.meta_description -}}
+{{- end -}}
 
 {{- /* Dynamic descriptions for taxonomy and section pages.
      Configure templates in site params (optional):
@@ -41,10 +48,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title itemprop="name">{{ $fullTitle }}</title>
-<meta property="og:title" content="{{ $fullTitle }}" />
-<meta name="twitter:title" content="{{ $fullTitle }}" />
-<meta itemprop="name" content="{{ $fullTitle }}" />
-<meta name="application-name" content="{{ $fullTitle }}" />
+
+<meta property="og:title" content="{{ $ogTitle }}" />
+<meta name="twitter:title" content="{{ $ogTitle }}" />
+<meta itemprop="name" content="{{ $ogTitle }}" />
+<meta name="application-name" content="{{ $ogTitle }}" />
 
 <meta name="description" content="{{ $description }}">
 <meta itemprop="description" content="{{ $description }}" />

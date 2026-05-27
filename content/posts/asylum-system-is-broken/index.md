@@ -2,6 +2,8 @@
 # Metadata
 title: "Asylum System is Broken and Unsustainable"
 description: "And it's only going to get worse, because what once was a \"non-binding agreement\" is now being turned into coercion via legal and fiscal means - like the EU's Migration Pact."
+meta_title: "Asylum System: Critical Flaws and Unintended Consequences"
+meta_description: "A comprehensive analysis of the asylum system's fundamental flaws, its impact on host countries, and the ideological underpinnings that perpetuate it. Explore the real-world consequences and the urgent need for reform."
 image: "/posts/asylum-system-is-broken/thumb.jpg"
 author: "Xayan"
 date: 2025-09-12
